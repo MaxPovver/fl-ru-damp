@@ -1,0 +1,34 @@
+.b-promo__note{
+	background:url(b-promo__note.png) 0 0 repeat-y;
+	padding-left:3px;
+	}
+.b-promo__note_margtop_10{
+	margin-top:10px;
+	}	
+	
+	
+.b-promo__note_relative{
+	position:relative;
+	}
+	
+.b-promo__note-wrap_inline-block{
+	display:inline-block;
+	}
+
+.b-promo__note-wrap_width_420{
+	width:420px;
+	}
+.b-promo__note-wrap_padtop_15{
+	padding-top:15px;
+	}
+.b-promo__note-wrap_padleft_20{
+	padding-left:20px;
+	}
+.b-promo__note-inner{
+	background:#fffded;
+	border-bottom:1px solid #dfddce;
+	border-right:1px solid #f8f6e5;
+	border-top:1px solid #f8f6e5;
+	padding:15px;
+	}
+

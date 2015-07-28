@@ -1,0 +1,442 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+<title>b-button</title>
+<link href="b-button.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/scripts/mootools-new.js"></script>
+<script type="text/javascript" src="b-button.js"></script>
+</head>
+<body>
+<div>
+    <h3>Прямоугольная кнопочка с прозрачной подложкой</h3>
+    <a class="b-button b-button_rectangle_transparent"  href="#">
+        <span class="b-button__b1">
+            <span class="b-button__b2">
+                <span class="b-button__txt">Отправить</span>
+            </span>
+        </span>
+    </a>
+    <h3>Уменьшенная прямоугольная кнопочка с прозрачной подложкой</h3>
+    <a class="b-button b-button_rectangle_transparent_small"  href="#">
+        <span class="b-button__b1">
+            <span class="b-button__b2">
+                <span class="b-button__txt">Выбрать файл</span>
+            </span>
+        </span>
+    </a>
+    <h3>Прямоугольная кнопочка с зеленой подложкой</h3>
+    <a class="b-button b-button_rectangle_color_green"  href="#">
+        <span class="b-button__b1">
+            <span class="b-button__b2">
+                <span class="b-button__txt">Купить за <span class="b-button__colored b-button__colored_fd6c30">1 FM</span></span>
+            </span>
+        </span>
+    </a>
+    <h3>Прямоугольная кнопочка с красной подложкой</h3>
+    <a class="b-button b-button_rectangle_color_red"  href="#">
+        <span class="b-button__b1">
+            <span class="b-button__b2">
+                <span class="b-button__txt">Отправить</span>
+            </span>
+        </span>
+    </a>
+    <h3>Прямоугольная кнопочка с зеленой подложкой нажатая и идет загрузка</h3>
+    <a class="b-button b-button_rectangle_color_green b-button_press"  href="#">
+        <span class="b-button__b1">
+            <span class="b-button__b2">
+                <span class="b-button__txt b-button__txt_hide">Отправить</span>
+                <img class="b-button__load" src="b-button__load.gif" alt="" width="26" height="6" />
+            </span>
+        </span>
+    </a>
+    <h3>Прямоугольная кнопочка с красной подложкой нажатая и идет загрузка</h3>
+    <a class="b-button b-button_rectangle_color_red b-button_press"  href="#">
+        <span class="b-button__b1">
+            <span class="b-button__b2">
+                <span class="b-button__txt b-button__txt_hide">Отправить</span>
+                <img class="b-button__load" src="b-button__load.gif" alt="" width="26" height="6" />
+            </span>
+        </span>
+    </a>
+    <h3>Прямоугольная кнопочка с подложкой недоступна</h3>
+    <a class="b-button b-button_rectangle_color_disable"  href="#">
+        <span class="b-button__b1">
+            <span class="b-button__b2">
+                <span class="b-button__txt">Отправить</span>
+            </span>
+        </span>
+    </a>
+    <h3>Прямоугольная кнопочка с подложкой недоступна и идет загрузка</h3>
+    <a class="b-button b-button_rectangle_color_disable"  href="#">
+        <span class="b-button__b1">
+            <span class="b-button__b2">
+                <span class="b-button__txt b-button__txt_hide">Отправить</span>
+                <img class="b-button__load" src="b-button__load.gif" alt="" width="26" height="6" />
+            </span>
+        </span>
+    </a>
+    <h3>Скругленная кнопочка с зеленой подложкой</h3>
+    <a class="b-button b-button_round_green"  href="#">
+        <span class="b-button__b1">
+            <span class="b-button__b2">
+                <span class="b-button__txt">Отправить</span>
+            </span>
+        </span>
+    </a>
+    <h3>Скругленная кнопочка с зеленой подложкой недоступна</h3>
+    <a class="b-button b-button_round_color_disable"  href="#">
+        <span class="b-button__b1">
+            <span class="b-button__b2">
+                <span class="b-button__txt">Отправить</span>
+            </span>
+        </span>
+    </a>
+    <h3>Микрокнопка добавления</h3>
+    <a class="b-button b-button_m_add"  href="#"></a>
+    <h3>Микрокнопка добавления неактивная</h3>
+    <a class="b-button b-button_m_add b-button_disabled"  href="#"></a>
+    <h3>Микрокнопка добавления прозрачная</h3>
+    <a class="b-button b-button_m_add b-button_transparent"  href="#"></a>
+		
+    <h3>Микрокнопка удаления</h3>
+    <a class="b-button b-button_m_remove"  href="#"></a>
+    <h3>Микрокнопка удаления неактивная</h3>
+    <a class="b-button b-button_m_remove b-button_disabled"  href="#"></a>
+    <h3>Микрокнопка удаления прозрачная</h3>
+    <a class="b-button b-button_m_remove b-button_transparent"  href="#"></a>
+		
+    <h3>Микрокнопка редактирования</h3>
+    <a class="b-button b-button_m_edit"  href="#"></a>
+    <h3>Микрокнопка редактирования неактивная</h3>
+    <a class="b-button b-button_m_edit b-button_disabled"  href="#"></a>
+    <h3>Микрокнопка редактирования при наведении на блок</h3>
+		<div class="i-button">
+    	<a class="b-button b-button_m_edit"  href="#"></a>
+		</div>
+		
+    <h3>Микрокнопка удаления</h3>
+    <a class="b-button b-button_m_delete"  href="#"></a>
+    <h3>Микрокнопка удаления неактивная</h3>
+    <a class="b-button b-button_m_delete b-button_disabled"  href="#"></a>
+    <h3>Микрокнопка удаления при наведении на блок</h3>
+		<div class="i-button">
+    	<a class="b-button b-button_m_delete"  href="#"></a>
+		</div>
+		
+    <h3>Микрокнопка закрытия</h3>
+    <a class="b-button b-button_m_close"  href="#"></a>
+    <h3>Микрокнопка закрытия неактивная</h3>
+    <a class="b-button b-button_m_close b-button_disabled"  href="#"></a>
+		
+		
+    <h3>Прямоугольная второстепенная кнопочка с прозрачной подложкой</h3>
+    <a class="b-button b-button_rectangle_color_transparent"  href="#">
+        <span class="b-button__b1">
+            <span class="b-button__b2">
+                <span class="b-button__txt">Отправить</span>
+            </span>
+        </span>
+    </a>
+    <h3>Прямоугольная второстепенная кнопочка с прозрачной подложкой и иконкой</h3>
+    <a class="b-button b-button_rectangle_color_transparent"  href="#">
+        <span class="b-button__b1">
+            <span class="b-button__b2">
+                <span class="b-button__txt">Подробнее о <img class="b-button__pro" src="/images/icons/f-pro.png" alt="" width="26" height="11" /></span>
+            </span>
+        </span>
+    </a>
+    <h3>Прямоугольная второстепенная кнопочка с прозрачной подложкой не активная</h3>
+    <a class="b-button b-button_rectangle_color_transparent b-button_disabled"  href="#">
+        <span class="b-button__b1">
+            <span class="b-button__b2">
+                <span class="b-button__txt">Отправить</span>
+            </span>
+        </span>
+    </a>
+    <h3>Прямоугольная второстепенная кнопочка с прозрачной подложкой не активная и идет загрузка</h3>
+    <a class="b-button b-button_rectangle_color_transparent b-button_disabled"  href="#">
+        <span class="b-button__b1">
+            <span class="b-button__b2">
+                <span class="b-button__txt b-button__txt_hide">Отправить</span>
+                <img class="b-button__load" src="b-button__load.gif" alt="" width="26" height="6" />
+            </span>
+        </span>
+    </a>
+    <h3>Прямоугольная второстепенная кнопочка с прозрачной подложкой нажатая и идет загрузка</h3>
+    <a class="b-button b-button_rectangle_color_transparent b-button_press"  href="#">
+        <span class="b-button__b1">
+            <span class="b-button__b2">
+                <span class="b-button__txt b-button__txt_hide">Отправить</span>
+                <img class="b-button__load" src="b-button__load.gif" alt="" width="26" height="6" />
+            </span>
+        </span>
+    </a>
+    <h3>Прямоугольная оранжевая второстепенная кнопочка с прозрачной подложкой</h3>
+    <a class="b-button b-button_rectangle_orange"  href="#">
+        <span class="b-button__b1">
+            <span class="b-button__b2">
+                <span class="b-button__txt">Регистрация</span>
+            </span>
+        </span>
+    </a>
+	<div class="i-button">
+		<h3>Прямоугольная второстепенная кнопочка с зеленой подложкой при наведении на блок</h3>
+		<a class="b-button b-button_rectangle_color_transparent_green"  href="#">
+			<span class="b-button__b1">
+				<span class="b-button__b2">
+					<span class="b-button__txt">Отправить</span>
+				</span>
+			</span>
+		</a>
+		<h3>Прямоугольная второстепенная кнопочка с прозрачной подложкой не активная</h3>
+		<a class="b-button b-button_rectangle_color_transparent b-button_disabled"  href="#">
+			<span class="b-button__b1">
+				<span class="b-button__b2">
+					<span class="b-button__txt">Отправить</span>
+				</span>
+			</span>
+		</a>
+		<h3>Прямоугольная второстепенная кнопочка с прозрачной подложкой не активная и идет загрузка</h3>
+		<a class="b-button b-button_rectangle_color_transparent b-button_disabled"  href="#">
+			<span class="b-button__b1">
+				<span class="b-button__b2">
+					<span class="b-button__txt b-button__txt_hide">Отправить</span>
+					<img class="b-button__load" src="b-button__load.gif" alt="" width="26" height="6" />
+				</span>
+			</span>
+		</a>
+		<h3>Прямоугольная второстепенная кнопочка с зеленой подложкой при наведении на блок, нажатая и идет загрузка</h3>
+		<a class="b-button b-button_rectangle_color_transparent_green b-button_press" href="#" >
+			<span class="b-button__b1">
+				<span class="b-button__b2">
+					<span class="b-button__txt b-button__txt_hide">Отправить</span>
+					<img class="b-button__load" width="26" height="6" alt="" src="b-button__load.gif" />
+				</span>
+			</span>
+		</a>	
+	</div>
+	<h3>Кнопки с иконками</h3>
+    <a class="b-button b-button_rectangle_color_transparent"  href="#">
+        <span class="b-button__b1">
+            <span class="b-button__b2">
+                <span class="b-button__icon b-button__icon_mess"></span><span class="b-button__txt">Сообщение</span>
+            </span>
+        </span>
+    </a>
+    <a class="b-button b-button_rectangle_color_transparent"  href="#">
+        <span class="b-button__b1">
+            <span class="b-button__b2">
+                <span class="b-button__icon b-button__icon_star"></span><span class="b-button__txt">В избранное</span>
+            </span>
+        </span>
+    </a>
+	<h3>Большие кнопки</h3>
+    <a class="b-button b-button_big_grey b-button_block"  href="#">
+        <span class="b-button__b1">
+            <span class="b-button__b2">
+                <span class="b-button__txt b-button__txt_width_300 b-button__txt_center"><span class="b-button__icon-big b-button__icon-big_prj"></span>Опубликовать проект</span>
+            </span>
+        </span>
+    </a>
+    <a class="b-button b-button_big_grey b-button_block"  href="#">
+        <span class="b-button__b1">
+            <span class="b-button__b2">
+                <span class="b-button__txt b-button__txt_width_300 b-button__txt_center"><span class="b-button__icon-big b-button__icon-big_contest"></span>Опубликовать конкурс</span>
+            </span>
+        </span>
+    </a>
+    <a class="b-button b-button_big_green"  href="#">Найти исполнителя</a>
+    <a class="b-button b-button_big_yellow"  href="#">Найти работу</a>
+		
+		<a class="b-button b-button_big_rectangle_color_green" href="#">
+        <span class="b-button__b1">
+            <span class="b-button__b2">
+                <span class="b-button__txt">Купить за <span class="b-button__colored b-button__colored_fd6c30">2 FM</span></span>
+            </span>
+        </span>
+    </a>		
+		<a class="b-button b-button_big_rectangle_color_disable" href="#">
+        <span class="b-button__b1">
+            <span class="b-button__b2">
+                <span class="b-button__txt">Купить за <span class="b-button__colored b-button__colored_fd6c30">2 FM</span></span>
+            </span>
+        </span>
+    </a>		
+		<a class="b-button b-button_big_round_green b-button_disabled" href="#">
+        <span class="b-button__b1">
+            <span class="b-button__b2">
+                <span class="b-button__txt"><div class="b-icon b-icon__btn_rur"></div> &#160; Пополнить счет на сайте и оплатить услуги</span>
+            </span>
+        </span>
+    </a>		
+		
+		<a class="b-button b-button_big_round_green" href="#">
+        <span class="b-button__b1">
+            <span class="b-button__b2">
+                <span class="b-button__txt"><div class="b-icon b-icon__btn_sbr"></div> &#160; Зарезервировать деньги для «Безопасной Сделки»</span>
+            </span>
+        </span>
+    </a>		
+		
+		
+	<h3>Кнопка переключатель сортировки</h3>
+	<a class="b-button b-button_sort"  href="#"></a>
+	<a class="b-button b-button_sort b-button_asort"  href="#"></a>
+	
+	
+	<h3>Мини-кнопки</h3>
+	<a class="b-button b-button_mini" href="#"></a>
+	<a class="b-button b-button_mini" href="#"><span class="b-button__icon b-button__icon_ok"></span></a>
+	<a class="b-button b-button_mini" href="#"><span class="b-button__icon b-button__icon_att"></span></a>
+	<a class="b-button b-button_mini" href="#"><span class="b-button__icon b-button__icon_krest"></span></a>
+	<a class="b-button b-button_mini" href="#"><span class="b-button__icon b-button__icon_del"></span></a>
+	<a class="b-button b-button_mini" href="#"><span class="b-button__icon b-button__icon_list"></span></a>
+	
+    <a class="b-button b-button_mini" href="#"><span class="b-button__icon b-button__icon_com"></span></a>
+	<a class="b-button b-button_mini" href="#"><span class="b-button__icon b-button__icon_edit"></span></a>
+    
+	<a class="b-button b-button_mini b-button__left insertunorderedlist-item" href="#"><em class="b-button__icon"></em></a><a class="b-button b-button_mini b-button__right insertorderedlist-item" href="#"><em class="b-button__icon"></em></a>
+    
+	<h3>Тянущиеся мини-кнопки</h3>
+	<a class="b-button b-button_small" href="#">
+        <span class="b-button__b1">
+            <span class="b-button__b2">
+                <span class="b-button__txt b-button__txt_fontsize_11">Обычный текст</span>
+            </span>
+        </span>
+    </a>
+	
+	
+	<h3>Кнопки-голосовалки</h3>
+	<div class="i-button">
+		<a class="b-button b-button_poll_plus" href="#"></a>
+	</div>
+	<div class="i-button">
+		<a class="b-button b-button_poll_minus" href="#"></a>
+	</div>
+	<div class="i-button">
+		<a class="b-button b-button_poll_multi" href="#"></a>
+	</div>
+	
+	<h3>Кнопки управления</h3>
+	<div class="i-button">
+		<a class="b-button b-button_admin_edit" href="#"></a>
+	</div>
+	<div class="i-button">
+		<a class="b-button b-button_admin_del" href="#"></a>
+	</div>
+	<div class="i-button">
+		<a class="b-button b-button_admin_close" href="#"></a>
+	</div>
+		<a class="b-button b-button_admin_gdel" href="#"></a>
+	
+	<h3>Кнопки при оплате</h3>
+	<a class="b-button b-button_bill b-button_bill_mid" href="#">        
+		<span class="b-button__b1">
+      <span class="b-button__b2">
+				<img class="b-button__pic" src="/images/bill-wm.png" alt="WebMoney" />
+			</span>
+		</span>
+	</a>
+	<a class="b-button b-button_bill b-button_bill_mid" href="#">        
+		<span class="b-button__b1">
+      <span class="b-button__b2">
+				<img class="b-button__pic" src="/images/bill-wm1.png" alt="WebMoney" />
+                <span class="b-button__bonus"></span>
+			</span>
+		</span>
+	</a>
+	<a class="b-button b-button_bill b-button_bill_mid" href="#">        
+        <span class="b-button__b1">
+            <span class="b-button__b2">
+				<div class="b-button__txt b-button__txt_padlr_25 b-button__txt_color_0f71c8 b-button__txt_padtop_10">Квитанция для физических лиц</div><div class="b-button__txt b-button__txt_padlr_25 b-button__txt_fontsize_11"><img class="b-button__pic b-button__pic_top_2" src="/images/icons/f-pro.png" alt="" />&#160;в подарок</div>
+                <span class="b-button__bonus"></span>
+			</span>
+		</span>
+	</a>
+    
+	<a class="b-button b-button_bill b-button_bill_small" href="#">        
+		<span class="b-button__b1">
+      <span class="b-button__b2">
+				<span class="b-button__txt b-button__txt_color_0f71c8">Для юридических лиц</span>
+			</span>
+		</span>
+	</a>
+
+
+
+<h3>Плоские кнопки</h3>
+<a class="b-button b-button_flat b-button_flat_green" href="#">Опубликовать&hellip;</a>
+<button class="b-button b-button_flat b-button_flat_green" type="button">Kнопка button</button>
+<a class="b-button b-button_flat b-button_flat_red" href="#">Заблокировать</a>
+<a class="b-button b-button_flat b-button_flat_orange" href="#">Стать фрилансером</a>
+<a class="b-button b-button_flat b-button_flat_grey" href="#">Добавить</a>
+<br />
+<a class="b-button b-button_flat b-button_flat_orange b-button_flat_lite" href="#">Привяжите телефон</a>
+<a class="b-button b-button_flat b-button_flat_green b-button_flat_small" href="#">Опубликовать&hellip;</a>
+<a class="b-button b-button_flat b-button_flat_grey" href="#">Добавить</a>
+
+<h3>Сортировка</h3>
+<a class="b-button b-button_ar" href="#"></a>
+<a class="b-button b-button_ar b-button_disabled" href="#"></a>
+<a class="b-button b-button_ar b-button_ar_revers" href="#"></a>
+<a class="b-button b-button_ar b-button_ar_revers b-button_disabled" href="#"></a>
+
+<h3>RSS</h3>
+<a class="b-button b-button_rss" href="#"></a>
+
+<h3></h3>
+
+<a class="b-button b-button_close" href="#"></a>
+<a class="b-button b-button_back" href="#"></a>
+
+
+<h3></h3>
+
+<a class="b-button b-button__pay b-button__pay_wm b-button_width_176" href="#">Требуется WM-аттестат<br />не ниже начального</a>
+<a class="b-button b-button__pay b-button__pay_wm b-button_disabled b-button_width_176" href="#">Требуется WM-аттестат<br />не ниже начального</a>
+<a class="b-button b-button__pay b-button__pay_yd b-button_width_176" href="#">Требуется идентифици-<br />рованный кошелек</a>
+<a class="b-button b-button__pay b-button__pay_yd b-button_disabled b-button_width_176" href="#">Требуется идентифици-<br />рованный кошелек</a>
+<a class="b-button b-button__pay b-button__pay_other b-button_width_176" href="#">Другой способ</a>
+<a class="b-button b-button__pay b-button__pay_other b-button_disabled b-button_width_176" href="#">Другой способ</a>
+<a class="b-button b-button__pay b-button__pay_card b-button_width_176" href="#">Банковской картой<br />Visa или Mastercard</a>
+<a class="b-button b-button__pay b-button__pay_tel b-button_width_176" href="#">Через мобильный телефон</a>
+<a class="b-button b-button__pay b-button__pay_ek b-button_width_176" href="#">Электронные кошельки<br />ЯД, WM и др.</a>
+<a class="b-button b-button__pay b-button__pay_ek b-button_width_176 b-button_disabled" href="#">Электронные кошельки<br />ЯД, WM и др.</a>
+<a class="b-button b-button__pay b-button__pay_op b-button_width_176" href="#">Требуется верифицированный<br />кошелек</a>
+<a class="b-button b-button__pay b-button__pay_op b-button_width_176 b-button_disabled" href="#">Требуется верифицированный<br />кошелек</a>
+
+<h3></h3>
+<a class="b-button b-button_gbord" href="#">Заказать промо-кнопку</a>
+
+
+</div>
+<h3></h3>
+<a class="b-button b-button__pm b-button__pm_wm b-button_disabled" href="#"><span class="b-button__txt">WebMoney</span></a>
+<a class="b-button b-button__pm b-button__pm_yd b-button_disabled" href="#"><span class="b-button__txt">Яндекс.Деньги</span></a>
+<a class="b-button b-button__pm b-button__pm_qiwi b-button_disabled" href="#"><span class="b-button__txt">Visa QIWI<br />Wallet</span></a>
+<a class="b-button b-button__pm b-button__pm_tel b-button_disabled" href="#"><span class="b-button__txt">Мобильный<br />платеж</span></a>
+<a class="b-button b-button__pm b-button__pm_card b-button_disabled" href="#"><span class="b-button__txt">Пластиковые<br />карты</span></a>
+<a class="b-button b-button__pm b-button__pm_pp b-button_disabled" href="#"><span class="b-button__txt">Купить в<br />кредит</span></a>
+
+<h3></h3>
+<a class="b-button b-button__pm b-button__pm_green b-button__pm_wm b-button_disabled" href="#"><span class="b-button__txt">WebMoney</span></a>
+<a class="b-button b-button__pm b-button__pm_green b-button__pm_yd b-button_disabled" href="#"><span class="b-button__txt">Яндекс.Деньги</span></a>
+<a class="b-button b-button__pm b-button__pm_green b-button__pm_qiwi b-button_disabled" href="#"><span class="b-button__txt">Visa QIWI<br />Wallet</span></a>
+<a class="b-button b-button__pm b-button__pm_green b-button__pm_tel b-button_disabled" href="#"><span class="b-button__txt">Мобильный<br />платеж</span></a>
+<a class="b-button b-button__pm b-button__pm_green b-button__pm_card b-button_disabled" href="#"><span class="b-button__txt">Пластиковые<br />карты</span></a>
+
+<h3>кнопки голосовалки</h3>
+<a class="b-button b-button_vote_up" href="#"></a>
+<a class="b-button b-button_vote_down" href="#"></a>
+<a class="b-button b-button_vote_up b-button_disabled" href="#"></a>
+<a class="b-button b-button_vote_down b-button_disabled" href="#"></a>
+<h3></h3>
+<div style="background:#000; padding:20px;">
+<a class="b-button b-button_land b-button_land_bg_ff" href="/freelancers/">Каталог исполнителей</a>
+<a class="b-button b-button_land" href="">Заказать услугу</a>
+<a class="b-button b-button_circ" href=""></a>
+</div>
+</body>
+</html>

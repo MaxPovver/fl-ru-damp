@@ -1,0 +1,7 @@
+php_value session.save_handler files
+RewriteEngine on
+DirectoryIndex index.php
+#php_value error_reporting 0
+php_value error_reporting 6143
+php_value display_errors On
+php_value error_reporting E_ALL~E_NOTICE

@@ -1,0 +1,13 @@
+<?php
+require_once($_SERVER['DOCUMENT_ROOT'] . "/classes/stdf.php");
+require_once($_SERVER['DOCUMENT_ROOT'] . "/guest/models/GuestHelper.php");
+
+ini_set('display_errors',1);
+error_reporting(E_ALL ^ E_NOTICE);
+
+
+//$form_data = "name=%D0%9F%D1%80%D0%BE%D0%B5%D0%BA%D1%82%20%D0%B4%D0%BE%20%D0%BB%D0%BE%D0%B3%D0%B8%D0%BD%D0%B0&descr=%D0%9E%D0%BF%D0%B8%D1%81%D0%B0%D0%BD%D0%B8%D0%B5%20%D0%BF%D0%BE%D0%B4%D1%80%D0%BE%D0%B1%D0%BD%D0%BE%D0%B5&IDResource%5B%5D=224e2-13692-a22a16b-guest_prj&profession_columns%5B1%5D=0&profession_columns%5B0%5D=49&profession%5Bgroup_column_id%5D=0&profession%5Bgroup_db_id%5D=49&profession%5Bgroup%5D=%D0%90%D0%B4%D0%BC%D0%B8%D0%BD%D0%B8%D1%81%D1%82%D1%80%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B0%D1%8F%20%D0%BF%D0%BE%D0%B4%D0%B4%D0%B5%D1%80%D0%B6%D0%BA%D0%B0&profession-spec_columns%5B1%5D=0&profession-spec_columns%5B0%5D=276&profession%5Bspec_column_id%5D=0&profession%5Bspec_db_id%5D=276&profession%5Bspec%5D=%D0%92%D0%B8%D1%80%D1%82%D1%83%D0%B0%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%20%D0%B0%D1%81%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BD%D1%82&cost%5Bbudget%5D=522&el-cost_currency_columns%5B1%5D=0&el-cost_currency_columns%5B0%5D=2&cost%5Bcurrency_column_id%5D=0&cost%5Bcurrency_db_id%5D=2&cost%5Bcurrency%5D=%D0%A0%D1%83%D0%B1&el-cost_priceby_columns%5B1%5D=0&el-cost_priceby_columns%5B0%5D=4&cost%5Bpriceby_column_id%5D=0&cost%5Bpriceby_db_id%5D=4&cost%5Bpriceby%5D=%D0%B7%D0%B0%20%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82&prefer_sbr=1&filter%5B%5D=pro_only&kind=1&uname=&usurname=&email=&u_token_key=744a4539736378280d753db27cb6447c";
+
+$form_data = "name=dzrgsxreg&descr=drgrs&IDResource%5B%5D=f2419-22682-995ad19-guest_prj&profession_columns%5B1%5D=0&profession_columns%5B0%5D=0&profession%5Bgroup_column_id%5D=0&profession%5Bgroup_db_id%5D=&profession%5Bgroup%5D=&profession%5Bspec_column_id%5D=0&profession%5Bspec_db_id%5D=&profession%5Bspec%5D=undefined&el-location_columns%5B1%5D=3060&el-location_columns%5B0%5D=3&location_column_id=1&location_db_id=3060&location=%D0%90%D0%B2%D1%81%D1%82%D1%80%D0%B0%D0%BB%D0%B8%D1%8F%3A%20%D0%90%D0%B4%D0%B5%D0%BB%D0%B0%D0%B8%D0%B4%D0%B0&cost%5Bbudget%5D=0&el-cost_currency_columns%5B1%5D=0&el-cost_currency_columns%5B0%5D=2&cost%5Bcurrency_column_id%5D=0&cost%5Bcurrency_db_id%5D=2&cost%5Bcurrency%5D=%D0%A0%D1%83%D0%B1&el-cost_priceby_columns%5B1%5D=0&el-cost_priceby_columns%5B0%5D=3&cost%5Bpriceby_column_id%5D=0&cost%5Bpriceby_db_id%5D=3&cost%5Bpriceby%5D=%D0%B7%D0%B0%20%D0%BC%D0%B5%D1%81%D1%8F%D1%86&filter%5B%5D=pro_only&kind=4&auth=&uname=&usurname=&email=&u_token_key=58dfb127de8d0af63ea8c52dc98402ea";
+
+print_r(GuestHelper::overrideDataFromString($form_data));

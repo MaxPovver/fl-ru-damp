@@ -1,0 +1,44 @@
+<?php if($this->element->getAttrib('padbot')): ?>
+<td class="b-layout__td b-layout__td_padbot_<?=$this->element->getAttrib('padbot')?>">
+<?php endif; ?>
+    <?php if(!$this->element->getAttrib('hide_label')):?>
+    <div class="
+         b-layout__txt <?php if ($this->element->getAttrib('label_class')): echo $this->element->getAttrib('label_class'); else:?>
+         b-layout__txt_padbot_<?=$this->element->getAttrib('label_padbot')?$this->element->getAttrib('label_padbot'):'10'?>
+         b-layout__txt_bold 
+         b-layout__txt_fontsize_<?=$this->element->getAttrib('label_fs')?$this->element->getAttrib('label_fs'):'13'?><?php endif; ?>">
+        <?=$this->element->getLabel();?>
+    </div>
+    <?php endif;?>
+    <div id="apf-files" style="position:relative;">
+        <div id="attachedfiles" class=""></div>
+        <?php if ($this->element->getAttrib('suffix')): ?>
+            <div class="b-layout__txt b-layout__txt_fontsize_11 b-layout__txt_padtop_5">
+                <?=$this->element->getAttrib('suffix')?>
+            </div>
+        <?php endif; ?>
+    </div>
+    <?php
+
+    $values = $this->element->getValue();
+    if ($values) {
+        $values = is_array($values)?$values[0]:$values;
+    } else {
+        $values = uploader::createResource('guest_prj');
+    }
+
+    $uploader = new uploader($values);
+
+    $templates = array(
+        uploader::getTemplate('uploader', 'project/'),
+        uploader::getTemplate('uploader.file', 'project/'),
+        uploader::getTemplate('uploader.popup', '')
+    );
+    uploader::init(array(
+        'attachedfiles'  => uploader::sgetLoaderOptions($uploader->resource)
+    ), $templates);
+
+    ?>
+<?php if($this->element->getAttrib('padbot')): ?>
+</td>
+<?php endif; ?>

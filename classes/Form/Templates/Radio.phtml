@@ -1,0 +1,60 @@
+<td class="b-layout__td b-layout__td_width_120 b-layout__td_padbot_<?=$this->element->getAttrib('padbot')?$this->element->getAttrib('padbot'):20?>">
+    <div class="b-layout__txt b-layout__txt_fontsize_15">
+        <?=$this->element->getLabel();?>
+    </div>
+</td>
+<td class="b-layout__td b-layout__td_padbot_<?=is_numeric($this->element->getAttrib('padbot'))?$this->element->getAttrib('padbot'):20?>">
+    <?php
+        $options = $this->element->getMultiOptions();
+        $subTitles = $this->element->getAttrib('subTitles');
+        $values = (array) $this->element->getValue();
+        $cnt = count($options);
+        if($cnt):
+    ?>
+    <div class="b-radio b-radio_layout_vertical">
+    <?php
+            $idx = 0;
+            $attr = $this->element->getAttrib('attr');
+            foreach($options as $key => $value):
+                $optId = "el-{$this->element->getName()}-{$idx}";
+                $idx++;
+    ?>
+        <div class="b-radio__item<?php if($cnt > $idx): ?> b-radio__item_padbot_10<?php endif; ?>">
+            <input type="radio" 
+                   id="<?=$optId?>"
+                   class="b-radio__input" 
+                   name="<?=$this->element->getName();?>" 
+                   <?php if (in_array($key, $values)):?>
+                   checked="checked"
+                   <?php endif; ?>
+                   value="<?=htmlspecialchars($key);?>" 
+                   <?=(isset($attr[$key])?$attr[$key]:'')?>>
+            <label class="b-radio__label b-radio__label_fontsize_13 b-radio__label_bold b-radio__label_margtop_-1" 
+                   for="<?=$optId?>">
+                <?=$value?>
+            </label>
+            <?php if(isset($subTitles[$key])): ?>
+            <div class="b-layout__txt b-layout__txt_fontsize_11 b-layout__txt_padleft_20">
+                <?=$subTitles[$key]?>
+            </div>
+            <?php endif; ?>
+        </div>        
+    <?php
+            endforeach;
+    ?>
+    </div>    
+    <?php
+        endif;
+    ?>
+    <?php if ($this->element->getAttrib('suffix')): ?>
+        <div class="b-layout__txt b-layout__txt_fontsize_11 b-layout__txt_padtop_2">
+            <?=$this->element->getAttrib('suffix')?>
+        </div>
+    <?php endif; ?>
+
+    <div class="b-layout__txt b-layout__txt_padtop_5 b-layout__txt_color_c10600 <?php if (!$this->element->hasErrors()): ?>b-layout_hide<?php endif;?>" 
+        id="el-<?=$this->element->getName();?>-error">
+        <span class="b-icon b-icon_sbr_rattent"></span>
+        <span id="el-<?=$this->element->getName();?>-error-text"><?=array_shift($this->element->getMessages()); ?></span>
+    </div>
+</td>

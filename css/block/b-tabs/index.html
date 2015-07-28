@@ -1,0 +1,822 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>b-tabs</title>
+<link href="b-tabs.css" rel="stylesheet" type="text/css">
+<link href="../b-layout/b-layout.css" rel="stylesheet" type="text/css">
+<link href="../b-icon/b-icon.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<h3>Прямая оплата</h3>
+<div class="b-tabs">
+   <div class="b-tabs__item b-tabs__item_current">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_run"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_6db335 b-layout__txt_padbot_5 b-layout__txt_bold">Создание заказа</div>
+               <div class="b-layout__txt b-layout__txt_color_6db335 b-layout__txt_fontsize_11">Формирование исходного задания, бюджета, сроков выполнения работы и выбора типа оплаты.</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item b-tabs__item_current">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_atten"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_6db335 b-layout__txt_padbot_5 b-layout__txt_bold">Обратите внимание</div>
+               <div class="b-layout__txt b-layout__txt_color_6db335 b-layout__txt_fontsize_11 b-layout__txt_padbot_5">Тип оплаты в вашем заказе &mdash; <span class="b-layout__bold">Прямая оплата</span>, при которой вы самостоятельно регулируете все претензии по качеству, срокам и оплате выполненой работы.</div>
+               <div class="b-layout__txt b-layout__txt_color_6db335 b-layout__txt_fontsize_11">Для безопасной работы в заказе рекомендуем оплату через &laquo;<a class="b-layout__link b-layout__link_bold" href="#">Безопасную сделку</a>&raquo;</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_padbot_5 b-layout__txt_bold">Согласование условий</div>
+               <div class="b-layout__txt b-layout__txt_color_71 b-layout__txt_fontsize_11">Обсуждение задания и условий выполнения работы. Подтверждение заказа Исполнителем</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_padbot_5 b-layout__txt_bold">Выполнение работы</div>
+               <div class="b-layout__txt b-layout__txt_color_71 b-layout__txt_fontsize_11">Процесс выполнения задания в заказе до получения Заказчиком итогового результата работы.</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_padtb_10"></td>
+            <td class="b-layout__td b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_padbot_5 b-layout__txt_bold">Завершение заказа</div>
+               <div class="b-layout__txt b-layout__txt_color_71 b-layout__txt_fontsize_11">Получение заказчиком результата работы, закрытие заказа с отзывом о сотрудничестве.</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+</div>
+<br>
+<div class="b-tabs">
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Создание заказа</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item b-tabs__item_current">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_run"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_6db335 b-layout__txt_padbot_5 b-layout__txt_bold">Согласование условий</div>
+               <div class="b-layout__txt b-layout__txt_color_6db335 b-layout__txt_fontsize_11">Обсуждение задания и условий выполнения работы. Подтверждение заказа Исполнителем</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item b-tabs__item_current">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_atten"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_6db335 b-layout__txt_padbot_5 b-layout__txt_bold">Обратите внимание</div>
+               <div class="b-layout__txt b-layout__txt_color_6db335 b-layout__txt_fontsize_11 b-layout__txt_padbot_5">Тип оплаты в вашем заказе &mdash; <span class="b-layout__bold">Прямая оплата</span>, при которой вы самостоятельно регулируете все претензии по качеству, срокам и оплате выполненой работы.</div>
+               <div class="b-layout__txt b-layout__txt_color_6db335 b-layout__txt_fontsize_11">Для безопасной работы в заказе рекомендуем оплату через &laquo;<a class="b-layout__link b-layout__link_bold" href="#">Безопасную сделку</a>&raquo;</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_padbot_5 b-layout__txt_bold">Выполнение работы</div>
+               <div class="b-layout__txt b-layout__txt_color_71 b-layout__txt_fontsize_11">Процесс выполнения задания в заказе до получения Заказчиком итогового результата работы.</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_padtb_10"></td>
+            <td class="b-layout__td b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_padbot_5 b-layout__txt_bold">Завершение заказа</div>
+               <div class="b-layout__txt b-layout__txt_color_71 b-layout__txt_fontsize_11">Получение заказчиком результата работы, закрытие заказа с отзывом о сотрудничестве.</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+</div>
+<br>
+<div class="b-tabs">
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Создание заказа</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Согласование условий</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item b-tabs__item_current">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_run"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_6db335 b-layout__txt_padbot_5 b-layout__txt_bold">Выполнение работы</div>
+               <div class="b-layout__txt b-layout__txt_color_6db335 b-layout__txt_fontsize_11">Процесс выполнения задания в заказе до получения Заказчиком итогового результата работы.</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_padtb_10"></td>
+            <td class="b-layout__td b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_padbot_5 b-layout__txt_bold">Завершение заказа</div>
+               <div class="b-layout__txt b-layout__txt_color_71 b-layout__txt_fontsize_11">Получение заказчиком результата работы, закрытие заказа с отзывом о сотрудничестве.</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+</div>
+<br>
+<div class="b-tabs">
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Создание заказа</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Согласование условий</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Выполнение работы</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item b-tabs__item_current">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_run"></span></td>
+            <td class="b-layout__td b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_6db335 b-layout__txt_padbot_5 b-layout__txt_bold">Завершение заказа</div>
+               <div class="b-layout__txt b-layout__txt_color_6db335 b-layout__txt_fontsize_11">Получение заказчиком результата работы, закрытие заказа с отзывом о сотрудничестве.</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+</div>
+<br>
+<div class="b-tabs">
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Создание заказа</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Согласование условий</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Выполнение работы</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Завершение заказа</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+</div>
+<br>
+<div class="b-tabs">
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Создание заказа</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Согласование условий</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Отмена заказа</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+</div>
+<h3>БС</h3>
+<div class="b-tabs">
+   <div class="b-tabs__item b-tabs__item_current">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_run"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_6db335 b-layout__txt_padbot_5 b-layout__txt_bold">Создание заказа</div>
+               <div class="b-layout__txt b-layout__txt_color_6db335 b-layout__txt_fontsize_11">Формирование исходного задания, бюджета, сроков выполнения работы и выбора типа оплаты.</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_padbot_5 b-layout__txt_bold">Согласование условий</div>
+               <div class="b-layout__txt b-layout__txt_color_71 b-layout__txt_fontsize_11">Обсуждение задания и условий выполнения работы. Подтверждение заказа Исполнителем</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_padbot_5 b-layout__txt_bold">Резервирование</div>
+               <div class="b-layout__txt b-layout__txt_color_71 b-layout__txt_fontsize_11">Резервирование заказчиком суммы оплаты по заказу. Деньги перечисляются и храняться на сайте.</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_padbot_5 b-layout__txt_bold">Выполнение работы</div>
+               <div class="b-layout__txt b-layout__txt_color_71 b-layout__txt_fontsize_11">Процесс выполнения задания в заказе до получения Заказчиком итогового результата работы.</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_padtb_10"></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_padbot_5 b-layout__txt_bold">Завершение заказа</div>
+               <div class="b-layout__txt b-layout__txt_color_71 b-layout__txt_fontsize_11">Получение заказчиком результата работы, закрытие заказа с отзывом о сотрудничестве.</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_padtb_10"></td>
+            <td class="b-layout__td b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_padbot_5 b-layout__txt_bold">Выплата суммы</div>
+               <div class="b-layout__txt b-layout__txt_color_71 b-layout__txt_fontsize_11">Перечисление суммы оплаты Исполнителю (и/или ее возврат Заказчику по решению Арбитра).</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+</div>
+<br>
+<div class="b-tabs">
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Создание заказа</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item b-tabs__item_current">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_run"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_6db335 b-layout__txt_padbot_5 b-layout__txt_bold">Согласование условий</div>
+               <div class="b-layout__txt b-layout__txt_color_6db335 b-layout__txt_fontsize_11">Обсуждение задания и условий выполнения работы. Подтверждение заказа Исполнителем</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_padbot_5 b-layout__txt_bold">Резервирование</div>
+               <div class="b-layout__txt b-layout__txt_color_71 b-layout__txt_fontsize_11">Резервирование заказчиком суммы оплаты по заказу. Деньги перечисляются и храняться на сайте.</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_padbot_5 b-layout__txt_bold">Выполнение работы</div>
+               <div class="b-layout__txt b-layout__txt_color_71 b-layout__txt_fontsize_11">Процесс выполнения задания в заказе до получения Заказчиком итогового результата работы.</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_padtb_10"></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_padbot_5 b-layout__txt_bold">Завершение заказа</div>
+               <div class="b-layout__txt b-layout__txt_color_71 b-layout__txt_fontsize_11">Получение заказчиком результата работы, закрытие заказа с отзывом о сотрудничестве.</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_padtb_10"></td>
+            <td class="b-layout__td b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_padbot_5 b-layout__txt_bold">Выплата суммы</div>
+               <div class="b-layout__txt b-layout__txt_color_71 b-layout__txt_fontsize_11">Перечисление суммы оплаты Исполнителю (и/или ее возврат Заказчику по решению Арбитра).</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+</div>
+<br>
+<div class="b-tabs">
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Создание заказа</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Согласование условий</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item b-tabs__item_current">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_run"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_6db335 b-layout__txt_padbot_5 b-layout__txt_bold">Резервирование</div>
+               <div class="b-layout__txt b-layout__txt_color_6db335 b-layout__txt_fontsize_11">Резервирование заказчиком суммы оплаты по заказу. Деньги перечисляются и храняться на сайте.</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_padbot_5 b-layout__txt_bold">Выполнение работы</div>
+               <div class="b-layout__txt b-layout__txt_color_71 b-layout__txt_fontsize_11">Процесс выполнения задания в заказе до получения Заказчиком итогового результата работы.</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_padtb_10"></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_padbot_5 b-layout__txt_bold">Завершение заказа</div>
+               <div class="b-layout__txt b-layout__txt_color_71 b-layout__txt_fontsize_11">Получение заказчиком результата работы, закрытие заказа с отзывом о сотрудничестве.</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_padtb_10"></td>
+            <td class="b-layout__td b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_padbot_5 b-layout__txt_bold">Выплата суммы</div>
+               <div class="b-layout__txt b-layout__txt_color_71 b-layout__txt_fontsize_11">Перечисление суммы оплаты Исполнителю (и/или ее возврат Заказчику по решению Арбитра).</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+</div>
+<br>
+<div class="b-tabs">
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Создание заказа</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Согласование условий</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Резервирование</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item b-tabs__item_current">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_run"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_6db335 b-layout__txt_padbot_5 b-layout__txt_bold">Выполнение работы</div>
+               <div class="b-layout__txt b-layout__txt_color_6db335 b-layout__txt_fontsize_11">Процесс выполнения задания в заказе до получения Заказчиком итогового результата работы.</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_padtb_10"></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_padbot_5 b-layout__txt_bold">Завершение заказа</div>
+               <div class="b-layout__txt b-layout__txt_color_71 b-layout__txt_fontsize_11">Получение заказчиком результата работы, закрытие заказа с отзывом о сотрудничестве.</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_padtb_10"></td>
+            <td class="b-layout__td b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_padbot_5 b-layout__txt_bold">Выплата суммы</div>
+               <div class="b-layout__txt b-layout__txt_color_71 b-layout__txt_fontsize_11">Перечисление суммы оплаты Исполнителю (и/или ее возврат Заказчику по решению Арбитра).</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+</div>
+<br>
+<div class="b-tabs">
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Создание заказа</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Согласование условий</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Резервирование</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Выполнение работы</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item b-tabs__item_current">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_run"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_6db335 b-layout__txt_padbot_5 b-layout__txt_bold">Завершение заказа</div>
+               <div class="b-layout__txt b-layout__txt_color_6db335 b-layout__txt_fontsize_11">Получение заказчиком результата работы, закрытие заказа с отзывом о сотрудничестве.</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_padtb_10"></td>
+            <td class="b-layout__td b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_padbot_5 b-layout__txt_bold">Выплата суммы</div>
+               <div class="b-layout__txt b-layout__txt_color_71 b-layout__txt_fontsize_11">Перечисление суммы оплаты Исполнителю (и/или ее возврат Заказчику по решению Арбитра).</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+</div>
+<br>
+<div class="b-tabs">
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Создание заказа</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Согласование условий</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Резервирование</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Выполнение работы</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item b-tabs__item_current">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_run"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_6db335 b-layout__txt_padbot_5 b-layout__txt_bold">Арбитраж</div>
+               <div class="b-layout__txt b-layout__txt_color_6db335 b-layout__txt_fontsize_11">Рассмотрение заказа Арбитром, вынесение решения о выплате или возврате суммы.</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_padtb_10"></td>
+            <td class="b-layout__td b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_padbot_5 b-layout__txt_bold">Выплата суммы</div>
+               <div class="b-layout__txt b-layout__txt_color_71 b-layout__txt_fontsize_11">Перечисление суммы оплаты Исполнителю (и/или ее возврат Заказчику по решению Арбитра).</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+</div>
+<br>
+<div class="b-tabs">
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Создание заказа</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Согласование условий</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Резервирование</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Выполнение работы</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Арбитраж</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item b-tabs__item_current">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_run"></span></td>
+            <td class="b-layout__td b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_6db335 b-layout__txt_padbot_5 b-layout__txt_bold">Выплата суммы</div>
+               <div class="b-layout__txt b-layout__txt_color_6db335 b-layout__txt_fontsize_11">Перечисление суммы оплаты Исполнителю (и/или ее возврат Заказчику по решению Арбитра).</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+</div>
+<br>
+<div class="b-tabs">
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Создание заказа</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Согласование условий</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Резервирование</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_bordbot_e6 b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Выполнение работы</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_bordbot_e6 b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Арбитраж</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+   <div class="b-tabs__item">
+      <table class="b-layout__table b-layout__table_width_full">
+         <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_width_40 b-layout__td_valign_mid b-layout__td_center b-layout__td_padtb_10"><span class="b-icon b-icon__tabs_done"></span></td>
+            <td class="b-layout__td b-layout__td_padtb_10">
+               <div class="b-layout__txt b-layout__txt_uppercase b-layout__txt_color_71 b-layout__txt_bold">Выплата суммы</div>
+            </td>
+         </tr>
+      </table>
+   </div>
+</div>
+<br>
+</body>
+</html>

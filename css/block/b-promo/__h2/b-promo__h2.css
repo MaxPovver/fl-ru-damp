@@ -1,0 +1,67 @@
+.b-promo__h2{
+	font-size:22px !important;
+	color:#000 !important;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:0;
+	margin:0 !important;
+	font-weight:normal;
+	}
+.b-promo__h2__hide{
+	display:none;
+	}
+.b-promo__h2_padbot_14{
+	padding-bottom:14px;
+	}
+.b-promo__h2_padbot_15{
+	padding-bottom:15px !important;
+	}
+.b-promo__h2_padbot_19{
+	padding-bottom:19px !important;
+	}
+.b-promo__h2_padbot_20{
+	padding-bottom:20px !important;
+	}
+.b-promo__h2_padbot_37{
+	padding-bottom:37px;
+	}
+.b-promo__h2_padbot_40{
+	padding-bottom:40px;
+	}
+.b-promo__h2_padbot_50{
+	padding-bottom:50px;
+	}
+.b-promo__h2_padleft_95{
+	padding-left:95px;
+	}
+.b-promo__h2_padlr_20{
+	padding-left:20px;
+	padding-right:20px;
+	}
+.b-promo__h2_bg_fff{
+	background:#fff;
+	}
+.b-promo__h2_bg_edf0f1{
+	background:#edf0f1;
+	}
+	
+.b-promo__h2_relative{
+	position:relative;
+	}
+
+.b-promo__h2_center{
+	margin-left:auto !important;
+	margin-right:auto !important;
+	}
+.b-promo__h2_color_6db335{
+	color:#6db335 !important;
+	}
+.b-promo__h2_fontsize_34{
+	font-size:34px !important;
+	}
+.b-promo__h2_inline{
+	display:inline;
+	}
+
+
+
+

@@ -1,0 +1,16 @@
+.b-tabs{
+	border:2px solid #dfdfdf;
+	border-radius:3px;
+	padding:3px 5px;;
+	}
+.b-tabs__item_current{
+	border-left:4px solid #6db335;
+	margin-left:-8px;
+	padding-left:5px;
+	}
+.b-tabs_margtop_75{
+	margin-top:75px;
+	}
+.b-tabs_margbot_30{
+	margin-bottom:30px;
+	}

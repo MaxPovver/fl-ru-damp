@@ -1,0 +1,54 @@
+.b-crumbs{}
+.b-crumbs_padbot_15{
+	padding-bottom:15px;
+	}
+.b-crumbs_padbot_20{
+	padding-bottom:20px;
+	}
+
+
+.b-crumbs__table{
+	padding:0;
+	margin:0;
+	border:0;
+	}
+.b-crumbs__tr{
+	padding:0;
+	margin:0;
+	border:0;
+	}
+.b-crumbs__td{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#4e4e4e;
+	font-size:22px;
+	vertical-align:top;
+	}
+.b-crumbs__td_nowrap{
+	white-space:nowrap;
+	}
+a.b-crumbs__link{
+	font-family:Arial, Helvetica, sans-serif;
+	color:#4e4e4e !important;
+	font-size:22px;
+	text-decoration: underline !important;
+	}
+a.b-crumbs__link:hover{
+	color:#8c0400 !important;
+	}
+
+a.b-crumbs__link_color_0f71c8{
+	color:#0F71C8 !important;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+

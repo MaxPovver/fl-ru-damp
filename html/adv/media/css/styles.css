@@ -1,0 +1,481 @@
+@import url("reset.css");
+@import url("font/stylesheet.css");
+
+
+body {
+    font-family:'DINPro-Regular';
+    font-size:14px;
+    color:#544741;
+    min-width:1300px;
+}
+
+a {
+    font-family:'DINPro-Bold';
+    font-size:13px;
+    color:#ffffff;
+    text-decoration:none;
+}
+
+a:hover,
+a:active {
+    text-decoration:underline;
+}
+
+h1 {
+    font-family: 'web_serveroffregular';
+    font-size:130px;
+    line-height:145px;
+    color:#ffffff;
+    text-transform:uppercase;
+}
+
+h2 {
+    font-family: 'web_serveroffregular';
+    font-size:40px;
+    text-align:center;
+    margin-bottom:28px;
+}
+
+
+section {
+    width:1082px;
+    margin:0 auto;
+}
+
+header {
+    background:#00BC1A;
+    height:44px;
+}
+
+header .wrapp {
+    border-left:1px solid #ffffff;
+    border-right:1px solid #ffffff;
+    width:1080px;
+    margin:0 auto;
+}
+
+.logo {
+    background:url(../images/logo.jpg);
+    border-right:1px solid #ffffff;
+    width:53px;
+    height:44px;
+    margin:0 11px 0 9px;
+    float:left;
+}
+
+nav {
+    margin-top:13px;
+    float:left;
+}
+
+nav ul li {
+    margin-right:13px;
+    float:left;
+}
+
+header .more {
+    position:relative;
+    border-bottom:1px dotted #b6ed95;
+    color:#b6ed95;
+    margin:15px 35px 0 0;
+    padding-bottom:1px;
+    float:left;
+}
+
+header .more:hover {
+    border:none;
+    text-decoration:none;
+}
+
+header .more:after {
+    background:url(../images/icon1.png) no-repeat right;
+    width:7px;
+    height:5px;
+    content:'';
+    position:absolute;
+    top:5px;
+    margin-left:7px;
+}
+
+.question {
+    background:url(../images/icon2.png);
+    width:21px;
+    height:22px;
+    margin:14px 25px 0 0;
+    float:left;
+}
+
+header form {
+    float:left;
+}
+
+header input[type="text"],
+header input[type="password"] {
+    background:#ffffff;
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    width:70px;
+    height:30px;
+    color:#afaeae;
+    margin:6px 10px 0 0;
+    padding-left:10px;
+}
+
+header input[type="submit"] {
+    background: #4aa623;
+    background: -moz-linear-gradient(top,  #4aa623 0%, #3f941e 47%, #348419 98%, #2e5d1a 99%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#4aa623), color-stop(47%,#3f941e), color-stop(98%,#348419), color-stop(99%,#2e5d1a));
+    background: -webkit-linear-gradient(top,  #4aa623 0%,#3f941e 47%,#348419 98%,#2e5d1a 99%);
+    background: -o-linear-gradient(top,  #4aa623 0%,#3f941e 47%,#348419 98%,#2e5d1a 99%);
+    background: -ms-linear-gradient(top,  #4aa623 0%,#3f941e 47%,#348419 98%,#2e5d1a 99%);
+    background: linear-gradient(to bottom,  #4aa623 0%,#3f941e 47%,#348419 98%,#2e5d1a 99%);
+    border-radius:3px;
+    -moz-border-radius:3px;
+    -webkit-border-radius:3px;
+    width:82px;
+    height:30px;
+    font-family:'DINPro-Bold';
+    color:#ffffff;
+    margin-right:7px;
+}
+
+header span {
+    color:#b6ed95;
+    margin:12px 7px 0 0;
+    float:left;
+}
+
+header .social {
+    margin-top:10px;
+    float:left;
+}
+
+header .social li {
+    background:url(../images/social.png);
+    margin-right:4px;
+    float:left;
+}
+
+header .social li:nth-child(2) {
+    background-position:-23px 0;
+}
+
+header .social li:nth-child(3) {
+    background-position:-46px 0;
+}
+
+header .social li a {
+    width:23px;
+    height:24px;
+    display:block;
+}
+
+.registration {
+    position:relative;
+    margin:15px 12px 0 0;
+    float:right;
+}
+
+.registration:before {
+    background:url(../images/icon3.png);
+    width:13px;
+    height:7px;
+    content:'';
+    position:absolute;
+    left:-18px;
+    top:5px;
+}
+.fon_1{
+    background: #eeeee2;
+    padding-bottom: 160px;
+}
+.advertising {
+    background:#544741;
+    padding:60px 0 35px;
+}
+
+.advertising article {
+    width:473px;
+    padding-top:25px;
+    margin-left:16px;
+    float:left;
+}
+
+.advertising ul {
+    margin-top:60px;
+}
+.advertising ul li{
+    margin:0 19px 30px 0;
+    float:left;
+}
+
+.advertising ul li a{
+    background:#5dbb35;
+    width:142px;
+    height:36px;
+    text-align:center;
+    display: block;
+}
+
+.advertising ul li a {
+    font-family:'DINPro-Regular';
+    color:#e7e6d4;
+    line-height:35px;
+    text-transform:uppercase;
+}
+
+.advertising ul li:last-child {
+    margin-right:0;
+}
+
+.advertising article > a {
+    background:url(../images/icon4.png) no-repeat;
+    font-family:'DINPro-Light';
+    margin-right:32px;
+    padding-left:31px;
+    display:inline-block;
+}
+
+.advertising span {
+    background:url(../images/icon5.png) no-repeat;
+    height:17px;
+    font-family:'DINPro-Light';
+    color:#ffffff;
+    padding-left:24px;
+    display:inline-block;
+}
+
+.advertising aside {
+    width:516px;
+    margin-right:15px;
+    float:right;
+}
+
+.about {
+    background:#ffffff;
+    background-image: url(../images/bg1.png), url(../images/bg2.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom left, top right;
+    padding:72px 0 217px;
+}
+
+.about .text {
+    width:852px;
+    margin:0 auto 60px;
+}
+
+.about .text p {
+    margin-bottom:12px;
+}
+
+.about ul {
+    margin:0 auto;
+    display:table;
+}
+
+.about ul li {
+    position:relative;
+    width:237px;
+    margin-right:31px;
+    padding-top:13px;
+    float:left;
+}
+
+.about ul li:first-child {
+    width:200px;
+}
+
+.about ul li:last-child {
+    margin:0;
+}
+
+.about ul li img {
+    position:absolute;
+    top:0;
+    right:0;
+}
+
+.about ul li span {
+    font-family:'DINPro-Bold';
+    margin-bottom:12px;
+    display:block;
+}
+
+.about ul li strong {
+    font-family:'DINPro-Bold';
+    font-size:40px;
+    margin-bottom:38px;
+    display:block;
+}
+
+.format h2 {
+    margin-bottom:50px;
+}
+
+.format .fon_1 .text {
+    width:560px;
+    margin:0 auto 88px;
+    padding-left:155px;
+}
+
+.format ul {
+    margin:20px 0;
+}
+
+.format ul li {
+    background:url(../images/sep.png) no-repeat 0 5px;
+    margin-bottom:12px;
+    padding-left:13px;
+}
+
+.format .fon_1 > .wrapp {
+    background:url(../images/bg-format.png) no-repeat center top;
+    width:910px;
+    color:#5ebb47;
+    margin:0 auto 80px;
+    padding:47px 0 170px;
+}
+
+.block1 {
+    width:100px;
+    margin:0 40px 10px 123px;
+    float:right;
+}
+
+.block2 {
+    font-size:10px;
+    margin-top:8px;
+    float:right;
+}
+
+.block3 {
+    width:155px;
+    text-align:right;
+    margin-right:206px;
+    float:left;
+}
+
+.block4 {
+    margin:6px 0 13px 0;
+    float:left;
+}
+
+.block5 {
+    width:100px;
+    margin:0 40px 10px 123px;
+    float:right;
+}
+
+.block6 {
+    width:45px;
+    font-size:10px;
+    line-height:23px;
+    margin-bottom:33px;
+    float:right;
+}
+
+.block7 {
+    margin-right:262px;
+    float:right;
+}
+
+.slogan {
+    background:url(../images/bg-slogan.png);
+    width:901px;
+    height:95px;
+    text-align:center;
+    margin:0 auto 38px;
+    padding-top:26px;
+}
+
+.slogan strong {
+    font-family:'DINPro-Bold';
+    display:block;
+}
+
+.slogan p {
+    margin-top:17px;
+}
+
+.format .fon_1 > a {
+    font-family:'DINPro-Bold';
+    color:#ff0006;
+    text-decoration:underline;
+    margin:0 auto 90px;
+    display:table;
+}
+
+.format > a:hover {
+    text-decoration:none;
+}
+
+.consultation {
+
+}
+
+.consultation h2 {
+    color:#544741;
+    margin-bottom:34px;
+}
+
+.consultation .wrapp {
+    width:778px;
+    margin:0 auto;
+    padding:40px 0 55px;
+    background: #f4f2ef;
+    position: relative;
+    margin-top: -70px;
+}
+
+.consultation input[type="text"],
+.consultation input[type="email"],
+.consultation input[type="tel"] {
+    border:1px solid #cccccc;
+    width:430px;
+    height:61px;
+    font-size:20px;
+    color:#cfcfcf;
+    text-align:center;
+    margin:0 auto 26px;
+    display:table;
+}
+
+:focus::-webkit-input-placeholder {color: transparent}
+:focus::-moz-placeholder          {color: transparent}
+:focus:-moz-placeholder           {color: transparent}
+:focus:-ms-input-placeholder      {color: transparent}
+
+.consultation input[type="submit"] {
+    background:#5ebb47;
+    width:294px;
+    height:50px;
+    font-size:24px;
+    color:#ffffff;
+    margin:50px auto 0;
+    display:table;
+}
+
+footer {
+    background: #544741;
+    height: 105px;
+    margin-top: -16px;
+}
+footer div{
+    margin: 0 auto;
+    width:570px;
+    padding: 36px 0 0 0;
+}
+
+footer div a {
+    font-family:'DINPro-Light';
+    font-size:37px;
+    color:#ffffff;
+}
+
+footer div span {
+    font-family:'DINPro-Light';
+    font-size:37px;
+    color:#ffffff;
+    float:right;
+}

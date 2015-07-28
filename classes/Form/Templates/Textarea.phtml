@@ -1,0 +1,26 @@
+<td class="b-layout__td b-layout__td_width_120 b-layout__td_padbot_<?=$this->element->getAttrib('padbot')?$this->element->getAttrib('padbot'):20?>">
+    <div class="b-layout__txt b-layout__txt_fontsize_15"><?=$this->element->getLabel();?></div>
+</td>
+<td class="b-layout__td b-layout__td_padbot_<?=is_numeric($this->element->getAttrib('padbot'))?$this->element->getAttrib('padbot'):20?>">
+    <div class="b-textarea <?php if ($this->element->hasErrors()): ?>b-textarea_error<?php endif;?>">
+        <textarea rows="5" cols="80" 
+                  <?php if ($this->element->getAttrib('maxlength')):?>maxlength="<?=$this->element->getAttrib('maxlength')?>"<?php endif?> 
+                  name="<?=$this->element->getName();?>" 
+                  id="el-<?=$this->element->getName();?>" 
+                  class="b-textarea__textarea" 
+                  placeholder="<?=$this->element->getAttrib('placeholder')?>"><?=htmlspecialchars(stripcslashes($this->element->getValue()));?></textarea>
+    </div>
+
+    <?php if ($this->element->getAttrib('suffix')): ?>
+        <div class="b-layout__txt b-layout__txt_fontsize_11 b-layout__txt_padtop_2">
+            <?=$this->element->getAttrib('suffix')?>
+        </div>
+    <?php endif; ?>    
+    
+    <div 
+        class="b-layout__txt b-layout__txt_padtop_5 b-layout__txt_color_c10600 <?php if (!$this->element->hasErrors()): ?>b-layout_hide<?php endif;?>" 
+        id="el-<?=$this->element->getName();?>-error">
+        <span class="b-icon b-icon_sbr_rattent"></span>
+        <span id="el-<?=$this->element->getName();?>-error-text"><?=array_shift($this->element->getMessages()); ?></span>
+    </div>
+</td>

@@ -1,0 +1,391 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>b-port</title>
+<link href="b-port.css" rel="stylesheet" type="text/css">
+<link href="../b-txt/b-txt.css" rel="stylesheet" type="text/css">
+<link href="../b-radio/b-radio.css" rel="stylesheet" type="text/css">
+<link href="../b-file/b-file.css" rel="stylesheet" type="text/css">
+<link href="../b-shadow/b-shadow.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+<h3 style="clear:both; padding:30px;">Начальное состояние</h3>
+<div class="b-port">
+  <div class="b-port__item">
+      <div class="b-txt b-txt_padbot_10">Ваша работа</div>
+          <div class="b-file b-file_port">
+             <div class="b-file__wrap b-file__wrap_margtop_30">
+              <input class="b-file__input" type="file" />
+              <a href="#" class="b-button b-button_flat b-button_flat_grey">Загрузить файл</a>
+             </div>
+             <div class="b-txt b-txt_center i-shadow">
+                 <a class="b-txt__lnk b-txt__lnk_dot_80 b-txt__lnk_fs_11 b-txt__lnk_inline-block" href="#" onClick="this.getNext('.b-shadow').toggleClass('b-shadow_hide');return false;">Требования к файлам</a>
+                 <div class="b-shadow b-shadow_margleft_-60 b-shadow_top_20 b-shadow_hide">
+                  <div class="b-shadow__right">
+                   <div class="b-shadow__left">
+                    <div class="b-shadow__top">
+                     <div class="b-shadow__bottom">
+                      <div class="b-shadow__body b-shadow__body_pad_10 b-shadow_width_200 b-shadow__body_bg_fff">
+                       <div class="b-txt b-txt_fs_11 b-txt_padbot_5">Разрешается добавлять не более <span class="b-txt b-txt_bold b-txt_fs_11">1 файла</span> объемом не более 10 MБ.</div>
+                       <div class="b-txt b-txt_fs_11">Запрещенные форматы: ade, adp, chm, cmd, com, cpl, exe, hta, ins, isp, jse, lib, mde, msk, msp, mst, pif, scr, sct, shb, sys, vb, vbe, vbs, vxd, wsc, wsf, wsh</div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="b-shadow__icon_nosik"></div>
+                  <div class="b-shadow__icon_close"></div>
+                 </div>
+             </div>
+          </div>
+  </div>
+  <div class="b-port__item">
+      <div class="b-radio">
+         <div class="b-radio__item b-radio__item_padbot_10">
+            <input id="img" class="b-radio__input" name="" type="radio" value="" />
+            <label class="b-radio__label b-radio__label_ptsans" for="img">Графическое превью</label>
+         </div>
+      </div>
+        <div class="b-file b-file_port">
+           <div class="b-file__wrap b-file__wrap_margtop_30">
+            <input class="b-file__input" type="file" />
+            <a href="#" class="b-button b-button_flat b-button_flat_grey">Загрузить файл</a>
+           </div>
+           <div class="b-txt b-txt_center i-shadow">
+               <a class="b-txt__lnk b-txt__lnk_dot_80 b-txt__lnk_fs_11 b-txt__lnk_inline-block" href="#" onClick="this.getNext('.b-shadow').toggleClass('b-shadow_hide');return false;">Требования к файлам</a>
+               <div class="b-shadow b-shadow_margleft_-60 b-shadow_top_20 b-shadow_hide">
+                <div class="b-shadow__right">
+                 <div class="b-shadow__left">
+                  <div class="b-shadow__top">
+                   <div class="b-shadow__bottom">
+                    <div class="b-shadow__body b-shadow__body_pad_10 b-shadow_width_200 b-shadow__body_bg_fff">
+                     <div class="b-txt b-txt_fs_11 b-txt_padbot_5">Разрешается добавлять не более <span class="b-txt b-txt_bold b-txt_fs_11">1 файла</span> объемом не более 10 MБ.</div>
+                     <div class="b-txt b-txt_fs_11">Запрещенные форматы: ade, adp, chm, cmd, com, cpl, exe, hta, ins, isp, jse, lib, mde, msk, msp, mst, pif, scr, sct, shb, sys, vb, vbe, vbs, vxd, wsc, wsf, wsh</div>
+                    </div>
+                   </div>
+                  </div>
+                 </div>
+                </div>
+                <div class="b-shadow__icon_nosik"></div>
+                <div class="b-shadow__icon_close"></div>
+               </div>
+           </div>
+        </div>
+  </div>
+  <div class="b-port__item">
+      <div class="b-radio">
+         <div class="b-radio__item b-radio__item_padbot_10">
+            <input id="img" class="b-radio__input" name="" type="radio" value="" />
+            <label class="b-radio__label b-radio__label_ptsans" for="img">Текстовое превью</label>
+         </div>
+      </div>
+      <div class="b-txt b-txt_center b-txt_fs_11 b-txt_padtop_60">Добавьте описание</div>
+  </div>
+</div>
+
+
+<h3 style="clear:both; padding:30px;">Картинки загружены</h3>
+
+<div class="b-port">
+  <div class="b-port__item">
+      <div class="b-txt b-txt_padbot_10">Ваша работа</div>
+      <div class="b-port__main b-port__ugol">
+          <img class="b-port__pic" src="/images/tmp/port.png" alt="">
+          <div class="b-file b-file_port">
+             <div class="b-file__wrap b-file__wrap_margtop_30">
+              <input class="b-file__input" type="file" />
+              <a href="#" class="b-button b-button_flat b-button_flat_grey">Загрузить файл</a>
+             </div>
+             <div class="b-txt b-txt_center b-txt_zindex_1 i-shadow">
+                 <a class="b-txt__lnk b-txt__lnk_dot_80 b-txt__lnk_fs_11 b-txt__lnk_inline-block" href="#" onClick="this.getNext('.b-shadow').toggleClass('b-shadow_hide');return false;">Требования к файлам</a>
+                 <div class="b-shadow b-shadow_margleft_-60 b-shadow_top_20 b-shadow_hide">
+                  <div class="b-shadow__right">
+                   <div class="b-shadow__left">
+                    <div class="b-shadow__top">
+                     <div class="b-shadow__bottom">
+                      <div class="b-shadow__body b-shadow__body_pad_10 b-shadow_width_200 b-shadow__body_bg_fff">
+                       <div class="b-txt b-txt_fs_11 b-txt_padbot_5">Разрешается добавлять не более <span class="b-txt b-txt_bold b-txt_fs_11">1 файла</span> объемом не более 10 MБ.</div>
+                       <div class="b-txt b-txt_fs_11">Запрещенные форматы: ade, adp, chm, cmd, com, cpl, exe, hta, ins, isp, jse, lib, mde, msk, msp, mst, pif, scr, sct, shb, sys, vb, vbe, vbs, vxd, wsc, wsf, wsh</div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="b-shadow__icon_nosik"></div>
+                  <div class="b-shadow__icon_close"></div>
+                 </div>
+             </div>
+          </div>
+          <a href="#" class="b-button b-button_admin_del b-button_absolute b-button_top_null b-button_right_null b-button_z-index_3"></a>
+      </div>
+  </div>
+  <div class="b-port__item">
+      <div class="b-radio">
+         <div class="b-radio__item b-radio__item_padbot_10">
+            <input id="img" class="b-radio__input" name="" type="radio" value="" />
+            <label class="b-radio__label b-radio__label_ptsans" for="img">Графическое превью</label>
+         </div>
+      </div>
+      <div class="b-port__img b-port__ugol">
+          <img class="b-port__pic" src="/images/tmp/port.png" alt="">
+          <div class="b-file b-file_port">
+             <div class="b-file__wrap b-file__wrap_margtop_30">
+              <input class="b-file__input" type="file" />
+              <a href="#" class="b-button b-button_flat b-button_flat_grey">Загрузить файл</a>
+             </div>
+             <div class="b-txt b-txt_center b-txt_zindex_1 i-shadow">
+                 <a class="b-txt__lnk b-txt__lnk_dot_80 b-txt__lnk_fs_11 b-txt__lnk_inline-block" href="#" onClick="this.getNext('.b-shadow').toggleClass('b-shadow_hide');return false;">Требования к файлам</a>
+                 <div class="b-shadow b-shadow_margleft_-60 b-shadow_top_20 b-shadow_hide">
+                  <div class="b-shadow__right">
+                   <div class="b-shadow__left">
+                    <div class="b-shadow__top">
+                     <div class="b-shadow__bottom">
+                      <div class="b-shadow__body b-shadow__body_pad_10 b-shadow_width_200 b-shadow__body_bg_fff">
+                       <div class="b-txt b-txt_fs_11 b-txt_padbot_5">Разрешается добавлять не более <span class="b-txt b-txt_bold b-txt_fs_11">1 файла</span> объемом не более 10 MБ.</div>
+                       <div class="b-txt b-txt_fs_11">Запрещенные форматы: ade, adp, chm, cmd, com, cpl, exe, hta, ins, isp, jse, lib, mde, msk, msp, mst, pif, scr, sct, shb, sys, vb, vbe, vbs, vxd, wsc, wsf, wsh</div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="b-shadow__icon_nosik"></div>
+                  <div class="b-shadow__icon_close"></div>
+                 </div>
+             </div>
+          </div>
+          <a href="#" class="b-button b-button_admin_del b-button_absolute b-button_top_null b-button_right_null b-button_z-index_3"></a>
+      </div>
+  </div>
+  <div class="b-port__item">
+      <div class="b-radio">
+         <div class="b-radio__item b-radio__item_padbot_10">
+            <input id="img" class="b-radio__input" name="" type="radio" value="" />
+            <label class="b-radio__label b-radio__label_ptsans" for="img">Текстовое превью</label>
+         </div>
+      </div>
+      <div class="b-port__txt b-port__txt_disabled">
+         Это лучшая работа, которую я когда-либо делал. Она настолько крута, что все мои знакомые кончают, когда разглядывают её. Это лучше чем всё, что сделал Тёма за все свои
+      </div>
+  </div>
+</div>
+
+<h3 style="clear:both; padding:30px;">Активное текстовое превью</h3>
+
+
+<div class="b-port">
+  <div class="b-port__item">
+      <div class="b-txt b-txt_padbot_10">Ваша работа</div>
+      <div class="b-port__main b-port__ugol">
+          <img class="b-port__pic" src="/images/tmp/port.png" alt="">
+          <div class="b-file b-file_port">
+             <div class="b-file__wrap b-file__wrap_margtop_30">
+              <input class="b-file__input" type="file" />
+              <a href="#" class="b-button b-button_flat b-button_flat_grey">Загрузить файл</a>
+             </div>
+             <div class="b-txt b-txt_center b-txt_zindex_1 i-shadow">
+                 <a class="b-txt__lnk b-txt__lnk_dot_80 b-txt__lnk_fs_11 b-txt__lnk_inline-block" href="#" onClick="this.getNext('.b-shadow').toggleClass('b-shadow_hide');return false;">Требования к файлам</a>
+                 <div class="b-shadow b-shadow_margleft_-60 b-shadow_top_20 b-shadow_hide">
+                  <div class="b-shadow__right">
+                   <div class="b-shadow__left">
+                    <div class="b-shadow__top">
+                     <div class="b-shadow__bottom">
+                      <div class="b-shadow__body b-shadow__body_pad_10 b-shadow_width_200 b-shadow__body_bg_fff">
+                       <div class="b-txt b-txt_fs_11 b-txt_padbot_5">Разрешается добавлять не более <span class="b-txt b-txt_bold b-txt_fs_11">1 файла</span> объемом не более 10 MБ.</div>
+                       <div class="b-txt b-txt_fs_11">Запрещенные форматы: ade, adp, chm, cmd, com, cpl, exe, hta, ins, isp, jse, lib, mde, msk, msp, mst, pif, scr, sct, shb, sys, vb, vbe, vbs, vxd, wsc, wsf, wsh</div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="b-shadow__icon_nosik"></div>
+                  <div class="b-shadow__icon_close"></div>
+                 </div>
+             </div>
+          </div>
+          <a href="#" class="b-button b-button_admin_del b-button_absolute b-button_top_null b-button_right_null b-button_z-index_3"></a>
+      </div>
+  </div>
+  <div class="b-port__item">
+      <div class="b-radio">
+         <div class="b-radio__item b-radio__item_padbot_10">
+            <input id="img" class="b-radio__input" name="" type="radio" value="" />
+            <label class="b-radio__label b-radio__label_ptsans" for="img">Графическое превью</label>
+         </div>
+      </div>
+      <div class="b-port__img b-port__img_disabled b-port__ugol">
+          <img class="b-port__pic" src="/images/tmp/port.png" alt="">
+          <div class="b-file b-file_port">
+             <div class="b-file__wrap b-file__wrap_margtop_30">
+              <input class="b-file__input" type="file" />
+              <a href="#" class="b-button b-button_flat b-button_flat_grey">Загрузить файл</a>
+             </div>
+             <div class="b-txt b-txt_center b-txt_zindex_1 i-shadow">
+                 <a class="b-txt__lnk b-txt__lnk_dot_80 b-txt__lnk_fs_11 b-txt__lnk_inline-block" href="#" onClick="this.getNext('.b-shadow').toggleClass('b-shadow_hide');return false;">Требования к файлам</a>
+                 <div class="b-shadow b-shadow_margleft_-60 b-shadow_top_20 b-shadow_hide">
+                  <div class="b-shadow__right">
+                   <div class="b-shadow__left">
+                    <div class="b-shadow__top">
+                     <div class="b-shadow__bottom">
+                      <div class="b-shadow__body b-shadow__body_pad_10 b-shadow_width_200 b-shadow__body_bg_fff">
+                       <div class="b-txt b-txt_fs_11 b-txt_padbot_5">Разрешается добавлять не более <span class="b-txt b-txt_bold b-txt_fs_11">1 файла</span> объемом не более 10 MБ.</div>
+                       <div class="b-txt b-txt_fs_11">Запрещенные форматы: ade, adp, chm, cmd, com, cpl, exe, hta, ins, isp, jse, lib, mde, msk, msp, mst, pif, scr, sct, shb, sys, vb, vbe, vbs, vxd, wsc, wsf, wsh</div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="b-shadow__icon_nosik"></div>
+                  <div class="b-shadow__icon_close"></div>
+                 </div>
+             </div>
+          </div>
+          <a href="#" class="b-button b-button_admin_del b-button_absolute b-button_top_null b-button_right_null b-button_z-index_3"></a>
+      </div>
+  </div>
+  <div class="b-port__item">
+      <div class="b-radio">
+         <div class="b-radio__item b-radio__item_padbot_10">
+            <input id="img" class="b-radio__input" name="" type="radio" value="" />
+            <label class="b-radio__label b-radio__label_ptsans" for="img">Текстовое превью</label>
+         </div>
+      </div>
+      <div class="b-port__txt">
+         Это лучшая работа, которую я когда-либо делал. Она настолько крута, что все мои знакомые кончают, когда разглядывают её. Это лучше чем всё, что сделал Тёма за все свои
+      </div>
+  </div>
+</div>
+
+<h3 style="clear:both; padding:30px;">Базовый аккаунт</h3>
+
+<div class="b-port">
+  <div class="b-port__item">
+      <div class="b-txt b-txt_padbot_10">Ваша работа</div>
+      <div class="b-port__main b-port__ugol">
+          <img class="b-port__pic" src="/images/tmp/port.png" alt="">
+          <div class="b-file b-file_port">
+             <div class="b-file__wrap b-file__wrap_margtop_30">
+              <input class="b-file__input" type="file" />
+              <a href="#" class="b-button b-button_flat b-button_flat_grey">Загрузить файл</a>
+             </div>
+             <div class="b-txt b-txt_center b-txt_zindex_1 i-shadow">
+                 <a class="b-txt__lnk b-txt__lnk_dot_80 b-txt__lnk_fs_11 b-txt__lnk_inline-block" href="#" onClick="this.getNext('.b-shadow').toggleClass('b-shadow_hide');return false;">Требования к файлам</a>
+                 <div class="b-shadow b-shadow_margleft_-60 b-shadow_top_20 b-shadow_hide">
+                  <div class="b-shadow__right">
+                   <div class="b-shadow__left">
+                    <div class="b-shadow__top">
+                     <div class="b-shadow__bottom">
+                      <div class="b-shadow__body b-shadow__body_pad_10 b-shadow_width_200 b-shadow__body_bg_fff">
+                       <div class="b-txt b-txt_fs_11 b-txt_padbot_5">Разрешается добавлять не более <span class="b-txt b-txt_bold b-txt_fs_11">1 файла</span> объемом не более 10 MБ.</div>
+                       <div class="b-txt b-txt_fs_11">Запрещенные форматы: ade, adp, chm, cmd, com, cpl, exe, hta, ins, isp, jse, lib, mde, msk, msp, mst, pif, scr, sct, shb, sys, vb, vbe, vbs, vxd, wsc, wsf, wsh</div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="b-shadow__icon_nosik"></div>
+                  <div class="b-shadow__icon_close"></div>
+                 </div>
+             </div>
+          </div>
+          <a href="#" class="b-button b-button_admin_del b-button_absolute b-button_top_null b-button_right_null b-button_z-index_3"></a>
+      </div>
+  </div>
+  <div class="b-port__item">
+      <div class="b-radio">
+         <div class="b-radio__item b-radio__item_padbot_10">
+            <input id="img" class="b-radio__input" name="" type="radio" value="" disabled />
+            <label class="b-radio__label b-radio__label_ptsans b-radio__label_color_80" for="img">Графическое превью</label>
+            <div class="b-txt b-txt_fs_11 b-txt_padleft_20"><div class="b-icon b-icon__cub b-icon_top_3"></div><a class="b-txt__lnk b-txt__lnk_color_0f71c8" href="#">Купить</a> <a class="b-txt__lnk" href="#"><span title="PRO" class="b-icon b-icon__pro b-icon__pro_f"></span></a></div>
+         </div>
+      </div>
+      <div class="b-port__img">
+          <img class="b-port__pic" src="/images/tmp/port.png" alt="">
+      </div>
+  </div>
+  <div class="b-port__item">
+      <div class="b-radio">
+         <div class="b-radio__item b-radio__item_padbot_10">
+            <input id="img" class="b-radio__input" name="" type="radio" value="" />
+            <label class="b-radio__label b-radio__label_ptsans" for="img">Текстовое превью</label>
+         </div>
+      </div>
+      <div class="b-port__txt b-port__txt_disabled">
+         Это лучшая работа, которую я когда-либо делал. Она настолько крута, что все мои знакомые кончают, когда разглядывают её. Это лучше чем всё, что сделал Тёма за все свои
+      </div>
+  </div>
+</div>
+
+
+<h3 style="clear:both; padding:30px;">При обновлении основного файла</h3>
+
+<div class="b-port">
+  <div class="b-port__item">
+      <div class="b-txt b-txt_padbot_10">Ваша работа</div>
+      <div class="b-port__main b-port__ugol">
+          <img class="b-port__pic" src="/images/tmp/port.png" alt="">
+          <div class="b-file b-file_port">
+             <div class="b-file__wrap b-file__wrap_margtop_30">
+              <input class="b-file__input" type="file" />
+              <a href="#" class="b-button b-button_flat b-button_flat_grey">Загрузить файл</a>
+             </div>
+             <div class="b-txt b-txt_center b-txt_zindex_1 i-shadow">
+                 <a class="b-txt__lnk b-txt__lnk_dot_80 b-txt__lnk_fs_11 b-txt__lnk_inline-block" href="#" onClick="this.getNext('.b-shadow').toggleClass('b-shadow_hide');return false;">Требования к файлам</a>
+                 <div class="b-shadow b-shadow_margleft_-60 b-shadow_top_20 b-shadow_hide">
+                  <div class="b-shadow__right">
+                   <div class="b-shadow__left">
+                    <div class="b-shadow__top">
+                     <div class="b-shadow__bottom">
+                      <div class="b-shadow__body b-shadow__body_pad_10 b-shadow_width_200 b-shadow__body_bg_fff">
+                       <div class="b-txt b-txt_fs_11 b-txt_padbot_5">Разрешается добавлять не более <span class="b-txt b-txt_bold b-txt_fs_11">1 файла</span> объемом не более 10 MБ.</div>
+                       <div class="b-txt b-txt_fs_11">Запрещенные форматы: ade, adp, chm, cmd, com, cpl, exe, hta, ins, isp, jse, lib, mde, msk, msp, mst, pif, scr, sct, shb, sys, vb, vbe, vbs, vxd, wsc, wsf, wsh</div>
+                      </div>
+                     </div>
+                    </div>
+                   </div>
+                  </div>
+                  <div class="b-shadow__icon_nosik"></div>
+                  <div class="b-shadow__icon_close"></div>
+                 </div>
+             </div>
+          </div>
+          <a href="#" class="b-button b-button_admin_del b-button_absolute b-button_top_null b-button_right_null b-button_z-index_3"></a>
+      </div>
+  </div>
+  <div class="b-port__item">
+      <div class="b-radio">
+         <div class="b-radio__item b-radio__item_padbot_10">
+            <input id="img" class="b-radio__input" name="" type="radio" value="" />
+            <label class="b-radio__label b-radio__label_ptsans" for="img">Графическое превью</label>
+         </div>
+      </div>
+      <div class="b-port__img b-port__ugol b-port_renew">
+          <img class="b-port__pic" src="/images/tmp/port.png" alt="">
+          <a href="#" class="b-button b-button_admin_del b-button_absolute b-button_top_null b-button_right_null b-button_z-index_3"></a>
+          <div class="b-port__new">
+             <div class="b-txt b-txt_color_fff b-txt_padbot_10">Основной файл<br>был изменён</div>
+             <a href="#" class="b-button b-button_flat b-button_flat_grey">Обновить превью</a>
+             <div class="b-txt b-txt_fs_11 b-txt_color_fff b-txt_padtop_10">или</div>
+             <a class="b-txt__lnk b-txt__lnk_color_fff" href="#">не обновлять</a>
+          </div>
+      </div>
+  </div>
+  <div class="b-port__item">
+      <div class="b-radio">
+         <div class="b-radio__item b-radio__item_padbot_10">
+            <input id="img" class="b-radio__input" name="" type="radio" value="" />
+            <label class="b-radio__label b-radio__label_ptsans" for="img">Текстовое превью</label>
+         </div>
+      </div>
+      <div class="b-port__txt">
+         Это лучшая работа, которую я когда-либо делал. Она настолько крута, что все мои знакомые кончают, когда разглядывают её. Это лучше чем всё, что сделал Тёма за все свои
+      </div>
+  </div>
+</div>
+
+
+
+
+</body>
+</html>

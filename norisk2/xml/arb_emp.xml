@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<document title="Doc Title" author="Free-Lance.ru" width="170" margin-left="25" margin-right="25" margin-top="25" font-name="ArialMT" font-size="15" paragraph-indent="5">
+    <page>
+        <paragraph font-name="ArialMT" font-size="9" width="170" height="5" align="L" border="0" parse="1" keep-text-wrap="1" save-pos="1">
+            <![CDATA[125040, Москва, улица Нижняя, дом 14, корпус 1
+ИНН 7805399430/КПП 771401001
+Телефон: +7 495 646-81-29]]>
+        </paragraph>
+        <line x="25" y="43" len="75" />
+        <ln height="15"/>
+        <text font-name="ArialMT" font-size="12" width="170" height="5" align="C" border="0" parse="1" save-pos="0">
+            <![CDATA[Соглашение к Договору № $act_num$ssnum от $from_act_year г.]]>
+        </text>
+        <ln/>
+ 		<paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0" save-pos="0">
+            <![CDATA[Общество с ограниченной ответственностью «Ваан» в лице генерального директора Воропаева В.В., действующего на основании Устава, с одной стороны, далее именуемым «Исполнитель», и $fio, с другой стороны, далее именуемым «Заказчик», вместе далее по тексту Соглашения к Договору именуемые «Стороны», согласно Оферты $act_num между ООО «Ваан» и $fio на заключение Соглашения о выполнении работы и/или оказании услуги с использованием онлайн сервиса «Безопасная сделка», составили настоящий отчет о нижеследующем:]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[В соответствии с п.13.9. Оферты $act_num на заключение Соглашения о выполнении работы и/или оказании услуги с использованием онлайн сервиса «Безопасная сделка» стороны пришли к соглашению, что Исполнитель выполнил работы (услуги) ($job_name) на сумму $frl_sum.]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[Сумма в размере $emp_sum подлежит возврату на расчётный счет Заказчика.]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[Стороны не имеют друг к другу финансовых или иных претензий.]]>
+        </paragraph>
+        <nobreak start="1"/>
+        <locate x="0" y="0" x_offset="0" y_offset="5"/>
+        <cell width="85" height="5" keep-pos="1" align="L"><![CDATA[Сведения об Исполнителе:]]></cell>
+        <locate x="0" y="0" x_offset="85" y_offset="0"/>
+        <cell width="85" height="5" keep-pos="1" align="L"><![CDATA[Сведения о Заказчике:]]></cell>
+        <locate x="0" y="0" x_offset="0" y_offset="5"/>
+        <cell width="85" height="120" keep-pos="1"/>
+        <fix-locate y="@usign"/>
+        <locate x="0" y="0" x_offset="85" y_offset="0"/>
+        <cell width="85" height="120" keep-pos="1" />
+        <locate y_offset="2"/>
+        <fix-locate y="@vaan"/>
+        <paragraph font-name="ArialMT" font-size="9" width="85" height="4" align="L" offset-left="1" keep-text-wrap="1">
+            <![CDATA[ООО «Ваан»
+
+Юридический адрес: 125040, Москва,
+улица Нижняя, дом 14, корпус 1.
+Почтовый адрес: 129223, Москва, а/я 33.
+ИНН 7805399430/ КПП 771401001
+Расчетный счет: 40702810787880000803
+в Московский филиал ОАО АКБ "РОСБАНК" г. Москва
+Корреспондентский счет: 30101810200000000272
+БИК 044552272
+ОКПО 94626823
+ОГРН 5067847040421
+ОКВЭД 52.61.2.]]>
+        </paragraph>
+        <locate y="@vaan" />
+	<paragraph font-name="ArialMT" font-size="9" width="75" height="4" align="L" offset-left="86" keep-text-wrap="1" parse="1">
+            <![CDATA[$side_b]]>
+        </paragraph>
+        <locate x="0" y="@usign" y_offset="97"/>
+        <paragraph font-name="ArialMT" font-size="9" width="85" height="4" align="L" offset-left="1" keep-text-wrap="1">
+            <![CDATA[Генеральный директор: Воропаев В.В.
+
+_____________________________
+
+ М.П.]]>
+        </paragraph>
+        <locate y="@usign" y_offset="97"/>
+        <paragraph font-name="ArialMT" font-size="9" width="85" height="4" align="L" offset-left="86" keep-text-wrap="1" parse="1">
+            <![CDATA[$bossname
+
+_____________________________
+]]>
+        </paragraph>
+        <locate x="0" y="@usign" y_offset="125"/>
+    	<paragraph font-name="ArialMT" color="008080" font-size="9" width="170" height="4" align="L" keep-pos="1" keep-text-wrap="1" parse="1">
+            <![CDATA[Подписанное вами соглашение необходимо отправить на один из следующих адресов:
+$adr_act
+Обязательно укажите наименование организации-получателя – ООО «Ваан».]]>
+        </paragraph>
+        <nobreak end="1"/>
+        <footer><![CDATA[_____________________(Подпись Заказчика)]]></footer>
+        
+    </page>
+</document>

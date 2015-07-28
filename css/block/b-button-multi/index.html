@@ -1,0 +1,158 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>b-button-multi</title>
+<link href="b-button-multi.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/scripts/mootools-new.js"></script>
+<script type="text/javascript" src="b-button-multi.js"></script>
+</head>
+<body>
+<h3>Обычные кнопки</h3>
+<ul class="b-button-multi">
+	<li class="b-button-multi__item b-button-multi__item_first"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_red"></span><span class="b-button-multi__txt">Отказать</span></span></a></li>
+	<li class="b-button-multi__item b-button-multi__item_middle"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_blue"></span><span class="b-button-multi__txt">Кандидат</span></span></a></li>
+	<li class="b-button-multi__item b-button-multi__item_last"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_green"></span><span class="b-button-multi__txt">Исполнитель</span></span></a></li>
+</ul>
+<h3>Недоступные кнопки</h3>
+<ul class="b-button-multi">
+	<li class="b-button-multi__item b-button-multi__item_first b-button-multi__item_disabled"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_grey-krest"></span><span class="b-button-multi__txt">Отказать</span></span></a></li>
+	<li class="b-button-multi__item b-button-multi__item_middle b-button-multi__item_disabled"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_grey"></span><span class="b-button-multi__txt">Кандидат</span></span></a></li>
+	<li class="b-button-multi__item b-button-multi__item_last b-button-multi__item_disabled"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_grey"></span><span class="b-button-multi__txt">Исполнитель</span></span></a></li>
+</ul>
+<h3>Недоступные кнопки и идет загрузка</h3>
+<ul class="b-button-multi">
+	<li class="b-button-multi__item b-button-multi__item_first b-button-multi__item_disabled"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_grey-krest b-button-multi__icon_hide"></span><span class="b-button-multi__txt b-button-multi__txt_hide">Отказать</span><img class="b-button-multi__load" src="b-button-multi__load.gif" alt="" width="26" height="6" /></span></a></li>
+	<li class="b-button-multi__item b-button-multi__item_middle b-button-multi__item_disabled"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_grey b-button-multi__icon_hide"></span><span class="b-button-multi__txt b-button-multi__txt_hide">Кандидат</span><img class="b-button-multi__load" src="b-button-multi__load.gif" alt="" width="26" height="6" />
+	</span></a></li>
+	<li class="b-button-multi__item b-button-multi__item_last b-button-multi__item_disabled"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_grey b-button-multi__icon_hide"></span><span class="b-button-multi__txt b-button-multi__txt_hide">Исполнитель</span><img class="b-button-multi__load" src="b-button-multi__load.gif" alt="" width="26" height="6" /></span></a></li>
+</ul>
+<h3>Нажато и идет загрузка</h3>
+<ul class="b-button-multi">
+	<li class="b-button-multi__item b-button-multi__item_first b-button-multi__item_active"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_grey-krest b-button-multi__icon_hide"></span><span class="b-button-multi__txt b-button-multi__txt_hide">Отказать</span><img class="b-button-multi__load" src="b-button-multi__load.gif" alt="" width="26" height="6" /></span></a></li>
+	<li class="b-button-multi__item b-button-multi__item_middle b-button-multi__item_active"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_grey b-button-multi__icon_hide"></span><span class="b-button-multi__txt b-button-multi__txt_hide">Кандидат</span><img class="b-button-multi__load" src="b-button-multi__load.gif" alt="" width="26" height="6" />
+	</span></a></li>
+	<li class="b-button-multi__item b-button-multi__item_last b-button-multi__item_active"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_grey b-button-multi__icon_hide"></span><span class="b-button-multi__txt b-button-multi__txt_hide">Исполнитель</span><img class="b-button-multi__load" src="b-button-multi__load.gif" alt="" width="26" height="6" /></span></a></li>
+</ul>
+
+
+
+<h3>Цветные кнопки</h3>
+<div class="i-button-multi">
+	<ul class="b-button-multi">
+		<li class="b-button-multi__item b-button-multi__item_first b-button-multi__item_red"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_red"></span><span class="b-button-multi__txt">Отказать</span></span></a></li>
+		<li class="b-button-multi__item b-button-multi__item_middle b-button-multi__item_blue"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_blue"></span><span class="b-button-multi__txt">Кандидат</span></span></a></li>
+		<li class="b-button-multi__item b-button-multi__item_last b-button-multi__item_green"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_green"></span><span class="b-button-multi__txt">Исполнитель</span></span></a></li>
+	</ul>
+</div>
+<h3>Красные кнопки</h3>
+<div class="i-button-multi">
+	<ul class="b-button-multi">
+		<li class="b-button-multi__item b-button-multi__item_first b-button-multi__item_red"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_red"></span><span class="b-button-multi__txt">Отказать</span></span></a></li>
+		<li class="b-button-multi__item b-button-multi__item_middle b-button-multi__item_red"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_blue"></span><span class="b-button-multi__txt">Кандидат</span></span></a></li>
+		<li class="b-button-multi__item b-button-multi__item_last b-button-multi__item_red"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_green"></span><span class="b-button-multi__txt">Исполнитель</span></span></a></li>
+	</ul>
+</div>
+<h3>Зеленые кнопки</h3>
+<div class="i-button-multi">
+	<ul class="b-button-multi">
+		<li class="b-button-multi__item b-button-multi__item_first b-button-multi__item_green"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_red"></span><span class="b-button-multi__txt">Отказать</span></span></a></li>
+		<li class="b-button-multi__item b-button-multi__item_middle b-button-multi__item_green"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_blue"></span><span class="b-button-multi__txt">Кандидат</span></span></a></li>
+		<li class="b-button-multi__item b-button-multi__item_last b-button-multi__item_green"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_green"></span><span class="b-button-multi__txt">Исполнитель</span></span></a></li>
+	</ul>
+</div>
+<h3>Синие кнопки</h3>
+<div class="i-button-multi">
+	<ul class="b-button-multi">
+		<li class="b-button-multi__item b-button-multi__item_first b-button-multi__item_blue"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_red"></span><span class="b-button-multi__txt">Отказать</span></span></a></li>
+		<li class="b-button-multi__item b-button-multi__item_middle b-button-multi__item_blue"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_blue"></span><span class="b-button-multi__txt">Кандидат</span></span></a></li>
+		<li class="b-button-multi__item b-button-multi__item_last b-button-multi__item_blue"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_green"></span><span class="b-button-multi__txt">Исполнитель</span></span></a></li>
+	</ul>
+</div>
+<h3>Недоступные кнопки</h3>
+<div class="i-button-multi">
+	<ul class="b-button-multi">
+		<li class="b-button-multi__item b-button-multi__item_first b-button-multi__item_disabled"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_grey-krest"></span><span class="b-button-multi__txt">Отказать</span></span></a></li>
+		<li class="b-button-multi__item b-button-multi__item_middle b-button-multi__item_disabled"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_grey"></span><span class="b-button-multi__txt">Кандидат</span></span></a></li>
+		<li class="b-button-multi__item b-button-multi__item_last b-button-multi__item_disabled"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_grey"></span><span class="b-button-multi__txt">Исполнитель</span></span></a></li>
+	</ul>
+</div>
+<h3>Недоступные кнопки идет загрузка</h3>
+<div class="i-button-multi">
+	<ul class="b-button-multi">
+		<li class="b-button-multi__item b-button-multi__item_first b-button-multi__item_disabled"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_grey-krest b-button-multi__icon_hide"></span><span class="b-button-multi__txt b-button-multi__txt_hide">Отказать</span><img class="b-button-multi__load" src="b-button-multi__load.gif" alt="" width="26" height="6" /></span></a></li>
+		<li class="b-button-multi__item b-button-multi__item_middle b-button-multi__item_disabled"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_grey b-button-multi__icon_hide"></span><span class="b-button-multi__txt b-button-multi__txt_hide">Кандидат</span><img class="b-button-multi__load" src="b-button-multi__load.gif" alt="" width="26" height="6" /></span></a></li>
+		<li class="b-button-multi__item b-button-multi__item_last b-button-multi__item_disabled"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_grey b-button-multi__icon_hide"></span><span class="b-button-multi__txt b-button-multi__txt_hide">Исполнитель</span><img class="b-button-multi__load" src="b-button-multi__load.gif" alt="" width="26" height="6" /></span></a></li>
+	</ul>
+</div>
+<h3>Цветные кнопки идет загрузка</h3>
+<div class="i-button-multi">
+	<ul class="b-button-multi">
+		<li class="b-button-multi__item b-button-multi__item_first b-button-multi__item_red"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_grey b-button-multi__icon_hide"></span><span class="b-button-multi__txt b-button-multi__txt_hide">Отказать</span><img class="b-button-multi__load" src="b-button-multi__load.gif" alt="" width="26" height="6" /></span></a></li>
+		<li class="b-button-multi__item b-button-multi__item_middle b-button-multi__item_blue"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_grey b-button-multi__icon_hide"></span><span class="b-button-multi__txt b-button-multi__txt_hide">Кандидат</span><img class="b-button-multi__load" src="b-button-multi__load.gif" alt="" width="26" height="6" /></span></a></li>
+		<li class="b-button-multi__item b-button-multi__item_last b-button-multi__item_green"><a class="b-button-multi__link" href="#"><span class="b-button-multi__inner"><span class="b-button-multi__icon b-button-multi__icon_grey b-button-multi__icon_hide"></span><span class="b-button-multi__txt b-button-multi__txt_hide">Исполнитель</span><img class="b-button-multi__load" src="b-button-multi__load.gif" alt="" width="26" height="6" /></span></a></li>
+	</ul>
+</div>
+<h3>Двойные, цветные</h3>
+<ul class="b-button-multi b-button-multi_colored">
+	<li class="b-button-multi__item b-button-multi__item_first b-button-multi__item_green"><a href="#" class="b-button-multi__link"><span class="b-button-multi__inner"><span class="b-button-multi__txt">Согласиться с изменениями</span></span></a></li>
+	<li class="b-button-multi__item b-button-multi__item_last b-button-multi__item_green"><a href="#" class="b-button-multi__link"><span class="b-button-multi__inner"><span class="b-button-multi__txt">или</span>&#160;<span class="b-button-multi__arrow"></span></span></a></li>
+</ul>
+
+
+<h3>Двойные, зеленые средние</h3>
+<ul class="b-button-multi b-button-multi_mid">
+	<li class="b-button-multi__item b-button-multi__item_first b-button-multi__item_green"><a href="#" class="b-button-multi__link"><span class="b-button-multi__inner"><span class="b-button-multi__txt">Согласиться с изменениями</span></span></a></li>
+	<li class="b-button-multi__item b-button-multi__item_last b-button-multi__item_green"><a href="#" class="b-button-multi__link"><span class="b-button-multi__inner"><span class="b-button-multi__txt">или</span>&#160;<span class="b-button-multi__arrow"></span></span></a></li>
+</ul>
+<h3>Двойные, красные средние</h3>
+<ul class="b-button-multi b-button-multi_mid">
+	<li class="b-button-multi__item b-button-multi__item_first b-button-multi__item_red"><a href="#" class="b-button-multi__link"><span class="b-button-multi__inner"><span class="b-button-multi__txt">Согласиться с изменениями</span></span></a></li>
+	<li class="b-button-multi__item b-button-multi__item_last b-button-multi__item_red"><a href="#" class="b-button-multi__link"><span class="b-button-multi__inner"><span class="b-button-multi__txt">или</span>&#160;<span class="b-button-multi__arrow"></span></span></a></li>
+</ul>
+
+
+
+<h3>Мини-кнопки</h3>
+<ul class="b-button-multi b-button-multi_mini">
+	<li class="b-button-multi__item b-button-multi__item_first"><a class="b-button-multi__link" href="#"></a></li>
+	<li class="b-button-multi__item b-button-multi__item_middle"><a class="b-button-multi__link" href="#"></a></li>
+	<li class="b-button-multi__item b-button-multi__item_last"><a class="b-button-multi__link" href="#"></a></li>
+</ul>
+<ul class="b-button-multi b-button-multi_mini">
+	<li class="b-button-multi__item b-button-multi__item_first"><a class="b-button-multi__link" href="#"><span class="b-button-multi__mini-list b-button-multi__mini-list_bold"></span></a></li>
+	<li class="b-button-multi__item b-button-multi__item_last"><a class="b-button-multi__link" href="#"><span class="b-button-multi__mini-list"></span></a></li>
+</ul>
+
+<h3>Плоские выбирашки</h3>
+<ul class="b-button-multi b-button-multi_flat">
+	<li class="b-button-multi__item b-button-multi__item_first"><a class="b-button-multi__link b-button-multi__link_grey" href="#">Отказать</a></li>
+	<li class="b-button-multi__item b-button-multi__item_middle"><a class="b-button-multi__link b-button-multi__link_grey" href="#">Кандидат</a></li>
+	<li class="b-button-multi__item b-button-multi__item_last"><a class="b-button-multi__link b-button-multi__link_grey" href="#">Исполнитель</a></li>
+</ul>
+<ul class="b-button-multi b-button-multi_flat">
+	<li class="b-button-multi__item b-button-multi__item_first"><a class="b-button-multi__link b-button-multi__link_grey" href="#">Ответить</a></li>
+	<li class="b-button-multi__item b-button-multi__item_last"><a class="b-button-multi__link b-button-multi__link_grey b-button-multi__link_arr" href="#">Или</a></li>
+</ul>
+<ul class="b-button-multi b-button-multi_flat">
+	<li class="b-button-multi__item b-button-multi__item_first"><a class="b-button-multi__link b-button-multi__link_green" href="#">Отказать</a></li>
+	<li class="b-button-multi__item b-button-multi__item_middle"><a class="b-button-multi__link b-button-multi__link_green" href="#">Кандидат</a></li>
+	<li class="b-button-multi__item b-button-multi__item_last"><a class="b-button-multi__link b-button-multi__link_green" href="#">Исполнитель</a></li>
+</ul>
+<ul class="b-button-multi b-button-multi_flat">
+	<li class="b-button-multi__item b-button-multi__item_first"><a class="b-button-multi__link b-button-multi__link_green" href="#">Продолжить</a></li>
+	<li class="b-button-multi__item b-button-multi__item_last"><a class="b-button-multi__link b-button-multi__link_green b-button-multi__link_arr" href="#">Или</a></li>
+</ul>
+<ul class="b-button-multi b-button-multi_flat">
+	<li class="b-button-multi__item b-button-multi__item_first"><a class="b-button-multi__link b-button-multi__link_red" href="#">Продолжить</a></li>
+	<li class="b-button-multi__item b-button-multi__item_last"><a class="b-button-multi__link b-button-multi__link_red b-button-multi__link_arr" href="#">Или</a></li>
+</ul>
+<ul class="b-button-multi b-button-multi_small b-button-multi_flat">
+	<li class="b-button-multi__item b-button-multi__item_first"><a class="b-button-multi__link b-button-multi__link_green" href="#">Продолжить</a></li>
+	<li class="b-button-multi__item b-button-multi__item_last"><a class="b-button-multi__link b-button-multi__link_green b-button-multi__link_arr" href="#">Или</a></li>
+</ul>
+
+
+
+</body>
+</html>

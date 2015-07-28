@@ -1,0 +1,31 @@
+<html>
+<head><title>keyCode</title>
+<META charset="utf-8" ></META>
+<script type="text/javascript">
+	function $(i){return document.getElementById(i); }
+	window.onload=function() {
+		$('test').focus();
+		$('test').onkeydown = function(e) {
+			if (!e) {
+				e = window.event;
+			}
+			$('output').value += e.keyCode + '\r\n';
+			return false;
+		}
+	}
+</script>
+</head>
+
+<body>
+<div style="text-align:center">	
+	<label>Установите фокус и нажамите сочетания cmd + стрелки</label>
+	<textarea style="resize:none; width:100%;" rows="15" id="test"></textarea>
+	
+	<label>Скопируйте результат теста</label>
+	<textarea style="resize:none; width:100%;" rows="15" id="output"></textarea>	
+</p>
+<p align="right">
+	<input type="button" value="Clear" onclick="$('output').value = '';" />
+</p>
+</body>
+</html>

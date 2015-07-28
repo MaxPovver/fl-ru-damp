@@ -1,0 +1,30 @@
+.b-tu{
+    position: relative;
+    width: 200px !important;
+    z-index: 1;
+    height: 265px !important;
+    display: block;
+    margin: 0 0 30px;
+    padding: 10px;
+    vertical-align: top;
+    border-radius: 3px;
+    border: 2px solid rgba(0, 0, 0, 0);
+	}
+.b-tu_hover:hover {
+    border-color:#aad58b;
+}
+
+.b-tu:nth-child(3n+1) {
+    clear: both;
+    float: left;
+}
+.b-tu:nth-child(3n+2) {
+    float: left;
+    left: 50%;
+    margin-left: -333px;
+}
+.b-tu:nth-child(3n+3) {
+    float: right;
+}
+
+

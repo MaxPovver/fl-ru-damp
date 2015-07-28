@@ -1,0 +1,27 @@
+[class*='b-icon__soc_'] {
+	width:50px;
+	height:50px;
+	background-repeat:no-repeat;
+	background-image:url(b-icon__soc.png);
+	}
+
+.b-icon__soc_f{
+	background-position:0 0;
+	}
+.b-icon__soc_f:hover{
+	background-position:0 -50px;
+	}
+.b-icon__soc_vk{
+	background-position:0 -100px;
+	}
+.b-icon__soc_vk:hover{
+	background-position:0 -150px;
+	}
+.b-icon__soc_g{
+	background-position:0 -200px;
+	}
+.b-icon__soc_g:hover{
+	background-position:0 -250px;
+	}
+
+

@@ -1,0 +1,38 @@
+.b-tel{
+	margin: 0 0 20px;
+	padding: 13px 0 10px 67px;
+	position: relative;
+	}
+.b-tel__number{
+    color: #000;
+    display: block;
+		padding:0;
+		margin:0;
+    font-size: 28px;
+    font-weight: normal;
+    line-height: 30px;
+		font-family:Tahoma, Arial, Helvetica, sans-serif;
+}
+.b-tel__txt{
+    display: block;
+    font-size: 11px;
+    margin: -2px 0 0;
+		color:#000;
+		font-family:Tahoma, Arial, Helvetica, sans-serif;
+}
+.b-tel__icon{
+	display:block;
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 52px;
+	height: 63px;
+}
+.b-tel__icon_green{
+	background: url(b-tel.gif) no-repeat scroll 0 0 transparent;
+}
+.b-tel__icon_red{
+	background: url(b-tel.gif) no-repeat scroll 0 -63px transparent;
+}
+
+

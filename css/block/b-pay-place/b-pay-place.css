@@ -1,0 +1,165 @@
+
+
+.b-pay-place{
+	box-sizing:border-box;
+	}
+.b-pay-place_padtop_25{
+	padding-top:25px;
+	}
+.b-pay-place_padtop_50{
+	padding-top:50px;
+	}
+
+
+.b-pay-place__avatar{
+	border:0;
+	margin:4px 10px 0 0;
+	padding:0;
+	float:left;
+	}
+.b-pay-place__h3{
+	padding:0;
+	margin:0;
+	font-size:13px;
+	font-weight:bold;
+	color:#000;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+.b-pay-place__h3_padbot_15{
+	padding-bottom:15px;
+	}
+.b-pay-place__h4{
+	font-weight:bold;
+	font-size:11px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	color:#414141;
+	padding: 10px 0 0;
+	margin:0;
+	line-height:1.4;
+	}	
+.b-pay-place__h4_padleft_60{
+	padding-left:60px;
+	}
+	
+.b-pay-place__txt{
+	padding:0 0 5px;
+	margin:0;
+	font-size:11px;
+	font-family:Tahoma, Arial, Helvetica, sans-serif;
+	color:#414141;
+	line-height:1.4;
+	}	
+.b-pay-place__txt_padleft_60{
+	padding-left:60px;
+	}
+.b-pay-place__txt_maxwidth_200{
+	max-width:200px;
+	}
+a.b-pay-place__more{
+	color:#026dc0 ;
+	text-decoration:none;
+	border-bottom:1px dotted #026dc0 ;
+	line-height:1;
+	position:relative;
+	z-index:1;
+	}	
+a.b-pay-place__close{
+	font-size:11px;
+	font-family:Tahoma, Arial, Helvetica, sans-serif;
+	color:#026dc0 ;
+	border-bottom:1px dotted #026dc0 ;
+	text-decoration:none;
+	}
+a.b-pay-place__more:hover{
+	text-decoration:none;
+	color:#8c0400 !important;
+	border-bottom-color:#8c0400;
+	}
+.b-pay-place__item{
+	position:relative;
+	min-height:70px;
+	border-bottom:1px solid #eee;
+	}	
+.b-pay-place__item:last-child{
+	border:0;
+	}	
+.b-pay-place__item_padbot_20{
+	padding-bottom:20px;
+	}	
+.b-pay-place__item_padbot_15{
+	padding-bottom:15px;
+	}	
+.b-pay-place__item_margbot_15{
+	margin-bottom:15px;
+	}	
+.b-pay-place__item_margbot_25{
+	margin-bottom:25px;
+	}	
+.b-pay-place__item_active{
+	z-index:3;
+	padding:10px;
+	margin:-10px -10px 15px;
+	background:#fff;
+	}
+	
+.b-pay-place__title{
+	padding:0 0 25px;
+	margin:0;
+	font-size:20px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000;
+	font-weight: normal;
+	}	
+a.b-pay-place__link{
+	color:#026dc0 ;
+	text-decoration: underline;
+	line-height:1;
+	}	
+a.b-pay-place__link:hover{
+	color:#fd6c30 !important;
+	border-bottom-color:#fd6c30;
+	}
+a.b-pay-place__link_bold{
+	font-weight:bold;
+	}	
+.b-pay-place__link_dot_0f71c8{
+	border-bottom:1px dotted #0f71c8;
+	text-decoration:none !important;
+	}	
+
+
+
+
+.b-pay-place__name{
+	text-decoration:underline;
+	}
+.b-pay-place__name_color_0f71c8{
+	color:#0f71c8;
+	text-decoration:underline
+	}	
+.b-pay-place__login{
+	font-weight:bold;
+	}	
+.b-pay-place__login_color_fd6c30{
+	color:#fd6c30;
+	text-decoration:underline
+	}	
+a.b-pay-place__link-user{
+	font-size:11px;
+	font-family: Tahoma, Geneva, sans-serif;
+	color:#414141;
+	}
+a.b-pay-place__link-user:hover{
+	color:#8c0400;
+	}
+a.b-pay-place__link-user_color_fd6c30{
+	color:#fd6c30;
+	}
+a.b-pay-place__link-user:hover .b-pay-place__login{
+	color:#8c0400;
+	}
+a.b-pay-place__link-user:hover .b-pay-place__name{
+	color:#8c0400;
+	}
+	
+	

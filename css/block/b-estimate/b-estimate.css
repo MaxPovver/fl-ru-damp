@@ -1,0 +1,131 @@
+
+
+.b-estimate{
+	}
+	
+.b-estimate_padbot_15{
+	padding-bottom:15px;
+	}	
+	
+	
+	
+	
+	
+	
+	
+	
+a.b-estimate__link{
+	font-size:11px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	text-decoration:none;
+	vertical-align:top;
+	border-bottom:1px dotted #026dc0 ;
+	color:#026dc0 ;
+	line-height:1;
+	}
+	
+.b-estimate__item{
+	display:inline-block;
+	vertical-align:middle;
+	height:21px;
+	margin:0 10px;
+	}
+.b-estimate__item_margright_20{
+	margin-right:20px;
+	}
+
+
+
+.b-estimate__item_active a.b-estimate__link .b-button_poll_plus{
+	background-position: 0 -39px !important;
+	}
+.b-estimate__item_active a.b-estimate__link .b-button_poll_minus{
+	background-position: 0 -87px !important;
+	}
+.b-estimate__item_active a.b-estimate__link .b-button_poll_multi{
+	background-position: 0 -149px !important;
+	}
+	
+a.b-estimate__link:hover .b-button_poll_plus{
+	background-position: 0 -39px !important;
+	}
+a.b-estimate__link:hover .b-button_poll_minus{
+	background-position: 0 -87px !important;
+	}
+a.b-estimate__link:hover .b-button_poll_multi{
+	background-position: 0 -149px !important;
+	}
+	
+	
+.b-estimate__item_green.b-estimate__item_active{
+	background:url(b-estimate.png) 0 -88px repeat-x;
+	}
+.b-estimate__item_green.b-estimate__item_active .b-estimate__left{
+	background:url(b-estimate.png) 0 0 no-repeat;
+	}
+.b-estimate__item_green.b-estimate__item_active .b-estimate__right{
+	background:url(b-estimate.png) right -175px no-repeat;
+	}
+.b-estimate__item_green.b-estimate__item_active a.b-estimate__link{
+	color:#fff;
+	border-color:transparent;
+	cursor:default;
+	}
+	
+	
+.b-estimate__item_grey.b-estimate__item_active{
+	background:url(b-estimate.png) 0 -148px repeat-x;
+	}
+.b-estimate__item_grey.b-estimate__item_active .b-estimate__left{
+	background:url(b-estimate.png) 0 -60px no-repeat;
+	}
+.b-estimate__item_grey.b-estimate__item_active .b-estimate__right{
+	background:url(b-estimate.png) right -235px no-repeat;
+	}
+.b-estimate__item_grey.b-estimate__item_active a.b-estimate__link{
+	color:#fff;
+	border-color:transparent;
+	cursor:default;
+	}
+	
+	
+.b-estimate__item_red.b-estimate__item_active{
+	background:url(b-estimate.png) 0 -118px repeat-x;
+	}
+.b-estimate__item_red.b-estimate__item_active .b-estimate__left{
+	background:url(b-estimate.png) 0 -30px no-repeat;
+	}
+.b-estimate__item_red.b-estimate__item_active .b-estimate__right{
+	background:url(b-estimate.png) right -205px no-repeat;
+	}
+.b-estimate__item_red.b-estimate__item_active a.b-estimate__link{
+	color:#fff;
+	border-color:transparent;
+	cursor: default;
+	}
+
+
+.b-estimate__left{
+	margin-left:-10px;
+	padding-left:6px;
+	display:block;
+	height:21px;
+	vertical-align:top;
+	}
+.b-estimate__right{
+	margin-right:-10px;
+	padding-right:10px;
+	padding-top:4px;
+	display:block;
+	height:17px;
+	vertical-align:top;
+	}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,212 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fl2_date {
+
+	border-top:1px solid #dbdbdb;
+	border-bottom:1px solid #dbdbdb;
+	background:#f7f7f7;
+	padding:4px 25px 4px 8px;
+}
+
+.fl2_date_day {
+	float:left;
+}
+
+.fl2_date_date {
+	float:right;
+}
+
+.clear {
+	clear:both;
+}
+
+
+.fl2_offer {
+	padding:15px 0;
+	overflow:hidden;
+}
+.hr {
+	height:2px;
+	font-size:0%;
+	border-bottom:1px solid #dbdbdb;
+}
+.fl2_offer_header {
+	font-size:18px;
+	display:inline;
+}
+
+.fl2_offer_budget {
+	font-size:18px;
+	float:right;
+	color: #858585;
+	padding:0 0 10px 20px;
+	text-decoration:none; clear:right;
+}
+.bujet-dogovor{ clear:right;}
+.fl2_offer_content {
+	color:#333;
+	padding:10px 0;
+}
+
+
+
+
+
+.fl2_offer_logo {
+	position:relative;
+	margin-bottom:10px;
+	min-height:15px;
+	_height:15px;
+}
+
+.fl2_offer_logo img {
+	display: inline;
+}
+.fl2_offer_logo div { float:right;}
+.fl2_comments_link {
+	text-align:right;
+}
+.fl2_comments_link_b {
+	text-align:right;
+	font-weight:bold;
+}
+.fl2_comments_link strong{
+	font-weight:normal;
+}
+.fl2_comments_link_b strong{
+	font-weight:normal;
+}
+.bordered {
+	border:1px solid #999;	
+	padding:10px;
+	margin-top:-1px;
+
+}
+
+.bordered .fl2_offer_content {
+	font-size:12px;
+}
+.fl2_offer_meta {
+	font-size:9px;
+	color:#999;
+}
+	
+
+
+.flw_offer_attach {
+	padding:5px 0 3px 0px;
+	margin:0px 0 0px 0;
+	font-size:11px;
+}
+
+
+.fl2_offer_budget div{
+	font-size:11px;
+	color:#666;
+	text-align:right;
+}
+
+.fl2_offer_header a,.fl2_offer_header a:hover {
+	font-size:18px;
+	text-decoration:underline; 
+	word-wrap: break-word;
+	max-width:500px;
+}
+
+.fl2_offer_header img {
+	border:0;
+	padding:0 3px 0 0;
+	vertical-align:middle !important;
+	vertical-align:bottom;
+}
+
+
+
+
+
+
+
+
+#it{
+color: #333333;
+font-size: 13px;
+height: 25px;
+width: 297px;
+background-image: url(/images/grad_orange.jpg);
+padding: 5px 0 0 15px;
+margin: 30px 0 20px 0;
+background-repeat: repeat-y;
+}
+
+.error{
+	overflow-y: hidden;
+	height: 1px;
+	color: #5f5;
+	visibility: hidden;
+}
+
+.vis{
+	height: auto;
+	padding-bottom: 10px;
+	visibility: visible;
+}
+
+
+.disable {
+    color: #999;
+}
+
+.this {
+    display: inline;
+    font-size: 100%;
+	color: #003399;
+    text-decoration: underline;
+    font-weight: inherit;
+}
+
+.frlname11{
+font-size: 11px;
+color: #666666;
+font-weight: bold;
+}
+
+
+
+.user-info-tbl{
+	border-collapse:collapse;
+	width: 100%;
+	}
+.user-info-tbl th{
+	text-align:left; font-weight:bold;
+	}
+.user-info-tbl th, .user-info-tbl td{
+	font-size:13px;
+	border-top: 1px solid #F0EFED;
+	padding: 5px 0 4px;
+	}
+.user-info-tbl .first th, .user-info-tbl .first td{
+	border-top:none;
+	}
+.user-info-tbl td a.b-post__link { 
+        color: #003399 !important;
+	}
+.user-info-tbl .first th, .user-info-tbl td a.b-post__link:hover { 
+        text-decoration: none;
+	}

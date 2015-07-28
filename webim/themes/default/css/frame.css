@@ -1,0 +1,77 @@
+@import url("/css/block/b-button/b-button.css");
+@import url("/css/block/b-button/_rectangle/b-button_rectangle_transparent.css");
+html{overflow-x: hidden;}
+body{
+	margin: 0;
+	font:12px/17px Arial, Helvetica, sans-serif;
+	color: #4f4f4f;
+	padding: 2px 0 0 4px;
+}
+
+.message {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #4F4F4F;
+	padding-left: 3px;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-right: 3px;
+	line-height: 17px;
+}
+
+.message span.time {
+	color: #000000;
+}
+
+.message span.nvisitor {
+	color: #B11E23;
+	font-weight: bold;
+}
+
+.message span.nagent {
+	font-weight: bold;
+}
+
+.message span.minf {
+	color: #1E48B1;
+	font-size: 11px;
+}
+
+.message span.mevent {
+	color: #A1A1A1;
+	font-size: 11px;
+}
+
+.message span.mhidden {
+	color: #A1A1A1;
+	font-size: 11px;
+}
+
+.message span.mconn {
+	color: #A1A1A1;
+	font-size: 11px;
+}
+
+.message span.mrate {
+	color: #ff0000;
+	font-size: 11px;
+}
+
+a{color: #c28400;}
+a:hover{text-decoration: none;}
+
+
+.mess-item{
+	position:relative;
+	padding-left:50px;
+	}
+.mess-item:before{
+	content:attr(title);
+	color:#000;
+	position:absolute;
+	left:0;
+	}
+
+
+
+

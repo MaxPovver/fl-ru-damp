@@ -1,0 +1,115 @@
+User-agent: Yandex
+Disallow: /login/
+Disallow: /registration/
+Disallow: /remind/
+Disallow: /search/
+Disallow: /webim
+Disallow: /xajax
+Disallow: /*?ord=
+Disallow: /projects/upload/
+Disallow: /*?from
+Disallow: /*&ord
+Disallow: /*?kind
+Disallow: /*?open=
+Disallow: /*?closed=
+Disallow: /*?user=
+Disallow: /*?order=
+Disallow: /*?om=
+Disallow: /fbd.php
+Disallow: /public/
+Disallow: /*?word=
+Disallow: /*&sort=
+Disallow: /proonly.php
+Disallow: /login.php
+Disallow: /&b=
+Disallow: /a.php
+Disallow: /*?tag=
+Disallow: */rss/*
+Disallow: /*?keywords
+Disallow: *?mode*
+Disallow: *?pid=
+Disallow: *?sort
+Disallow: *?action
+Clean-param: f /users/*/
+Clean-param: stamp /users/*/
+Clean-param: b /blogs/view.php
+Clean-param: ord /blogs/view.php
+Clean-param: openlevel /blogs/view.php
+Clean-param: om /commune/
+Host: https://www.fl.ru
+
+User-agent: Googlebot
+Disallow: /login/
+Disallow: /registration/
+Disallow: /remind/
+Disallow: /search/
+Disallow: /webim
+Disallow: /xajax
+Disallow: /projects/upload/
+Disallow: /*?ord=
+Disallow: /*?from
+Disallow: /*&ord
+Disallow: /*?kind
+Disallow: /*?open=
+Disallow: /*?closed=
+Disallow: /*?user=
+Disallow: /*?order=
+Disallow: /*?om=
+Disallow: /fbd.php
+Disallow: /public/
+Disallow: /*?word=
+Disallow: /*&sort=
+Disallow: /proonly.php
+Disallow: /login.php
+Disallow: /&b=
+Disallow: /a.php
+Disallow: /*?tag=
+Disallow: */rss/*
+Disallow: /*?keywords
+Disallow: *?mode*
+Disallow: *?pid=
+Disallow: *?sort
+Disallow: *?action
+
+User-agent: dotbot
+Disallow: /
+
+User-agent: aggregator:Spinn3r
+Disallow: /
+
+User-agent: Twitterbot
+Disallow: /
+
+User-agent: *
+Disallow: /login/
+Disallow: /registration/
+Disallow: /remind/
+Disallow: /search/
+Disallow: /webim
+Disallow: /xajax
+Disallow: /projects/upload/
+Disallow: /*?ord=
+Disallow: /users/*/contacts/
+Disallow: /*?from
+Disallow: /*&ord
+Disallow: /*?kind
+Disallow: /*?open=
+Disallow: /*?closed=
+Disallow: /*?user=
+Disallow: /*?order=
+Disallow: /*?om=
+Disallow: /fbd.php
+Disallow: /public/
+Disallow: /*?word=
+Disallow: /*&sort=
+Disallow: /proonly.php
+Disallow: /login.php
+Disallow: /&b=
+Disallow: /a.php
+Disallow: /*?tag=
+Disallow: */rss/*
+Disallow: /*?keywords
+Disallow: *?mode*
+Disallow: *?pid=
+Disallow: *?sort
+Disallow: *?action

@@ -1,0 +1,1 @@
+<a href="<?= $this->getLink();?>" class="b-button b-button_flat b-button_float_right <?= $this->getCss(); ?> <?= $this->getColorMain();?>" <?= $this->getEvents();?>><?= $this->getName();?></a>

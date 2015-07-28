@@ -1,0 +1,83 @@
+a.b-button_m_add, a.b-button_m_edit, a.b-button_m_remove, a.b-button_m_delete, a.b-button_m_close{
+	width:24px;
+	height:24px;
+	display:inline-block;
+	background:url(/css/block/b-button/_m/b-button_m.png) 0 0 no-repeat;
+	padding:0;
+	cursor:pointer;
+	}
+a.b-button_m_add:hover{
+	background-position: 0 -24px;
+	}
+a.b-button_m_add.b-button_active{
+	background-position: 0 -48px ;
+	}
+a.b-button_m_add.b-button_disabled{
+	background-position: 0 -192px ;
+	cursor:default;
+	}
+a.b-button_m_add.b-button_transparent{
+	background-position: 0 -72px ;
+	cursor:default;
+	}
+a.b-button_m_remove{
+	background-position: 0 -96px ;
+	}
+a.b-button_m_remove:hover{
+	background-position: 0 -120px ;
+	}
+a.b-button_m_remove.b-button_active{
+	background-position: 0 -144px ;
+	}
+a.b-button_m_remove.b-button_disabled{
+	background-position: 0 -214px ;
+	cursor:default;
+	}
+a.b-button_m_remove.b-button_transparent{
+	background-position: 0 -168px ;
+	cursor:default;
+	}
+
+a.b-button_m_edit{
+	background-position: 0 -313px;
+	}
+a.b-button_m_edit:hover{
+	background-position: 0 -264px  !important;
+	}
+a.b-button_m_edit.b-button_active{
+	background-position: 0 -288px  !important;
+	}
+a.b-button_m_edit.b-button_disabled{
+	background-position: 0 -239px ;
+	cursor:default;
+	}
+
+a.b-button_m_delete{
+	background-position: 0 -412px ;
+	}
+a.b-button_m_delete:hover{
+	background-position: 0 -362px  !important;
+	}
+a.b-button_m_delete.b-button_active{
+	background-position: 0 -386px  !important;
+	}
+a.b-button_m_delete.b-button_disabled{
+	background-position: 0 -338px ;
+	cursor:default;
+	}
+
+a.b-button_m_close{
+	background-position: 0 -512px ;
+	}
+a.b-button_m_close:hover{
+	background-position: 0 -461px  !important;
+	}
+a.b-button_m_close.b-button_active{
+	background-position: 0 -485px  !important;
+	}
+a.b-button_m_close.b-button_disabled{
+	background-position: 0 -436px ;
+	cursor:default;
+	}
+
+

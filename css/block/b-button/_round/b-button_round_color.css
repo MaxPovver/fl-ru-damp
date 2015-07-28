@@ -1,0 +1,78 @@
+.b-button_round_green {
+	height: 36px;
+	background: url(b-button_round_color.png) no-repeat right -36px;
+	padding-right:17px !important;
+	cursor:pointer;
+	}
+.b-button_round_green .b-button__b1{
+	background: url(b-button_round_color.png) no-repeat 0 0;
+	padding-left:17px !important;
+	}
+.b-button_round_green .b-button__b2{
+	background: url(b-button_round_color.png) repeat-x 0 -72px;
+	font-weight: bold;
+	line-height: 36px;
+	height: 36px;
+	}
+.b-button_round_green:hover{
+	background-position: right -144px;
+	}
+.b-button_round_green:hover .b-button__b1{
+	background-position: 0 -108px;
+	}
+.b-button_round_green:hover .b-button__b2{
+	background-position: 0 -180px;
+	}
+.b-button_round_green.b-button_active{
+	background-position: right -252px !important;
+	}
+.b-button_round_green.b-button_active .b-button__b1{
+	background-position: 0 -216px !important;
+	}
+.b-button_round_green.b-button_active .b-button__b2{
+	background-position: 0 -288px !important;
+	}
+
+/* недоступная кнопочка */
+.b-button_round_color_disable {
+	height: 36px;
+	background: url(b-button_round_color.png) no-repeat right -360px;
+	padding-right:17px !important;
+	cursor:default !important;
+	}
+.b-button_round_color_disable .b-button__b1{
+	background: url(b-button_round_color.png) no-repeat 0 -324px;
+	padding-left:17px !important;
+	}
+.b-button_round_color_disable .b-button__b2{
+	background: url(b-button_round_color.png) repeat-x 0 -396px;
+	font-weight: bold;
+	color: #444;
+	line-height: 36px;
+	height: 36px;
+	}
+.b-button_round_color_disable:hover{
+	background-position: right -360px;
+	}
+.b-button_round_color_disable:hover .b-button__b1{
+	background-position: 0 -324px;
+	}
+.b-button_round_color_disable:hover .b-button__b2{
+	background-position: 0 -396px;
+	}
+.b-button_round_color_disable.b-button_active{
+	background-position: right -360px !important;
+	}
+.b-button_round_color_disable.b-button_active .b-button__b1{
+	background-position: 0 -324px !important;
+	}
+.b-button_round_color_disable.b-button_active .b-button__b2{
+	background-position: 0 -396px !important;
+	}
+.b-button_round_color_disable.b-button_active .b-button__txt{
+	position:static;
+	color:#a7a7a6;
+	}
+.b-button_round_color_disable .b-button__txt{
+	color:#a7a7a6;
+	}

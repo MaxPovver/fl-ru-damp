@@ -1,0 +1,33 @@
+.b-tags{}
+
+.b-tags__list{
+	list-style:none;
+	padding:0;
+	margin:0;
+	display:inline;
+	}
+.b-tags__item{
+	list-style:none;
+	display:inline;
+	}
+a.b-tags__link{
+	font-size:11px;
+	font-family:Tahoma, Arial, Helvetica, sans-serif;
+	color:#404040;
+	text-decoration:underline;
+	}
+a.b-tags__link:hover{
+	text-decoration:none;
+	}
+.b-tags__txt{
+	font-size:11px;
+	font-family:Tahoma, Arial, Helvetica, sans-serif;
+	color:#404040;
+	}
+
+
+
+
+
+
+

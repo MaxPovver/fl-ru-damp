@@ -1,0 +1,131 @@
+
+.msie a.b-menu__link:active{
+		background-color: inherit;/* убираем подсветку в ие10 */
+}
+
+.b-menu_bar{
+	display:inline-block;
+	vertical-align:top;
+	padding-left:20px;
+	height:28px;
+	}
+.b-menu_bar_hide{
+	display:none;
+	}
+.b-menu_bar a.b-menu__link{
+	font-size:15px;
+	font-family: 'PT Sans', sans-serif;
+	line-height:1;
+	color:#fff;
+	margin-top:6px;
+	float:left;
+	}
+.b-menu_bar a.b-menu__link:hover{
+	color:#9c9c9c !important;
+	text-decoration:none;
+	}
+.b-menu__active_no-hover a.b-menu__link:hover{
+	color:#fff !important;
+	}
+	
+	
+.b-menu_bar .b-menu__item{
+	float:left;
+	font-size:15px;
+	font-family: 'PT Sans', sans-serif;
+	line-height:27px;
+	margin-right:20px;
+	height:27px;
+	text-align:left;
+	}
+.b-menu_bar .b-menu__active{
+	background-color:#676767;
+	border-radius:2px;
+	color:#fff;
+	padding:0;
+	}
+.b-menu__active a.b-menu__link{
+	padding:6px 10px;
+	margin:0;
+	}
+
+.b-menu__more{
+	font-size:15px;
+	font-family: 'PT Sans', sans-serif;
+	color:#fff;
+	float:left;
+	cursor:pointer;
+	position:relative;
+	height:34px;
+	}
+.b-menu__more a.b-menu__link{
+	margin-right:0;
+	cursor:default;
+	}
+.b-menu__more .b-menu__link:before{
+	content:attr(name);
+	border-bottom:1px dotted #fff;
+	display:inline-block;
+	}
+.b-menu__more:hover .b-menu__link:before{
+	border-color:#9c9c9c;
+	}
+
+@media screen and (max-width: 700px){
+
+.b-menu__active .b-menu__link{
+	display:inline;
+	}
+.b-menu__active a.b-menu__link {
+ padding-right: 17px;
+	position:relative;
+	z-index:1;
+}	
+.b-menu__active.b-bar__corner:after{
+	display:block;
+	margin:12px 5px -12px -12px;
+	float:left;
+	}
+.b-menu__active{
+	cursor:pointer;
+	}
+.b-menu__active:hover .b-bar__menu_hide{
+	left:0;
+	right:0;
+	top:30px;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+	border-top:10px solid transparent;
+	}
+.b-menu__active_no-hover:hover .b-bar__menu_hide{
+	right:9999px;
+	left:-9999px;
+	}
+.b-menu__active.b-menu__active_iphone .b-bar__menu_hide{
+	left:0;
+	right:0;
+	top:30px;
+	-moz-box-sizing: border-box;
+	box-sizing:border-box;
+	border-top:10px solid transparent;
+	}
+
+
+.b-menu__item_iphone_marg_null{
+	margin:0 !important;
+	}
+
+.b-menu_prj a.b-menu__link, .b-menu_prj .b-menu__active{
+	margin-right:15px !important;
+	}
+.b-menu_prj :last-child{
+	margin-right:0;
+	}
+	
+.b-menu__more{
+	display:none;
+	}
+
+}
+
+

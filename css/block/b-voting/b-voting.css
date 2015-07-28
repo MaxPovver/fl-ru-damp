@@ -1,0 +1,76 @@
+
+
+.b-voting{
+	width:73px;
+	overflow:hidden;
+	position:relative;
+	z-index:1;
+	}
+.b-voting_inline-block{
+	display:inline-block;
+	}
+.b-voting_float_right{
+	float:right;
+	}
+.b-voting_center{
+	margin:0 auto;
+	}
+.b-voting_padtop_10{
+	padding-top:10px;
+	}
+.b-voting_padtb_10{
+	padding-top:10px;
+	padding-bottom:10px;
+	}
+.b-voting_padtb_15{
+	padding-top:15px;
+	padding-bottom:15px;
+	}
+.b-voting_fs_15{
+	}
+.b-voting_fs_15 .b-voting__mid{
+	font-size:15px;
+	font-family: Tahoma, Geneva, sans-serif;
+	}
+.b-voting_fs_15 .b-button_poll_plus{
+	margin-top:1px;
+	}
+.b-voting_fs_15 .b-button_poll_minus{
+	margin-top:3px;
+	}
+.b-voiting__right{
+	float:right !important;
+	}
+.b-voiting__left{
+	float:left !important;
+	}
+.b-voting__mid{
+	text-align:center;
+	display:block;
+	margin-left:12px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	text-align:center;
+	line-height:1;
+	}
+.b-voting__mid_color_green{
+	color:#6db335;
+	}
+.b-voting__mid_color_red{
+	color:#c10600;
+	}
+
+a.b-voting__link{}
+a.b-voting__link_dot_green{
+	color:#6db335;
+	border-bottom:1px dotted #6db335;
+	text-decoration:none;
+	}
+a.b-voting__link_dot_red{
+	color:#8c0400;
+	border-bottom:1px dotted #8c0400;
+	text-decoration:none;
+	}
+
+

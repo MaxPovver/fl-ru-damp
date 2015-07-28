@@ -1,0 +1,17 @@
+.b-menu_base{}
+.b-menu_base .b-menu__item{
+	font-size:15px;
+	font-family: 'PT Sans', sans-serif;
+	color:#000;
+	display:block;
+	text-align:left;
+	padding-bottom:10px;
+	}
+.b-menu_base a.b-menu__link{
+	font-size:15px;
+	font-family: 'PT Sans', sans-serif;
+	color:#026dc0 ;
+	text-decoration:underline;
+	display:inline;
+	}
+

@@ -1,0 +1,23 @@
+.b-status{
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	}
+.b-status__lnk{
+	font-weight:bold;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	text-decoration:none;
+	}
+.b-status_free, .b-status_free .b-status__lnk{
+	color:#57b330;
+	}
+.b-status_busy, .b-status_busy .b-status__lnk{
+	color:#ed1c24;
+	}
+.b-status_abs, .b-status_abs .b-status__lnk{
+	color:#fec402;
+	}
+.b-status_no, .b-status_no .b-status__lnk{
+	color:#969696;
+	}

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="WSCustomerAlfaClick10" targetNamespace="http://WSCustomerAlfaClick10.EQ.CS.ws.alfabank.ru" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://WSCustomerAlfaClick10.EQ.CS.ws.alfabank.ru" xmlns:wsct="http://WSCommonTypes10.CS.ws.alfabank.ru" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsio="http://WSCustomerAlfaClickInOutParms10.EQ.CS.ws.alfabank.ru" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://WSCustomerAlfaClick10.EQ.CS.ws.alfabank.ru" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+			<xsd:import namespace="http://WSCommonTypes10.CS.ws.alfabank.ru" schemaLocation="WSCommonTypes10.xsd"/>
+			<xsd:import namespace="http://WSCustomerAlfaClickInOutParms10.EQ.CS.ws.alfabank.ru" schemaLocation="WSCustomerAlfaClickInOutParms10.xsd"/>
+			<xsd:element name="WSCustomerAlfaClickCheck" type="tns:WSCustomerAlfaClickCheck"/>
+			<xsd:complexType name="WSCustomerAlfaClickCheck">
+				<xsd:sequence>
+					<xsd:element name="inCommonParms" type="wsct:WSCommonParms"/>
+					<xsd:element name="inParms" type="wsio:WSCustomerAlfaClickCheckInParms"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:element name="WSCustomerAlfaClickCheckResponse" type="tns:WSCustomerAlfaClickCheckResponse"/>
+			<xsd:complexType name="WSCustomerAlfaClickCheckResponse">
+				<xsd:sequence>
+					<xsd:element name="outParms" type="wsio:WSCustomerAlfaClickCheckOutParms"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			
+			<xsd:element name="WSCustomerAlfaClickGather" type="tns:WSCustomerAlfaClickGather"/>
+			<xsd:complexType name="WSCustomerAlfaClickGather">
+				<xsd:sequence>
+					<xsd:element name="inCommonParms" type="wsct:WSCommonParms"/>
+					<xsd:element name="inParms" type="wsio:WSCustomerAlfaClickGatherInParms"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:element name="WSCustomerAlfaClickGatherResponse" type="tns:WSCustomerAlfaClickGatherResponse"/>
+			<xsd:complexType name="WSCustomerAlfaClickGatherResponse">
+				<xsd:sequence>
+					<xsd:element name="outParms" type="wsio:WSCustomerAlfaClickGatherOutParms"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			
+			<xsd:element name="WSCustomerAlfaClickGet" type="tns:WSCustomerAlfaClickGet"/>
+			<xsd:complexType name="WSCustomerAlfaClickGet">
+				<xsd:sequence>
+					<xsd:element name="inCommonParms" type="wsct:WSCommonParms"/>
+					<xsd:element name="inParms" type="wsio:WSCustomerAlfaClickGetInParms"/>
+				</xsd:sequence>
+			</xsd:complexType>
+			<xsd:element name="WSCustomerAlfaClickGetResponse" type="tns:WSCustomerAlfaClickGetResponse"/>
+			<xsd:complexType name="WSCustomerAlfaClickGetResponse">
+				<xsd:sequence>
+					<xsd:element name="outParms" type="wsio:WSCustomerAlfaClickGetOutParms"/>
+				</xsd:sequence>
+			</xsd:complexType>
+		</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="msgWSCustomerAlfaClickCheckResponse">
+    <wsdl:part element="tns:WSCustomerAlfaClickCheckResponse" name="WSCustomerAlfaClickCheckResponse"/>
+  </wsdl:message>
+  <wsdl:message name="msgWSAppException">
+    <wsdl:part element="wsct:WSAppException" name="WSAppException"/>
+  </wsdl:message>
+  <wsdl:message name="msgWSCustomerAlfaClickGet">
+    <wsdl:part element="tns:WSCustomerAlfaClickGet" name="WSCustomerAlfaClickGet"/>
+  </wsdl:message>
+  <wsdl:message name="msgWSCustomerAlfaClickGatherResponse">
+    <wsdl:part element="tns:WSCustomerAlfaClickGatherResponse" name="WSCustomerAlfaClickGatherResponse"/>
+  </wsdl:message>
+  <wsdl:message name="msgWSVerificationException">
+    <wsdl:part element="wsct:WSVerificationException" name="WSVerificationException"/>
+  </wsdl:message>
+  <wsdl:message name="msgWSAppTechnicalException">
+    <wsdl:part element="wsct:WSAppTechnicalException" name="WSAppTechnicalException"/>
+  </wsdl:message>
+  <wsdl:message name="msgWSCustomerAlfaClickGetResponse">
+    <wsdl:part element="tns:WSCustomerAlfaClickGetResponse" name="WSCustomerAlfaClickGetResponse"/>
+  </wsdl:message>
+  <wsdl:message name="msgWSCustomerAlfaClickGather">
+    <wsdl:part element="tns:WSCustomerAlfaClickGather" name="WSCustomerAlfaClickGather"/>
+  </wsdl:message>
+  <wsdl:message name="msgWSCustomerAlfaClickCheck">
+    <wsdl:part element="tns:WSCustomerAlfaClickCheck" name="WSCustomerAlfaClickCheck"/>
+  </wsdl:message>
+  <wsdl:message name="msgWSTechnicalException">
+    <wsdl:part element="wsct:WSTechnicalException" name="WSTechnicalException"/>
+  </wsdl:message>
+  <wsdl:message name="msgWSAccessException">
+    <wsdl:part element="wsct:WSAccessException" name="WSAccessException"/>
+  </wsdl:message>
+  <wsdl:portType name="WSCustomerAlfaClickPortType">
+    <wsdl:operation name="WSCustomerAlfaClickCheck">
+      <wsdl:input message="tns:msgWSCustomerAlfaClickCheck"/>
+      <wsdl:output message="tns:msgWSCustomerAlfaClickCheckResponse"/>
+      <wsdl:fault message="tns:msgWSAppTechnicalException" name="WSAppTechnicalException"/>
+      <wsdl:fault message="tns:msgWSTechnicalException" name="WSTechnicalException"/>
+      <wsdl:fault message="tns:msgWSVerificationException" name="WSVerificationException"/>
+      <wsdl:fault message="tns:msgWSAppException" name="WSAppException"/>
+      <wsdl:fault message="tns:msgWSAccessException" name="WSAccessException"/>
+    </wsdl:operation>
+    <wsdl:operation name="WSCustomerAlfaClickGather">
+      <wsdl:input message="tns:msgWSCustomerAlfaClickGather"/>
+      <wsdl:output message="tns:msgWSCustomerAlfaClickGatherResponse"/>
+      <wsdl:fault message="tns:msgWSAppTechnicalException" name="WSAppTechnicalException"/>
+      <wsdl:fault message="tns:msgWSTechnicalException" name="WSTechnicalException"/>
+      <wsdl:fault message="tns:msgWSVerificationException" name="WSVerificationException"/>
+      <wsdl:fault message="tns:msgWSAppException" name="WSAppException"/>
+      <wsdl:fault message="tns:msgWSAccessException" name="WSAccessException"/>
+    </wsdl:operation>
+    <wsdl:operation name="WSCustomerAlfaClickGet">
+      <wsdl:input message="tns:msgWSCustomerAlfaClickGet"/>
+      <wsdl:output message="tns:msgWSCustomerAlfaClickGetResponse"/>
+      <wsdl:fault message="tns:msgWSAppTechnicalException" name="WSAppTechnicalException"/>
+      <wsdl:fault message="tns:msgWSTechnicalException" name="WSTechnicalException"/>
+      <wsdl:fault message="tns:msgWSVerificationException" name="WSVerificationException"/>
+      <wsdl:fault message="tns:msgWSAppException" name="WSAppException"/>
+      <wsdl:fault message="tns:msgWSAccessException" name="WSAccessException"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WSCustomerAlfaClickBinding" type="tns:WSCustomerAlfaClickPortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="WSCustomerAlfaClickCheck">
+      <soap:operation soapAction="/CS/EQ/WSCustomerAlfaClick10#Check"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="WSAppTechnicalException">
+        <soap:fault name="WSAppTechnicalException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WSTechnicalException">
+        <soap:fault name="WSTechnicalException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WSVerificationException">
+        <soap:fault name="WSVerificationException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WSAppException">
+        <soap:fault name="WSAppException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WSAccessException">
+        <soap:fault name="WSAccessException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="WSCustomerAlfaClickGather">
+      <soap:operation soapAction="/CS/EQ/WSCustomerAlfaClick10#Gather"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="WSAppTechnicalException">
+        <soap:fault name="WSAppTechnicalException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WSTechnicalException">
+        <soap:fault name="WSTechnicalException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WSVerificationException">
+        <soap:fault name="WSVerificationException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WSAppException">
+        <soap:fault name="WSAppException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WSAccessException">
+        <soap:fault name="WSAccessException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="WSCustomerAlfaClickGet">
+      <soap:operation soapAction="/CS/EQ/WSCustomerAlfaClick10#Get"/>
+      <wsdl:input>
+        <soap:body use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="WSAppTechnicalException">
+        <soap:fault name="WSAppTechnicalException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WSTechnicalException">
+        <soap:fault name="WSTechnicalException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WSVerificationException">
+        <soap:fault name="WSVerificationException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WSAppException">
+        <soap:fault name="WSAppException" use="literal"/>
+      </wsdl:fault>
+      <wsdl:fault name="WSAccessException">
+        <soap:fault name="WSAccessException" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WSCustomerAlfaClickService">
+    <wsdl:port binding="tns:WSCustomerAlfaClickBinding" name="WSCustomerAlfaClickPort">
+      <soap:address location="http://testssl.alfabank.ru:80/CS/EQ/WSCustomerAlfaClick/WSCustomerAlfaClick10"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

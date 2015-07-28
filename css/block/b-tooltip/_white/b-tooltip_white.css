@@ -1,0 +1,110 @@
+/* b-tooltip_white */
+.b-tooltip_white {
+	background:url(b-tooltip_white.gif) 0 -76px repeat-x;
+	margin:0 3px;
+	position:relative;
+	}
+.b-tooltip_white .b-tooltip__right{
+	background:url(b-tooltip_white.gif) right -42px no-repeat;
+	position:relative;
+	right:-3px;
+	}
+.b-tooltip_white .b-tooltip__left{
+	background:url(b-tooltip_white.gif) 0 -8px no-repeat;
+	height:34px;
+	padding-left:6px;
+	position:relative;
+	left:-6px;
+	}
+.b-tooltip_white .b-tooltip__body{
+	line-height:34px;
+	padding:0 8px;
+	}
+.b-tooltip_white .b-tooltip__txt{
+	font-size:11px;
+	color:#d00000;
+	font-weight:bold;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	}
+.b-tooltip_nosiktopright .b-tooltip__nosik{
+	background:url(b-tooltip_white.gif) 0 0 no-repeat;
+	width:13px;
+	height:8px;
+	position:absolute;
+	top:-6px;
+	}
+.b-tooltip_nosiktopleft .b-tooltip__nosik{
+	background:url(b-tooltip_white.gif) 0 0 no-repeat;
+	width:13px;
+	height:8px;
+	position:absolute;
+	top:-6px;
+	}
+.b-tooltip_white.b-tooltip_nosiktopleft{
+	margin-top:6px;
+	}
+.b-tooltip_white.b-tooltip_nosiktopright{
+	margin-top:6px;
+	}
+.b-tooltip_nosiktopleft .b-tooltip__nosik{
+	left:20px;
+	}
+.b-tooltip_nosiktopright .b-tooltip__nosik{
+	right:20px;
+	}
+
+
+/* b-tooltip_nosikright */
+.b-tooltip_white.b-tooltip_nosikright .b-tooltip__right{
+	background:url(b-tooltip_white.gif) right -110px no-repeat;
+	right:-13px;
+	}
+.b-tooltip_white.b-tooltip_nosikright .b-tooltip__left{
+	left:-26px;
+	margin-right:-13px;
+	}
+.b-tooltip_white.b-tooltip_nosikright{
+	margin:0 13px;
+	}
+
+/* i-tooltip */
+.i-tooltip{
+	position:relative;
+	}
+.i-tooltip .b-tooltip_white{
+	position:absolute;
+	left:0;
+	top:-7px;
+	z-index:5;
+	}
+
+.i-tooltip_hide{
+	display:none;
+	}
+.i-tooltip_height_1{
+	height:1px;
+	}
+.i-tooltip_margright_-450{
+	margin-right:-450px;
+	}
+
+/* b-tooltip_nosikleft */
+.b-tooltip_white.b-tooltip_nosikleft .b-tooltip__left{
+	background:url(b-tooltip_white.gif) 0 -144px no-repeat;
+	left:-26px;
+	padding-left:13px;
+	margin-right:-21px;
+	}
+.b-tooltip_white.b-tooltip_nosikleft .b-tooltip__right{
+	right:-13px;
+	padding-right:0;
+	}
+.b-tooltip_white.b-tooltip_nosikleft{
+	margin:0 13px;
+	}
+
+
+
+
+
+

@@ -1,0 +1,124 @@
+1.4.3
+******************************************************
+
+
+1.4.2
+******************************************************
+- Fixed compatibility issue with FPDF 1.7
+    ($adjustPageSize-parameter of useTemplate())
+- Fixed encryption issue with TCPDF if AES algorithm
+    is in use.
+
+
+1.4.1
+******************************************************
+- Optimized creation of unique name of an imported page
+    (solved a bug if a document path ends with a number)
+- Changes in pdf_context to prevent a possible endless
+    loop on special OS / PHP combinations.
+- Added handling of "Fl" named filter (same as FlateDecode)
+
+
+1.4
+******************************************************
+- PHP 5 required
+- Introduced _getPdfParser() method, to change the underlaying
+    parser object in extended classes
+- Introduced getPDFVersion() and setPDFVersion() to be independent
+    of public/protected states from TCPDF
+- Optimized for usage in conjunction with TCPDF
+- Fixed bug: Negative rotation values were not handled correct
+	(Thanks to Timon Grützmacher @ echo3)
+
+1.3.4
+******************************************************
+- Fixe d a bug related to the matching of the xref-keyword if its
+    near to the beginning of the file (<20 bytes)
+- Fixed a bug by resetting the token stack before parsing an object
+- Fixed $adjustPageSize-parameter in FPDI::useTemplate() for TCPDF
+- Fixed compatibility for TCPDF (v. 5.8.014)
+
+
+1.3.3
+******************************************************
+- Fixed method typo in ASCII85 filter (thanks to Jeremy Parrish)
+- Fixed referenced objects for filters
+- Added handling of incorrect byte offset positions
+- Added $readPlain-Property (needed by extending classes)
+- Fixed compatibility for TCPDF (v. 5.0.000)
+
+
+1.3.2
+******************************************************
+- optimized check for existing classes
+    (class_exists with autoload-"issue" and PHP4/5)
+- removed assigning return values of "new" by reference
+- fixed error handling for documents without a page box
+- corrected parsing of the page tree
+- fixed a wrong calculation for rotated pages
+- added some class_exists-checks
+
+1.3.1
+******************************************************
+- Fixed finding of xref-position with a very short incremental update
+- Readded TCPDF compatibility
+- Changed decoders-directory to filters-directory
+- Corrected interpretation of box values (thanks to Randy Black)
+
+
+1.3
+******************************************************
+- Fixed decompression of streams
+- Optimized LZW decompression
+- Changed handling of rotated pages
+- Removed FPDI::_putresources() and switched the code to the end of 
+    FPDI::_putformxobjects()
+- Added FPDI::_straightOut()-method to avoid problems related to changes in TCPDF
+- Fixed output of very small float values.
+- Recreate compatibility with TCPDF (4.5.022)
+- Updated fpdi2tcpdf_bridge.php
+- Updated pdf_context.php to support strings instead of only files
+- Changed %f to %F in all needed sprintf()-calls to be non-locale aware
+    (As of now, like for FPDF, PHP 4.3.10 is required)
+- Removed wrapper_functions.php
+- Fix in PDF parser for unbalanced dictionaries entries
+- Optimized handling of PDF comments
+- PDF parser parses tokens of type "null"
+
+- New Feature: Automatically adjust the page size to the imported page
+    (new parameter in FPDI::useTemplate()-method
+
+
+1.2.1
+******************************************************
+- !IMPORTANT CHANGE! As FPDI is usable with FPDF and TCPDF from now on you need to
+  include the desired class before you inlcude FPDI/FPDF_TPL!
+- added compatibility for TCPDF (4.0.023)
+- removed unused var FPDI::$importVersion
+- removed constructor in FPDI
+- multiple FPDI::importPage()-calls will not create multiple xform objects, now.
+- added additional standard value for graphic state before template usage
+  (FPDI::useTemplate())
+- corrected handling of $_obj_stack in FPDI::_putimportedobjects()
+- removed FPDI::setVersion()
+- added "new" PDF variable types: PDF_TYPE_REAL, PDF_TYPE_BOOLEAN
+- corrected handling of FPDI::PDFVersion
+- fixed pdf_parser::pdf_find_xref()
+- pdf_parser::pdf_read_xref() completely rewritten:
+    - the new method is not that strict as the last one
+    - parses some errorious documents
+    - does not rely on fgets/lineendings anymore.
+    - does not care about any recursive-stack limitations of php/apache
+- optimized parsing of strings (pdf_parser::pdf_read_value())
+- added parsing of PDF comments (pdf_parser::pdf_read_value())
+- removed _fgets()-wrapper function (wrapper_functions.php)
+- FPDI will now work with stream wrappers (in pdf_context.php).
+- smal changes in the LZWDecode-Class (removed handling by reference)
+- added fpdi2tcpdf_bridge.php which remaps TCPDF to the name FPDF so FPDF_TPL can
+  inherit from FPDF further.
+- added compatibility for FPDF 1.6
+
+Known Issues for/with TCPDF in 1.2.1
+*******************************************
+- As TCPDF writes some content to the begining of a content stream, border- and
+  background gets behind a template, while the text still stays in front of it.

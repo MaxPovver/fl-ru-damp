@@ -1,0 +1,197 @@
+.b-textarea{
+	vertical-align:top;
+border-bottom: 1px solid #bdc0c1;
+border-top: 1px solid #888c8f;
+border-left: 1px solid #a2a6a8;
+border-right: 1px solid #a2a6a8;
+background:#fff;	
+	padding:6px 0 0 5px !important;
+	margin:0;
+	position:relative;
+	z-index:1;
+	}
+	
+.b-textarea_error{
+border-bottom: 1px solid #ff3e3e;
+border-top: 1px solid #c90101;
+border-left: 1px solid #ff2626;
+border-right: 1px solid #ff2626;	
+	}
+.b-textarea_current{
+	border-bottom: 1px solid #ffd500;
+	border-top: 1px solid #dfa100;
+	border-left: 1px solid #ffc300;
+	border-right: 1px solid #ffc300;	
+	}
+.b-textarea_noborder{
+	box-shadow: none;
+	border: 0;
+	}
+	
+.b-textarea_hidden{
+	position:absolute;
+	left:-9999px;
+	}	
+	
+	
+.b-textarea_inline-block{
+	display:inline-block;
+	}
+.b-textarea_inline-block .b-textarea__textarea{
+	width:100%;
+	}
+.b-textarea_width_402{
+	width:402px;
+	}
+.b-textarea_width_550{
+	width:550px;
+	}	
+.b-textarea_max-width_500{
+	max-width:500px;
+	}        
+.b-textarea_padtop_10{
+	padding-top:10px;
+	}
+.b-textarea_margbot_5{
+	margin-bottom:5px;
+	}
+.b-textarea_margbot_10{
+	margin-bottom:10px;
+	}
+.b-textarea_margbot_15{
+	margin-bottom:15px;
+	}
+.b-textarea_margbot_20{
+	margin-bottom:20px;
+	}
+.b-textarea_margbot_35{
+	margin-bottom:35px;
+	}
+.b-textarea_margleft_60{
+	margin-left:60px;
+	}
+
+	
+/* .b-textarea__textarea */
+.b-textarea__textarea{
+	font: 13px Arial,Helvetica,sans-serif;
+	border:0;
+	background: transparent;
+	margin:0;
+	padding:0 !important;
+	height:100px;
+	min-height:100px;
+	
+-moz-border-radius:0px; 
+-khtml-border-radius:0px;
+border-radius:0px;
+	
+	line-height:18px;
+	outline:initial;
+	color:#000;
+	width:100% !important;
+	display:block;
+	overflow:auto;
+	resize:vertical;
+	}
+.b-textarea__textarea_fontsize_11{
+	font-size:11px;
+	line-height:15px;
+	color:#414141;
+	font-family: Tahoma, Geneva, sans-serif;
+	}	
+.b-textarea__textarea_color_a7{
+	color:#a7a7a7;
+	}	
+.b-textarea__textarea_color_c10600{
+	color:#c10600;
+	}	
+.b-textarea__textarea_color_91{
+	color:#919191;
+	}	
+.b-textarea__textarea_italic{
+	font-style:italic;
+	}	
+	
+.b-textarea__handler {
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAIBAMAAAA2IaO4AAAAElBMVEUAAAD09fW5vL24u7z///+7vsBIJbZCAAAAAXRSTlMAQObYZgAAAB9JREFUCNdjAAJGECEEYiiCGIIghiiIYQhkCIuAGM4AE3IBxOtP8f0AAAAASUVORK5CYII=");
+	background-repeat:no-repeat;
+	background-position:8px 7px;
+    bottom: 0px;
+    cursor: se-resize;
+    height: 16px;
+    overflow: hidden;
+    position: absolute;
+    right: 0px;
+    width: 17px;
+}
+.b-textarea__textarea_height_35{
+	height:35px;
+	min-height:35px;
+	}	
+.b-textarea__textarea_height_50{
+	height:50px;
+	min-height:50px;
+	}
+.b-textarea__textarea_height_70{
+	height:70px;
+	min-height:70px;
+	}
+.b-textarea__textarea_height_100{
+	height:100px;
+	}
+.b-textarea__textarea_height_120{
+	height:120px;
+	}
+.b-textarea__textarea_height_140{
+	height:140px;
+}
+.b-textarea__textarea_height_180{
+	height:180px;
+	}
+.b-textarea__textarea_height_250{
+	height:250px;
+	}
+.b-textarea__textarea_min-height_200{
+	min-height:200px;
+	}
+
+.b-textarea__textarea_width_750{
+	width:750px;
+	}
+
+
+.b-textarea__textarea_noresize{
+	resize:none;
+	}
+
+
+.b-textarea__limit{
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#414141;
+	background:#FFEDA9;
+	padding: 5px 6px 7px;
+	line-height:1;
+	}
+
+.b-textarea__tawl_max .b-textarea__limit{
+	background: #FFCCCC;
+	color: #A23E3E;
+	}
+
+
+textarea.b-textarea__textarea[placeholder]          {}
+textarea.b-textarea__textarea::-moz-placeholder ,
+textarea.b-textarea__textarea:-moz-placeholder  , 
+textarea.b-textarea__textarea:-ms-input-placeholder,    
+textarea.b-textarea__textarea::-webkit-input-placeholder{ color:#b2b4b5;}
+
+textarea.b-textarea__textarea::-webkit-input-placeholder ,
+textarea.b-textarea__textarea::-moz-placeholder          ,
+textarea.b-textarea__textarea:-moz-placeholder           ,
+textarea.b-textarea__textarea:-ms-input-placeholder      ,
+textarea.b-textarea__textarea:focus::-webkit-input-placeholder,
+textarea.b-textarea__textarea:focus::-moz-placeholder    ,
+textarea.b-textarea__textarea:focus:-moz-placeholder     ,
+textarea.b-textarea__textarea:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}	

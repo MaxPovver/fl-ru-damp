@@ -1,0 +1,430 @@
+html{height: 100%;background: url(../images/window/bg-body.gif) repeat-x 0 100%;}
+body{
+	margin: 0;
+	font:12px Arial, Helvetica, sans-serif;
+	color: #4f4f4f;
+	background:#fff url(../images/window/bg-body.gif) repeat-x 0 100%;
+	min-height: 100%;
+	min-width: 680px;
+}
+* html body {width:expression(document.documentElement.clientWidth < 680 ? "680px" : "auto");height: 100%;}
+a{text-decoration: none;}
+a:hover{text-decoration: underline;}
+img{display: block;border: none;}
+form,fieldset{margin: 0;padding: 0;border: none;}
+input,textarea{
+	border: 1px solid #b3b3b3;
+	font:12px Arial, Helvetica, sans-serif;
+	color: #4f4f4f;
+	background:#fff;
+}
+select{background:#fff;}
+#pagewidth{
+	padding: 0 12px 11px;
+}
+.row{
+	width: 100%;
+}
+#footer{
+	padding: 10px 0 0 25px;
+}
+.options{
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+#me{
+	width: 25px;
+	height: 33px;
+	background: url(../images/window/me.gif);
+	overflow: hidden;
+	float: left;
+	margin: 0 0 0 -25px;
+	display: inline;
+	text-indent: -9999px;
+}
+a.enter{
+	float: right;
+	border: 1px solid #58ad15;
+	font:17px/26px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	height:28px;
+	color: #fff;
+	padding: 0 22px;
+	background:#449d1a url(../images/window/bg-enter.gif) repeat-x 0 0;
+}
+.button{
+	float: right;
+	margin: 0 11px 0 0;
+}
+.user{
+	float: left;
+	padding: 0 0 0 13px;
+}
+.user a{
+	font:18px/30px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #37a3f2;
+	float: left;
+	background: url(../images/window/bg-dashed.gif) repeat-x 0 0;
+}
+.user a:hover{
+	text-decoration: none;
+	background: none;
+}
+.user fieldset{padding: 5px 0 0;}
+.user input{float: left;}
+.user input.txt{
+	width: 142px;
+	height: 18px;
+	margin: 2px 6px 0 0;
+	padding: 2px 0 0 4px;
+}
+.message{
+	padding: 4px 0 0 25px;
+	overflow: hidden;
+	clear: both;
+}
+#btn-message{
+	width: 24px;
+	height: 86px;
+	float: left;
+	overflow: hidden;
+	text-indent: -9999px;
+	margin: 0 0 0 -24px;
+	background: url(../images/window/btn-message.gif);
+}
+.message .textarea{
+	height: 86px;
+	float: left;
+	width: 100%;
+	overflow: hidden;
+}
+.message .textarea .frame{
+	border: 1px solid #b3b3b3;
+	height: 84px;
+	overflow: hidden;
+	background: #fff;
+}
+.message textarea{
+	padding: 5px 0 0 5px;
+	border: 0;
+	height: 80px;
+	max-height: 80px;
+	overflow: auto;
+	width: 99%;
+}
+.message textarea:focus{
+	border: none;
+}
+.textarea ul{
+	width: 99%;
+	overflow: hidden;
+	margin: 0;
+	padding:6px 0 0;
+	list-style: none;
+}
+.textarea ul li{
+	width: 100%;
+	overflow: hidden;
+}
+.textarea ul div{
+	padding: 0 0 3px 142px;
+	height: 1%;
+	overflow: hidden;
+}
+* html .textarea ul div{
+	padding: 0 0 0 142px;
+}
+.textarea ul label{
+	margin: 0 0 0 -142px;
+	float: left;
+	width: 132px;
+	text-align: right;
+	font:18px/20px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #37a3f2;
+}
+.textarea ul input{
+	float: left;
+	width: 98%;
+	height: 18px;
+	margin: 0;
+	padding: 2px 0 0 1%;
+}
+#histry{
+	padding: 0 0 0 25px;
+}
+a.btn-history{
+	width: 24px;
+	height: 83px;
+	background: url(../images/window/btn-history.gif);
+	overflow: hidden;
+	text-indent: -9999px;
+	float: left;
+	display: inline;
+	margin: 0 0 0 -24px;
+}
+.iframe{
+	float: left;
+	width: 100%;
+}
+.box{
+	border: 1px solid #b3b3b3;
+	min-height: 176px;
+	background: #fff;
+}
+#header{
+	width: 100%;
+	min-height:88px;
+}
+* html #header{height: 134px;}
+.row:after,
+#header:after{
+	content: "";
+	display: block;
+	clear: both;
+}
+#header h2,
+#header h1{
+	font:20px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin: 8px 0 0 36px;
+	color: #1895f0;
+}
+#header h2{
+	color: #ffce0b;
+	padding:70px 0 0;
+	margin: 0;
+	clear: right;
+	float: right;
+}
+a.close{
+	float: right;
+	width: 13px;
+	height: 13px;
+	background: url(../images/window/a-close.gif);
+	overflow: hidden;
+	text-indent: -9999px;
+	margin: 6px -8px 0 0;
+	position: relative;
+	z-index: 100;
+}
+#header p{
+	margin: 0 0 0 -200px;
+	padding: 0 7px 0 0;
+	float: right;
+	font:12px/32px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #909090;
+}
+#header p a{
+	color: #909090;
+	text-decoration: underline;
+}
+#header p a:hover{text-decoration: none;}
+.image{
+	float: right;
+	clear: right;
+	width: 400px;
+}
+.image img{float: right;}
+.image strong{
+	float: right;
+	margin: 66px 9px 0 0;
+	font:20px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #ffce0b;
+}
+.image strong.composting{
+	padding: 0 0 0 23px;
+	background: url(../images/window/composting.gif) no-repeat left;
+}
+.offline{
+	font:18px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #000;
+	margin: -20px 0 0;
+	position: relative;
+	padding:0 57px 0 37px;
+}
+.offline p{margin:5px 0 0;}
+.offline p strong{
+	color: #f03030;
+	font-weight: normal;
+}
+.messagesent{
+	margin: 0 14px;
+	text-align: center;
+	padding: 44px 60px 25px;
+	border: 1px solid #b3b3b3;
+	background: #fff;
+	font:18px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.messagesent p{
+	color: #000;
+	margin: 0;
+}
+a.btn-close{
+	border: 1px solid #ce0d1c;
+	line-height: 30px;
+	margin: 38px auto 0;
+	display: block;
+	width: 158px;
+	color: #fff;
+	background:#ed2626 url(../images/window/a-btn-close.gif) repeat-x 0 0;
+}
+#name{
+	display: none;
+	float: left;
+}
+.user-info{float: left;color:#000000;}
+.user-info ul{
+	margin: 0 0 0 36px;
+	padding: 0;
+	color: #000;
+	list-style: none;
+	font:14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+.user-info a{color: #000;text-decoration: underline;}
+.user-info a img{display:inline;}
+.user-info a:hover{text-decoration: none;}
+#fader {
+	display:none;
+	filter: alpha(opacity=50);
+	-moz-opacity: 0.5;
+	opacity: 0.5;
+	z-index:999;
+	background:#000;
+	position:absolute;
+	top:0;
+	left:0;
+}
+#popup{
+	display:none;
+	width: 480px;
+	background:#fff;
+	padding:13px 0;
+	position:absolute;
+	z-index:1000;
+}
+.listofoperator{
+	margin: 5px 0 0 30px;
+	padding:0;
+	list-style: none;
+	overflow: hidden;
+	font-size: 12px;
+}
+.listofoperator a{
+	color: #62B624;
+}
+#popup h2{
+	font:20px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	margin: 0;
+	text-align: center;
+	color: #ffce0b;
+}
+#popup big{
+	font:18px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	color: #000;
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	padding: 100px 0;
+}
+#popup .close{
+	margin:-5px 8px 0 0;
+}
+#popup h3{
+	margin: 15px 0 0 20px;
+	font-size:14px;
+}
+#popup h3 a{
+	color:#1895F0;
+}
+.pro{
+	padding: 0 168px 0 0;
+}
+#sidebar{
+	float: right;
+	display: inline;
+	margin: 0 -168px 0 11px;
+	width: 156px;
+}
+.pro .row{
+	float: left;
+}
+#sidebar ul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+	font:12px/22px Arial, Helvetica, sans-serif;
+	text-align: center;
+	overflow: hidden;
+}
+#sidebar ul li{
+	float: left;
+	width: 100%;
+	padding: 0 0 7px;
+}
+#sidebar ul a{
+	display: block;
+	border: 1px solid #c1c1c1;
+	color: #000;
+	background:#ebebeb url(../images/window/bg-button.gif) repeat-x 0 0;
+}
+#footer select{
+	font:11px Arial, Helvetica, sans-serif;
+	border: 1px solid #cdcdcd;
+	width: 265px;
+	float:left;
+	margin: 6px 0 0;
+}
+#footer a.btn-close{
+	border: 1px solid #ce0d1c;
+	display: block;
+	text-align: center;
+	margin: 0;
+	width: 158px;
+	color: #fff;
+	font:18px/30px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background:#ed2626 url(../images/window/a-btn-close.gif) repeat-x 0 0;
+}
+#rate-panel{width:270px;}
+
+.action-button{
+	float:right;
+}
+#h{position:relative;height:1%;}
+#h .action-button{
+	position:absolute;
+	bottom:10px;
+	right:0;
+	float:none;
+}
+.action-button .action-sound-on {
+	display:block;
+	width:18px;
+	height:18px;
+	background: url(../images/sound-on.gif) no-repeat 0 0;
+}
+
+.action-button .action-sound-off {
+	display:block;
+	width:18px;
+	height:18px;
+	background: url(../images/sound-off.gif) no-repeat 0 0;
+}
+
+.chat-info li {display:inline}
+#connection-status{
+	position:absolute;
+	right:165px;
+	top:10px;
+	display:none;
+}
+.composing{
+	text-indent:-9999px;
+	overflow:hidden;
+	position:absolute;
+	display: none;
+	left:11px;
+	top:13px;
+	width:16px;
+	height:16px;
+	background: url(../images/composing.gif) no-repeat 0 0;
+}

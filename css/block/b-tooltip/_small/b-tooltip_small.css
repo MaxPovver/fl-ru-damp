@@ -1,0 +1,68 @@
+.b-tooltip_small{
+	position:relative;
+	left:50%;
+	}
+
+.b-tooltip_small .b-tooltip__body, .b-tooltip_small .b-tooltip__left, .b-tooltip_small .b-tooltip__right, .b-tooltip_small .b-tooltip_nosikright, .b-tooltip_small .b-tooltip_nosikleft, .b-tooltip_small .b-tooltip_nosikcenter{
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAABYCAYAAAAnQ91CAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAUtJREFUeNrslrFKw0AYx7+72jQqCOLg1E0cBcFNcBOfwYfwIcTBxYdwFrr4BnZwaEERfAJBSyVasFrTxtz1+4cb0vS8ZJDicB/8OXL8CCHk/8vR6s4RtbsP4XiSnCulnrVliCE5iscX2jGAgjRVkQuSRFSXUmyQYwAJKpnKEHnIQ4uGdKrUeynUjwZXLqgWbG6J27vH+8P9vfXlsNGsSblShATKyWvIWeMAWCpC2FCcmPPDGZr2zDbI1lg4AW6AI+AKctUbjsgexwXBEXCF82UaR9SrvHHxZ5D/fD20OMg4Qjuh17dBC5C1UpMkiZ5e+pcHxydNVAou2LbcBJUfcT6gALigVwC0SWJgJbJfelmnPOQhD/1T6BcXzJ0LelUkNszlM+pc72LN7+clJhk4DRvBDdYZC+IEgQPC13d8lhcZrrGfnTBsQBGcCjAAZxWq0LVbgC4AAAAASUVORK5CYII=");
+	}
+
+.b-tooltip_small .b-tooltip__body{
+	background-position: 0 -56px;
+	background-repeat:repeat-x;
+	height:28px;
+	line-height:28px;
+	position:relative;
+	margin:0 9px;
+	}
+.b-tooltip_small .b-tooltip__left{
+	background-position: 0 0;
+	background-repeat:no-repeat;
+	height:28px;
+	width:9px;
+	position:absolute;
+	left:-9px;
+	top:0;
+	}
+.b-tooltip_small .b-tooltip__right{
+	background-position: right -28px;
+	background-repeat:no-repeat;
+	height:28px;
+	width:9px;
+	position:absolute;
+	right:-9px;
+	top:0;
+	}
+.b-tooltip_small .b-tooltip__txt{
+	color:#000;
+	font-size:11px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	white-space:nowrap;
+	}
+	
+	
+	
+.b-tooltip_small .b-tooltip_nosikright, .b-tooltip_small .b-tooltip_nosikleft, .b-tooltip_small .b-tooltip_nosikcenter{
+	background-position: 0 -84px;
+	background-repeat:no-repeat;
+	width:9px;
+	height:4px;
+	position:absolute;
+	top:-4px;
+	display:block;
+	}
+.b-tooltip_small .b-tooltip_nosikright{
+	right:30px;
+	}
+.b-tooltip_small .b-tooltip_nosikleft{
+	left:30px;
+	}
+.b-tooltip_small .b-tooltip_nosikcenter{
+	left:50%;
+	margin-left:-4px;
+	}
+
+
+.b-tooltip_small .b-tooltip_nosikright{
+	right:0;
+	}

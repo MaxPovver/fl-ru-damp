@@ -1,0 +1,40 @@
+.b-icon_help_ask:before, .b-icon_help_tel:before, .b-icon_help_qwest:before, .b-icon_help_letter:before, .b-icon_help_article:before{
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAABzCAMAAACxb+JuAAAAaVBMVEUAAADhPQDsTQDwUgD4XQDxUwD3WwDoRgDvUQDvUQDjQQDgOwD6XwDgPAD9ZQD/kQD/aQD/oAD/dgD/hgD/pwDvXQD9YQD/bwD/fgD/rwD2cAD/mgD3fQD/ugDsTgD1s3X//v39pDD527+jaadhAAAAD3RSTlMA/SpB65N1tFkV53O80tDiFykGAAADeUlEQVRIx72W65KiMBBGSUIIAtK5NZeQRZ33f8jtoDOKxN1fu6dSYjikwfKzY5EQste9FMWBU+fM/Gs2rju9GV7Cr9l7P/+C8s31MBtzu92MmUHtTB29WS7Xr+tlMT7Wr0otC8DXBS9XgGXZLSsNAGC4fX3R0ZSvajWOuF2/kA7L+qoamIjLFS0doNndK07W2tsl0OsU1e4JcRrH8XIdiQnr4pVzsFoj01rbQRU7eIOjHoZBj9icij0ntQ60ZlgVmXdq1bBG1cX/QIiPRpcfXFVpn3cV9NVgck4Ms//gpJm9IefLg+oMQS63CgzlBSiDB0TwAB55kaGDBSiAOTgacLLIIuOylEUeFU2UeXVqyLV5x5sIq8g7wWJk/KMLTHwXOfO9Cz/uHNnBoTzRGtWycHATMqVYOGcc2nEYxlEfHUVcDxvkmHiL+NOR2SPZJjW2mQ94ZisiSyYjWyV58c/gtez6UhNl38nqeae6t2CosW1QXsH29cMANUPC35lnmsLdlXR2D+kyGTHN5sA8iS3Y/qg8yPvPYTlgTLf1wwUOLKbcFGT4q1pchiWpBnJqa6fKuemAc4pUFZ094KIkJTCncEtNE+34ho3Noy+HyZLVD0Y7Bax/QoSBsES6ANlZPKNZS3VuGIF6xDafpxYty4rNkfrkSH10xb9D6gwymV5I53/t8E6KntQwVKKE+SWfUIpqGJKaXcc78P6RQA80dXNSOHu6TAYwJuUPgqQifsakPBiHVNQl5agYOgN+UwaIqHgXjYkdVxEIk9S6hQ1iI6oQKtFE2MK2JgX3DMW1EqJa4z1fkBR7pGaaglJhmh65YUlN31mxKQOPybQpqzPYuxoybKoZRn1gHBpSomEZGlH8W6oqv+VUXaF10VWnw4ISLLc0oKz2S3pqYVZYGtS6+tOLSdmYp3qiMadsPF0HKS2uAqjc7FM6fu7jKDKAkiNyiUDRcdV3OTKu5N//Fh25R8k6zuZly+bozezqIqHCEKJ83YvphHpcx+uaP1Wa3afVihji+lRrDIhr9Sf1KNi+FmzvBQmFtOz1MQKdUPeHDzA59nx45iYI7f0jMzvaoeEP0ww0ZaefDkMRYpIzxiWjgNnndnjGUac50rCUNDw/v5S06eq1XmnQm92fy9MZ9cgEozFqPO8z0DbIOKOBTXuITasKxgrVnvLNRe6mvwHuZmBgPbQoBQAAAABJRU5ErkJggg==");
+	background-repeat:no-repeat;
+	float:left;
+	content:"\00a0";
+	margin-right:10px;
+	}
+.b-icon_help_ask:before{
+	background-position: 0 0;
+	width:15px;
+	height:15px;
+	margin-top:11px;
+	}
+.b-icon_help_tel:before{
+	background-position: 0 -18px;
+	width:26px;
+	height:26px;
+	margin-top:6px;
+	}
+.b-icon_help_qwest:before{
+	background-position: 0 -47px;
+	width:24px;
+	height:23px;
+	margin-top:9px;
+	}
+.b-icon_help_letter:before{
+	background-position: 0 -73px;
+	width:24px;
+	height:15px;
+	margin-top:14px;
+	}
+.b-icon_help_article:before{
+	background-position: 0 -91px;
+	width:24px;
+	height:24px;
+	margin-top:10px;
+	}
+
+
+

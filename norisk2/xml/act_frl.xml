@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<document title="Doc Title" author="Free-Lance.ru" width="170" margin-left="25" margin-right="25" margin-top="25" font-name="ArialMT" font-size="15" paragraph-indent="3">
+    <page>
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="C" border="0" parse="1" keep-text-wrap="1" save-pos="1">
+            <![CDATA[Акт об оказании услуг №$tab$tab$tab $ssnum
+                     по Договору об использовании онлайн сервиса «Безопасная сделка»
+                     № $cnum от $sbr_begin г.]]>
+        </paragraph>
+        <locate x="0" y="0" x_offset="0" y_offset="5"/>
+        <cell width="85" border="0" height="5" keep-pos="1" align="L"><![CDATA[г. Москва]]></cell>
+        <locate x="0" y="0" x_offset="85" y_offset="0"/>
+        <cell width="85" border="0" height="5" keep-pos="1" align="R" parse="1"><![CDATA[$now_date]]></cell>
+ 
+        <ln height="15"/>
+
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="1" save-pos="0">
+            <![CDATA[Общество с ограниченной ответственностью «Ваан», в лице генерального директора Воропаева Василия Владимировича, действующего на основании Устава, с одной стороны, далее именуемое «Общество», и
+
+$freelancer_title, далее именуемый «Исполнитель», с другой стороны, далее совместно именуемые «Стороны», а по отдельности «Сторона»,
+
+в соответствии с условиями и во исполнение Договора об использовании онлайн сервиса «Безопасная сделка» № $cnum от $sbr_begin года, заключенного между Обществом, Исполнителем и $employer_title (далее — «Заказчиком»), (далее — «Договор») 
+ 
+составили настоящий Акт об оказании услуг по Договору о нижеследующем. 
+            ]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[Все термины в настоящем Акте используются в том смысле, как они определены в Договоре.]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[Общество в соответствии с условиями Договора оказало Исполнителю следующие услуги:
+            Общество предоставило Исполнителю информационно-технологические услуги посредством Сайта, а именно: ]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[– Общество обеспечило уведомление Исполнителя через Защищенные страницы Сайте о том, что:]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" offset-left="6" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[– произошло Резервирование денежных средств со стороны Заказчика;]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" offset-left="6" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[– Заказчик принял Работу Исполнителя;]]>
+        </paragraph>
+        <paragraph show-if="$emp_init_arb" font-name="ArialMT" font-size="12" width="170" height="5" offset-left="6" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[– Заказчик обратился в «Арбитраж»;]]>
+        </paragraph>
+        <paragraph show-if="$arbitrage" font-name="ArialMT" font-size="12" width="170" height="5" offset-left="6" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[– О решении принятом Обществом в рамках выполнения им своих обязанностей в соответствии с п. 9 Договора;]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[– Общество предоставило Исполнителю возможность вести переписку с Заказчиком через Защищенные страницы Сайта;]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[– Общество предоставило Исполнителю возможность оформить свои отношения с Заказчиком по поводу выполнения Работ посредством Сайта через его Защищенные страницы;]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[– Общество предоставило Исполнителю возможность передать результаты Работы посредством Сайта.]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[Стоимость работы, выполненной Исполнителем для Заказчика, составляет $act_sum.]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[Стоимость услуг Общества составляет $act_ssum$act_ssum_nds.]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0" skip-empty="1">
+            <![CDATA[$ndfl_text]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0" skip-empty="1">
+            <![CDATA[$nds_text]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[К перечислению на счет Исполнителя: $frl_sum $frl_nds.]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0" skip-empty="1">
+            <![CDATA[$payout_name]]>
+        </paragraph>
+
+        <ln/> 
+         
+    
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[После получения оплаты Работы Исполнителем, обязательства Сторон по Договору являются выполненными надлежащим образом, финансовых и иных претензий друг к другу Стороны не имеют.]]>
+        </paragraph>
+
+        <nobreak start="1"/>
+        <text font-name="ArialMT" font-size="12" width="170" height="5" align="C" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[Подписи и реквизиты сторон:]]>
+        </text>
+        
+        <locate x="0" y="0" x_offset="0" y_offset="5"/>
+        <cell width="85" height="5" keep-pos="1" align="L"><![CDATA[Общество:]]></cell>
+        <locate x="0" y="0" x_offset="85" y_offset="0"/>
+        <cell width="85" height="5" keep-pos="1" align="L"><![CDATA[Исполнитель:]]></cell>
+        <locate x="0" y="0" x_offset="0" y_offset="5"/>
+        <cell width="85" height="120" keep-pos="1"/>
+        <fix-locate y="@usign"/>
+        <locate x="0" y="0" x_offset="85" y_offset="0"/>
+        <cell width="85" height="120" keep-pos="1" />
+        <locate y_offset="2"/>
+        <fix-locate y="@vaan"/>
+        <paragraph font-name="ArialMT" font-size="9" width="85" height="4" align="L" offset-left="1" keep-text-wrap="1">
+            <![CDATA[ООО «Ваан»
+
+Юридический адрес: 125040, Москва,
+улица Нижняя, дом 14, корпус 1.
+Почтовый адрес: 129223, Москва, а/я 33.
+ИНН 7805399430/ КПП 771401001
+Расчетный счет: 40702810787880000803
+в Московский филиал ОАО АКБ "РОСБАНК" г. Москва
+Корреспондентский счет: 30101810200000000272
+БИК 044552272
+ОКПО 94626823
+ОГРН 5067847040421
+ОКВЭД 52.61.2.]]>
+        </paragraph>
+        <locate y="@vaan" />
+	<paragraph font-name="ArialMT" font-size="9" width="75" height="4" align="L" offset-left="86" keep-text-wrap="1" parse="1">
+            <![CDATA[$side_b]]>
+        </paragraph>
+        <locate x="0" y="@usign" y_offset="97"/>
+        <paragraph font-name="ArialMT" font-size="9" width="85" height="4" align="L" offset-left="1" keep-text-wrap="1">
+            <![CDATA[Генеральный директор: Воропаев В.В.
+
+_____________________________
+
+ М.П.]]>
+        </paragraph>
+        <locate y="@usign" y_offset="97"/>
+        <paragraph font-name="ArialMT" font-size="9" width="85" height="4" align="L" offset-left="86" keep-text-wrap="1" parse="1">
+            <![CDATA[$bossname
+
+_____________________________
+]]>
+        </paragraph>
+        <locate x="0" y="@usign" y_offset="125"/>
+    	<paragraph font-name="ArialMT" color="008080" font-size="9" width="170" height="4" align="L" keep-pos="1" keep-text-wrap="1" parse="1">
+            <![CDATA[Подписанный вами акт необходимо отправить на один из следующих адресов:
+$adr_act
+Обязательно укажите наименование организации-получателя – ООО «Ваан».]]>
+        </paragraph>
+        
+        <nobreak end="1"/>
+        <footer><![CDATA[_____________________(Подпись Исполнителя)]]></footer>
+    </page>
+</document>

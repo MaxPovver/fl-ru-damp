@@ -1,0 +1,7 @@
+<div class="b-layout b-layout_pad_10 b-layout_bord_e6 b-layout_relative b-layout_margbot_10 b-promo__servis b-promo__servis_pl-car service" data-name="pay_place_<?= $service['id']?>" data-cost="<?= round($service['ammount'])?>">
+    <a href="javascript:void(0)" class="b-button b-button_admin_del b-button_float_right service-remove"></a>
+    <input type="hidden" name="opcode" value="<?= $service['op_code']; ?>" />
+    <h3 class="b-layout__h3 b-layout__h3_padleft_70">Карусель <?= $service['op_code'] == 73 ? 'в каталоге фрилансеров' : 'на главной странице'?> &nbsp;&nbsp; <span class="b-layout__txt b-layout__txt_fontsize_11 b-layouyt__txt_weight_normal"><a href="/pay_place/top_payed.php" class="b-layout__link promo-link">Подробнее об услуге</a></span></h3>
+    <div class="b-layout__txt b-layout__txt_fontsize_11 b-layout__txt_padbot_20 b-layout__txt_padleft_70">Что может быть заметнее рекламного объявления на главной странице или наверху каталога фрилансеров? Это очень эффективный способ продвижения вашего аккаунта на сайте. Прокатитесь на Карусели и «накатайте» выгодный проект.</div>
+    <div class="b-layout__txt b-layout__txt_padleft_70 b-layout__txt_fontsize_22 b-layout__txt_color_fd6c30"><?= to_money($service['ammount'])?> руб.</div>
+</div>

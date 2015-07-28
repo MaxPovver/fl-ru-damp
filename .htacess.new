@@ -1,0 +1,42 @@
+#<Files ~ "[^(unavailable\.html|\.gif|\.css)]$>
+#AuthName "Site currently unavailable, sorry."
+#AuthType Basic
+#require valid-user
+#AuthUserFile /home/admin/free-lance.ru/html/.htpwd
+#</Files>
+
+ErrorDocument 404 /404.php
+ErrorDocument 403 /403.php
+ErrorDocument 401 /unavailable.html
+
+php_flag register_globals Off
+
+DirectoryIndex index.phtml index.php
+
+RewriteEngine On
+
+RewriteCond  %{HTTP_REFERER}  ^http://project/users/[^/]+/[^\.]+\.swf$
+RewriteRule  ^(.*)$                 /xui.php  [L]
+
+RewriteRule ^new/([^/]+)[/]?$			/news/?v=$1 [NS,L]
+##	для новогодних поздравлений
+RewriteRule ^news/([^/]+)[/]?$			/news/?date=$1 [NS,L]
+##	для новостей
+RewriteRule ^contacts/([^/]+)[/]?$		/contacts/?p=$1 [NS,L]
+##	для контактов
+RewriteRule ^users[/]?$				/freelancers/ [R]
+##	 
+RewriteRule ^users/(([^/]{1,2})[^/]+)/resume/([^/]*)$	/users/$2/$1/resume/$3
+##	для прямой загрузки файлов
+RewriteRule ^users/(([^/]{1,2})[^/]+)/upload/([^/]*)$	/users/$2/$1/upload/$3
+##	для прямой загрузки файлов
+RewriteRule ^users/([^/]+)/addnote/$		/user/addnote.php?user=$1
+##	для заметок
+RewriteRule ^users/([^/]+)/uploads/([^/]*)[/]?$	/user/uploads/index.php?user=$1&p=$2
+##	для написать\загрузить
+RewriteRule ^users/([^/]+)/setup[/]?([^/]*)[/]?([^/]*)[/]?$ /user/setup/index.php?user=$1&p=$2&target=$3
+##	для настроек
+RewriteRule ^users/([^/]+)/([^\.]+)\.php$	/user/$2.php?user=$1 [QSA]
+##	для viewproj
+ RewriteRule ^users/([^/]+)/([^/]*)[/]?$	/user/index.php?user=$1&p=$2 [NS,QSA]
+##	для просмотра ин

@@ -1,0 +1,299 @@
+
+.b-txt{
+	font-size:13px;
+	font-family: arial, sans-serif;
+	color:#000;
+	line-height:1.4;
+	margin:0;
+	padding:0;
+	font-style:normal;
+	}
+.b-txt_fs_11{
+	font-size:11px;
+	font-family: tahoma, sans-serif;
+	color:#808080;
+	}
+.b-txt_ff_hn{
+    font-family: "Helvetica Neue", Arial, sans-serif;
+}
+.b-txt_fs_14{
+	font-size:14px;
+	color:#808080;
+	}        
+.b-txt_fs_25{
+	font-size:25px;
+	}
+.b-txt_lh_1{
+	line-height:1;
+	}
+.b-txt_lh_40{
+	line-height:40px;
+	}    
+.b-txt_bold{
+	font-weight:bold;
+	}
+.b-txt_normal{
+	font-weight:normal;
+	}
+.b-txt_fr{
+	float:right;
+	}
+.b-txt_fl{
+	float:left;
+	}   
+.b-txt_center{
+	text-align:center;
+	}
+.b-txt_left{
+	text-align:left;
+	}    
+.b-txt_inline-block{
+	display:inline-block;
+	}
+.b-txt_hide{
+	display:none;
+	}
+.b-txt_bw{
+	word-wrap:break-word
+	}
+	
+.b-txt_padtop_2{
+	padding-top:2px;
+	}
+.b-txt_padtop_3{
+	padding-top:3px;
+	}
+.b-txt_padtop_5{
+	padding-top:5px;
+	}
+.b-txt_padtop_10{
+	padding-top:10px;
+	}
+.b-txt_padtop_15{
+	padding-top:15px;
+	}
+.b-txt_padtop_20{
+	padding-top:20px;
+	}
+.b-txt_padtop_30{
+	padding-top:30px;
+	}
+.b-txt_padright_10{
+	padding-right:10px;
+	}
+.b-txt_padright_20{
+	padding-right:20px;
+	}
+.b-txt_padbot_5{
+	padding-bottom:5px;
+}
+.b-txt_padbot_10{
+	padding-bottom:10px;
+}
+.b-txt_padbot_20{
+	padding-bottom:20px;
+}
+.b-txt_padbot_30{
+	padding-bottom:30px;
+}
+.b-txt_padbot_40{
+	padding-bottom:40px;
+}
+.b-txt_padleft_5{
+	padding-left:5px;
+}
+.b-txt_padleft_10{
+	padding-left:10px;
+}
+.b-txt_padleft_20{
+	padding-left:20px;
+}
+.b-txt_padleft_25{
+	padding-left:25px;
+}
+.b-txt_padleft_60{
+	padding-left:60px;
+}
+.b-txt_padlr_5{
+        padding-left: 5px;
+        padding-right: 5px;
+}
+
+        
+.b-txt_margbot_null{
+	margin-bottom:0px;
+	}
+.b-txt_margbot_20{
+	margin-bottom:20px;
+	}
+.b-txt_margbot_40{
+        margin-bottom:40px;    
+        }
+.b-txt_color_000{
+	color:#000;
+	}
+.b-txt_color_fff{
+	color:#fff;
+	}    
+.b-txt_color_80{
+	color:#808080;
+	}
+.b-txt_color_eb0000{
+	color:#eb0000;
+	}
+.b-txt_color_55b02e{
+        color:#55b02e;
+        }  
+.b-txt_color_ee5b5b{
+        color:#ee5b5b;    
+        }  
+.b-txt_color_de2c2c{
+        color:#de2c2c;
+        }
+.b-txt_color_red{
+    color: red;
+}
+.b-txt_color_ba0000{
+    color: #ba0000
+}
+.b-txt_color_fd6c30{
+    color: #fd6c30
+}
+.b-txt_color_c10600{
+    color: #c10600
+}
+.b-txt_color_orange{
+    color: orange;
+}
+.b-txt_color_darkorange{
+    color: darkorange;
+}        
+.b-txt_color_darkred{
+    color: darkred;
+} 
+
+a.b-txt__lnk{
+	text-decoration:none;
+	color:#808080 !important;
+	font-family: arial, sans-serif;
+	}
+a.b-txt__lnk:active{
+		background-color: inherit;/* убираем подсветку в ие10 */
+	}
+a.b-txt__lnk_underline{
+	text-decoration: underline;
+	}
+a.b-txt__lnk:hover{
+	color:#fd6c30 !important;
+	border-color:#fd6c30 !important;
+	}
+a.b-txt__lnk_color_000{
+	color:#000 !important;
+	}
+a.b-txt__lnk_color_0f71c8{
+	color:#0f71c8 !important;
+	}
+a.b-txt__lnk_color_80{
+	color:#808080 !important;
+	}
+a.b-txt__lnk_color_ccff99{
+	color:#ccff99 !important;
+	}
+a.b-txt__lnk_color_ccff99:hover{
+	color:#fff !important;
+	}    
+a.b-txt__lnk_fs_11{
+	font-size:11px;
+	font-family: tahoma, sans-serif;
+	color:#808080;
+	}
+a.b-txt__lnk_fs_15{
+	font-size:15px;
+	}
+.b-txt__lnk_bold{
+	font-weight:bold;
+	}
+a.b-txt__lnk_dot_0f71c8{
+	border-bottom:1px dotted #0f71c8;
+	color:#0f71c8 !important;
+	line-height:1;
+	}
+a.b-txt__lnk_dot_ba0000{
+	border-bottom:1px dotted #ba0000;
+	color:#ba0000 !important;
+	line-height:1;
+	}
+.b-txt__lnk_inline-block{
+	display:inline-block;
+	}
+.b-txt__lnk_outline_none{
+        outline: none;
+        }
+	
+
+
+
+
+.b-txt__title{
+	font-family: arial, sans-serif;
+	font-weight:bold;
+	font-size:23px !important;
+	margin:0;
+	padding-bottom:15px;
+	}
+.b-txt__title_padbot_40{
+        padding-bottom:40px;    
+        }        
+.b-txt__title_padnull{
+	padding:0px!important;
+	}
+.b-txt__title_center{
+	text-align:center;
+	}	
+.b-txt__h3{
+	font-size:15px;
+	font-weight:bold;
+	font-family: arial, sans-serif;
+	color:#000;
+	margin:0;
+	padding:0 0 10px;
+	}
+.b-txt__h3_padbot_20{
+    padding-bottom: 20px;
+}        
+.b-txt_pa{
+    position: absolute;
+}
+.b-txt_top_20{
+    top: 20px;
+}
+.b-txt_left_0{
+    left: 0px;
+}
+.b-txt_right_0{
+    right: 0px;
+}
+.b-txt_right_20{
+    right: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

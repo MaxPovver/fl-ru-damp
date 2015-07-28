@@ -1,0 +1,37 @@
+<?php
+    $value = htmlspecialchars(stripslashes($this->element->getUnfilteredValue()));
+?>
+<div class="b-combo b-combo_valign_mid<?php if ($this->element->getAttrib('width')):?> b-combo_inline-block<?php endif;?>" 
+     data-element-spinner-name="<?=$this->element->getId();?>">
+    <a data-element-spinner-plus="true" class="b-button b-button_poll_plus b-button_absolute b-button_z-index_3 b-button_top_8 b-button_right_5" href="javascript:void(0)"></a>
+    <a data-element-spinner-minus="true" class="b-button b-button_poll_minus b-button_absolute b-button_z-index_3 b-button_top_8 b-button_left_5" href="javascript:void(0)"></a>
+    <div class="b-combo__input
+        <?php if ($this->element->getAttrib('width')):?>b-combo__input_width_<?=$this->element->getAttrib('width')?><?php endif?>
+        <?php if ($this->element->hasErrors()): ?>b-combo__input_error<?php endif;?>">
+        <input type="text" 
+               id="el-<?=$this->element->getId()?>" 
+               value="<?=$value?>" 
+               <?php if ($this->element->getAttrib('max')):?>max="<?=$this->element->getAttrib('max')?>"<?php endif?> 
+               <?php if ($this->element->getAttrib('min')):?>min="<?=$this->element->getAttrib('min')?>"<?php endif?>
+               <?php if ($this->element->getAttrib('maxlength')):?>maxlength="<?=$this->element->getAttrib('maxlength')?>"<?php endif?> 
+               name="<?=$this->element->getName();?>" 
+               class="b-combo__input-text b-combo__input-text_center b-combo__input-text_bold">
+    </div>
+</div>
+<?php
+    $suffix = $this->element->getAttrib('suffix');
+    if (is_array($suffix) && count($suffix) == 3): 
+?>
+<div id="el-<?=$this->element->getID();?>-suffix" 
+     data-element-spinner-suffix="<?=implode(',', $suffix)?>" 
+     class="b-layout__txt b-layout__txt_inline-block b-layout__txt_padleft_10 b-layout__txt_fontsize_13">
+    <?=ending($value, $suffix[0], $suffix[1], $suffix[2])?>
+</div>
+<?php endif; ?>
+<div class="b-layout__txt b-layout__txt_float_left b-layout__txt_width_72ps b-layout__txt_padtop_5 b-layout__txt_color_c10600 <?php if (!$this->element->hasErrors()): ?>b-layout_hide<?php endif;?>" 
+     id="el-<?=$this->element->getID();?>-error">
+     <span class="b-icon b-icon_sbr_rattent"></span>
+     <span id="el-<?=$this->element->getID();?>-error-text">
+        <?=array_shift($this->element->getMessages()); ?>
+     </span>
+</div>

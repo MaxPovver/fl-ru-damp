@@ -1,0 +1,32 @@
+{
+    "name": "FL.ru",
+    "repositories": [
+        {
+            "type": "pear",
+            "url": "http://pear.php.net"
+        }
+    ],
+    "require": {
+       "pear-pear.php.net/HTTP_Request2": "2.2.1",
+       "pear-pear.php.net/Spreadsheet_Excel_Writer": "0.9.3",
+       "zf1/zend-loader": "1.12.6",
+       "zf1/zend-exception": "1.12.6",
+       "zf1/zend-filter": "1.12.6",
+       "zf1/zend-xml": "1.12.6",
+       "zf1/zend-cache": "1.12.6",
+       "zf1/zend-locale": "1.12.6",
+       "zf1/zend-validate": "1.12.6",
+       "zf1/zend-form": "1.12.6",
+       "zf1/zend-registry": "1.12.6",
+       "zf1/zend-controller": "1.12.6",
+       "zf1/zend-translate": "1.12.6",
+       "codeception/codeception": "*",
+       "microsoft/windowsazure": "*",
+       "PHPOffice/PHPExcel": "1.8.*",
+       "opauth/opauth": "*",
+       "opauth/facebook": "*",
+       "opauth/vkontakte": "*",
+       "userscape/customerio": "1.0.*@dev"
+    },
+    "minimum-stability": "dev"
+}

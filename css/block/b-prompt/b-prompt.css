@@ -1,0 +1,49 @@
+.b-prompt{
+	position:relative;
+	}
+
+.b-prompt__txt{
+	font-size:15px;
+	color:#000;
+	font-family: Trebuchet MS, Arial, Helvetica, sans-serif;
+	}
+.b-prompt__txt_color_6db335{
+	color:#6db335;
+	}
+.b-prompt__txt_italic{
+	font-style:italic;
+	}
+
+
+
+
+
+
+
+
+
+
+
+	
+	
+.b-prompt__arrow_7{
+	background:url(/css/block/b-prompt/b-prompt__arrow7.png) 0 0 no-repeat;
+	width:131px;
+	height:66px;
+	}
+
+.b-prompt__arrow_left_-140{
+	position: absolute;
+	left:-140px;
+	}	
+.b-prompt__arrow_top_-55{
+	top:-55px;
+}
+
+
+
+
+
+
+
+

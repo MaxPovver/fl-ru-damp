@@ -1,0 +1,6 @@
+<td class="b-layout__td b-layout__td_width_70 b-layout__td_center b-layout__td_width_null_ipad"><span class="b-page__desktop"><img class="b-layout__pic" src="/images/promo-icons/small/12.png" alt=""  /></span></td>
+<td class="b-layout__td"><h3 class="b-layout__h3 b-layout__h3_padbot_5"><a class="b-layout__link b-layout__link_bold" href="/service/offers/">ѕлатные ответы</a></h3>
+<div class="b-layout__txt">¬ы можете приобрести неограниченное количество платных ответов: чем чаще вы откликаетесь на опубликованные проекты от заказчиков, тем выше ваши шансы получить интересную и хорошо оплачиваемую работу.</div>
+<div class="b-buttons b-buttons_padtop_10 b-page__iphone"><a href="/service/offers/" class="b-button b-button_flat b-button_flat_green b-button_height_auto"> упить ответы</a></div>
+</td>
+<td class="b-layout__td b-layout__td_width_270 b-layout__td_center b-layout__td_valign_mid  b-layout__td_width_null_iphone b-layout__td_pad_10 b-layout__td_pad_null_iphone"><a href="/service/offers/" class="b-button b-button_flat b-button_flat_green b-button_height_auto b-page__desktop b-page__ipad"> упить ответы</a></td>

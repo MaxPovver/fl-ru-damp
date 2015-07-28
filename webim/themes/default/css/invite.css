@@ -1,0 +1,106 @@
+.webim-invite .webim-c img{display:block;border:none;}
+.webim-invite span:after{
+	content:"";
+	overflow:hidden;
+	height:0;
+	clear:both;
+	display:block;
+}
+.webim-invite{
+	width:360px;
+	overflow:hidden;
+	color:#fff !important;
+	text-decoration:none !important;
+	display:block;
+	cursor:pointer;
+	
+	position: absolute;
+	top: 0; 
+	left: 0; 
+	z-index: 50;
+}
+.webim-invite span{
+	display:block;
+	width:360px;
+}
+.webim-invite span#invatation-message{
+	width:auto;
+}
+* html .webim-invite span{overflow:hidden;}
+.webim-invite .webim-t{
+	height:13px;
+	background:url(../images/invite/invite-t.png);
+}
+.webim-invite .webim-b{
+	height:17px;
+	background:url(../images/invite/invite-b.png);
+}
+.webim-invite .webim-c{
+	width:341px;
+	padding:0 4px 0 15px;
+	min-height: 84px;
+	border-left: 1px solid #7ec936;
+	border-right: 1px solid #7ec936;
+	background:#56a31c url(../images/invite/bg-f.gif) repeat-x 0 0;
+}
+* html .webim-invite .webim-c{
+	width: 360px;
+	height: 84px;
+	overflow: visible;
+	background:#56a31c;
+}
+.webim-invite .webim-im{
+	width:100px;
+	height:100px;
+	display: inline;
+	margin:-8px 20px -8px 10px;
+	position:relative;
+	overflow:hidden;
+	float:right;
+	z-index: 100;
+}
+.webim-invite .webim-im img{
+	position:absolute;
+	z-index:1;
+}
+.webim-invite strong{
+	font:1.4em Arial, Helvetica, sans-serif;
+}
+.webim-invite strong img{
+	display:inline !important;
+	vertical-align:middle;
+}
+.webim-invite .webim-im em{
+	background:url(../images/invite/bg-frame-im.png);
+	text-indent:-9999px;
+	width:100px;
+	height:100px;
+	overflow:hidden;
+	display:block;
+	z-index:2;
+	position:absolute;
+	top:0;
+	left:0;
+}
+#invitediv{
+	display: none;
+	position: absolute;
+	top: 92.5px;
+	left: 251.4px;
+	z-index: 900;
+	width: 360px;
+	height: 150px;
+}
+img.webim-close{
+	position: absolute; 
+	width: 15px; 
+	height: 15px; 
+	left: 340px; 
+	top: 4px;
+	z-index: 1000;
+}
+#webim-invatation-message {width:auto;}
+
+* html .webim-invite .webim-t{background:#56a31c;/*filter:progid:dximagetransform.microsoft.alphaimageloader(src='./images/invite/invite-t.png',sizingMethod='crop');*/}
+* html .webim-invite .webim-b{background:#56a31c;height:13px;/*filter:progid:dximagetransform.microsoft.alphaimageloader(src='./images/invite/invite-b.png',sizingMethod='crop');*/}
+* html .webim-invite .webim-im em{background:none;/*filter:progid:dximagetransform.microsoft.alphaimageloader(src='./images/invite/bg-frame-im.png',sizingMethod='crop');*/}

@@ -1,0 +1,4 @@
+<input 
+    id="el-<?=$this->element->getName();?>" type="hidden" 
+    name="<?=$this->element->getName();?>" 
+    value="<?=htmlspecialchars(stripslashes($this->element->getUnfilteredValue()));?>" />

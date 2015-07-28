@@ -1,0 +1,6 @@
+<td class="b-layout__td b-layout__td_width_70 b-layout__td_center b-layout__td_width_null_ipad"><span class="b-page__desktop"><img class="b-layout__pic" src="/images/promo-icons/small/7.png" alt=""  /></span></td>
+<td class="b-layout__td"><h3 class="b-layout__h3 b-layout__h3_padbot_5"><a class="b-layout__link b-layout__link_bold" href="/public/?step=1&kind=7">Публикация конкурса</a></h3>
+<div class="b-layout__txt">Если вы хотите перед определением исполнителя дать претендентам пробное задание, опубликуйте конкурс. Конкурсы привлекают намного больше фри-лансеров, чем обычные проекты.</div>
+<div class="b-buttons b-buttons_padtop_10 b-page__iphone"><a href="/public/?step=1&kind=7" class="b-button b-button_flat b-button_flat_green b-button_height_auto">Опубликовать конкурс</a></div>
+</td>
+<td class="b-layout__td b-layout__td_width_270 b-layout__td_center b-layout__td_valign_mid  b-layout__td_width_null_iphone b-layout__td_pad_10 b-layout__td_pad_null_iphone"><a href="/public/?step=1&kind=7" class="b-button b-button_flat b-button_flat_green b-button_height_auto b-page__desktop b-page__ipad">Опубликовать конкурс</a></td>

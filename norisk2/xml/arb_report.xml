@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<document title="Doc Title" author="Free-Lance.ru" width="170" margin-left="25" margin-right="25" margin-top="25" font-name="ArialMT" font-size="15" paragraph-indent="5">
+    <page>
+        <paragraph font-name="ArialMT" font-size="8" width="170" height="4" align="L" border="0" parse="1" keep-text-wrap="1" save-pos="1">
+            <![CDATA[ООО «Ваан»
+125040, Москва, улица Нижняя, дом 14, корпус 1
+ИНН 7805399430/ КПП 771401001
+Телефон: +7 495 646-81-29]]>
+        </paragraph>
+		<line x="20" y="42" len="100"/>
+ 
+        <ln height="10"/>
+		<paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="C" border="0" parse="1" keep-text-wrap="1"><![CDATA[Отчет № $rep_num от $rep_from г. о выполнении обязательств
+согласно пункту 9 Договора об использовании онлайн сервиса «Безопасная сделка» № $cnum$ssnum от $sbr_begin г.
+]]></paragraph>
+		<ln/>
+ 		<paragraph font-name="Arial-BoldMT" font-size="10" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0" save-pos="0">
+            <![CDATA[$tabОбщество с ограниченной ответственностью «Ваан»  в лице генерального директора
+Воропаева В.В., действующего на основании Устава, далее именуемое «Общество», на основании Договора
+об использовании онлайн сервиса «Безопасная сделка» № $cnum от $sbr_begin года, заключенного между Обществом,
+$ffio и $efio (далее — «Договор») и Соглашения о выполнении работы и/или
+оказании услуги с использованием онлайн сервиса «Безопасная сделка» № $cnum от $sbr_begin года, заключенного между
+$ffio и $efio рассмотрело обращение $ifio, (далее — «Соглашение») направленное согласно:]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="10" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[$init]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="10" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[Основанием обращения послужили следующие обстоятельства.
+Между Заказчиком ($efio) и Исполнителем ($ffio) заключено Соглашение, а также между Заказчиком ($efio)
+и Исполнителем ($ffio) и Обществом заключен Договор.
+            ]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="10" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[В соответствии с условиями Соглашения и Договора между Заказчиком и Исполнителем было согласовано Техническое задание. На основании Технического задания Исполнитель обязался выполнить:]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="10" width="170" height="5" align="J" border="0" parse="1" offset-left="6" keep-text-wrap="1">
+            <![CDATA[$stage_name
+в срок $stage_work_days
+за $stage_cost]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="10" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[$result]]>
+        </paragraph>
+        <paragraph show-if="$fper100" font-name="ArialMT" font-size="10" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[Следовательно, на основании п. 6.1.3 Договора Общество должно Осуществить оплату стоимости работы Исполнителю. В акте об оказании услуг Общество необходимо будет указать, что на основании Отчета Отчет № $rep_num от $rep_from г. о выполнении обязательств согласно пункту 9 Договора об использовании онлайн сервиса «Безопасная сделка» № $cnum$ssnum от $sbr_begin года и на основании п. 6.1.3 Договора об использовании онлайн сервиса «Безопасная сделка» № $cnum$ssnum от $sbr_begin года Общество должно Осуществить оплату стоимости работы Исполнителю: 
+            $cffio, 100% от суммы по Договору № $cnum$ssnum от $sbr_begin года$fsums, способ оплаты $fcsys.]]>
+        </paragraph>
+        <paragraph show-if="$eper100" font-name="ArialMT" font-size="10" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[Следовательно, на основании п. 7.1.3 Договора Общество должно Осуществить возврат Стоимости работы Работодателю. В акте об оказании услуг Общество необходимо будет указать, что на основании Отчета Отчет № $rep_num от $rep_from г. о выполнении обязательств согласно пункту 9 Договора об использовании онлайн сервиса «Безопасная сделка» № $cnum$ssnum от $sbr_begin года и на основании п. п. 7.1.3 Договора об использовании онлайн сервиса «Безопасная сделка» № $cnum$ssnum от $sbr_begin года Общество должно Осуществить возврат Стоимости работы Работодателю: 
+            $cefio, 100% от суммы по Договору № $cnum$ssnum от $sbr_begin года, $esums_not_reqv]]>
+        </paragraph>
+        <paragraph show-if="$rastorg" font-name="ArialMT" font-size="10" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[Следовательно, на основании п. 7.1.4 Договора Общество должно Осуществить возврат Стоимости работы Работодателю. В акте об оказании услуг Общество необходимо будет указать, что на основании Отчета Отчет № $rep_num от $rep_from г. о выполнении обязательств согласно пункту 9 Договора об использовании онлайн сервиса «Безопасная сделка» № $cnum$ssnum от $sbr_begin года и на основании п. 7.1.4 Договора об использовании онлайн сервиса «Безопасная сделка» № $cnum$ssnum от $sbr_begin года Общество должно Осуществить возврат Стоимости работы Работодателю: 
+            $cefio, 100% от суммы по Договору № $cnum$ssnum от $sbr_begin года, $esums_not_reqv]]>
+        </paragraph>
+        
+        <paragraph font-name="ArialMT" font-size="10" width="170" height="5" align="L" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[Возврат работодателю: $ess]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="10" width="170" height="5" align="L" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[$fss]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="10" width="170" height="4" align="L" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[$payout_method]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="10" width="170" height="5" align="L" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[Во избежание сомнений, Общество не несет ответственности за принятие любого решения (или его последствия) в результате анализа соответствия результата Работы Соглашению и Техническому заданию на основании обращения, сделанного в порядке, предусмотренном п. 9 Договора, так как само принятие такого решения (а не его содержание) является обязанностью Общества (п. 11.2 Договора).]]>
+        </paragraph>
+        <locate x="25" y="250"/>
+        <text width="85" height="4" keep-pos="1" align="L" border="0"><![CDATA[Генеральный директор ООО «Ваан»]]></text>
+        <locate x_offset="85" y_offset="-4"/>
+        <text width="85" height="4" keep-pos="1" align="R" border="0"><![CDATA[/Воропаев В.В./]]></text>
+        <ln/>
+        <locate x="25"/>
+        <text width="85" height="4" keep-pos="1" align="L" border="0"><![CDATA[Председатель арбитражной комиссии]]></text>
+        <locate x_offset="85" y_offset="-4"/>
+        <text width="85" height="4" keep-pos="1" align="R" border="0"><![CDATA[/Тарханов В.О./]]></text>
+        <ln/>
+        <locate x="25"/>
+        <text width="85" height="4" keep-pos="1" align="L" border="0"><![CDATA[Главный бухгалтер]]></text>
+        <locate x_offset="85" y_offset="-4"/>
+        <text width="85" height="4" keep-pos="1" align="R" border="0"><![CDATA[/Яцук Е.Г./]]></text>
+    </page>
+</document>

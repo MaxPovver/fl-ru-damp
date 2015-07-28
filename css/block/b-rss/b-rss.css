@@ -1,0 +1,41 @@
+.b-rss{
+	}
+.b-rss_bordtop_f0{
+	border-top:1px solid #f0f0f0;
+	}
+.b-rss_padtop_25{
+	padding-top:25px;
+	}
+.b-rss_padbot_15{
+	padding-bottom:15px;
+	}
+	
+.b-rss:before{
+	content: "\00a0";
+	background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB8AAAANCAMAAABmbkWbAAAANlBMVEX/////VwD/ewD/eAD/bAD/cwD/ZgD/WwD/r1b/YgDwUAD/XgDvUAD/q0zwUQD/jAP/oTf/mCYOGuwxAAAAfklEQVQY04WJgQ7CMAhEzxaqIkP9/5/1kC5Llmx7Kbwrh3YO2kIee5ZJR//0Q9hBv6qKRGfYpG8FJ//mwGrKA6hemogA21j85cF7F6bqBzDEQWTV4MNIkASDGbvSbJ4J4AbGmtJsXgko5zIQK0U198Qil2UwZ3R3owhu51z1PyMjBz0UmC3vAAAAAElFTkSuQmCC");
+	background-repeat:no-repeat;
+	background-position:0 0;
+	width:31px;
+	height:13px;
+	display:inline-block;
+	vertical-align:middle;
+	}
+a.b-rss__link{
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#026dc0 ;
+	line-height:1.2;
+	text-decoration: underline;
+	display:inline-block;
+	vertical-align:middle;
+	}
+a.b-rss__link:hover{
+	color:#8c0400;
+	border-bottom-color:#8c0400;
+	}
+a.b-rss__link_dot_0f71c8{
+	border-bottom:1px dotted #0f71c8;
+	text-decoration:none;
+	}
+
+

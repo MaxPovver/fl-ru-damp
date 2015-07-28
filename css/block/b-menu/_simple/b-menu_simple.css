@@ -1,0 +1,14 @@
+.b-menu_simple{}
+.b-menu_simple .b-menu__item{
+	font-size:15px;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+.b-menu_simple a.b-menu__link{
+	text-decoration:underline !important;
+	color:#026dc0 ;
+	display:inline;
+	}
+.b-menu_simple a.b-menu__link:hover{
+	color:#8c0400;
+	}
+

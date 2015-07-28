@@ -1,0 +1,68 @@
+<?php if($this->element->getAttrib('padbot')): ?>
+<td class="b-layout__td b-layout__td_padbot_<?=$this->element->getAttrib('padbot')?>">
+<?php endif; ?>
+    <?php if(!$this->element->getAttrib('hide_label')):?>
+    <div class="
+         b-layout__txt <?php if ($this->element->getAttrib('label_class')): echo $this->element->getAttrib('label_class'); else:?>
+         b-layout__txt_padbot_<?=$this->element->getAttrib('label_padbot')?$this->element->getAttrib('label_padbot'):'10'?>
+         b-layout__txt_bold 
+         b-layout__txt_fontsize_<?=$this->element->getAttrib('label_fs')?$this->element->getAttrib('label_fs'):'13'?><?php endif; ?>">
+        <?=$this->element->getLabel();?>
+    </div>
+    <?php endif;?>
+    <?php
+        $options = $this->element->getMultiOptions();
+        $subTitles = $this->element->getAttrib('subTitles');
+        $values = (array) $this->element->getValue();
+        $cnt = count($options);
+        if($cnt):
+    ?>
+    <div class="b-radio b-radio_layout_vertical <?php if ($this->element->getAttrib('class')): echo $this->element->getAttrib('class'); endif;?>">
+    <?php
+            $idx = 0;
+            $attr = $this->element->getAttrib('attr');
+            foreach($options as $key => $value):
+                $optId = "el-{$this->element->getName()}-{$idx}";
+                $idx++;
+    ?>
+        <div class="b-radio__item<?php if($cnt > $idx): ?> b-radio__item_padbot_10<?php endif; ?>">
+            <input type="radio" 
+                   id="<?=$optId?>"
+                   class="b-radio__input" 
+                   name="<?=$this->element->getName();?>" 
+                   <?php if (in_array($key, $values)):?>
+                   checked="checked"
+                   <?php endif; ?>
+                   value="<?=htmlspecialchars($key);?>" 
+                   <?=(isset($attr[$key])?$attr[$key]:'')?>>
+            <label class="b-radio__label b-radio__label_fontsize_15 b-radio__label_margtop_-1 <?php if ($this->element->getAttrib('radio_label_class')): echo $this->element->getAttrib('radio_label_class'); endif; ?>" 
+                   for="<?=$optId?>">
+                <?=$value?>
+            </label>
+            <?php if(isset($subTitles[$key])): ?>
+            <div class="b-layout__txt b-layout__txt_fontsize_11 b-layout__txt_padleft_20 b-layout__txt_color_808080">
+                <?=$subTitles[$key]?>
+            </div>
+            <?php endif; ?>
+        </div>        
+    <?php
+            endforeach;
+    ?>
+    </div>    
+    <?php
+        endif;
+    ?>
+    <?php if ($this->element->getAttrib('suffix')): ?>
+        <div class="b-layout__txt b-layout__txt_fontsize_11 b-layout__txt_padtop_2">
+            <?=$this->element->getAttrib('suffix')?>
+        </div>
+    <?php endif; ?>
+
+    <div class="b-layout__txt b-layout__txt_padtop_5 b-layout__txt_color_c10600 <?php if (!$this->element->hasErrors()): ?>b-layout_hide<?php endif;?>" 
+        id="el-<?=$this->element->getName();?>-error">
+        <span class="b-icon b-icon_sbr_rattent"></span>
+        <span id="el-<?=$this->element->getName();?>-error-text"><?=array_shift($this->element->getMessages()); ?></span>
+    </div>
+<?php if($this->element->getAttrib('padbot')): ?>
+</td>
+<?php endif; ?>

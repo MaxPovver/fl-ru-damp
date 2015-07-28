@@ -1,0 +1,83 @@
+
+
+.b-captcha{
+	font-family:Tahoma, Arial, Helvetica, sans-serif;
+	vertical-align:top;
+	}
+	
+.b-captcha_padtop_15{
+	padding-top:15px;
+	}
+.b-captcha_padleft_90{
+	padding-left:90px;
+	}	
+.b-captcha_pad_5_10{
+	padding:5px 10px !important;
+	}
+	
+	
+	
+.b-captcha__descr{
+	display:block;
+	padding-bottom:10px;
+	font-size:11px;
+	}
+.b-captcha__img{
+	display:inline-block;
+	vertical-align:top;
+	}
+.b-captcha__img_bord_b2b2b2{
+	border:1px solid #b2b2b2;
+	}
+.b-captcha__img_bord_ebe8e8{
+	border:1px solid #ebe8e8;
+	}	
+	
+.b-captcha .b-input{
+	vertical-align:top;
+	}
+	
+/* b-captcha__link */
+a.b-captcha__link{
+	display:inline-block;
+	font-size:11px;
+	line-height:1.2;
+	border-bottom:1px dotted #026dc0 ;
+	color:#026dc0 ;
+	text-decoration:none;
+	}
+a.b-captcha__link:hover{
+	border-bottom-color:#8c0400;
+	text-decoration:none;
+	color:#8c0400;
+	}
+a.b-captcha__link_margtop_20{
+	margin-top:20px;
+	}
+	
+	
+.b-captcha__txt{
+	font-size:13px;
+	color:#000;
+	font-family:Arial, Helvetica, sans-serif;
+	}	
+.b-captcha__txt_padtop_5{
+	padding-top:5px;
+	}	
+.b-captcha__txt_padtop_15{
+	padding-top:15px;
+	}	
+.b-captcha__txt_padtop_20{
+	padding-top:20px;
+	}	
+.b-captcha__txt_padbot_20{
+	padding-bottom:20px;
+	}	
+.b-captcha__txt_color_c4271f{
+	color:#c4271f;
+	}
+	
+.b-captcha__txt_inline-block{
+	display:inline-block;
+	}	
+

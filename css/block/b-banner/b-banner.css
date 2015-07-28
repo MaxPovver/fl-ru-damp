@@ -1,0 +1,36 @@
+@import url("_layout/b-banner_layout_vert.css");
+
+.b-banner {
+    margin: 0 auto;
+    padding: 0;
+    text-align: center;
+    vertical-align: top;
+    line-height: 1;
+    background: #fff;
+}
+
+.b-banner_margbot_20{
+	margin-bottom:20px;
+	}
+.b-banner_float_right{
+	float:right;
+	}
+.b-banner_fixed{
+	position:fixed;
+	top:80px;
+	}
+.b-banner_abs{
+	position:absolute;
+	}
+.b-banner_pf{
+	margin-top:20px;
+	border:1px solid #b2b2b2;
+	}
+.b-banner_pf .b-banner__link{
+	display:block;
+	text-align:center;
+	}
+
+	
+	
+	

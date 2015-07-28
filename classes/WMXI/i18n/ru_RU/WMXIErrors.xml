@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wmxierrors>
+	<error code="" scope="*">Неизвестная ошибка</error>
+
+	<error code=   "0" scope="*">Ошибки нет</error>
+
+	<error code="-110" scope="*">Запросы отправляются с IP адреса, отличающегося от указанного при включении интерфейса технической поддержкой</error>
+	<error code="-100" scope="*">Общая ошибка парсинга. Неправильный формат запроса</error>
+
+	<error code=  "-1" scope="*">Неправильное значение w3s.request/reqn</error>
+	<error code=  "-2" scope="*">Неправильное значение w3s.request/sign</error>
+	<error code=  "-3" scope="*">Неправильное значение w3s.request/trans/tranid</error>
+	<error code=  "-4" scope="*">Неправильное значение w3s.request/trans/pursesrc</error>
+	<error code=  "-5" scope="*">Неправильное значение w3s.request/trans/pursedest</error>
+	<error code=  "-6" scope="*">Неправильное значение w3s.request/trans/amount</error>
+	<error code=  "-7" scope="*">Неправильное значение w3s.request/trans/desc</error>
+	<error code=  "-8" scope="*">Поле w3s.request/trans/pcode слишком длинное</error>
+	<error code=  "-9" scope="*">Поле w3s.request/trans/pcode не должно быть пустым, если w3s.request/trans/period > 0</error>
+	<error code= "-10" scope="*">Поле w3s.request/trans/pcode должно быть пустым, если w3s.request/trans/period = 0</error>
+	<error code= "-11" scope="*">Неправильное значение w3s.request/trans/wminvid</error>
+	<error code= "-12" scope="*">Идентификатор w3s.request/wmid не зарегистрирован</error>
+	<error code= "-14" scope="*">Проверка подписи не прошла</error>
+	<error code= "-15" scope="*">Неправильное значение w3s.request/wmid</error>
+
+	<error code=   "4" scope="*">Внутренняя ошибка при создании транзакции</error>
+	<error code=   "5" scope="*">WMID отправителя не найден</error>
+	<error code=   "6" scope="*">Корреспондент не найден</error>
+	<error code=   "7" scope="*">WM кошелек получателя не найден</error>
+	<error code=  "11" scope="*">WM кошелек отправителя не найден</error>
+	<error code=  "13" scope="*">Сумма транзакции должна быть > 0</error>
+	<error code=  "15" scope="*">Внутренняя ошибка при создании транзакции</error>
+	<error code=  "17" scope="*">Недостаточное колличество средств в кошельке</error>
+	<error code=  "19" scope="*">Внутренняя ошибка при создании транзакции</error>
+	<error code=  "21" scope="*">Счет для этой транзакции не найден</error>
+	<error code=  "22" scope="*">Код протекции для платежа по этому счету не доступен</error>
+	<error code=  "23" scope="*">Внутренняя ошибка при создании транзакции</error>
+	<error code=  "25" scope="*">Срок действия счета истек</error>
+	<error code=  "26" scope="*">Для этой операции должны использоваться разные кошельки</error>
+	<error code=  "29" scope="*">Типы кошелько в отличаются</error>
+	<error code=  "30" scope="*">Кошелек не поддерживает прямые переводы</error>
+	<error code=  "35" scope="*">Плательщик не авторизован корреспондентом для выполнения этой операции</error>
+	<error code=  "58" scope="*">Лимит стредств для кошельков получателя исчерпан</error>
+	<error code= "102" scope="*">Требование постоянного наращивания the w3s.request/reqn parameter не выполнено</error>
+	<error code= "103" scope="*">Транзакция с указанным for w3s.request/trans/tranid уже проводилась</error>
+	<error code= "110" scope="*">Нет доступа к интерфейсу</error>
+	<error code= "111" scope="*">Попытка отправить средства с WM кошелька, который не принадлежит WMID, подписавшему запрос; Доверенность на платежи не установлена</error>
+
+	<error code=  "-1" scope="X1">Неправильное значение w3s.request/invoice/orderid</error>
+	<error code=  "-2" scope="X1">Неправильное значение w3s.request/invoice/customerwmid</error>
+	<error code=  "-3" scope="X1">Неправильное значение w3s.request/invoice/storepurse</error>
+	<error code=  "-5" scope="X1">Неправильное значение w3s.request/invoice/amount</error>
+	<error code=  "-6" scope="X1">Значение w3s.request/invoice/desc слишком длинное</error>
+	<error code=  "-7" scope="X1">Значение w3s.request/invoice/address слишком длинное</error>
+	<error code=  "-8" scope="X1">Неправильное значение w3s.request/sign</error>
+	<error code=  "-9" scope="X1">Неправильное значение w3s.request/reqn</error>
+	<error code= "-11" scope="X1">Идентификатор w3s.request/wmid не зарегистрирован</error>
+	<error code= "-12" scope="X1">Проверка подписи не прошла</error>
+
+	<error code=   "5" scope="X1">Отправитель счета не найден</error>
+	<error code=   "6" scope="X1">Получатель счета не найден</error>
+	<error code=   "7" scope="X1">Отправитель счета не найден</error>
+
+	<error code=  "20" scope="X5">Код протекции неправильный, но попытки ещё остались</error>
+
+	<error code=  "-2" scope="X6">Неправильное значение поля field\receiverwmid</error>
+	<error code= "-12" scope="X6">Проверка подписи не прошла</error>
+
+	<error code=   "0" scope="X8">Ничего не найдено</error>
+	<error code=   "1" scope="X8">Поиск завершен успешно</error>
+
+	<error code=   "1" scope="X11">Неправильный формат запроса</error>
+	<error code=   "2" scope="X11">Неправильно указан passportwmid</error>
+	<error code=   "4" scope="X11">Проверка подписи не прошла</error>
+	<error code=  "11" scope="X11">Не указан один из обязательных параметров</error>
+
+	<error code=  "15" scope="X16">Внутренняя ошибка при создании кошелька</error>
+	<error code=  "31" scope="X16">Может существовать только один кошелек указанного типа</error>
+	<error code=  "44" scope="X16">Этот WM-идентификатор не может создать кошелек данного типа</error>
+
+</wmxierrors>

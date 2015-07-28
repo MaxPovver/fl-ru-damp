@@ -1,0 +1,34 @@
+.b-icon__dk{
+	padding-right:0 !important;
+	}
+
+.b-icon__dk_gar,
+.b-icon__dk_ek,
+.b-icon__dk_ur,
+.b-icon__dk_br,
+.b-icon__dk_bp,
+.b-icon__dk_op{
+	background-image:	url(sprite.png);
+	background-repeat:no-repeat;
+	width:86px;
+	height:90px;
+	}
+.b-icon__dk_gar{
+	background-position: 0	-15px;
+	}
+.b-icon__dk_ek{
+	background-position:	0 -195px;
+	}
+.b-icon__dk_ur{
+	background-position:	0 -375px;
+	}
+.b-icon__dk_br{
+	background-position:	0 -555px;
+	}
+.b-icon__dk_op{
+	background-position:	0 -755px;
+	}
+.b-icon__dk_bp{
+	background-position:	0 -925px;
+	}
+

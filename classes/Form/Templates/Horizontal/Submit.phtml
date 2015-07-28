@@ -1,0 +1,14 @@
+<?php if($this->element->getAttrib('padbot')): ?>
+<td class="b-layout__td b-layout__td_padbot_<?=$this->element->getAttrib('padbot')?> <?php if ($this->element->getAttrib('td_class')): echo $this->element->getAttrib('td_class'); endif;?>">
+<?php endif; ?>
+
+    <div class="b-buttons <?php if ($this->element->getAttrib('parent_class')): echo $this->element->getAttrib('parent_class'); endif;?>">
+        <button <?php if ($this->element->getAttrib('data-ga-event')):?> data-ga-event="<?=$this->element->getAttrib('data-ga-event'); ?>"<?php endif;?>
+                class="b-button b-button_flat b-button_flat_green <?php if ($this->element->getAttrib('class')): echo $this->element->getAttrib('class'); endif;?>" 
+                id="el-<?=$this->element->getName();?>" 
+                type="submit"><?=$this->element->getLabel();?></button>
+    </div>
+    
+<?php if($this->element->getAttrib('padbot')): ?>
+</td>
+<?php endif; ?>

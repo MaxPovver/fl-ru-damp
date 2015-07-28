@@ -1,0 +1,179 @@
+.b-icon{
+	}
+[class*='b-icon_attach_'] {
+	background-image:url(attach.gif);
+	background-repeat:no-repeat;
+	padding-right:0 !important;
+	margin-right:5px;
+	width:16px;
+	}
+.b-icon_attach_unknown {
+	background-position:0 -477px;
+	height:16px;
+	}
+.b-icon_attach_ogg{
+	background-position:0 0;
+	height:13px;
+	}
+.b-icon_attach_flv{
+	background-position:0 -13px;
+	height:13px;
+	}
+.b-icon_attach_3gp{
+	background-position:0 -26px;
+	height:13px;
+	}
+.b-icon_attach_mov{
+	background-position:0 -39px;
+	height:13px;
+	}
+.b-icon_attach_avi{
+	background-position:0 -52px;
+	height:13px;
+	}
+.b-icon_attach_wma{
+	background-position:0 -65px;
+	height:13px;
+	}
+.b-icon_attach_mp4{
+	background-position:0 -78px;
+	height:13px;
+	}
+.b-icon_attach_wmv{
+	background-position:0 -91px;
+	height:13px;
+	}
+.b-icon_attach_mpg{
+	background-position:0 -104px;
+	height:13px;
+	}
+.b-icon_attach_mpeg{
+	background-position:0 -117px;
+	height:13px;
+	}
+.b-icon_attach_wav{
+	background-position:0 -130px;
+	height:15px;
+	}
+.b-icon_attach_mp3{
+	background-position:0 -145px;
+	height:15px;
+	}
+.b-icon_attach_swf{
+	background-position:0 -160px;
+	height:15px;
+	}
+.b-icon_attach_fla{
+	background-position:0 -175px;
+	height:16px;
+	}
+.b-icon_attach_png{
+	bottom:-4px;
+	position:relative;
+	background-position:0 -191px;
+	height:13px;
+	}
+.b-icon_attach_tiff{
+	bottom:-4px;
+	position:relative;
+	background-position:0 -204px;
+	height:13px;
+	}
+.b-icon_attach_gif{
+	bottom:-4px;
+	position:relative;
+	background-position:0 -217px;
+	height:13px;
+	}
+.b-icon_attach_jpg{
+	bottom:-4px;
+	position:relative;
+	background-position:0 -230px;
+	height:13px;
+	}
+.b-icon_attach_jpeg{
+	bottom:-4px;
+	position:relative;
+	background-position:0 -243px;
+	height:13px;
+	}
+.b-icon_attach_bmp{
+	bottom:-4px;
+	position:relative;
+	background-position:0 -256px;
+	height:13px;
+	}
+	
+	
+.b-icon-layout__icon .b-icon_attach_png{
+	bottom:0px;
+	}
+.b-icon-layout__icon .b-icon_attach_tiff{
+	bottom:0px;
+	}
+.b-icon-layout__icon .b-icon_attach_gif{
+	bottom:0px;
+	}
+.b-icon-layout__icon .b-icon_attach_jpg{
+	bottom:0px;
+	}
+.b-icon-layout__icon .b-icon_attach_jpeg{
+	bottom:0px;
+	}
+.b-icon-layout__icon .b-icon_attach_bmp{
+	bottom:0px;
+	}
+
+
+.b-icon_attach_ai{
+	background-position:0 -269px;
+	height:16px;
+	}
+.b-icon_attach_psd{
+	background-position:0 -285px;
+	height:16px;
+	}
+.b-icon_attach_iwd{
+	background-position:0 -301px;
+	height:16px;
+	}
+.b-icon_attach_ppt{
+	background-position:0 -317px;
+	height:16px;
+	}
+.b-icon_attach_rar{
+	background-position:0 -333px;
+	height:16px;
+	}
+.b-icon_attach_zip{
+	background-position:0 -349px;
+	height:16px;
+	}
+.b-icon_attach_xls{
+	background-position:0 -365px;
+	height:16px;
+	}
+.b-icon_attach_xlsx{
+	background-position:0 -381px;
+	height:16px;
+	}
+.b-icon_attach_rtf{
+	background-position:0 -397px;
+	height:16px;
+	}
+.b-icon_attach_pdf{
+	background-position:0 -413px;
+	height:16px;
+	}
+.b-icon_attach_txt{
+	background-position:0 -429px;
+	height:16px;
+	}
+.b-icon_attach_doc{
+	background-position:0 -445px;
+	height:16px;
+	}
+.b-icon_attach_docx{
+	background-position:0 -461px;
+	height:16px;
+	}

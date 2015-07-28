@@ -1,0 +1,28 @@
+<?php
+
+$form_elements = $this->element->getElements();
+$hidden_html = '';
+
+?>
+<form id="<?=$this->escape($this->element->getId())?>" 
+      method="<?=$this->escape($this->element->getMethod())?>" 
+      action="<?=$this->escape($this->element->getAction())  ?>" 
+      enctype="<?php echo $this->escape($this->element->getEnctype())?>">
+    
+    <table class="b-layout__table b-layout__table_width_full">
+        <tbody>
+            <?php 
+                foreach($form_elements as $form_element): 
+                    if($form_element->getType() == 'Form_Element_Hidden') {
+                        $hidden_html .= $form_element->render();
+                        continue;
+                    }
+            ?>
+            <tr class="b-layout__tr">
+                <?=$form_element?>
+            </tr>
+            <?php endforeach; ?>
+        </tbody>
+    </table>
+    <?=$hidden_html?>
+</form>

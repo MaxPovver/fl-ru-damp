@@ -1,0 +1,155 @@
+.b-pay-tu{
+	background-color:#eaffdd;
+	width:220px;
+	height:285px;
+	border-radius:3px;
+	border:2px solid #eaffdd;
+	text-align:center;
+	position:relative;
+	}
+.b-pay-tu:hover{
+	border-color:#aad58b;
+	}
+.b-pay-tu_payed{
+	background-color:#fff;
+	text-align:left;
+	}
+.b-pay-tu_payed-my{
+	background-color:#fff;
+	text-align:left;
+	padding:0;
+	}
+.b-pay-tu_payed-my:hover{
+	background-color:#eaffdd;
+	}
+.b-pay-tu_payed-my:hover .i-pic_port, .b-pay-tu_payed-my:hover .b-post{
+	display:none;
+	}
+.b-pay-tu_payed-my .b-pay-tu__hider{
+	text-align:center;
+	}
+.b-pay-tu__inner{
+	display:table-cell;
+	vertical-align:middle;
+	width:200px;
+	height:265px;
+	padding:10px;
+	}
+.b-pay-tu_payed .b-pay-tu__inner, .b-pay-tu_payed-my .b-pay-tu__inner{
+	padding:0;
+	}
+.b-pay-tu__hider{
+	display:none;
+	}
+.b-pay-tu_payed-my:hover .b-pay-tu__hider, .b-pay-tu_hor:hover .b-pay-tu__hider{
+	display:block;
+	}
+.b-pay-tu__pin{
+	display:inline-block;
+	width:52px;
+	height:52px;
+	margin:0 auto 10px;
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADQAAAA0CAMAAADypuvZAAAAZlBMVEUAAAAepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAm5BRSkAAAAIXRSTlMAwda3+XpHOyEF8enjr6egKBrdWQ/IjXFnMQKDC85PFJWjpw3IAAABZ0lEQVRIx5WV2ZKDIBBFG1EiruC+m/7/n5yKNcwkRpA+bz6cutfGFjDsfcnWvG/An6kP8KBV3k7M0bD6Zo0B/lP7OY8M35j9uq34DvdxFoYfJA8PKcIThUe57CwlghJkSG8Lcryw7rJSvLK2xSnhNTwSmpBkSAL+7ArOy01a3slJO56lOry3KnWSZIf38AlOiKKt7iwB3+i6TJxSadmPwCUFjXWr7GSxdX8dkrJucGIfugYbuVVaJWFNDB0AvZ9wbHFlm7i0S4ttfj04YJYg7ZKKa6mGA9LMywnI9djSFIqYVMUwYylJP8FghCHEcHCcLp7h+uUgprH3+MJuMuncXlC3HyPYQJXmIQIrexeaFFY3Jvr2CoqjnLWs6NVxOsuc/OU24I1oKRerYX+awgIIbBUeVDvF0r8zfEqgUGdHwRpIxMd3mWmgMaSImEuipV5hAxCZ+hSzEaiMDJkkW82MHdARwQB0VPQD2At5Zt6lljQAAAAASUVORK5CYII=) 0 0 no-repeat;
+	}
+.b-pay-tu__mpin{
+	display:inline-block;
+	position:absolute;
+	left:-11px;
+	top:-11px;
+	z-index:1;
+	width:21px;
+	height:21px;
+	background-color:#fff;
+	text-decoration:none;
+	}
+.b-pay-tu__mpin:before{
+	content:'\00a0';
+	display:block;
+	position:absolute;
+	z-index:2;
+	left:3px;
+	top:3px;
+	width:16px;
+	height:16px;
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAVFBMVEUAAAAepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkepAkE3oUYAAAAG3RSTlMA1/e74tyEU8/AsmE3JhgOA+W2npBvbVsyIQ2rtQMWAAAAZElEQVQY013MRxaAIBRD0U+3i71k//tUpBzkzXIHISLN65GyBIA92xpvLAMJlxgSMPiUrPoPLh0JgkJNgMkG6ANUFFMe2uK4uRPMbtctNxEGwZkZJZSlvJNhoX8rtkIM7wrpjgfuPghFbXUp6gAAAABJRU5ErkJggg==) 0 0 no-repeat;
+	}
+.b-pay-tu__mpin:after{
+	content:'\00a0';
+	display:block;
+	position:absolute;
+	bottom:0;
+	right:0;
+	z-index:1;
+	width:12px;
+	height:12px;
+}
+.b-pay-tu_payed-my:hover .b-pay-tu__mpin:after{
+	background-color:#eaffdd;
+}
+.b-pay-tu__close{
+	display:block;
+	width:10px;
+	height:8px;
+	position:absolute;
+	top:5px;
+	right:5px;
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAIBAMAAAAy1HOFAAAAIVBMVEUAAAA1pCc1pCc1pCc1pCc1pCc1pCc1pCc1pCc1pCc1pCf5HqRYAAAACnRSTlMAVYi7d+7MmUQRWPalkQAAADhJREFUCNdjkFrOoLWQgWWV0yoHBgatVYsYGBjYVhkASalVCxkYGFcZr2pgEF3MkBXIIKTAMEkRAB1jC4J0NEg5AAAAAElFTkSuQmCC) 0 0 no-repeat;
+	}
+
+.b-pay-tu__pin, .b-pay-tu__mpin, .b-pay-tu .b-button, .b-pay-tu__close {
+	opacity:.5;
+	}
+.b-pay-tu:hover .b-pay-tu__pin, .b-pay-tu:hover .b-pay-tu__mpin, .b-pay-tu:hover .b-button, .b-pay-tu:hover .b-pay-tu__close {
+	opacity:1;
+	}
+.b-pay-tu_payed .b-pay-tu__mpin, .b-pay-tu .b-layout__txt{
+	opacity:.7;
+	}
+.b-pay-tu_payed:hover .b-pay-tu__mpin, .b-pay-tu:hover .b-layout__txt{
+	opacity:1;
+	}
+	
+.b-pay-tu_hor{
+	display:block;
+	width:auto;
+	height:auto;
+	text-align:left;
+	padding:10px;
+	margin:0 -10px;
+	}
+.b-pay-tu_hor .b-pay-tu__hider{
+	text-align:left !important;
+	}
+
+.b-pay-tu_car{
+	display:block;
+	width:228px;
+	height:43px;
+	padding:15px 0px;
+	margin:-8px;
+	}
+.b-pay-tu_car:hover .b-pay-tu__decor{
+	color:#0f71c8;
+	text-decoration:underline;
+	}
+.b-pay-tu__link{
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#6db335;
+	font-weight:bold;
+	line-height:1.5;
+	text-decoration:none;
+	}
+.b-pay-tu__link_color_6db335:hover,    
+.b-pay-tu__link_color_6db335 {
+        color: #6db335;
+    }     
+.b-pay-tu .b-pay-tu__hidden {
+    display: none;    
+    }    
+.b-pay-tu:hover .b-pay-tu__hidden {
+    display: inline;    
+    }
+.b-pay-tu__txt_fontsize_12 {
+    font-size: 12px;    
+    }    

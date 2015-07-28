@@ -1,0 +1,21 @@
+.b-button_mini{
+	padding:0 !important;
+	
+	}
+a.b-button_mini_nobg
+{
+    background: none!important;
+}        
+a.b-button_mini{
+	background:url(/css/block/b-button/_mini/b-button_mini.png) 0 0 no-repeat;
+	width:23px;
+	height:23px;
+	}
+a.b-button_mini:hover{
+	background:url(/css/block/b-button/_mini/b-button_mini.png) 0 -23px no-repeat;
+	}
+a.b-button_mini.b-button_active{
+	background:url(/css/block/b-button/_mini/b-button_mini.png) 0 -46px no-repeat;
+	}
+
+

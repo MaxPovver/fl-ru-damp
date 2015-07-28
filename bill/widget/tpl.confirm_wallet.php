@@ -1,0 +1,3 @@
+<div class="walletSelect b-fon__body b-fon__body_pad_10 b-fon__body_margbot_1 b-fon__body_padleft_30 b-fon__body_fontsize_13 b-fon__body_bg_ffebbf <?= ( $service['auto'] == 't' && !WalletTypes::isWalletActive() ? "" : "b-layout__txt_hide" ) ?>" id="select_wallet<?= $service['id']?>">
+    <span class="b-icon b-icon_sbr_oattent b-icon_margleft_-25"></span>Настройте <a href="javascript:void(0)" class="b-layout__link" onclick="toggleWalletPopup(event);">платежную систему</a>!
+</div>

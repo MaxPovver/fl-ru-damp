@@ -1,0 +1,117 @@
+/* CALENDAR */
+
+/* calendar container element */
+div#tcal {
+        position: absolute;
+        visibility: hidden;
+        z-index: 100;
+        width: 158px;
+        padding: 2px 0 0 0;
+}
+
+/* all tables in calendar */
+div#tcal table {
+        width: 100%;
+        border-left: 1px solid #EEEEEE;
+        border-collapse: collapse;
+        background-color: white;
+}
+
+/* navigation table */
+div#tcal table.ctrl {
+        border-bottom: 0;
+        border-top: 1px solid #EEEEEE;
+}
+
+/* navigation buttons */
+div#tcal table.ctrl td {
+        width: 15px;
+        height: 20px;
+        border-bottom: 0 none;
+        border-top: 0 none;
+        font-family: tahoma, verdana, arial;
+        font-size: 9px;
+        vertical-align: center;
+}
+
+/* month year header */
+div#tcal table.ctrl th {
+        background-color: white;
+        color: black;
+        border: 0;
+        vertical-align: center;
+        font-size: 11px;
+}
+
+/* week days header */
+div#tcal th {
+        /*border: 1px solid silver;*/
+        border-collapse: collapse;
+        text-align: center;
+        padding: 3px 0;
+        font-family: tahoma, verdana, arial;
+        font-size: 10px;
+        background-color: white;
+        /*color: white;*/
+}
+
+/* date cells */
+div#tcal td {
+        border: 0;
+        border-collapse: collapse;
+        text-align: center;
+        padding: 2px 0;
+        font-family: tahoma, verdana, arial;
+        font-size: 11px;
+        width: 22px;
+        cursor: pointer;
+}
+
+/* date highlight in case of conflicting settings order here determines the priority from least to most important */
+div#tcal td.othermonth {
+        color: silver;
+}
+
+div#tcal td.weekend {
+        background-color: White;
+}
+
+div#tcal td.today {
+        border: 1px solid #DF939E;
+}
+
+div#tcal td.selected {
+        border: 1px solid #FFB3BE;
+        background-color: #FFB3BE;
+}
+
+/* iframe element used to suppress windowed controls in IE5/6 */
+iframe#tcalIF {
+        position: absolute;
+        visibility: hidden;
+        z-index: 98;
+        border: 0;
+}
+
+/* transparent shadow */
+div#tcalShade {
+        position: absolute;
+        visibility: hidden;
+        z-index: 99;
+}
+
+div#tcalShade table {
+        border: 0;
+        border-collapse: collapse;
+        width: 100%; padding:0; margin:0;
+}
+
+div#tcalShade table td {
+        border:0;
+        border-collapse: collapse;
+        padding: 0; margin:0;
+}
+div#tcalShade table  td img{ float:left}
+
+
+/* end of CALENDAR */

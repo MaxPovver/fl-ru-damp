@@ -1,0 +1,40 @@
+<td class="b-layout__td b-layout__td_width_120 b-layout__td_padbot_<?=$this->element->getAttrib('padbot')?$this->element->getAttrib('padbot'):20?>">
+    <div class="b-layout__txt b-layout__txt_fontsize_15"><?=$this->element->getLabel();?></div>
+</td>
+<td class="b-layout__td b-layout__td_padbot_<?=is_numeric($this->element->getAttrib('padbot'))?$this->element->getAttrib('padbot'):20?>">
+
+    <div class="b-combo b-combo_inline-block b-combo_margright_10">
+        <div class="b-combo__input b-combo__input_width_60">
+            <input id="<?=$this->element->getName();?>_budget" class="b-combo__input-text" name="<?=$this->element->getName();?>[budget]" type="text" size="10" maxlength="6" value="" />
+        </div>
+    </div>
+
+    <script type="text/javascript">var currencyList = {0:"USD", 1:"≈вро", 2:"–уб"}</script>
+    <div class="b-combo b-combo_inline-block b-combo_margright_10">
+        <div class="b-combo__input b-combo__input_width_60 b-combo__input_arrow_yes b-combo__input_multi_dropdown drop_down_default_2 b-combo__input_init_currencyList reverse_list">
+            <input id="<?=$this->element->getName();?>_currency" class="b-combo__input-text" name="<?=$this->element->getName();?>[currency]" type="text" size="80" readonly="readonly"/>
+            <span class="b-combo__arrow"></span>
+        </div>
+    </div>
+
+    <script type="text/javascript">var pricebyList = {1:"за час", 2:"за день", 3:"за мес€ц", 4:"за проект"}</script>
+    <div class="b-combo b-combo_inline-block">
+      <div class="b-combo__input b-combo__input_width_85 b-combo__input_arrow_yes b-combo__input_multi_dropdown drop_down_default_4 b-combo__input_init_pricebyList">
+          <input id="<?=$this->element->getName();?>_priceby" class="b-combo__input-text" name="<?=$this->element->getName();?>[priceby]" type="text" size="10" value="" readonly="readonly" />
+          <span class="b-combo__arrow"></span>
+      </div>
+    </div>
+    
+    <?php if ($this->element->getAttrib('suffix')): ?>
+        <div class="b-layout__txt b-layout__txt_inline-block b-layout__txt_fontsize_15 b-layout__txt_padtop_2">
+            <?=$this->element->getAttrib('suffix')?>
+        </div>
+    <?php endif; ?>
+
+    <?php if ($this->element->hasErrors()): ?>
+        <div class="b-layout__txt b-layout__txt_padtop_5 b-layout__txt_color_c10600 " id="project_descr_error">
+            <span class="b-icon b-icon_sbr_rattent"></span>
+            <span id="project_descr_error_text"><?=array_shift($this->element->getMessages()); ?></span>
+        </div>
+    <?php endif; ?>    
+</td>

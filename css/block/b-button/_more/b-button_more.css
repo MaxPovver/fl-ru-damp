@@ -1,0 +1,30 @@
+
+.b-button_more{
+		color: hsl(0, 0%, 16%);
+		display: block !important;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: 13px;
+		text-decoration: none;
+		border-radius: 2px 2px 2px 2px;
+		background-color: hsl(0, 0%, 95%);
+		padding:5px 0 !important;
+		text-align:center;
+		font-weight:bold;
+	}
+.b-button_more:hover{
+	color:#fd6c30;
+	}
+
+
+.b-post__lenta .b-button_more{
+	display:none !important;
+	}
+@media screen and (max-width: 700px){
+.b-post__lenta .b-button_more{
+	display:block !important;
+	}
+}
+
+
+
+

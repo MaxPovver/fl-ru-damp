@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<document title="Doc Title" author="Free-Lance.ru" width="170" margin-left="25" margin-right="25" margin-top="25" font-name="ArialMT" font-size="15" paragraph-indent="3">
+    <page>
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="C" border="0" parse="1" keep-text-wrap="1">
+            <![CDATA[АКТ
+выполненных работ
+по Договору подряда № $sbr_num$ssnum
+$from_date_act]]>
+        </paragraph>
+        <locate x="25" y="50"/>
+        <text width="85" border="0" align="L" height="5" keep-pos="1"><![CDATA[г. Москва]]></text>
+        <locate x="110" y="50"/>
+        <text width="85" border="0" align="R" height="5" keep-pos="1" parse="1"><![CDATA[$make_date]]></text>
+        <locate x="110" y="60"/>
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1">
+            <![CDATA[Общество с ограниченной ответственностью «Ваан», именуемое в дальнейшем «Заказчик», 
+            в лице Генерального директора Воропаева В.В. действующего на основании Устава, с одной стороны, 
+            и $maker_info, 
+            именуемый в дальнейшем «Подрядчик», с другой стороны, вместе именуемые «Стороны», 
+            в исполнение заключенного между ними Договора подряда № $sbr_num от $from_date_make 
+            (далее – «Договор») составили настоящий Акт о нижеследующем:]]>
+        </paragraph>
+        <ln/>
+        <paragraph offset-left="10" font-name="ArialMT" font-size="12" width="160" height="5" align="J" border="0" parse="1">
+            <![CDATA[1. Подрядчик выполнил Работу $job_name, 
+            в соответствии с Техническим Заданием, 
+            являющимся Приложением № 1 к настоящему Акту.]]>
+        </paragraph>
+        <paragraph offset-left="10" font-name="ArialMT" font-size="12" width="160" height="5" align="J" border="0" parse="1">
+            <![CDATA[2. Вознаграждение Подрядчика за выполненную по Договору Работу в период с  
+            $reward_text]]>
+        </paragraph>
+        <paragraph offset-left="10" font-name="ArialMT" font-size="12" width="160" height="5" align="J" border="0" parse="1" keep-text-wrap="1">
+            <![CDATA[3. Реквизиты:$bank_details]]>
+        </paragraph>
+        <paragraph offset-left="10" font-name="ArialMT" font-size="12" width="160" height="5" align="J" border="0" parse="1">
+            <![CDATA[4. Стороны не имеют друг к другу финансовых или иных претензий, Работа выполнена 
+            Подрядчиком надлежащим образом, соответствует требованиям и принята полностью.]]>
+        </paragraph>
+        <paragraph offset-left="10" font-name="ArialMT" font-size="12" width="160" height="5" align="J" border="0" parse="1">
+            <![CDATA[5. Настоящий Акт составлен в двух экземплярах по одному экземпляру для каждой 
+            Стороны, при этом оба экземпляра имеют одинаковую юридическую силу.]]>
+        </paragraph>
+        <paragraph offset-left="10" font-name="ArialMT" font-size="12" width="160" height="5" align="J" border="0" parse="1">
+            <![CDATA[6. Подрядчик передаёт Заказчику авторские права в соответствии с Договором, п.10.1.]]>
+        </paragraph>
+        
+        <nobreak start="1"/>
+        
+        <paragraph offset-left="10" font-name="ArialMT" font-size="12" width="160" height="5" align="J" border="0" parse="1">
+            <![CDATA[7. Результат работ (услуг) передан через Защищенные страницы Сайта в соответствии 
+            с п.8.1, 8.2, 7.1 и 7.2 Договора.]]>
+        </paragraph>
+        <locate x="0" y="0" x_offset="0" y_offset="5"/>
+        <cell width="85" height="5" keep-pos="1" align="L"><![CDATA[Заказчик:]]></cell>
+        <locate x="0" y="0" x_offset="85" y_offset="0"/>
+        <cell width="85" height="5" keep-pos="1" align="L"><![CDATA[Подрядчик:]]></cell>
+        <locate x="0" y="0" x_offset="0" y_offset="5"/>
+        <cell width="85" height="110" keep-pos="1"/>
+        <fix-locate y="@usign"/>
+        <locate x="0" y="0" x_offset="85" y_offset="0"/>
+        <cell width="85" height="110" keep-pos="1" />
+        <locate y_offset="2"/>
+        <fix-locate y="@vaan"/>
+        <paragraph font-name="ArialMT" font-size="9" width="85" height="4" align="L" offset-left="1" keep-text-wrap="1">
+            <![CDATA[ООО «Ваан»
+
+Юридический адрес: 125040, Москва,
+улица Нижняя, дом 14, корпус 1.
+Почтовый адрес: 129223, Москва, а/я 33.
+ИНН 7805399430/ КПП 771401001
+Расчетный счет: 40702810787880000803
+в Московский филиал ОАО АКБ "РОСБАНК" г. Москва
+Корреспондентский счет: 30101810200000000272
+БИК 044552272
+ОКПО 94626823
+ОГРН 5067847040421
+ОКВЭД 52.61.2.]]>
+        </paragraph>
+        <locate y="@vaan" />
+	<paragraph font-name="ArialMT" font-size="9" width="75" height="4" align="L" offset-left="86" keep-text-wrap="1" parse="1">
+            <![CDATA[$side_b]]>
+        </paragraph>
+        <locate x="0" y="@usign" y_offset="87"/>
+        <paragraph font-name="ArialMT" font-size="9" width="85" height="4" align="L" offset-left="1" keep-text-wrap="1">
+            <![CDATA[Генеральный директор: Воропаев В.В.
+
+_____________________________
+
+ М.П.]]>
+        </paragraph>
+        <locate y="@usign" y_offset="87"/>
+        <paragraph font-name="ArialMT" font-size="9" width="85" height="4" align="L" offset-left="86" keep-text-wrap="1" parse="1">
+            <![CDATA[$bossname
+
+_____________________________
+]]>
+        </paragraph>
+        <locate x="0" y="@usign" y_offset="115"/>
+    	<paragraph border="0" font-name="ArialMT" color="008080" font-size="9" width="170" height="4" align="L" keep-pos="1" keep-text-wrap="1" parse="1">
+            <![CDATA[Подписанный вами акт необходимо отправить на один из следующих адресов:
+$adr_act
+Обязательно укажите наименование организации-получателя – ООО «Ваан».]]>
+        </paragraph>
+        <nobreak end="1"/>
+        <footer><![CDATA[____________________(Подпись Исполнителя)]]></footer>
+    </page>
+</document>

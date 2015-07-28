@@ -1,0 +1,9 @@
+.b-banner_layout_vert { 
+	width:240px;
+	height:430px;
+	box-sizing:border-box;
+        }
+.b-banner_layout_vert embed, .b-banner_layout_vert iframe{ 
+border:1px solid #ccc; 
+        }
+

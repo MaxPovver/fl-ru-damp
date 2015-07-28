@@ -1,0 +1,2 @@
+<div class="b-layout__txt b-layout__txt_padbot_30">Вы можете заказать рассылку <a class="b-layout__link" href="/search/?type=users">по результатам поиска</a>.<br />Укажите необходимые параметры и разошлите ваше сообщение всем найденным пользователям.</div>
+<img class="b-promo__pic b-promo__pic_center" src="/images/promo-pic/promo-mail.png" alt="" width="744" height="404" />

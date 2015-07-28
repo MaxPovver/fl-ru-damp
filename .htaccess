@@ -1,0 +1,255 @@
+php_value session.save_handler  user
+
+<FilesMatch "\.js$">
+  <IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "*"
+    Header set Access-Control-Allow-Headers: X-Requested-With
+  </IfModule>
+</FilesMatch>
+
+
+Order Deny,Allow
+Deny from 82.179.205.131
+Allow from 213.232.194.183
+Allow from 82.138.50.41
+Allow from 213.220.219.2
+
+
+
+#<Files ~ "[^(unavailable\.html|\.gif|\.css)]$>
+#AuthName "Site currently unavailable, sorry."
+#AuthType Basic
+#require valid-user
+#AuthUserFile /home/admin/free-lance.ru/html/.htpwd
+#</Files>
+
+ErrorDocument 404 /404.php
+ErrorDocument 403 /403.php
+ErrorDocument 401 /unavailable.html
+
+php_flag register_globals Off
+
+DirectoryIndex index.phtml index.php index.html
+
+RewriteEngine On
+
+
+#Default projects list page
+#RewriteCond %{QUERY_STRING} ^$
+#RewriteRule ^projects/$  projects/list/index.php?showprojects=1 [NS,QSA]
+
+
+#RewriteCond   %{HTTP_HOST}	           ^[^(.|www)]+\.free-lance\.ru$
+#RewriteCond   %{REQUEST_URI}               !/user/
+#RewriteCond   %{REQUEST_URI}               \.php
+RewriteCond %{REQUEST_FILENAME} !-f    
+#RewriteRule   ^(.+)                        %{HTTP_HOST}/$1 [C]
+#RewriteRule   ^([^(.|www)]+)\.free-lance\.ru/(.*) /user/index.php?user=$2&p=$3 [R,QSA]
+
+
+RewriteRule ^proj$                             /projects/index.php [NS,QSA]
+RewriteRule ^proj/$                            /projects/index.php [NS,QSA]
+
+
+##0026650 Deprecated conflict
+RewriteRule ^projects/$                       projects/list/index.php?showprojects=1 [NS,QSA]
+
+# Change project status
+RewriteRule ^project/([0-9]+)/status/(.*)/(.*)/$ projects/status.php?project_id=$1&status=$2&hash=$3 [NS,QSA]
+
+#Count statictics
+RewriteRule ^s.gif?(.*)$    /s.php?$1 [NC,L]
+
+
+#Welcome Wizard
+RewriteRule ^welcome[/]?$ /welcome/freelancer/1/ [R=301,L]
+RewriteRule ^welcome/(freelancer|customer)[/]?$ /welcome/$1/1/ [R=301,L]
+RewriteRule ^welcome/(freelancer|customer)/([1-9])$ /welcome/$1/$2/ [R=301,L]
+RewriteRule ^welcome/(freelancer|customer)/([1-9])/$ welcome/index.php?controller=$1&action=$2 [NS,QSA]
+
+
+#Catalog TU
+RewriteRule ^tu$ /tu/ [R=301,L]
+RewriteRule ^tu/$ tu/catalog.php [L]
+RewriteRule ^tu/([-_A-Za-z0-9]+)$ /tu/$1/ [R=301,L]
+RewriteRule ^tu/([-_A-Za-z0-9]+)/$ tu/catalog.php?category=$1 [NS,QSA]
+#Card TU
+RewriteRule ^tu/([0-9]+)/([-_A-Za-z0-9]+)\.html$ /tu/index.php?action=card&tuid=$1 [NS,L]
+#Manage TU
+RewriteRule ^users/([^/]+)/tu/(new|close|delete)$ /users/$1/tu/$2/ [R=301,L]
+RewriteRule ^users/([^/]+)/tu/(new|close|delete)/$ /tu/manage.php?action=$2&user=$1 [L]
+RewriteRule ^users/([^/]+)/tu/(edit)/([0-9]+)$ /users/$1/tu/$2/$3/ [R=301,L]
+RewriteRule ^users/([^/]+)/tu/(edit)/([0-9]+)/$ /tu/manage.php?action=$2&user=$1&tuid=$3 [L]
+#Profile TU list
+RewriteRule ^users/([^/]+)/tu$ /users/$1/tu/ [R=301,L]
+#TU order card
+RewriteRule ^tu/order/([0-9]+)$ /tu/order/$1/ [R=301,L]
+RewriteRule ^tu/order/([0-9]+)/$ tu/order.php?order_id=$1 [NS,QSA]
+#Create TU order
+RewriteRule ^tu/([0-9]+)/order/$ tu/order.php?action=order&tuid=$1 [NS,QSA]
+#TU orders list for freelancer
+RewriteRule ^tu-orders$ /tu-orders/ [R=301,L]
+RewriteRule ^tu-orders/$ tu/order.php?action=frllist [NS,QSA]
+#Change TU status
+#RewriteRule ^tu/order/([0-9]+)/status/$ tu/order.php?action=status&order_id=$1 [NS,QSA]
+RewriteRule ^tu/order/([0-9]+)/status/(.*)/(.*)/$ tu/order.php?action=status&order_id=$1&status=$2&hash=$3 [NS,QSA]
+#Create new order for anomin
+RewriteRule ^tu/new-order/([0-9a-f]{32})$ /tu/new-order/$1/ [R=301,L]
+RewriteRule ^tu/new-order/([0-9a-f]{32})/$ tu/order.php?action=neworder&code=$1 [NS,QSA]
+#Create new personal order
+RewriteRule ^new-personal-order/([^/]+)$ /new-personal-order/$1/ [R=301,L]
+RewriteRule ^new-personal-order/([^/]+)/$ tu/order.php?action=newpersonalorder&user=$1 [NS,QSA]
+#Create new project order
+RewriteRule ^new-project-order/([0-9]+)$ /new-project-order/$1/ [R=301,L]
+RewriteRule ^new-project-order/([0-9]+)/$ tu/order.php?action=newprojectorder&offer_id=$1 [NS,QSA]
+
+#Create guest new project
+RewriteRule ^guest/new/project$ /guest/new/project/ [R=301,L]
+RewriteRule ^guest/new/project/$ guest/index.php?action=project [NS,QSA]
+#Create guest new vacancy
+RewriteRule ^guest/new/vacancy$ /guest/new/vacancy/ [R=301,L]
+RewriteRule ^guest/new/vacancy/$ guest/index.php?action=vacancy [NS,QSA]
+#Create guest new personal order
+RewriteRule ^guest/new/personal-order/([^/]+)$ /guest/new/personal-order/$1/ [R=301,L]
+RewriteRule ^guest/new/personal-order/([^/]+)/$ guest/index.php?action=personalorder&user=$1 [NS,QSA]
+#Activate service for guest
+RewriteRule ^guest/activate/([0-9a-f]{32})$ /guest/activate/$1/ [R=301,L]
+RewriteRule ^guest/activate/([0-9a-f]{32})/$ guest/index.php?action=activate&code=$1 [NS,QSA]
+#Unsubscribe guest from invitations
+RewriteRule ^guest/unsubscribe/$ guest/index.php?action=unsubscribe [NS,QSA]
+
+#RewriteRule ^test /router.php [L]
+RewriteRule ^myblog(.*)$ /router.php?pg=/myblog$1 [L]
+RewriteRule ^about/rules[/]?.+$ https://st.fl.ru/about/documents/appendix_2_regulations.pdf [R,L]
+RewriteRule ^about/offer[/]?$ /about/agreement_site.pdf [R,L]
+RewriteRule ^about/tpo[/]?$ /about/appendix_3_software_requirements.pdf [R,L]
+RewriteRule ^about/([-_a-zA-Z0-9]+)\.pdf$ /about/redirect.php?f=$1.pdf [R,L]
+RewriteCond %{REQUEST_URI} !about/redirect.php
+RewriteRule ^about(.*)$ /router.php?pg=/about$1 [L]
+RewriteRule ^press(.*)$ /router.php?pg=/press$1 [L]
+RewriteRule ^adminback(.*)$ /router.php?pg=/adminback$1 [L]
+#RewriteRule ^obill(.*) /router.php?pg=/bill$1 [L]
+
+#RewriteRule ^search/([^/]+)[/]?([^/]*)[/]?$		/search/?action=view&type=$1&page=$2 [NS,L]
+#RewriteRule ^search/([^/]+)[/]?$			/search/?action=view&type=$1 [NS,L]
+##	для поиска
+
+RewriteRule ^catalog/section/([^/]+)[/]?$		/catalog/section/?id=$1 [NS,L]
+
+RewriteRule ^newyear2009/([^/]+)[/]?$			/newyear2009/?v=$1 [NS,L]
+##	для новогодних поздравлений
+RewriteRule ^news/([^/]+)[/]?$			/news/?date=$1 [NS,L]
+##	для новостей
+RewriteRule ^contacts/([^/]+)[/]?$		/contacts/?p=$1 [NS,L,QSA]
+##	для контактов
+RewriteCond   %{REQUEST_URI}               !\.php
+RewriteRule ^promo-([^/]+)[/]?$			/promo/index.php?p=$1 [NS,L,QSA]
+RewriteCond   %{REQUEST_URI}               !\.php
+RewriteRule ^feedback(.*)$	/about/feedback$1 [NS,L,QSA]
+RewriteRule ^norisk/([^/]+)[/]?$			/norisk/index.php?p=$1 [NS,L,QSA]
+RewriteRule ^users[/]?$				/freelancers/ [R]
+##	 
+RewriteRule ^users/(([^/]{1,2})[^/]*)/resume/([^/]*)$	/upload/users/$2/$1/resume/$3
+##	для прямой загрузки файлов
+RewriteRule ^users/(([^/]{1,2})[^/]*)/upload/([^/]*)$	/upload/users/$2/$1/upload/$3
+##	для прямой загрузки файлов
+RewriteRule ^users/(([^/]{1,2})[^/]*)/tmpproj/([^/]*)$	/upload/users/$2/$1/tmpproj/$3
+##	для прямой загрузки файлов
+RewriteRule ^users/(([^/]{1,2})[^/]*)/foto/([^/]*)$     /upload/users/$2/$1/foto/$3 
+RewriteRule ^users/(([^/]{1,2})[^/]*)/logo/([^/]*)$     /upload/users/$2/$1/logo/$3 
+RewriteRule ^users/(([^/]{1,2})[^/]*)/contacts/([^/]*)$     /upload/users/$2/$1/contacts/$3 
+RewriteRule ^users/([^/]+)/addnote/$		/user/addnote.php?user=$1
+##	для заметок
+RewriteRule ^users/([^/]+)/uploads/([^/]*)[/]?$	/user/uploads/index.php?user=$1&p=$2
+##	для написать\загрузить
+RewriteRule ^users/([^/]+)/setup[/]?([^/]*)[/]?([^/]*)[/]?$ /user/setup/index.php?user=$1&p=$2&target=$3 [QSA]
+##	для настроек
+RewriteRule ^users/([^/]+)/([^\.]+)\.php$	/user/$2.php?user=$1 [QSA]
+##	для viewproj
+ RewriteRule ^users/([^/]+)[/]?([^/]*)[/]?$	/user/index.php?user=$1&p=$2 [NS,QSA]
+##	для просмотра ин
+RewriteRule ^freelancers/([-_A-Za-z0-9]+)$ /freelancers/$1/ [R=301,L]
+RewriteRule ^freelancers/([-_A-Za-z0-9]+)/$ freelancers/index.php?prof=$1 [NS,QSA]
+
+RewriteRule ^freelancers/([-_A-Za-z0-9]+)/([-_A-Za-z0-9]+)$ /freelancers/$1/$2/ [R=301,L]
+RewriteRule ^freelancers/([-_A-Za-z0-9]+)/([-_A-Za-z0-9]+)/$ freelancers/index.php?prof=$1&region_filter_country=$2 [NS,QSA]
+RewriteRule ^freelancers/([-_A-Za-z0-9]+)/([-_A-Za-z0-9]+)/([-_A-Za-z0-9]+)$ /freelancers/$1/$2/$3/ [R=301,L]
+RewriteRule ^freelancers/([-_A-Za-z0-9]+)/([-_A-Za-z0-9]+)/([-_A-Za-z0-9]+)/$ freelancers/index.php?prof=$1&region_filter_country=$2&&region_filter_city=$3 [NS,QSA]
+
+RewriteRule ^freelancers2/([-_A-Za-z0-9]+)$ /freelancers2/$1/ [R=301,L]
+RewriteRule ^freelancers2/([-_A-Za-z0-9]+)/$ freelancers2/index.php?prof=$1 [NS,QSA]
+RewriteRule ^freelancers2/([-_A-Za-z0-9]+)/([-_A-Za-z0-9]+)$ /freelancers2/$1/$2/ [R=301,L]
+RewriteRule ^freelancers2/([-_A-Za-z0-9]+)/([-_A-Za-z0-9]+)/$ freelancers2/index.php?prof=$1&region_filter_country=$2 [NS,QSA]
+RewriteRule ^freelancers2/([-_A-Za-z0-9]+)/([-_A-Za-z0-9]+)/([-_A-Za-z0-9]+)$ /freelancers2/$1/$2/$3/ [R=301,L]
+RewriteRule ^freelancers2/([-_A-Za-z0-9]+)/([-_A-Za-z0-9]+)/([-_A-Za-z0-9]+)/$ freelancers2/index.php?prof=$1&region_filter_country=$2&&region_filter_city=$3 [NS,QSA]
+
+
+RewriteRule ^service/docs/([^/]+)/?$ /service/docs/?action=$1 [NS,L,QSA]
+
+##    0014743
+RewriteRule ^projects/([0-9]+)$                         /projects/$1/ [R=301,L]
+RewriteRule ^projects/([0-9]+)/$                        projects/index.php?newurl=1&pid=$1 [NS,QSA]
+RewriteRule ^projects/([0-9]+)/([-_A-Za-z0-9]+)\.html$  projects/index.php?newurl=1&pid=$1 [NS,QSA]
+RewriteRule ^blogs/([-_A-Za-z0-9]+)/([0-9]+)$                         /blogs/$1/$2/ [R=301,L]
+RewriteRule ^blogs/([-_A-Za-z0-9]+)/([0-9]+)/$                        blogs/view.php?newurl=1&tr=$2 [NS,QSA]
+RewriteRule ^blogs/([-_A-Za-z0-9]+)/([0-9]+)/([-_A-Za-z0-9]+)\.html$  blogs/view.php?newurl=1&tr=$2 [NS,QSA]
+RewriteRule ^blogs/([-_A-Za-z0-9]+)$                         /blogs/$1/ [R=301,L]
+RewriteRule ^blogs/([-_A-Za-z0-9]+)/$                        blogs/viewgroup.php?newurl=1&grname=$1 [NS,QSA]
+RewriteRule ^blogs$                         				 /blogs/ [R=301,L]
+RewriteRule ^blogs/$                        				 blogs/viewgroup.php?newurl=1 [NS,QSA]
+
+
+RewriteRule ^articles/([0-9]+)$   /articles/$1/ [R=301,L]
+RewriteRule ^interview/([0-9]+)$   /interview/$1/ [R=301,L]
+RewriteRule ^interview/([0-9]+)$  interview/index.php?newurl=1&id=$1 [NS,QSA]
+RewriteRule ^articles/([0-9]+)/$  articles/index.php?newurl=1&id=$1 [NS,QSA]
+RewriteRule ^interview/([0-9]+)/$  interview/index.php?newurl=1&id=$1 [NS,QSA]
+RewriteRule ^articles/([0-9]+)/([-_A-Za-z0-9]+)\.html$  articles/index.php?newurl=1&id=$1 [NS,QSA]
+RewriteRule ^interview/([0-9]+)/([-_A-Za-z0-9]+)\.html$  interview/index.php?newurl=1&id=$1 [NS,QSA]
+RewriteRule ^commune/([-_A-Za-z0-9]+)$                         /commune/$1/ [R=301,L]
+RewriteRule ^commune/([-_A-Za-z0-9]+)/$                        commune/index.php?newurl=1&grname=$1 [NS,QSA]
+RewriteRule ^commune/([-_A-Za-z0-9]+)/([0-9]+)/([-_A-Za-z0-9]+)$                         /commune/$1/$2/$3/ [R=301,L]
+RewriteRule ^commune/([-_A-Za-z0-9]+)/([0-9]+)/([-_A-Za-z0-9]+)/$                        commune/index.php?newurl=1&communeid=$2 [NS,QSA]
+RewriteRule ^commune/([-_A-Za-z0-9]+)/([0-9]+)/([-_A-Za-z0-9]+)/([0-9]+)$                         /commune/$1/$2/$3/$4/ [R=301,L]
+RewriteRule ^commune/([-_A-Za-z0-9]+)/([0-9]+)/([-_A-Za-z0-9]+)/([0-9]+)/$                        commune/index.php?newurl=1&site=Topic&post=$4 [NS,QSA]
+RewriteRule ^commune/([-_A-Za-z0-9]+)/([0-9]+)/([-_A-Za-z0-9]+)/([0-9]+)/([-_A-Za-z0-9]+)\.html$  commune/index.php?newurl=1&site=Topic&post=$4 [NS,QSA]
+RewriteRule ^commune/([-_A-Za-z0-9]+)/([-_A-Za-z0-9]+)/([0-9]+)/([-_A-Za-z0-9]+)\.html$  commune/index.php?newurl=1&site=Topic&post=$3 [NS,QSA]
+RewriteRule ^wizard/registration/employer/?$  wizard/registration/?role=1 [NS,QSA]
+RewriteRule ^wizard/registration/free-lancer/?$  wizard/registration/?role=2 [NS,QSA]
+
+RewriteRule ^sdelau$   /sdelau/$1/ [R=301,L]
+RewriteRule ^sdelau/$   index.php?newurl=1&kind=8 [NS,QSA]
+RewriteRule ^konkurs$  /konkurs/$1/ [R=301,L]
+RewriteRule ^konkurs/$   projects/list/index.php?newurl=1&kind=2 [NS,QSA]
+
+
+# Catalog
+RewriteRule ^catalog/admin.*$               														- [L]
+RewriteRule ^catalog/([-_A-Za-z0-9]+)/([-_A-Za-z0-9]+)/([-_A-Za-z0-9]+)/([-_A-Za-z0-9]+)\.html$		/catalog/?subdomain=$1&direction=$2&dir=$4 [NS,QSA]
+RewriteRule ^catalog/([-_A-Za-z0-9]+)/([-_A-Za-z0-9]+)/([-_A-Za-z0-9]+)$							/catalog/$1/$2/$3/ [R=301,L]
+RewriteRule ^catalog/([-_A-Za-z0-9]+)/([-_A-Za-z0-9]+)/([-_A-Za-z0-9]+)/$							/catalog/?subdomain=$1&direction=$2&cat=$3 [NS,QSA]
+RewriteRule ^catalog/([-_A-Za-z0-9]+)/([-_A-Za-z0-9]+)/$											/catalog/?subdomain=$1&direction=$2 [NS,QSA]
+RewriteRule ^catalog/([-_A-Za-z0-9]+)/([-_A-Za-z0-9]+)$												/catalog/$1/$2/ [R=301,L]
+RewriteRule ^catalog/([-_A-Za-z0-9]+)/([-_A-Za-z0-9]+)/$											/catalog/?subdomain=$1&direction=$2 [NS,QSA]
+RewriteRule ^catalog/([-_A-Za-z0-9]+)$																/catalog/$1/ [R=301,L]
+RewriteRule ^catalog/([-_A-Za-z0-9]+)/$																/catalog/?subdomain=$1 [NS,QSA]
+RewriteRule ^catalog$																				/catalog/ [R=301,L]
+
+#Massending
+RewriteRule ^masssending/pay/([0-9]+)$   /masssending/pay/$1/ [R=301,L]
+RewriteRule ^masssending/pay/([0-9]+)/$  masssending/masssending_pay.php?id=$1 [NS,QSA]
+
+# 0021372
+RewriteRule ^promo/frlpro[/]?$		/payed/ [R=301,L]
+RewriteRule ^promo/emppro[/]?$		/payed-emp/ [R=301,L]
+
+RewriteRule ^promo/bezopasnaya-sdelka(.*) /promo/sbr$1 [L]
+RewriteRule ^bezopasnaya-sdelka(.*)       /sbr$1 [L]
+
+#RewriteCond   %{REQUEST_URI}               ^\/index\.phtml$
+#RewriteCond   %{HTTP_HOST}                !^www\.free-lance\.ru$ 
+#RewriteCond   %{HTTP_HOST}                ^(.+)\.free-lance\.ru$
+#RewriteRule   ^(.+)$    http://free-lance.ru/redirect.php?login=%{HTTP_HOST}
+
+php_value error_log "/proj/free-lance/.error.log"
+#test3

@@ -1,0 +1,20 @@
+<div class="b-combo 
+    <?php if($this->element->getAttrib('unit')):?>b-combo_inline-block<?php endif; ?>">
+    <div class="b-combo__input 
+         b-combo__input_calendar 
+         b-combo__input_arrow-date_yes 
+         use_past_date 
+        <?php if (!$this->element->getAttrib('set_date_on_load')):?>no_set_date_on_load<?php endif?>
+        <?php if ($this->element->getAttrib('width')):?>b-combo__input_width_<?=$this->element->getAttrib('width')?><?php endif?>
+        <?php if ($this->element->hasErrors()): ?>b-combo__input_error<?php endif;?>">
+        <input 
+            id="el-<?=$this->element->getName();?>"
+            type="text" 
+            name="<?=$this->element->getName();?>" 
+            value="<?=htmlspecialchars(stripslashes($this->element->getUnfilteredValue()));?>" 
+            <?php if ($this->element->getAttrib('width')):?>size="<?=$this->element->getAttrib('width')?>"<?php endif?> 
+            <?php if ($this->element->getAttrib('maxlength')):?>maxlength="<?=$this->element->getAttrib('maxlength')?>"<?php endif?> 
+            class="b-combo__input-text">
+        <span class="b-combo__arrow-date"></span>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+
+.b-fix{
+  position:fixed;
+  z-index:10;
+  }
+.b-fix_padtb_10{
+	padding-top:10px;
+	padding-bottom:10px;
+  }
+.b-fix_width_full{
+	width:100%;
+	}
+.b-fix_top_30{
+	top:30px;
+	}
+.b-fix_bg_ffebbf{
+	background:#ffebbf;
+	}
+.b-fix_bordbot_solid_e7cca5{
+	border-bottom:1px solid #e7cca5;
+	}

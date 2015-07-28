@@ -1,0 +1,3 @@
+        <h1 class="b-page__title">Эта страница доступна только для фрилансеров</h1>
+        <div class="b-txt b-txt_padbot_40"><a class="b-txt__lnk b-txt__lnk_underline b-txt__lnk_color_0f71c8" href="/registration/?type=frl">Зарегистрируйтесь</a> или <a class="b-txt__lnk b-txt__lnk_underline b-txt__lnk_color_0f71c8" href="/login/">авторизуйтесь</a> под аккаунтом фрилансера.</div>
+        <div class="b-txt">Если у вас возникли вопросы, обратитесь в <a class="b-txt__lnk b-txt__lnk_underline b-txt__lnk_color_0f71c8" href="https://feedback.fl.ru/">службу поддержки</a>.<br />С удовольствием ответим.</div>

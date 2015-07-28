@@ -1,0 +1,66 @@
+/*
+    b-horizontal-line
+*/
+
+.b-horizontal-line
+{
+  height: 1px;  
+  border: none; 
+  border-top: 1px solid #000;
+  margin: 0px;
+  position: relative;
+  
+  -moz-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  -o-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+.b-horizontal-line:after
+{
+  content: "";
+  display: block;
+  width: 26px;
+  height: 26px;
+  left: 50%;
+  margin: -13px 0px 0px -30px;
+  padding: 0px 17px 0px 17px;
+  position: absolute;
+  background-position: center center;
+}
+
+.b-horizontal-line_after_bgcolor_f3:after
+{
+    background-color: #F3F3F3;
+}
+
+.b-horizontal-line_margbot_30
+{
+    margin-bottom: 30px;
+}
+
+.b-horizontal-line_icon_warning
+{
+    border-top-color: #ffb910;
+}
+
+.b-horizontal-line_icon_warning:after 
+{
+    background-image: url(/css/block/b-horizontal-line/b-horizontal-line_icon_warning_2x.png);
+    background-size: 26px 26px;
+    background-repeat: no-repeat;
+}
+
+
+.b-horizontal-line_icon_prohibited
+{
+    border-top-color: #ff5a52;
+}
+
+.b-horizontal-line_icon_prohibited:after 
+{
+    background-image: url(/css/block/b-horizontal-line/b-horizontal-line_icon_prohibited_2x.png);
+    background-repeat: no-repeat;
+    background-size: 26px 26px;
+    margin-top: -15px;
+}

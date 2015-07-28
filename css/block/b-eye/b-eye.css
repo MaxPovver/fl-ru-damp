@@ -1,0 +1,72 @@
+.b-eye{
+	}
+.b-eye__icon{
+	width:14px;
+	height:7px;
+	float:left;
+	margin-top:10px;
+	background-position:0 0;
+	background-repeat:no-repeat;
+	}
+.b-eye__icon_margright_5{
+	margin-right:5px;
+	}
+.b-eye__icon_open{
+	background:url(b-eye.png) 0 0 no-repeat;
+	}
+.b-eye__icon_close{
+	background:url(b-eye.png) 0 -25px no-repeat;
+	}
+
+a.b-eye__link{
+	color:#026dc0 ;
+	font-size:11px;
+	font-family:Tahoma, Arial, Helvetica, sans-serif;
+	outline:none;
+	}
+a.b-eye__link:hover{
+	border-bottom-color:#8c0400 !important;
+	color:#8c0400 !important;
+	}
+a.b-eye__link:hover .b-eye__icon_open{
+	background:url(b-eye.png) 0 -10px no-repeat;
+	}
+a.b-eye__link:hover .b-eye__icon_close{
+	background:url(b-eye.png) 0 -35px no-repeat;
+	}
+a.b-eye__link_right_null{
+	position:absolute;
+	right:0;
+	}
+
+	
+.b-combo__input.b-eye .b-combo__input-text{
+	padding-right:20px !important;
+	}
+.b-combo__input.b-eye .b-eye__icon{
+	position:absolute;
+	right:4px;
+	}
+
+
+.b-combo_large .b-eye__link {
+    right: 10px;
+    top: 50%;
+    margin-top: -3px;
+}
+
+.b-combo_large .b-eye__link .b-eye__icon {
+    margin: 0px;
+}
+    
+
+
+
+
+
+
+
+
+
+
+

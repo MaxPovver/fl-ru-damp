@@ -1,0 +1,23 @@
+.b-menu_crumbs{
+	overflow:hidden;
+	}
+.b-menu_crumbs .b-menu__item{
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000;
+	float:left;
+	text-align:left;
+	}
+.b-menu_crumbs a.b-menu__link{
+	color:#026dc0 ;
+	display:inline;
+	}
+.b-menu_crumbs a.b-menu__link:hover{
+	color:#8c0400;
+	}
+.b-menu_bigcrumbs {
+	padding-bottom:20px;
+	}
+.b-menu_bigcrumbs .b-menu__item{
+	font-size: 34px !important;
+	}

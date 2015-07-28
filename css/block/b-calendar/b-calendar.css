@@ -1,0 +1,121 @@
+.b-calendar{
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#4c4c4c;
+	display:block;
+	text-align:center;
+	vertical-align:top;
+	padding:5px 10px 10px !important;
+	width:176px;
+	}
+.b-calendar__title{
+	border:0;
+	border-collapse: collapse;
+	margin-bottom:8px;
+	border-bottom:1px solid #ececec !important;
+	margin-left:1px;
+	width:174px;
+	}
+.b-calendar__month{
+	border:0;
+	border-spacing:1px;
+	border-collapse: separate;
+	width:100%;
+	}
+.b-calendar__nameday{
+	width:22px;
+	height:18px;
+	white-space:nowrap;
+	text-align:center;
+	}
+.b-calendar__day{
+	width:22px;
+	height:18px;
+	white-space:nowrap;
+	border:1px solid #fff;
+	text-align:center;
+	vertical-align:middle;
+	display:table-cell !important;
+	}
+.b-calendar__day_current{
+	background:#8bd44e;
+	border-color:#8bd44e;
+	}
+.b-calendar__day_future{
+	border:1px solid #ececec;
+	}
+.b-calendar__day_current a.b-calendar__link{
+	padding:3px 5px;
+	display:block;
+	}
+.b-calendar__day_future a.b-calendar__link{
+	padding:3px 5px;
+	display:block;
+	}
+.b-calendar__day_future a.b-calendar__link:hover{
+	background:#ececec;
+	}
+.b-calendar__nameday{
+	font-weight:normal;
+	padding:3px 0 5px;
+	}
+.b-calendar__navigate{
+	display:table-row !important;
+	width:100% !important;
+	}
+.b-calendar__head{
+	display:table-header-group;
+	width:100% !important;
+	}
+	
+a.b-calendar__link{
+	color:#000;
+	text-decoration:none;
+	}
+a.b-calendar__link:hover{
+	text-decoration:none;
+	}
+.b-calendar__day_nextmonth a.b-calendar__link, .b-calendar__day_prevmonth a.b-calendar__link{
+	color:#7f7f7f;
+	}
+.b-calendar__prevmonth, .b-calendar__nextmonth{
+	font-size:10px;
+	vertical-align:top;
+	height:25px;
+	display:table-cell !important;
+	}
+.b-calendar__prevmonth{
+	text-align:left;
+	}
+.b-calendar__nextmonth{
+	text-align:right;
+	}
+.b-calendar__currentmonth{
+	white-space:nowrap;
+	text-align:center;
+	vertical-align:middle;
+	height:25px;
+	display:table-cell !important;
+	width:100%;
+	}
+.b-calendar__prevmonth a.b-calendar__link, .b-calendar__nextmonth a.b-calendar__link{
+	background:url(b-calendar__arrow.png);
+	background-repeat:no-repeat;
+	}
+.b-calendar__prevmonth a.b-calendar__link, .b-calendar__nextmonth a.b-calendar__link{
+	width:24px;
+	height:25px;
+	display:block;
+	}
+.b-calendar__prevmonth a.b-calendar__link{
+	background-position:0 0;
+	}
+.b-calendar__nextmonth a.b-calendar__link{
+	background-position:-30px 0;
+	}
+.b-calendar__prevmonth a.b-calendar__link:hover{
+	background-position:0 -40px;
+	}
+.b-calendar__nextmonth a.b-calendar__link:hover{
+	background-position:-30px -40px;
+	}

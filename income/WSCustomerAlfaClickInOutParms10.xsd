@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xsd:schema targetNamespace="http://WSCustomerAlfaClickInOutParms10.EQ.CS.ws.alfabank.ru" xmlns:tns="http://WSCustomerAlfaClickInOutParms10.EQ.CS.ws.alfabank.ru" xmlns:wsct="http://WSCommonTypes10.CS.ws.alfabank.ru" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<xsd:import namespace="http://WSCommonTypes10.CS.ws.alfabank.ru" schemaLocation="WSCommonTypes10.xsd"/>
+	<xsd:complexType name="WSCustomerAlfaClickCheckInParms">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="ID_client" type="wsct:WSTypeChar16"/>
+      <!--????????????? ???????-->
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="WSCustomerAlfaClickCheckOutParms">
+		<xsd:sequence>
+			<xsd:element name="outCommonParms" type="wsct:WSCommonOutParms"/>
+			<xsd:element minOccurs="1" name="Valid_client" type="wsct:WSTypeChar1"/>
+      <!--????????? ????????? ("Y" - ???? ???????)-->
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="WSCustomerAlfaClickGatherInParms">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="ID_client" type="wsct:WSTypeChar16"/>
+      <!--????????????? ???????-->
+			<xsd:element minOccurs="0" name="PDP" type="wsct:WSTypeChar64"/>
+      <!--??????? ??????-->
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="WSCustomerAlfaClickGatherOutParms">
+		<xsd:sequence>
+			<xsd:element name="outCommonParms" type="wsct:WSCommonOutParms"/>
+			<xsd:element minOccurs="1" name="Fnm1" type="wsct:WSTypeChar35"/>
+      <!--??????? ???????-->
+			<xsd:element minOccurs="1" name="Fnm2" type="wsct:WSTypeChar35"/>
+      <!--??? ???????-->
+			<xsd:element minOccurs="1" name="Fnm3" type="wsct:WSTypeChar35"/>
+      <!--???????? ???????-->
+			<xsd:element minOccurs="1" name="Dtbr" type="wsct:WSTypeDate"/>
+      <!--???? ????????-->
+			<xsd:element minOccurs="1" name="Cln" type="wsct:WSTypeChar1"/>
+      <!--???-->
+			<xsd:element minOccurs="1" name="Pzip" type="wsct:WSTypeChar10"/>
+      <!--??????-->
+			<xsd:element minOccurs="1" name="Cna" type="wsct:WSTypeChar2"/>
+      <!--??????-->
+			<xsd:element minOccurs="1" name="Regd" type="wsct:WSTypeChar35"/>
+      <!--???????? ???????-->
+			<xsd:element minOccurs="1" name="Regn" type="wsct:WSTypeChar35"/>
+      <!--???????? ??????-->
+			<xsd:element minOccurs="1" name="Cit" type="wsct:WSTypeChar35"/>
+      <!--???????? ??????-->
+			<xsd:element minOccurs="1" name="Dwe" type="wsct:WSTypeChar35"/>
+      <!--?????????? ?????-->
+			<xsd:element minOccurs="1" name="Str" type="wsct:WSTypeChar35"/>
+      <!--???????? ?????-->
+			<xsd:element minOccurs="1" name="Hnum" type="wsct:WSTypeChar6"/>
+      <!--????? ????-->
+			<xsd:element minOccurs="1" name="Bnum" type="wsct:WSTypeChar5"/>
+      <!--????????-->
+			<xsd:element minOccurs="1" name="Flt" type="wsct:WSTypeChar5"/>
+      <!--????? ????????-->
+			<xsd:element minOccurs="1" name="Ucd" type="wsct:WSTypeChar3"/>
+      <!--??? ???? ???-->
+			<xsd:element minOccurs="1" name="Ser" type="wsct:WSTypeChar10"/>
+      <!--?????-->
+			<xsd:element minOccurs="1" name="Num" type="wsct:WSTypeChar35"/>
+      <!--?????-->
+			<xsd:element minOccurs="1" name="Org" type="wsct:WSTypeChar70"/>
+      <!--??? ?????-->
+			<xsd:element minOccurs="1" name="Opn" type="wsct:WSTypeDate"/>
+      <!--???? ??????-->
+		</xsd:sequence>
+	</xsd:complexType>
+	
+	<xsd:complexType name="WSCustomerAlfaClickGetInParms">
+		<xsd:sequence>
+			<xsd:element minOccurs="0" name="ID_client" type="wsct:WSTypeChar16"/>
+      <!--????????????? ??????? ? Gemini-->
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="WSCustomerAlfaClickGetOutParms">
+		<xsd:sequence>
+			<xsd:element name="outCommonParms" type="wsct:WSCommonOutParms"/>
+			<xsd:element minOccurs="1" name="CUS" type="wsct:WSTypeChar6"/>
+      <!--????????????? ??????? ? EQ (CUS)-->
+			<xsd:element minOccurs="1" name="CLC" type="wsct:WSTypeChar3"/>
+      <!--????????????? ??????? ? EQ (CLC)-->
+		</xsd:sequence>
+	</xsd:complexType>
+</xsd:schema>

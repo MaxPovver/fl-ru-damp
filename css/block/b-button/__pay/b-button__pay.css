@@ -1,0 +1,69 @@
+.b-button__pay{
+	font-size:11px;
+	text-align:center;
+	display:inline-block;
+	height:45px;
+	color:#808080;
+	font-family:Tahoma, Geneva, sans-serif;
+	padding:65px 10px 0 !important;
+	border:2px solid #e6e6e6;
+	border-radius:5px;
+	background-repeat:no-repeat;
+	}
+span.b-button__pay{
+	padding:15px 10px 0 !important;
+	height:95px;
+	border-color:#ccc;
+	}
+a.b-button__pay:hover{
+	border-color:#ccc;
+	}
+
+.b-button__pay_wm{
+	background-position:center 18px;
+	background-image: url(webmoney.png);
+	}
+.b-button__pay_wm.b-button_disabled, .b-button__pay_wm.b-button_disabled:hover{
+	background-image: url(webmoney_disabled.png);
+	color:#ccc;
+	border-color:#e6e6e6;
+	cursor:auto;
+	}
+
+.b-button__pay_yd{
+	background-position:center 15px;
+	background-image: url(yandex.png);
+	height: 45px;
+ padding: 65px 10px 0 !important;
+	}
+.b-button__pay_yd.b-button_disabled, .b-button__pay_yd.b-button_disabled:hover{
+	background-image: url(yandex_disabled.png);
+	color:#ccc;
+	border-color:#e6e6e6;
+	cursor:auto;
+	}
+
+
+
+.b-button__pay_card{
+	background-position:center 20px;
+	background-image: url(card.png);
+ padding: 45px 10px 0 !important;
+	height: 65px;
+	}
+.b-button__pay_card.b-button_disabled, .b-button__pay_card.b-button_disabled:hover{
+	background-image: url(card_disabled.png);
+	color:#ccc;
+	border-color:#f2f2f2;
+	cursor:auto;
+	}
+
+
+
+
+
+
+
+
+
+

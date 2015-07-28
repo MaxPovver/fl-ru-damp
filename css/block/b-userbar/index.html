@@ -1,0 +1,218 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>b-userbar</title>
+<link href="b-userbar.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div class="b-userbar">
+    <div class="b-userbar__top b-userbar__top_free">
+        <b class="b-userbar__b1"></b>
+        <b class="b-userbar__b2"></b> 
+        <ul class="b-userbar__toplist">
+            <li class="b-userbar__login"><a class="b-userbar__toplink" href="/users/Alexandra13">Alexandra13</a>[<a class="b-userbar__toplink" title="Администрация" href="/siteadmin/">А</a>]</li>
+			<li class="b-userbar__account"><a class="b-userbar__toplink" href="/bill/"><i class="b-userbar__icacc"></i><b class="b-userbar__bold">Мой счет:</b> 71141.79  FM</a></li>
+            <li id="new_offers_messages" class="b-userbar__projects"><a class="b-userbar__toplink" href="/projects/?p=list"><i class="b-userbar__icprj"></i>Проекты</a></li>
+            <li class="b-userbar__sbr"><a class="b-userbar__toplink" href="/norisk2/"><i class="b-userbar__icsbr"></i>СБР</a></li>
+            <li id="mb-account" class="b-userbar__switch">
+        		<span class="b-userbar__switcher"><a id="l-switch" class="b-userbar__toplink" href="javascript:void(0);"><i class="b-userbar__icsw"></i>Аккаунт работодателя</a></span>
+			</li>
+            <li class="b-userbar__exit">
+                <form id="___logout_frm___" method="post" action="/">
+                	<div>
+                    	<input type="hidden" value="logout" name="action" />
+                    	<input class="b-userbar__exitbtn" type="submit" value="Выйти" title="Выйти" alt="Выйти" />
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </div>
+    <div class="b-userbar__bot">
+        <ul class="b-userbar__botlist">
+            <li class="b-userbar__settings"> <a class="b-userbar__link" href="/users/Alexandra13/setup/"><i class="b-userbar__icset"></i>Настройки</a> </li>
+            <li class="b-userbar__pro"><a class="b-userbar__link" href="/payed/">Купить <img class="b-userbar__icpro" alt="pro" src="/images/icons/f-pro.png" /></a></li>
+            <li class="b-userbar__message "><a class="b-userbar__link" href="/contacts/"><i class="b-userbar__icmess"></i>Мои контакты</a></li>
+            <li class="b-userbar__services"><a class="b-userbar__link" href="/bill/buy/">Платные услуги</a></li>
+            <li class="b-userbar__stat"><a class="b-userbar__link" href="/promotion/"><i class="b-userbar__icstat"></i>Статистика</a></li>
+            <li class="b-userbar__lenta"><a class="b-userbar__link" href="/lenta/"><i class="b-userbar__iclenta"></i>Лента</a></li>
+            <li class="b-userbar__drafts"><a class="b-userbar__link" href="/drafts/"><i class="b-userbar__icdrafts"></i>Черновики (33)</a></li>
+        </ul>
+        <b class="b-userbar__b3"></b>
+        <b class="b-userbar__b4"></b>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="b-userbar">
+    <div class="b-userbar__top b-userbar__top_free">
+        <b class="b-userbar__b1"></b>
+        <b class="b-userbar__b2"></b> 
+        <ul class="b-userbar__toplist">
+            <li class="b-userbar__login"><a class="b-userbar__toplink" href="/users/Alexandra13">Alexandra13</a>[<a class="b-userbar__toplink" title="Администрация" href="/siteadmin/">А</a>]</li>
+			<li class="b-userbar__account"><a class="b-userbar__toplink" href="/bill/"><i class="b-userbar__icacc"></i><b class="b-userbar__bold">Мой счет:</b> 71141.79  FM</a></li>
+            <li id="new_offers_messages" class="b-userbar__projects"><a class="b-userbar__toplink" href="/projects/?p=list"><img class="b-user__prjic" src="b-userbar__prjfree.gif" alt="" width="16" height="16" />Проекты</a></li>
+            <li class="b-userbar__sbr"><a class="b-userbar__toplink" href="/norisk2/"><img class="b-userbar__sbric" src="b-userbar__sbrfree.gif" alt="" width="24" height="24" />СБР</a></li>
+            <li id="mb-account" class="b-userbar__switch">
+        		<span class="b-userbar__switcher"><a id="l-switch" class="b-userbar__toplink" href="javascript:void(0);"><i class="b-userbar__icsw"></i>Аккаунт работодателя</a></span>
+        		<div id="b-switch" class="b-userbar__switchblock" style="display:block">
+					<b class="b-userbar__b2"></b>
+					<form id="asw_form" class="b-userbar__frmtransit" onsubmit="change_au(); return false" method="post" action="/">
+						<div>
+							<input type="hidden" value="%2F" id="redirect_au" name="redirect" />
+							<label class="b-userbar__transloginlabel" for="b-userbar__transitlogin"><i class="b-userbar__icsw"></i></label>
+							<input id="b-userbar__transitlogin" class="b-userbar__transitlogin" type="text" onblur="if(this.value==''){this.value='Логин';}" onfocus="if(this.value=='Логин'){this.value='';}"  value="alexandra15" name="a_login" />
+							<input id="b-userbar__transitpswrd" class="b-userbar__transitpswrd" type="password" onblur="if(this.value==''){this.value='******';}" onfocus="if(this.value=='******') {this.value='';}"  value="******" name="passwd" />
+							<a id="l-cancel" class="b-userbar__toplink" href="">Отмена</a>
+							<input class="b-userbar__transition" type="submit" value="Перейти" />
+						</div>
+					</form>
+				</div>
+			</li>
+            <li class="b-userbar__exit">
+                <form id="___logout_frm___" class="b-userbar__frmexit" method="post" action="/">
+                	<div>
+                    	<input type="hidden" value="logout" name="action" />
+                    	<input class="b-userbar__exitbtn" type="submit" value="Выйти" title="Выйти" alt="Выйти" />
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </div>
+    <div class="b-userbar__bot">
+        <ul class="b-userbar__botlist">
+            <li class="b-userbar__settings"> <a class="b-userbar__link" href="/users/Alexandra13/setup/"><i class="b-userbar__icset"></i>Настройки</a> </li>
+            <li class="b-userbar__pro"><a class="b-userbar__link" href="/payed/">Купить <img class="b-userbar__icpro" alt="pro" src="/images/icons/f-pro.png" /></a></li>
+            <li class="b-userbar__message "><a class="b-userbar__link b-userbar__link_green" href="/contacts/"><img class="b-userbar__mess" src="b-userbar__mess.gif" alt="" width="15" height="15" />1 новое сообщение</a></li>
+            <li class="b-userbar__services"><a class="b-userbar__link" href="/bill/buy/">Платные услуги</a></li>
+            <li class="b-userbar__stat"><a class="b-userbar__link" href="/promotion/"><i class="b-userbar__icstat"></i>Статистика</a></li>
+            <li class="b-userbar__lenta"><a class="b-userbar__link" href="/lenta/"><i class="b-userbar__iclenta"></i>Лента</a></li>
+            <li class="b-userbar__drafts"><a class="b-userbar__link" href="/drafts/"><i class="b-userbar__icdrafts"></i>Черновики (33)</a></li>
+        </ul>
+        <b class="b-userbar__b3"></b>
+        <b class="b-userbar__b4"></b>
+    </div>
+</div>
+
+
+
+
+
+<div class="b-userbar">
+    <div class="b-userbar__top b-userbar__top_emp">
+        <b class="b-userbar__b1"></b>
+        <b class="b-userbar__b2"></b> 
+        <ul class="b-userbar__toplist">
+            <li class="b-userbar__login"><a class="b-userbar__toplink" href="/users/Alexandra13">Alexandra13</a>[<a class="b-userbar__toplink" title="Администрация" href="/siteadmin/">А</a>]</li>
+			<li class="b-userbar__account"><a class="b-userbar__toplink" href="/bill/"><i class="b-userbar__icacc"></i><b class="b-userbar__bold">Мой счет:</b> 71141.79  FM</a></li>
+            <li id="new_offers_messages" class="b-userbar__projects"><a class="b-userbar__toplink" href="/projects/?p=list"><i class="b-userbar__icprj"></i>Проекты</a><span class="b-user__numberprj">(<a class="b-userbar__toplink" href="#">120</a>)</span></li>
+            <li class="b-userbar__sbr"><a class="b-userbar__toplink" href="/norisk2/"><i class="b-userbar__icsbr"></i>СБР</a></li>
+			<li class="b-userbar__lm"><a class="b-userbar__toplink" href="/manager/"><i class="b-userbar__iclm"></i>ЛМ</a></li>
+            <li id="mb-account" class="b-userbar__switch">
+        		<span class="b-userbar__switcher"><a id="l-switch" class="b-userbar__toplink" href="javascript:void(0);"><i class="b-userbar__icsw"></i>Аккаунт фри-лансера</a></span>
+			</li>
+            <li class="b-userbar__exit">
+                <form id="___logout_frm___" method="post" action="/">
+                	<div>
+                    	<input type="hidden" value="logout" name="action" />
+                    	<input class="b-userbar__exitbtn" type="submit" value="Выйти" title="Выйти" alt="Выйти" />
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </div>
+    <div class="b-userbar__bot">
+        <ul class="b-userbar__botlist">
+            <li class="b-userbar__settings"> <a class="b-userbar__link" href="/users/Alexandra13/setup/"><i class="b-userbar__icset"></i>Настройки</a> </li>
+            <li class="b-userbar__pro"><a class="b-userbar__link" href="/payed/">Купить <img class="b-userbar__icpro" alt="pro" src="/images/icons/f-pro.png" /></a></li>
+            <li class="b-userbar__message "><a class="b-userbar__link" href="/contacts/"><i class="b-userbar__icmess"></i>Мои контакты</a></li>
+            <li class="b-userbar__services"><a class="b-userbar__link" href="/bill/buy/">Платные услуги</a></li>
+            <li class="b-userbar__stat"><a class="b-userbar__link" href="/promotion/"><i class="b-userbar__icstat"></i>Статистика</a></li>
+            <li class="b-userbar__lenta"><a class="b-userbar__link" href="/lenta/"><i class="b-userbar__iclenta"></i>Лента</a></li>
+            <li class="b-userbar__drafts"><a class="b-userbar__link" href="/drafts/"><i class="b-userbar__icdrafts"></i>Черновики (33)</a></li>
+        </ul>
+        <b class="b-userbar__b3"></b>
+        <b class="b-userbar__b4"></b>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="b-userbar">
+    <div class="b-userbar__top b-userbar__top_emp">
+        <b class="b-userbar__b1"></b>
+        <b class="b-userbar__b2"></b> 
+        <ul class="b-userbar__toplist">
+            <li class="b-userbar__login"><a class="b-userbar__toplink" href="/users/Alexandra13">Alexandra13</a>[<a class="b-userbar__toplink" title="Администрация" href="/siteadmin/">А</a>]</li>
+			<li class="b-userbar__account"><a class="b-userbar__toplink" href="/bill/"><i class="b-userbar__icacc"></i><b class="b-userbar__bold">Мой счет:</b> 71141.79  FM</a></li>
+            <li id="new_offers_messages" class="b-userbar__projects"><a class="b-userbar__toplink" href="/projects/?p=list"><img class="b-user__prjic" src="b-userbar__prjemp.gif" alt="" width="16" height="16" />Проекты</a></li>
+            <li class="b-userbar__sbr"><a class="b-userbar__toplink" href="/norisk2/"><img class="b-userbar__sbric" src="b-userbar__sbremp.gif" alt="" width="24" height="24" />СБР</a></li>
+			<li class="b-userbar__lm"><a class="b-userbar__toplink" href="/manager/"><i class="b-userbar__iclm"></i>ЛМ</a></li>
+            <li id="mb-account" class="b-userbar__switch">
+        		<span class="b-userbar__switcher"><a id="l-switch" class="b-userbar__toplink" href="javascript:void(0);"><i class="b-userbar__icsw"></i>Аккаунт работодателя</a></span>
+        		<div id="b-switch" class="b-userbar__switchblock" style="display:block">
+					<b class="b-userbar__b2"></b>
+					<form id="asw_form" class="b-userbar__frmtransit" onsubmit="change_au(); return false" method="post" action="/">
+						<div>
+							<input type="hidden" value="%2F" id="redirect_au" name="redirect" />
+							<label class="b-userbar__transloginlabel" for="b-userbar__transitlogin"><i class="b-userbar__icsw"></i></label>
+							<input id="b-userbar__transitlogin" class="b-userbar__transitlogin" type="text" onblur="if(this.value==''){this.value='Логин';}" onfocus="if(this.value=='Логин'){this.value='';}"  value="alexandra15" name="a_login" />
+							<input id="b-userbar__transitpswrd" class="b-userbar__transitpswrd" type="password" onblur="if(this.value==''){this.value='******';}" onfocus="if(this.value=='******') {this.value='';}"  value="******" name="passwd" />
+							<a id="l-cancel" class="b-userbar__toplink" href="">Отмена</a>
+							<input class="b-userbar__transition" type="submit" value="Перейти" />
+						</div>
+					</form>
+				</div>
+			</li>
+            <li class="b-userbar__exit">
+                <form id="___logout_frm___" method="post" action="/">
+                	<div>
+                    	<input type="hidden" value="logout" name="action" />
+                    	<input class="b-userbar__exitbtn" type="submit" value="Выйти" title="Выйти" alt="Выйти" />
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </div>
+    <div class="b-userbar__bot">
+        <ul class="b-userbar__botlist">
+            <li class="b-userbar__settings"> <a class="b-userbar__link" href="/users/Alexandra13/setup/"><i class="b-userbar__icset"></i>Настройки</a> </li>
+            <li class="b-userbar__pro"><a class="b-userbar__link" href="/payed/"><img class="b-userbar__icpro" alt="pro" src="/images/icons/f-pro.png" /></a><a title="PRO" class="b-userbar__link" href="/payed/"> до 30.06.2012</a></li>
+            <li class="b-userbar__message "><a class="b-userbar__link b-userbar__link_green" href="/contacts/"><img class="b-userbar__mess" src="b-userbar__mess.gif" alt="" width="15" height="15" />1 новое сообщение</a></li>
+            <li class="b-userbar__services"><a class="b-userbar__link" href="/bill/buy/">Платные услуги</a></li>
+            <li class="b-userbar__stat"><a class="b-userbar__link" href="/promotion/"><i class="b-userbar__icstat"></i>Статистика</a></li>
+            <li class="b-userbar__lenta"><a class="b-userbar__link" href="/lenta/"><i class="b-userbar__iclenta"></i>Лента</a></li>
+            <li class="b-userbar__drafts"><a class="b-userbar__link" href="/drafts/"><i class="b-userbar__icdrafts"></i>Черновики (33)</a></li>
+        </ul>
+        <b class="b-userbar__b3"></b>
+        <b class="b-userbar__b4"></b>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

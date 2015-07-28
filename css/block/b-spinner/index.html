@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="windows-1251" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>Spinner</title>
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+		<link href="/css/block/b-spinner/b-spinner.css" rel="stylesheet" type="text/css" />
+		<script type="text/javascript" src="/scripts/mootools-new.js"></script>
+		<script type="text/javascript" src="/css/block/b-spinner/b-spinner.js" charset="windows-1251"></script>
+	</head>
+	<body>
+		<div>
+			<header>
+				<h1>Examples:</h1>
+			</header>
+			<div>
+				<h2>Default spinner</h2>
+
+				<div>
+					<i class="b-spinner__white"></i>
+					<br />
+					<i class="b-spinner__f0ffdf"></i>
+				</div>
+
+
+	        	<div style="padding-left:20px;">
+	        		<span class="b-spinner" id="attachedfiles-spinner"></span>
+	        	</div>
+				<script type="text/javascript">
+				window.addEvent('domready', function() {
+					var target = $('attachedfiles-spinner');
+					var spinner = new Spinner(opts).spin(target);
+				});
+				</script>
+
+
+				<h2>Custom spinner</h2>
+	        	<div style="padding:20px;background:#d2d2d2;">
+	        		<span class="b-spinner" id="attachedfiles-spinner2" style="width:140px;height:140px;"></span>
+	        	</div>
+	        	<a id="attachedfiles-spinner2-control" href="#off">включить спиннер</a>
+				<script type="text/javascript">
+				var opts_custom = {
+					lines: 11, // The number of lines to draw
+					length: 27, // The length of each line
+					width: 13, // The line thickness
+					radius: 20, // The radius of the inner circle
+					corners: 1, // Corner roundness (0..1)
+					rotate: 1, // The rotation offset
+					direction: 1, // 1: clockwise, -1: counterclockwise
+					color: '#ffffff', // #rgb or #rrggbb
+					speed: 1.3, // Rounds per second
+					trail: 60, // Afterglow percentage
+					shadow: false, // Whether to render a shadow
+					hwaccel: true, // Whether to use hardware acceleration
+					className: 'spinner2', // The CSS class to assign to the spinner
+					zIndex: 2e9, // The z-index (defaults to 2000000000)
+					top: 'auto', // Top position relative to parent in px
+					left: 'auto' // Left position relative to parent in px
+				};
+				window.addEvent('domready', function() {
+					var target2 = $('attachedfiles-spinner2');
+					var spinner2;
+					$('attachedfiles-spinner2-control').addEvent('click', function(){
+						if(this.get('href') == '#off') {
+							spinner2 = new Spinner(opts_custom).spin(target2);
+							this.set('href', '#on');
+							this.set('text', 'выключить спиннер');
+						}
+						else {
+							spinner2.stop();
+							this.set('href', '#off');
+							this.set('text', 'включить спиннер');
+						}
+						return false;
+					});
+				});
+				</script>
+			</div>
+		</div>
+	</body>
+</html>

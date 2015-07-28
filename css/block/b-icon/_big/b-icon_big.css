@@ -1,0 +1,41 @@
+.b-icon_big_sbr{
+	background:url(b-icon_big.png) 0 0 no-repeat;
+	width:104px;
+	height:90px;
+	}
+.b-icon_big_epro{
+	background:url(b-icon_big.png) 0 -103px no-repeat;
+	width:104px;
+	height:44px;
+	}
+.b-icon_big_fpro{
+	background:url(b-icon_big.png) 0 -647px no-repeat;
+	width:104px;
+	height:44px;
+	}
+.b-icon_big_cat{
+	background:url(b-icon_big.png) 0 -161px no-repeat;
+	width:104px;
+	height:89px;
+	}
+.b-icon_big_pf{
+	background:url(b-icon_big.png) 0 -259px no-repeat;
+	width:104px;
+	height:85px;
+	}
+.b-icon_big_blog{
+	background:url(b-icon_big.png) 0 -359px no-repeat;
+	width:104px;
+	height:90px;
+	}
+.b-icon_big_shop{
+	background:url(b-icon_big.png) 0 -547px no-repeat;
+	width:104px;
+	height:89px;
+	}
+.b-icon_big_reclam{
+	background:url(b-icon_big.png) 0 -701px no-repeat;
+	width:104px;
+	height:93px;
+	}
+

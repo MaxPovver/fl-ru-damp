@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<document title="Doc Title" author="Free-Lance.ru" width="170" margin-left="25" margin-right="25" margin-top="25" font-name="TimesNewRomanPSMT" font-size="15" paragraph-indent="3">
+    <page>
+        <locate x="110" y="10"/>
+        <paragraph font-name="TimesNewRomanPSMT" font-size="12" width="85" height="5" align="J" border="0" parse="1" keep-text-wrap="0" keep-pos="1">
+            <![CDATA[Генеральному директору ООО «Ваан»
+            Воропаеву Василию Владимировичу
+            ]]>
+        </paragraph>
+        <locate x="110"/>
+        <paragraph font-name="TimesNewRomanPSMT" font-size="12" width="85" height="5" align="J" border="0" parse="1" keep-text-wrap="0" keep-pos="1">
+            <![CDATA[От $fio]]>
+        </paragraph>
+        <locate x="110"/>
+        <paragraph font-name="TimesNewRomanPSMT" font-size="12" width="85" height="5" align="J" border="0" parse="1" keep-text-wrap="0" keep-pos="1">
+            <![CDATA[$idcard_name № $idcard, выдан $idcard_by]]>
+        </paragraph>
+        <locate x="110"/>
+        <paragraph font-name="TimesNewRomanPSMT" font-size="12" width="85" height="5" align="J" border="0" parse="1" keep-text-wrap="0" keep-pos="1">
+            <![CDATA[Адрес регистрации: $address_reg]]>
+        </paragraph>
+        <locate x="110"/>
+        <paragraph font-name="TimesNewRomanPSMT" font-size="12" width="85" height="5" align="J" border="0" parse="1" keep-text-wrap="0" keep-pos="1">
+            <![CDATA[Адрес постоянного места жительства: $address]]>
+        </paragraph>
+        
+        <paragraph width="170" height="14" align="C" border="0" parse="1" keep-text-wrap="1"></paragraph>
+        <paragraph font-name="TimesNewRomanPS-BoldMT" font-size="14" width="170" height="5" align="C" border="0" parse="1" keep-text-wrap="1">
+            <![CDATA[Заявление]]>
+        </paragraph>
+        <paragraph width="170" height="10" align="C" border="0" parse="1" keep-text-wrap="1"></paragraph>
+        <paragraph font-name="TimesNewRomanPSMT" font-size="12" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[
+            Прошу осуществить оплату стоимости работы, причитающуюся мне как Исполнителю по договору № $sbr_num$ssnum от $sbr_date $act_doc, в размере $sbr_summ_str, не включая НДФЛ, через систему “WebMoney Transfer” (ООО “Компания Гарантий”), согласно $doc_offer онлайн сервиса «Безопасная сделка» № $sbr_id от $sbr_date на сайте, принадлежащем ООО «Ваан», www.free-lance.ru.
+            ]]>
+        </paragraph>
+        <paragraph font-name="TimesNewRomanPSMT" font-size="12" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[
+            Номер кошелька в системе “WebMoney Transfer”, на который прошу перечислить мне указанную в настоящем заявлении сумму вознаграждения: $el_wmr.
+            ]]>
+        </paragraph>
+        <paragraph width="170" height="2" align="C" border="0" parse="1" keep-text-wrap="1"></paragraph>
+        
+        <locate x="110" y="190"/>
+        <text width="85" border="0" align="R" height="5" keep-pos="1" parse="1"><![CDATA[___________/ $fio /]]></text>
+        <locate x="162" y="200"/>
+        <paragraph font-name="TimesNewRomanPSMT" font-size="12" width="45" height="5" align="J" border="0" parse="1" keep-text-wrap="0" keep-pos="1">
+            <![CDATA[$date_statement]]>
+        </paragraph>
+    </page>
+</document>

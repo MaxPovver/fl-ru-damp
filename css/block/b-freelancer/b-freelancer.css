@@ -1,0 +1,131 @@
+
+
+.b-freelancer{}
+.b-freelancer_bordbot_f0{
+	border-bottom:1px solid #f0f0f0;
+	}
+.b-freelancer_padbot_30{
+	padding-bottom:30px;
+	}
+.b-freelancer_padtop_20{
+	padding-top:20px;
+	}
+
+/* b-freelancer__date */
+.b-freelancer__date{
+	font-size:11px;
+	color:#414141;
+	font-family:Tahoma, Arial, Helvetica, sans-serif;
+	}
+.b-freelancer__date_float_right{
+	float:right;
+	}
+.b-freelancer__date_padtop_10{
+	padding-top:10px;
+	}
+.b-freelancer__date_padleft_10{
+	padding-left:10px;
+	}
+
+/* b-freelancer__h2 */
+.b-freelancer__h2{
+	font-size:25px;
+	font-family:Arial, Helvetica, sans-serif;
+	padding:0;
+	margin:0 !important;
+	font-weight:normal;
+	}
+.b-freelancer__h2_padbot_20{
+	padding-bottom:20px;
+	}
+
+
+/*b-freelancer__link */
+a.b-freelancer__link{
+	color:#026dc0  !important;
+	}
+a.b-freelancer__link:hover{
+	text-decoration:none;
+	border-bottom-color:transparent;
+	}
+a.b-freelancer__link_color_6db335{
+	color:#6db335 !important;
+	}
+a.b-freelancer__link_color_414141{
+	color:#414141 !important;
+	}
+a.b-freelancer__link_color_c10600{
+	color:#c10600 !important;
+	}	
+a.b-freelancer__link_decoration_no{
+	text-decoration:none;
+	}	
+
+/* b-freelancer__p */
+.b-freelancer__p{
+	padding:0;
+	margin:0;
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000;
+	}
+
+
+/* b-freelancer_txt */
+.b-freelancer__txt{}
+.b-freelancer__txt_fontsize_11{
+	font-size:11px;
+	font-family:Tahoma, Arial, Helvetica, sans-serif;
+	color:#414141;
+	}
+.b-freelancer__txt_padtop_2{
+	padding-top:2px;
+	}
+.b-freelancer__txt_padbot_5{
+	padding-bottom:5px;
+	}
+.b-freelancer__txt_padbot_10{
+	padding-bottom:10px;
+	}
+.b-freelancer__txt_inline-block{
+	display:inline-block;
+	}
+.b-freelancer__txt_width_120{
+	width:120px;
+	}
+.b-freelancer__txt_width_320{
+	width:320px;
+	}
+.b-freelancer__txt_bordbot_dot_e5{
+	border-bottom:1px dotted #e5e5e5;
+	}
+.b-freelancer__txt_top_3{
+	top:3px;
+	position:relative;
+	}
+.b-freelancer__txt_bg_fff{
+	background:#fff;
+	}
+.b-freelancer__txt_float_right{
+	float:right;
+	}
+.b-freelancer__txt_color_c10600{
+	color:#c10600;
+	}
+.b-freelancer__txt_color_6db335{
+	color:#6db335;
+	}
+.b-freelancer__txt_valign_top{
+	vertical-align:top;
+	}	
+
+/* b-freelancer__sbr */
+.b-freelancer__sbr{
+	display:inline-block;
+	background:url(b-freelancer__sbr.gif) 0 0 no-repeat;
+	width:14px;
+	height:13px;
+	vertical-align: bottom;
+	}
+
+

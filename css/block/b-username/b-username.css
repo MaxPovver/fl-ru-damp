@@ -1,0 +1,222 @@
+
+/* b-username */
+.b-username{
+	font-size:13px !important;
+	color:#000;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height:1;
+	}
+.b-username_fontsize_11{
+	font-size:11px !important;
+	}
+.b-username_fontsize_11 a.b-username__link{
+	font-size:11px !important;
+	}
+	
+.b-username_inline{
+	display:inline;
+	}
+.b-username_overflow_hidden{
+	overflow:hidden;
+	}	
+.b-username_relative{
+	position:relative;
+	}	
+	
+.b-username_padbot_5{
+	padding-bottom:5px;
+	}
+.b-username_padbot_10{
+	padding-bottom:10px;
+	}
+.b-username_padbot_15{
+	padding-bottom:15px;
+	}
+.b-username_padbot_35{
+	padding-bottom:35px;
+	}
+.b-username_padbot_40{
+	padding-bottom:40px;
+	}
+.b-username_padleft_140{
+	padding-left:140px;
+	}
+.b-username_color_4e{
+	color:#4e4e4e !important;
+	}
+.b-username_color_4d{
+	color:#4d4d4d !important;
+	}
+.b-username_bold {
+	font-weight:bold;
+	}
+.b-username_lineheight_15{
+	line-height:15px;
+	} 
+.b-username_lineheight_18{
+	line-height:18px;
+	} 
+ 
+/*b-username__link */
+a.b-username__link{
+	color:#000 !important;
+	font-family:Arial, Helvetica, sans-serif;
+	text-decoration:underline;
+	line-height:1.4;
+	font-size:13px !important;
+	cursor:pointer;
+	}
+.b-username a.b-username__link:hover{
+	color:#8c0400 !important;
+	border-bottom-color:#8c0400;
+	}
+a.b-username__link_bold{
+	font-weight:bold;
+	}
+a.b-username__link_fontsize_11{
+	font-size:11px !important;
+	font-family:Tahoma, Geneva, sans-serif;
+	}
+a.b-username__link_margleft_10{
+	margin-left:10px;
+	}
+a.b-username__link_color_000{
+	color:#000 !important;
+	}
+a.b-username__link_color_4e{
+	color:#4e4e4e !important;
+	}
+a.b-username__link_color_fd6c30{
+	color:#fd6c30 !important;
+	}
+a.b-username__link_color_6db335{
+	color:#6db335 !important;
+	}
+a.b-username__link_color_0f71c8{
+	color:#0f71c8 !important;
+	}
+a.b-username__link_color_c10600{
+	color:#c10600 !important;
+	}
+a.b-username__link_color_f2922a{
+	color:#f2922a !important;
+	}
+	
+a.b-username__link_dot_000{
+	color:#000 !important;
+	text-decoration:none;
+	border-bottom:1px dotted #000;
+	}
+a.b-username__link_dot_0f71c8{
+	color:#0f71c8 !important;
+	text-decoration:none;
+	border-bottom:1px dotted #0f71c8;
+	}
+ 
+/* b-username__mark */
+.b-username__marks{
+	display:inline-block;
+	white-space:nowrap;
+	vertical-align:baseline;
+	height:13px;
+	}
+
+
+.b-username__login_bold{
+	font-weight:bold;
+	}
+.b-username__login_color_fd6c30{
+	color:#fd6c30;
+	}
+.b-username__login_color_fd6c30 a.b-username__link{
+	color:#fd6c30 !important;
+	}
+.b-username__login_color_6db335{
+	color:#6db335;
+	}
+.b-username__login_color_6db335 a.b-username__link{
+	color:#6db335 !important;
+	}
+.b-username__login_color_f2922a{
+	color:#f2922a;
+	}
+.b-username__login_color_f2922a a.b-username__link{
+	color:#f2922a !important;
+	}
+	
+.b-username__login-mark{
+	white-space:nowrap;
+	}
+.b-username__login_fontsize_11{
+	font-size:11px;
+	color:#414141;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+
+	
+.b-username__txt{
+	font-weight:normal;
+	}	
+.b-username__txt_fontsize_11{
+	font-size:11px;
+	color:#414141;
+	font-family:Tahoma, Geneva, sans-serif;
+	}	
+.b-username__txt_bold{
+	font-weight:bold;
+	}
+.b-username__txt_margleft_60{
+	margin-left:60px;
+	}	
+.b-username__txt_padtop_5{
+	padding-top:5px;
+	}	
+.b-username__txt_padtop_10{
+	padding-top:10px;
+	}
+.b-username__txt_padbot_5{
+	padding-bottom:5px;
+	}
+.b-username__txt_padbot_15{
+	padding-bottom:15px;
+	}
+.b-username__txt_padleft_55{
+	padding-left:55px;
+	}
+.b-username__txt_nowrap{
+	white-space:nowrap;
+	}
+
+	
+	
+	
+.b-username__role{
+	display:inline-block;
+	background-image: url(b-username__role.png);
+	width:18px;
+	height:14px;
+	margin-right:5px;
+	}	
+.b-username__role_valign_top{
+	vertical-align:top;
+	}
+.b-username__role_valign_middle{
+	vertical-align:middle;
+	}
+.b-username__role_frl{
+	background-position:0 0;
+	}
+.b-username__role_emp{
+	background-position:0 -16px;
+	}
+.b-username__role_all{
+	background-position:0 -32px;
+	}
+	
+	
+	
+	
+.b-username .b-layout__link{ display:inline-block; vertical-align: baseline; position:relative; top:-1px;}
+.b-username_fontsize_11 .b-layout__link{top:0px;}
+
+

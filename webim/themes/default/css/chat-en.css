@@ -1,0 +1,30 @@
+#me{
+	width: 25px;
+	height: 33px;
+	background: url(../locales/en/images/me.gif);
+	overflow: hidden;
+	float: left;
+	margin: 0 0 0 -25px;
+	display: inline;
+	text-indent: -9999px;
+}
+#btn-message{
+	width: 24px;
+	height: 86px;
+	float: left;
+	overflow: hidden;
+	text-indent: -9999px;
+	margin: 0 0 0 -24px;
+	display: inline;
+	background: url(../locales/en/images/btn-message.gif);
+}
+#btn-history{
+	width: 24px;
+	height: 83px;
+	background: url(../locales/en/images/btn-history.gif);
+	overflow: hidden;
+	text-indent: -9999px;
+	float: left;
+	display: inline;
+	margin: 0 0 0 -24px;
+}

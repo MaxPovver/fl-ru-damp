@@ -1,0 +1,25 @@
+
+.b-menu_prj a.b-menu__link{
+	margin-right:20px;
+	font-size:15px;
+	font-weight:bold;
+	font-family: 'PT Sans', sans-serif;
+	color:#026dc0 ;
+	display:inline-block;
+	text-decoration:underline;
+	}
+.b-menu_prj a.b-menu__link:hover{
+	color:hsl(2,100%,27%);
+	}
+.b-menu_prj .b-menu__active{
+	margin-right:20px;
+	font-family: 'PT Sans', sans-serif;
+	color: hsl(0, 0%, 16%);
+	font-size:15px;
+	display:inline-block;
+	font-weight:bold;
+	}
+
+
+
+

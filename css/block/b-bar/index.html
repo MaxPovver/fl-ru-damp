@@ -1,0 +1,524 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+<title>b-bar</title>
+<link href="b-bar.css" rel="stylesheet" type="text/css" />
+<link href="../b-menu/b-menu.css" rel="stylesheet" type="text/css" />
+<link href="../b-search/b-search.css" rel="stylesheet" type="text/css" />
+<link href="../b-icon/b-icon.css" rel="stylesheet" type="text/css" />
+<link href="../b-page/b-page.css" rel="stylesheet" type="text/css" />
+<link href="http://fonts.googleapis.com/css?family=PT+Sans&amp;subset=latin,cyrillic,latin-ext" rel="stylesheet" type="text/css">
+<link href='http://fonts.googleapis.com/css?family=PT+Sans+Caption&subset=latin,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="/scripts/mootools-new.js"></script>
+<script type="text/javascript" src="/scripts/b-bar.js"></script>
+<script type="text/javascript" src="../b-shadow/b-shadow.js"></script>
+<style type="text/css">.b-bar{ min-width:0;}</style>
+</head>
+
+<body>
+<h3>Юзербар 2013</h3>
+<header class="b-bar b-bar_black b-bar_fixed">
+  <div onclick="event.stopPropagation()" class="b-bar__auth-line b-page__iphone"> <a href="javascript:void(0)" onclick="Page.toggleAuthBar()" class="b-bar__link">Войти</a> <a href="/registration/" class="b-bar__link b-bar__link_reg">Регистрация</a> </div>
+  <div class="b-bar__wrapper">
+    <div class="b-bar__inner">
+      <form action="/search/">
+        <div class="b-search" id="searchBar">
+          <input type="button" onclick="this.form.submit()" name="qwert" class="b-search__icon" id="searchToggler">
+          <input type="search" onblur="Page.onSearchRoll()" onfocus="Page.onSearchUnRoll()" placeholder="Поиск" name="search_string" class="b-search__input" id="searchInput">
+          <input type="hidden" value="search" name="action">
+        </div>
+        <input type="hidden" name="u_token_key" value="8472fbcb3ab7dc2783b52ea786148227">
+      </form>
+      <section class="b-bar__user-section">
+        <div onclick="event.stopPropagation()" id="__au_bar" class="b-bar__au"> <a href="javascript:void(0)" onclick="Page.toggleAuthBar()" class="b-bar__link b-page__desktop b-page__ipad">Войти</a> <a href="/registration/" class="b-bar__link b-bar__link_reg b-page__desktop b-page__ipad">Регистрация</a>
+          <div class="b-bar__menu b-bar__menu_hide b-bar__login" id="show_log">
+            <form action="/" method="post" id="lfrm">
+              <div class="b-bar__menu-inner">
+                <div class="b-combo b-combo_padbot_10">
+                  <div class="b-combo__input b-combo__input_user">
+                    <input type="text" placeholder="Логин или e-mail" size="80" name="login" onkeydown="event.keyCode==13?$('lfrm').submit():null" class="b-combo__input-text b-combo__input-text_color_67 b-event__onkeydown_13-submit_lfrm">
+                    <label class="b-combo__label" for=""></label>
+                  </div>
+                </div>
+                <div class="b-combo b-combo_padbot_5">
+                  <div class="b-combo__input b-combo__input_key">
+                    <input type="password" placeholder="Пароль" size="80" onkeydown="event.keyCode==13?$('lfrm').submit():null" name="passwd" class="b-combo__input-text b-combo__input-text_color_67">
+                    <label class="b-combo__label" for=""></label>
+                  </div>
+                </div>
+                <div class="b-txt b-txt_padbot_10"><a href="/remind/" class="b-txt__lnk b-txt__lnk_fs_11 b-txt__lnk_color_b3">Восстановить пароль</a></div>
+                <div class="b-check b-check_padbot_15">
+                  <input type="checkbox" value="1" name="autologin" class="b-check__input" id="remember">
+                  <label class="b-check__label b-check__label_ptsans b-check__label_color_fff" for="remember">Запомнить меня</label>
+                </div>
+                <a class="b-button b-button_flat b-button_flat_green b-button_block" onclick="$('lfrm').submit();" href="javascript:void(0)">Войти</a>
+                <input type="hidden" value="login" name="action">
+              </div>
+              <input type="hidden" name="u_token_key" value="8472fbcb3ab7dc2783b52ea786148227">
+            </form>
+            <span onclick="Page.closeAuthBar()" class="b-layout__closer"></span> 
+          </div>
+        </div>
+      </section>
+      <a href="/" class="b-bar__link"><img width="27" height="27" title="FL.ru" alt="FL.ru" src="/images/logo-2013.png" class="b-bar__logo"></a>
+      <nav class="b-menu b-menu_bar">
+        <div class="b-menu__item b-page__desktop"> 
+           <a href="https://beta.free-lance.ru" class="b-menu__link b-menu__link_color_6db335">Старый дизайн</a> 
+        </div>
+        <div class="b-menu__item b-menu__item_iphone_marg_null b-menu__active b-bar__corner"> 
+          <a href="/" class="b-menu__link b-page__desktop b-page__ipad">Работа</a>
+          <a href="javascript:void(0)" class="b-menu__link b-page__iphone">Работа</a>
+          <div class="b-bar__menu b-bar__menu_hide">
+            <div class="b-bar__menu-inner"> 
+               <a href="https://beta.free-lance.ru" class="b-bar__menu-link b-menu__link_color_6db335">Старый дизайн</a>
+               <a href="/freelancers/" class="b-bar__menu-link">Фрилансеры</a>
+               <a href="/commune/" class="b-bar__menu-link">Сообщества</a>
+               <a href="/bezopasnaya-sdelka/" class="b-bar__menu-link">Безопасная Сделка</a>
+               <a href="/payed/" class="b-bar__menu-link">Профессиональный аккаунт</a>
+               <a href="/service/" class="b-bar__menu-link">Услуги сайта</a>
+               <a href="/defile/" class="b-bar__menu-link">Defile</a>
+               <a href="/articles/" class="b-bar__menu-link">Статьи</a>
+               <a href="/interview/" class="b-bar__menu-link">Интервью</a>
+               <a href="https://feedback.fl.ru/" class="b-bar__menu-link">Помощь</a>
+            </div>
+          </div>
+        </div>
+        <div class="b-menu__item b-page__desktop  b-page__ipad"> 
+           <a href="/freelancers/" class="b-menu__link ">Фрилансеры</a> 
+        </div>
+        <div class="b-menu__item b-page__desktop"> 
+           <a href="/commune/" class="b-menu__link ">Сообщества</a> 
+        </div>
+        <div class="b-menu__more b-bar__drop">
+           <a name="Еще" href="javascript:void(0)" class="b-menu__link b-bar__link b-bar__corner"></a>
+           <div class="b-bar__menu b-bar__menu_hide">
+             <div class="b-bar__menu-inner"> 
+                <a href="https://beta.free-lance.ru" class="b-bar__menu-link b-menu__link_color_6db335 b-page__ipad">Старый дизайн</a> 
+                <a href="/freelancers/" class="b-bar__menu-link b-page__iphone">Фрилансеры</a> 
+                <a href="/commune/" class="b-bar__menu-link b-page__ipad">Сообщества</a> 
+                <a href="/bezopasnaya-sdelka/" class="b-bar__menu-link">Безопасная Сделка</a> 
+                <a href="/payed/" class="b-bar__menu-link">Профессиональный аккаунт</a> 
+                <a href="/service/" class="b-bar__menu-link">Услуги сайта</a> 
+                <a href="/defile/" class="b-bar__menu-link">Defile</a> 
+                <a href="/articles/" class="b-bar__menu-link">Статьи</a> 
+                <a href="/interview/" class="b-bar__menu-link">Интервью</a> 
+                <a href="https://feedback.fl.ru/" class="b-bar__menu-link">Помощь</a> 
+             </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+
+<h3>Юзербар фрилансера</h3>
+<div class="b-bar b-bar_free b-layout">
+  <table class="b-layout__table b-layout__table_width_full" border="0" cellpadding="0" cellspacing="0">
+    <tr class="b-layout__tr">
+      <td class="b-layout__gap b-layout__gap_width_1ps">&#160;</td>
+      <td class="b-layout__left"><ul class="b-bar__list">
+          <li class="b-bar__item b-bar__item_padright_10"><a class="b-bar__name" href="#">Konstantinopolsky</a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light b-bar__item_current"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_admin"></span></a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_tuning"></span></a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_stat"></span></a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light b-bar__item_padleft_10"><a class="b-bar__link b-bar__link_underline" href="#">Купить<img class="b-bar__pro" src="/images/icons/f-pro.png" alt="" width="26" height="11" /></a></li>
+        </ul></td>
+      <td class="b-layout__middle b-layout__middle_align-center"><ul class="b-bar__list b-bar__list_inline-block b-bar__list_bordright">
+          <li class="b-bar__item b-bar__item_bordleft-light"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_mess"></span> Сообщения</a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_prj"></span> Проекты</a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_lenta"></span>Лента</a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_sbr"></span>СБР</a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_fm"></span>10 000,38 FM</a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_arr"></span></a></li>
+        </ul></td>
+      <td class="b-layout__right"><ul class="b-bar__list b-bar__list_float_right">
+          <li class="b-bar__item b-bar__item_padleft_10"><a class="b-bar__link b-bar__link_bordbot_dot" href="#">Работодатель</a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_ext"></span></a></li>
+          <li class="b-bar__item b-bar__bord-dark"><a class="b-bar__btn b-bar__btn_help" href="#"><span class="b-bar__icon b-bar__icon_help"></span>Помощь</a></li>
+        </ul></td>
+    </tr>
+  </table>
+</div>
+<h3>Юзербар фрилансера с активными иконками</h3>
+<div class="b-bar  b-bar_free b-layout">
+  <table class="b-layout__table b-layout__table_width_full" border="0" cellpadding="0" cellspacing="0">
+    <tr class="b-layout__tr">
+      <td class="b-layout__gap b-layout__gap_width_1ps"></td>
+      <td class="b-layout__left"><ul class="b-bar__list">
+          <li class="b-bar__item b-bar__item_padright_10"><a class="b-bar__name" href="#">Konstantinopolsky</a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_admin"></span></a></li>
+          <li class="b-bar__item b-bar__item_active b-bar__item_bordleft-light">
+            <div class="b-tooltip b-tooltip_small b-tooltip_nosikcenter b-tooltip_inline-block b-tooltip_hide">
+              <div class="b-tooltip__nosik"></div>
+              <div class="b-tooltip__right">
+                <div class="b-tooltip__left">
+                  <div class="b-tooltip__body">
+                    <div class="b-tooltip__txt">Настройки</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_tuning"></span></a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_stat"></span></a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light b-bar__item_padleft_10"><a class="b-bar__link b-bar__link_underline" href="#">Купить<img class="b-bar__pro" src="/images/icons/f-pro.png" alt="" width="26" height="11" /></a></li>
+        </ul></td>
+      <td class="b-layout__middle b-layout__middle_align-center"><ul class="b-bar__list b-bar__list_inline-block  b-bar__list_bordright">
+          <li class="b-bar__item b-bar__item_active b-bar__item_bordleft-light">
+            <div class="b-tooltip b-tooltip_small b-tooltip_nosikcenter b-tooltip_inline-block  b-tooltip_hide">
+              <div class="b-tooltip__nosik"></div>
+              <div class="b-tooltip__right">
+                <div class="b-tooltip__left">
+                  <div class="b-tooltip__body">
+                    <div class="b-tooltip__txt">13 непрочитанных сообщений</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_mess"></span> Сообщения</a></li>
+          <li class="b-bar__item b-bar__item_active b-bar__item_bordleft-light">
+            <div class="b-tooltip b-tooltip_small b-tooltip_nosikcenter b-tooltip_inline-block  b-tooltip_hide">
+              <div class="b-tooltip__nosik"></div>
+              <div class="b-tooltip__right">
+                <div class="b-tooltip__left">
+                  <div class="b-tooltip__body">
+                    <div class="b-tooltip__txt">Заказчик ответил на ваше предложение</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_prj"></span> Проекты</a></li>
+          <li class="b-bar__item b-bar__item_active b-bar__item_bordleft-light">
+            <div class="b-tooltip b-tooltip_small b-tooltip_nosikcenter b-tooltip_inline-block  b-tooltip_hide">
+              <div class="b-tooltip__nosik"></div>
+              <div class="b-tooltip__right">
+                <div class="b-tooltip__left">
+                  <div class="b-tooltip__body">
+                    <div class="b-tooltip__txt">Новое: 1 работа, 2 defile, 3 поста, 13 комм.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_lenta"></span>Лента</a></li>
+          <li class="b-bar__item b-bar__item_active b-bar__item_bordleft-light">
+            <div class="b-tooltip b-tooltip_small b-tooltip_nosikcenter b-tooltip_inline-block  b-tooltip_hide">
+              <div class="b-tooltip__nosik"></div>
+              <div class="b-tooltip__right">
+                <div class="b-tooltip__left">
+                  <div class="b-tooltip__body">
+                    <div class="b-tooltip__txt">Вам предлагают заключить СБР</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_sbr"></span>СБР</a></li>
+          <li class="b-bar__item b-bar__item_active b-bar__item_bordleft-light">
+            <div class="b-tooltip b-tooltip_small b-tooltip_nosikcenter b-tooltip_inline-block  b-tooltip_hide">
+              <div class="b-tooltip__nosik"></div>
+              <div class="b-tooltip__right">
+                <div class="b-tooltip__left">
+                  <div class="b-tooltip__body">
+                    <div class="b-tooltip__txt">На ваш счёт поступило 200 FM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_fm"></span>10 000,38 FM</a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light b-bar__item_active"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_arr"></span></a></li>
+        </ul></td>
+      <td class="b-layout__right"><ul class="b-bar__list b-bar__list_float_right">
+          <li class="b-bar__item b-bar__item_active b-bar__item_padleft_10"><a class="b-bar__link b-bar__link_bordbot_dot" href="#">Работодатель</a></li>
+          <li class="b-bar__item b-bar__item_active b-bar__item_padleft_10 b-bar__item_padright_10"><a class="b-bar__link b-bar__link_underline" href="#">Выход</a></li>
+          <li class="b-bar__item b-bar__item_active b-bar__bord-dark">
+            <div class="b-tooltip b-tooltip_small b-tooltip_nosikright b-tooltip_inline-block  b-tooltip_hide">
+              <div class="b-tooltip__nosik"></div>
+              <div class="b-tooltip__right">
+                <div class="b-tooltip__left">
+                  <div class="b-tooltip__body">
+                    <div class="b-tooltip__txt"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="b-bar__btn b-bar__btn_help" href="#"><span class="b-bar__icon b-bar__icon_help"></span>Помощь</a></li>
+        </ul></td>
+    </tr>
+  </table>
+</div>
+<h3>Юзербар работодателя</h3>
+<div class="b-bar  b-bar_emp b-layout">
+  <table class="b-layout__table b-layout__table_width_full" border="0" cellpadding="0" cellspacing="0">
+    <tr class="b-layout__tr">
+      <td class="b-layout__gap b-layout__gap_width_1ps"></td>
+      <td class="b-layout__left"><ul class="b-bar__list">
+          <li class="b-bar__item b-bar__item_padright_10"><a class="b-bar__name" href="#">Konstantinopolsky</a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_admin"></span></a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_tuning"></span></a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light b-bar__item_padleft_10"><a class="b-bar__link b-bar__link_underline" href="#">Купить<img class="b-bar__pro" src="/images/icons/e-pro.png" alt="" width="26" height="11" /></a></li>
+        </ul></td>
+      <td class="b-layout__middle b-layout__middle_align-center"><ul class="b-bar__list b-bar__list_inline-block  b-bar__list_bordright">
+          <li class="b-bar__item b-bar__item_bordleft-light"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_mess"></span> Сообщения</a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_prj"></span> Проекты</a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_lenta"></span>Лента</a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_sbr"></span>СБР</a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_lm"></span>ЛМ</a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_fm"></span>10 000,38 FM</a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_arr"></span></a></li>
+        </ul></td>
+      <td class="b-layout__right"><ul class="b-bar__list b-bar__list_float_right">
+          <li class="b-bar__item b-bar__item_padleft_10"><a class="b-bar__link b-bar__link_bordbot_dot" href="#">Фри-лансер</a></li>
+          <li class="b-bar__item b-bar__item_padleft_10 b-bar__item_padright_10"><a class="b-bar__link b-bar__link_underline" href="#">Выход</a></li>
+          <li class="b-bar__item b-bar__bord-dark"><a class="b-bar__btn b-bar__btn_help" href="#"><span class="b-bar__icon b-bar__icon_help"></span>Помощь</a></li>
+        </ul></td>
+    </tr>
+  </table>
+</div>
+<h3>Юзербар работодателя с активными иконками</h3>
+<div class="b-bar  b-bar_emp b-layout">
+  <table class="b-layout__table b-layout__table_width_full" border="0" cellpadding="0" cellspacing="0">
+    <tr class="b-layout__tr">
+      <td class="b-layout__gap b-layout__gap_width_1ps"></td>
+      <td class="b-layout__left"><ul class="b-bar__list">
+          <li class="b-bar__item b-bar__item_padright_10"><a class="b-bar__name" href="#">Konstantinopolsky</a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_admin"></span></a></li>
+          <li class="b-bar__item b-bar__item_active b-bar__item_bordleft-light">
+            <div class="b-tooltip b-tooltip_small b-tooltip_nosikcenter b-tooltip_inline-block b-tooltip_hide">
+              <div class="b-tooltip__nosik"></div>
+              <div class="b-tooltip__right">
+                <div class="b-tooltip__left">
+                  <div class="b-tooltip__body">
+                    <div class="b-tooltip__txt">Настройки</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_tuning"></span></a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light b-bar__item_padleft_10"><a class="b-bar__link b-bar__link_underline" href="#">Купить<img class="b-bar__pro" src="/images/icons/e-pro.png" alt="" width="26" height="11" /></a></li>
+        </ul></td>
+      <td class="b-layout__middle b-layout__middle_align-center"><ul class="b-bar__list b-bar__list_inline-block  b-bar__list_bordright">
+          <li class="b-bar__item b-bar__item_active b-bar__item_bordleft-light">
+            <div class="b-tooltip b-tooltip_small b-tooltip_nosikcenter b-tooltip_inline-block b-tooltip_hide">
+              <div class="b-tooltip__nosik"></div>
+              <div class="b-tooltip__right">
+                <div class="b-tooltip__left">
+                  <div class="b-tooltip__body">
+                    <div class="b-tooltip__txt">13 непрочитанных сообщений</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_mess"></span> Сообщения</a></li>
+          <li class="b-bar__item b-bar__item_active b-bar__item_bordleft-light">
+            <div class="b-tooltip b-tooltip_small b-tooltip_nosikcenter b-tooltip_inline-block b-tooltip_hide">
+              <div class="b-tooltip__nosik"></div>
+              <div class="b-tooltip__right">
+                <div class="b-tooltip__left">
+                  <div class="b-tooltip__body">
+                    <div class="b-tooltip__txt">Заказчик ответил на ваше предложение</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_prj"></span> Проекты</a></li>
+          <li class="b-bar__item b-bar__item_active b-bar__item_bordleft-light">
+            <div class="b-tooltip b-tooltip_small b-tooltip_nosikcenter b-tooltip_inline-block b-tooltip_hide">
+              <div class="b-tooltip__nosik"></div>
+              <div class="b-tooltip__right">
+                <div class="b-tooltip__left">
+                  <div class="b-tooltip__body">
+                    <div class="b-tooltip__txt">Новое: 1 работа, 2 defile, 3 поста, 13 комм.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_lenta"></span>Лента</a></li>
+          <li class="b-bar__item b-bar__item_active b-bar__item_bordleft-light">
+            <div class="b-tooltip b-tooltip_small b-tooltip_nosikcenter b-tooltip_inline-block b-tooltip_hide">
+              <div class="b-tooltip__nosik"></div>
+              <div class="b-tooltip__right">
+                <div class="b-tooltip__left">
+                  <div class="b-tooltip__body">
+                    <div class="b-tooltip__txt">Вам предлагают заключить СБР</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_sbr"></span>СБР</a></li>
+          <li class="b-bar__item b-bar__item_active b-bar__item_bordleft-light">
+            <div class="b-tooltip b-tooltip_small b-tooltip_nosikcenter b-tooltip_inline-block b-tooltip_hide">
+              <div class="b-tooltip__nosik"></div>
+              <div class="b-tooltip__right">
+                <div class="b-tooltip__left">
+                  <div class="b-tooltip__body">
+                    <div class="b-tooltip__txt">лм</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_lm"></span>ЛМ</a></li>
+          <li class="b-bar__item b-bar__item_active b-bar__item_bordleft-light">
+            <div class="b-tooltip b-tooltip_small b-tooltip_nosikcenter b-tooltip_inline-block b-tooltip_hide">
+              <div class="b-tooltip__nosik"></div>
+              <div class="b-tooltip__right">
+                <div class="b-tooltip__left">
+                  <div class="b-tooltip__body">
+                    <div class="b-tooltip__txt">На ваш счёт поступило 200 FM</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_fm"></span>10 000,38 FM</a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light b-bar__item_active"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_arr"></span></a></li>
+        </ul></td>
+      <td class="b-layout__right"><ul class="b-bar__list b-bar__list_float_right">
+          <li class="b-bar__item b-bar__item_active b-bar__item_padleft_10"><a class="b-bar__link b-bar__link_bordbot_dot" href="#">Фри-лансер</a></li>
+          <li class="b-bar__item b-bar__item_active b-bar__item_padleft_10 b-bar__item_padright_10"><a class="b-bar__link b-bar__link_underline" href="#">Выход</a></li>
+          <li class="b-bar__item b-bar__item_active b-bar__bord-dark">
+            <div class="b-tooltip b-tooltip_small b-tooltip_nosikright b-tooltip_inline-block b-tooltip_hide">
+              <div class="b-tooltip__nosik"></div>
+              <div class="b-tooltip__right">
+                <div class="b-tooltip__left">
+                  <div class="b-tooltip__body">
+                    <div class="b-tooltip__txt">Помощь</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="b-bar__btn b-bar__btn_help" href="#"><span class="b-bar__icon b-bar__icon_help"></span>Помощь</a></li>
+        </ul></td>
+    </tr>
+  </table>
+</div>
+<h3>Юзербар не авторизованого</h3>
+<div class="b-bar b-bar_login b-layout">
+  <table class="b-layout__table b-layout__table_width_full" border="0" cellpadding="0" cellspacing="0">
+    <tr class="b-layout__tr">
+      <td class="b-layout__left">&#160;</td>
+      <td class="b-layout__middle b-layout__middle_align-center"><div class="b-bar__auth"> <a class="b-bar__reglink" href=""><span class="b-bar__key"></span><span class="b-bar__reg">Регистрация</span></a> <a href="#" class="b-button b-button_top_-3 b-button_rectangle_color_transparent b-button_z-index_1"> <span class="b-button__b1"> <span class="b-button__b2"> <span class="b-button__txt">Вход</span> </span> </span> </a>
+          <div class="b-shadow b-shadow__login b-shadow_inline-block b-shadow_hide" style="display:none;">
+            <div class="b-shadow__right">
+              <div class="b-shadow__left">
+                <div class="b-shadow__top">
+                  <div class="b-shadow__bottom">
+                    <div class="b-shadow__body b-shadow__body_bg_fff b-shadow__body_pad_20">
+                      <div class="b-form b-form_padbot_20">
+                        <label class="b-form__name b-form__name_width_60 b-form__name_padtop_3 b-form__name_fontsize_13">Логин</label>
+                        <div class="b-input b-input_inline-block b-input_height_20 b-input_width_210">
+                          <input class="b-input__text" name="" type="text" size="80" />
+                        </div>
+                      </div>
+                      <div class="b-form b-form_padbot_16">
+                        <label class="b-form__name b-form__name_width_60 b-form__name_padtop_3 b-form__name_fontsize_13">Пароль</label>
+                        <div class="b-input b-input_inline-block b-input_height_20 b-input_width_210">
+                          <input class="b-input__text" name="" type="text" size="80" />
+                        </div>
+                      </div>
+                      <div class="b-check b-check_padleft_60">
+                        <input id="b-check1" class="b-check__input" name="" type="checkbox" value="" />
+                        <label for="b-check1" class="b-check__label b-check__label_fontsize_13">Запомнить меня</label>
+                      </div>
+                      <div class="b-buttons b-buttons_padleft_57 b-buttons_padtop_15"> <a href="#" class="b-button b-button_rectangle_color_transparent"> <span class="b-button__b1"> <span class="b-button__b2"> <span class="b-button__txt">Вход</span> </span> </span> </a> <span class="b-buttons__txt b-buttons__txt_padleft_5">или</span> <a class="b-buttons__link" href="#">восстановить пароль</a> </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="b-shadow__tl"></div>
+            <div class="b-shadow__tr"></div>
+            <div class="b-shadow__bl"></div>
+            <div class="b-shadow__br"></div>
+            <span class="b-shadow__icon b-shadow__icon_close"></span> <span class="b-shadow__icon b-shadow__icon_nosik"></span> </div>
+        </div></td>
+      <td class="b-layout__right b-layout__right_width_90"><ul class="b-bar__list b-bar__list_float_right">
+          <li class="b-bar__item b-bar__bord">
+            <div class="b-tooltip b-tooltip_small b-tooltip_nosikright b-tooltip_inline-block ">
+              <div class="b-tooltip__nosik"></div>
+              <div class="b-tooltip__right">
+                <div class="b-tooltip__left">
+                  <div class="b-tooltip__body">
+                    <div class="b-tooltip__txt">Помощь</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a class="b-bar__btn b-bar__btn_help" href="#"><span class="b-bar__icon b-bar__icon_help"></span>Помощь</a> </li>
+        </ul></td>
+    </tr>
+  </table>
+</div>
+<h3>Юзербар фрилансера для мигающих иконок</h3>
+<div class="b-bar b-bar_free b-layout">
+  <table class="b-layout__table b-layout__table_width_full" border="0" cellpadding="0" cellspacing="0">
+    <tr class="b-layout__tr">
+      <td class="b-layout__gap b-layout__gap_width_1ps">&#160;</td>
+      <td class="b-layout__left"><ul class="b-bar__list">
+          <li class="b-bar__item b-bar__item_padright_10"><a class="b-bar__name" href="#">Konstantinopolsky</a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_admin"></span></a></li>
+          <li class="b-bar__item b-bar__item_active  b-bar__item_bordleft-light"> <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_tuning"></span></a> <a class="b-bar__btn b-bar__btn_clone" href="#"><span class="b-bar__icon b-bar__icon_tuning"></span></a> </li>
+          <li class="b-bar__item b-bar__item_bordleft-light"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_stat"></span></a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light b-bar__item_padleft_10"><a class="b-bar__link b-bar__link_underline" href="#">Купить<img class="b-bar__pro" src="/images/icons/f-pro.png" alt="" width="26" height="11" /></a></li>
+        </ul></td>
+      <td class="b-layout__middle b-layout__middle_align-center"><ul class="b-bar__list b-bar__list_inline-block">
+          <li class="b-bar__item b-bar__item_active  b-bar__item_bordleft-light"> <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_mess"></span>Сообщения</a> <a class="b-bar__btn b-bar__btn_clone" href="#"><span class="b-bar__icon b-bar__icon_mess"></span>Сообщения</a> </li>
+          <li class="b-bar__item b-bar__item_active  b-bar__item_bordleft-light"> <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_prj"></span>Проекты</a> <a class="b-bar__btn b-bar__btn_clone" href="#"><span class="b-bar__icon b-bar__icon_prj"></span>Проекты</a> </li>
+          <li class="b-bar__item b-bar__item_active  b-bar__item_bordleft-light"> <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_lenta"></span>Лента</a> <a class="b-bar__btn b-bar__btn_clone" href="#"><span class="b-bar__icon b-bar__icon_lenta"></span>Лента</a> </li>
+          <li class="b-bar__item b-bar__item_active  b-bar__item_bordleft-light"> <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_sbr"></span>СБР</a> <a class="b-bar__btn b-bar__btn_clone" href="#"><span class="b-bar__icon b-bar__icon_sbr"></span>СБР</a> </li>
+          <li class="b-bar__item b-bar__item_active  b-bar__item_bordleft-light"> <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_fm"></span>10 000,38 FM</a> <a class="b-bar__btn b-bar__btn_clone" href="#"><span class="b-bar__icon b-bar__icon_fm"></span>10 000,38 FM</a> </li>
+          <li class="b-bar__item b-bar__item_active  b-bar__item_bordleft-light"> <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_arr"></span></a> <a class="b-bar__btn b-bar__btn_clone" href="#"><span class="b-bar__icon b-bar__icon_arr"></span></a> </li>
+          <li class="b-bar__item b-bar__item_bordleft-light"></li>
+        </ul></td>
+      <td class="b-layout__right"><ul class="b-bar__list b-bar__list_float_right">
+          <li class="b-bar__item b-bar__item_padleft_10"><a class="b-bar__link b-bar__link_bordbot_dot" href="#">Работодатель</a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_ext"></span></a></li>
+          <li class="b-bar__item b-bar__item_active "><span class="b-bar__bord-dark"></span> <a class="b-bar__btn b-bar__btn_help" href="#"><span class="b-bar__icon b-bar__icon_help"></span>Помощь</a> <a class="b-bar__btn b-bar__btn_help b-bar__btn_clone" href="#"><span class="b-bar__icon b-bar__icon_help"></span>Помощь</a> <span class="b-bar__bord-dark"></span></li>
+        </ul></td>
+    </tr>
+  </table>
+</div>
+<h3>Юзербар работодателя для мигающих иконок</h3>
+<div class="b-bar  b-bar_emp b-layout">
+  <table class="b-layout__table b-layout__table_width_full" border="0" cellpadding="0" cellspacing="0">
+    <tr class="b-layout__tr">
+      <td class="b-layout__gap b-layout__gap_width_1ps"></td>
+      <td class="b-layout__left"><ul class="b-bar__list">
+          <li class="b-bar__item b-bar__item_padright_10"><a class="b-bar__name" href="#">Konstantinopolsky</a></li>
+          <li class="b-bar__item b-bar__item_bordleft-light"><a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_admin"></span></a></li>
+          <li class="b-bar__item b-bar__item_active  b-bar__item_bordleft-light"> <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_tuning"></span></a> <a class="b-bar__btn b-bar__btn_clone" href="#"><span class="b-bar__icon b-bar__icon_tuning"></span></a> </li>
+          <li class="b-bar__item b-bar__item_bordleft-light b-bar__item_padleft_10"><a class="b-bar__link b-bar__link_underline" href="#">Купить<img class="b-bar__pro" src="/images/icons/e-pro.png" alt="" width="26" height="11" /></a></li>
+        </ul></td>
+      <td class="b-layout__middle b-layout__middle_align-center"><ul class="b-bar__list b-bar__list_inline-block">
+          <li class="b-bar__item b-bar__item_active  b-bar__item_bordleft-light"> <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_mess"></span>Сообщения</a> <a class="b-bar__btn b-bar__btn_clone" href="#"><span class="b-bar__icon b-bar__icon_mess"></span>Сообщения</a> </li>
+          <li class="b-bar__item b-bar__item_active  b-bar__item_bordleft-light"> <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_prj"></span>Проекты</a> <a class="b-bar__btn b-bar__btn_clone" href="#"><span class="b-bar__icon b-bar__icon_prj"></span>Проекты</a> </li>
+          <li class="b-bar__item b-bar__item_active  b-bar__item_bordleft-light"> <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_lenta"></span>Лента</a> <a class="b-bar__btn b-bar__btn_clone" href="#"><span class="b-bar__icon b-bar__icon_lenta"></span>Лента</a> </li>
+          <li class="b-bar__item b-bar__item_active  b-bar__item_bordleft-light"> <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_sbr"></span>СБР</a> <a class="b-bar__btn b-bar__btn_clone" href="#"><span class="b-bar__icon b-bar__icon_sbr"></span>СБР</a> </li>
+          <li class="b-bar__item b-bar__item_active  b-bar__item_bordleft-light"> <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_lm"></span>ЛМ</a> <a class="b-bar__btn b-bar__btn_clone" href="#"><span class="b-bar__icon b-bar__icon_lm"></span>ЛМ</a> </li>
+          <li class="b-bar__item b-bar__item_active  b-bar__item_bordleft-light"> <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_fm"></span>10 000,38 FM</a> <a class="b-bar__btn b-bar__btn_clone" href="#"><span class="b-bar__icon b-bar__icon_fm"></span>10 000,38 FM</a> </li>
+          <li class="b-bar__item b-bar__item_active  b-bar__item_bordleft-light"> <a class="b-bar__btn" href="#"><span class="b-bar__icon b-bar__icon_arr"></span></a> <a class="b-bar__btn b-bar__btn_clone" href="#"><span class="b-bar__icon b-bar__icon_arr"></span></a> </li>
+          <li class="b-bar__item b-bar__item_bordleft-light"></li>
+        </ul></td>
+      <td class="b-layout__right"><ul class="b-bar__list b-bar__list_float_right">
+          <li class="b-bar__item b-bar__item_padleft_10"><a class="b-bar__link b-bar__link_bordbot_dot" href="#">Фри-лансер</a></li>
+          <li class="b-bar__item b-bar__item_padleft_10 b-bar__item_padright_10"><a class="b-bar__link b-bar__link_underline" href="#">Выход</a></li>
+          <li class="b-bar__item b-bar__item_active "><span class="b-bar__bord-dark"></span> <a class="b-bar__btn b-bar__btn_help" href="#"><span class="b-bar__icon b-bar__icon_help"></span>Помощь</a> <a class="b-bar__btn b-bar__btn_help b-bar__btn_clone" href="#"><span class="b-bar__icon b-bar__icon_help"></span>Помощь</a> <span class="b-bar__bord-dark"></span></li>
+        </ul></td>
+    </tr>
+  </table>
+</div>
+-->
+</body>
+</html>

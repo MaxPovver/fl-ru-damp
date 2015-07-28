@@ -1,0 +1,371 @@
+.b-layout__td{
+	padding:0;
+	margin:0;
+	vertical-align:top;
+	}
+.b-layout__td_width_15{
+	width:15px;
+	}
+.b-layout__td_width_20{
+	width:20px;
+	}
+.b-layout__td_width_30{
+	width:30px;
+	}
+.b-layout__td_width_40{
+	width:40px;
+	}
+.b-layout__td_width_50{
+	width:50px;
+	}
+.b-layout__td_width_60{
+	width:60px !important;
+	}
+.b-layout__td_width_70{
+	width:70px;
+	}
+.b-layout__td_width_90{
+	width:90px;
+	}
+.b-layout__td_width_100{
+	width:100px !important;
+	}
+.b-layout__td_width_110{
+	width:110px;
+	}
+.b-layout__td_width_120{
+	width:120px;
+	}
+.b-layout__td_width_125{
+	width:125px;
+	}
+.b-layout__td_width_140{
+	width:140px;
+	}
+.b-layout__td_width_160{
+	width:160px;
+	}
+.b-layout__td_width_170{
+	width:170px;
+	}
+.b-layout__td_width_180{
+	width:180px;
+	}
+.b-layout__td_width_200{
+	width:200px;
+	}
+.b-layout__td_width_210{
+	width:210px;
+	}
+.b-layout__td_width_240{
+	width:240px;
+	}
+.b-layout__td_width_250{
+	width:250px;
+	}    
+.b-layout__td_width_270{
+	width:270px;
+	}
+.b-layout__td_width_280{
+	width:280px;
+	}
+.b-layout__td_width_290{
+	width:290px;
+	}    
+.b-layout__td_width_320{
+	width:320px;
+	}
+.b-layout__td_width_340{
+	width:340px;
+	}
+.b-layout__td_width_355{
+	width:355px;
+	}
+.b-layout__td_width_400{
+	width:400px;
+	}
+.b-layout__td_width_450{
+	width:450px;
+	}
+.b-layout__td_width_470{
+	width:470px;
+	}
+.b-layout__td_width_560{
+	width:560px;
+	}  
+.b-layout__td_width_640{
+	width:640px;
+	}  
+.android .b-layout__td_width_580_android{
+	width:580px;
+	}    
+.b-layout__td_width_1ps{
+	width:1%;
+	}    
+.b-layout__td_width_11ps{
+	width:11%;
+	}
+.b-layout__td_width_16ps{
+	width:16%;
+	}
+.b-layout__td_width_20ps{
+	width:20%;
+	}
+.b-layout__td_width_25ps{
+	width:25%;
+	}
+.b-layout__td_width_33ps{
+	width:33%;
+	}
+.b-layout__td_width_40ps{
+	width:40%;
+	}
+.b-layout__td_width_50ps{
+	width:50%;
+	}
+.b-layout__td_width_72ps{
+	width:72%;
+	}
+.b-layout__td_width_full{
+	width:100%;
+	}
+    
+.b-layout__td_width_half{
+	width:50%!important;
+	} 
+ 
+.b-layout__td_max-width_400{
+	max-width:400px;
+	}
+.b-layout__td_max-width_520{
+	max-width:520px;
+	}    
+.b-layout__td_height_20{
+	height:20px;
+	}
+.b-layout__td_height_50{
+	height:50px;
+	}
+.b-layout__td_height_200{
+	height:200px;
+	}
+.b-layout__td_height_240{
+	height:240px;
+	}
+.b-layout__td_padtop_3{
+	padding-top:3px;
+	}
+.b-layout__td_padtop_4{
+	padding-top:4px;
+	}
+.b-layout__td_padtop_5{
+	padding-top:5px;
+	}    
+.b-layout__td_padtop_10{
+	padding-top:10px;
+	}
+.b-layout__td_padtop_15{
+	padding-top:15px;
+	}
+.b-layout__td_padtop_20{
+	padding-top:20px;
+	}
+.b-layout__td_padtop_30{
+	padding-top:30px;
+	}    
+.b-layout__td_padbot_5{
+	padding-bottom:5px;
+	}
+.b-layout__td_padbot_10{
+	padding-bottom:10px;
+	}
+.b-layout__td_padbot_15{
+	padding-bottom:15px;
+	}
+.b-layout__td_padbot_20{
+	padding-bottom:20px;
+	}
+.b-layout__td_padbot_30{
+	padding-bottom:30px;
+	}
+.b-layout__td_padbot_37{
+	padding-bottom:37px;
+	}   
+.b-layout__td_padbot_35{
+	padding-bottom:35px;
+	}    
+.b-layout__td_padbot_40{
+	padding-bottom:40px;
+	}
+.b-layout__td_padbot_55{
+	padding-bottom:55px;
+	} 
+.b-layout__td_padbot_60{
+	padding-bottom:60px;
+	}    
+.b-layout__td_padright_5{
+	padding-right:5px;
+	}
+.b-layout__td_padright_10{
+	padding-right:10px;
+	}
+.b-layout__td_padright_15{
+	padding-right:15px;
+	}
+.b-layout__td_padright_20{
+	padding-right:20px;
+	}
+.b-layout__td_padright_35{
+	padding-right:35px;
+	}    
+.b-layout__td_padright_40{
+	padding-right:40px;
+	}     
+.b-layout__td_padright_70{
+	padding-right:70px;
+	}        
+.b-layout__td_padright_100{
+	padding-right:100px;
+	}    
+.b-layout__td_padleft_40{
+	padding-left:40px;
+	}    
+.b-layout__td_padleft_50{
+	padding-left:50px;
+	}
+.b-layout__td_padleft_30{
+	padding-left:30px;
+	}
+.b-layout__td_padleft_20{
+	padding-left:20px;
+	}
+.b-layout__td_padleft_10{
+	padding-left:10px;
+	}
+.b-layout__td_padleft_15{
+	padding-left:15px;
+	}
+.b-layout__td_padleft_20{
+	padding-left:20px;
+	}   
+.b-layout__td_padlr_0 {
+    padding-left: 0px;
+    padding-right: 0px;
+    }    
+.b-layout__td_pad_10{
+	padding:10px;
+	}
+.b-layout__td_padtb_5{
+	padding-bottom:5px;
+	padding-top:5px;
+	}
+.b-layout__td_padtb_10{
+	padding-bottom:10px !important;
+	padding-top:10px !important;
+	}
+.b-layout__td_padtb_15{
+	padding-bottom:15px;
+	padding-top:15px;
+	}
+.b-layout__td_padtb_20{
+        padding-bottom:20px;
+        padding-top:20px;
+        }
+.b-layout__td_padtb_30{
+	padding-bottom:30px;
+	padding-top:30px;
+	}
+.b-layout__td_valign_bot{
+	vertical-align:bottom;
+	}
+.b-layout__td_valign_mid{
+	vertical-align: middle;
+	}      
+.b-layout__td_center{
+	text-align:center;
+	}  
+.b-layout__td_right{
+	text-align:right;
+	}
+.b-layout__td_left{
+	text-align:left;
+}    
+.b-layout__td_nowrap{
+        white-space: nowrap;
+        } 
+.b-layout__td_line-height_1{
+        line-height: 1;
+        }        
+.b-layout__td_bord_ef{
+	border:1px solid #efefef;
+	}
+.b-layout__td_bord_e6{
+	border:1px solid #e6e6e6;
+	}
+.b-layout__td_bord_f5{
+	border:1px solid #f5f5f5;
+	}
+.b-layout__td_bordleft_c3{
+	border-left:1px solid #c3c3c3;
+	}
+.b-layout__td_bordleft_e6{
+	border-left:1px solid #e6e6e6;
+	}
+.b-layout__td_bordtop_fff{
+	border-top:1px solid #ffffff;
+	}
+.b-layout__td_bordleft_fff{
+	border-left:1px solid #ffffff;
+	}
+.b-layout__td_bordbot_e6{
+	border-bottom:1px solid #e6e6e6;
+	}
+.b-layout__td_bordbot_3_e6{
+	border-bottom:3px solid #e6e6e6;
+	}
+.b-layout__td_bordbot_c3{
+        border-bottom:1px solid #c3c3c3;
+        }
+.b-layout__td_bg_f0ffdf{
+	background-color:#f0ffdf;
+	}
+.b-layout__tr_bg_f0ffdf_hover:hover .b-layout__td{
+	background-color:#f0ffdf;
+	}
+.b-layout__td_fs_11 {
+    font-size: 11px;
+}	
+
+.b-layout__td_bg_5fbd37{
+    background-color: #5fbd37;
+}
+
+.b-layout__td_bg_4ea828{
+    background-color: #4ea828;
+}
+
+.b-layout__td_bg_e94e4e{
+    background-color: #e94e4e;
+}
+
+.b-layout__td_bg_ffb644{
+    background-color: #ffb644;
+}
+
+.b-layout__td_bg_061A40{
+    background-color: #061A40;
+}
+
+.b-layout__td_color_fff{
+    color: #fff;
+}
+
+.b-layout__td_relative {
+    position: relative;
+}
+
+@media screen and (max-width: 1200px){
+.b-layout__td_pad_null_r1200{
+	padding:0;
+	}    
+}

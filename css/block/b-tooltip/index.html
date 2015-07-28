@@ -1,0 +1,270 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>b-tooltip</title>
+<link href="b-tooltip.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/scripts/mootools-new.js"></script>
+<script type="text/javascript" src="b-tooltip.js"></script>
+<link href="../b-textarea/b-textarea.css" rel="stylesheet" type="text/css" />
+</head>
+<body style="background:#e8e9ec">
+<h3>Тултип с носиком</h3>
+<div class="b-tooltip b-tooltip_transparent b-tooltip_nosik_yes">
+	<div class="b-tooltip__right">
+		<div class="b-tooltip__left">
+			<div class="b-tooltip__top">
+				<div class="b-tooltip__topright"></div>
+				<div class="b-tooltip__bottom">
+					<div class="b-tooltip__body">
+						<div class="b-tooltip__txt">Эту плату берёт портал Free-lance.ru с исполнителя за пользование сервисом «Сделка без риска».</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="b-tooltip__topleft"></div>
+	<div class="b-tooltip__nosik"></div>
+	<div class="b-tooltip__tl"></div>
+	<div class="b-tooltip__tr"></div>
+	<div class="b-tooltip__bl"></div>
+	<div class="b-tooltip__br"></div>
+</div>
+<h3>Тултип с носиком и с крестиком для закрытия</h3>
+<div class="b-tooltip b-tooltip_transparent b-tooltip_nosik_yes b-tooltip_close_yes">
+	<div class="b-tooltip__right">
+		<div class="b-tooltip__left">
+			<div class="b-tooltip__top">
+				<div class="b-tooltip__topright"></div>
+				<div class="b-tooltip__bottom">
+					<div class="b-tooltip__body">
+						<div class="b-tooltip__txt">Эту плату берёт портал Free-lance.ru с исполнителя за пользование сервисом «Сделка без риска».</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="b-tooltip__close"></div>
+	<div class="b-tooltip__topleft"></div>
+	<div class="b-tooltip__nosik"></div>
+	<div class="b-tooltip__tl"></div>
+	<div class="b-tooltip__tr"></div>
+	<div class="b-tooltip__bl"></div>
+	<div class="b-tooltip__br"></div>
+</div>
+<h3>Тултип без носика</h3>
+<div class="b-tooltip b-tooltip_transparent b-tooltip_nosik_no">
+	<div class="b-tooltip__right">
+		<div class="b-tooltip__left">
+			<div class="b-tooltip__top">
+				<div class="b-tooltip__bottom">
+					<div class="b-tooltip__body">
+						<div class="b-tooltip__txt">Эту плату берёт портал Free-lance.ru с исполнителя за пользование сервисом «Сделка без риска».</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="b-tooltip__tl"></div>
+	<div class="b-tooltip__tr"></div>
+	<div class="b-tooltip__bl"></div>
+	<div class="b-tooltip__br"></div>
+</div>
+<h3>Тултип без носика с крестиком для закрытия</h3>
+<div class="b-tooltip b-tooltip_transparent b-tooltip_close_yes b-tooltip_nosik_no">
+	<div class="b-tooltip__right">
+		<div class="b-tooltip__left">
+			<div class="b-tooltip__top">
+				<div class="b-tooltip__bottom">
+					<div class="b-tooltip__body">
+						<div class="b-tooltip__txt">Эту плату берёт портал Free-lance.ru с исполнителя за пользование сервисом «Сделка без риска».</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="b-tooltip__close"></div>
+	<div class="b-tooltip__tl"></div>
+	<div class="b-tooltip__tr"></div>
+	<div class="b-tooltip__bl"></div>
+	<div class="b-tooltip__br"></div>
+</div>
+<h3>Тултип растягивающийся по ширине контента</h3>
+<div class="b-tooltip b-tooltip_transparent b-tooltip_nosik_yes b-tooltip_inline-block b-tooltip_close_yes">
+	<table class="b-tooltip__table" cellpadding="0" cellspacing="0"><tr class="b-tooltip__row"><td class="b-tooltip__cell">
+	<div class="b-tooltip__right">
+		<div class="b-tooltip__left">
+			<div class="b-tooltip__top">
+				<div class="b-tooltip__topright"></div>
+				<div class="b-tooltip__bottom">
+					<div class="b-tooltip__body">
+						<div class="b-tooltip__txt">Эту плату берёт портал Free-lance.ru с исполнителя за пользование сервисом «Сделка без риска».</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="b-tooltip__close"></div>
+	<div class="b-tooltip__topleft"></div>
+	<div class="b-tooltip__nosik"></div>
+	<div class="b-tooltip__tl"></div>
+	<div class="b-tooltip__tr"></div>
+	<div class="b-tooltip__bl"></div>
+	<div class="b-tooltip__br"></div>
+	</td></tr></table>
+</div>
+
+<h3> Иконка для тултипа</h3>
+<span class="b-tooltip b-tooltip_inline-block"><span class="b-tooltip__ic"></span></span>
+
+
+
+
+
+
+
+
+
+<h3>Тултип с белым фоном с верхним носиком слева</h3>
+<div class="i-tooltip">
+	<div id="err_safety_phone" class="b-tooltip b-tooltip_white b-tooltip_nosiktopleft b-tooltip_inline-block">
+		<div class="b-tooltip__right">
+			<div class="b-tooltip__left">
+				<div class="b-tooltip__body">
+					<div class="b-tooltip__txt">Ошибка при загрузке файла</div>
+				</div>
+			</div>
+		</div>
+		<div class="b-tooltip__nosik"></div>
+	</div>
+</div>
+<h3 style="padding-top:30px">Тултип с белым фоном с верхним носиком справа</h3>
+<div class="i-tooltip">
+	<div class="b-tooltip b-tooltip_white b-tooltip_nosiktopright b-tooltip_inline-block">
+		<div class="b-tooltip__right">
+			<div class="b-tooltip__left">
+				<div class="b-tooltip__body">
+					<div class="b-tooltip__txt">Эту плату берёт портал Free-lance.ru с исполнителя за пользование сервисом «Сделка без риска».</div>
+				</div>
+			</div>
+		</div>
+		<div class="b-tooltip__nosik"></div>
+	</div>
+</div>
+
+<h3 style="padding-top:30px">Тултип с белым фоном с носиком справа</h3>
+<div class="i-tooltip">
+	<div class="b-tooltip b-tooltip_white b-tooltip_nosikright b-tooltip_inline-block">
+		<div class="b-tooltip__right">
+			<div class="b-tooltip__left">
+				<div class="b-tooltip__body">
+					<div class="b-tooltip__txt">Эту плату берёт портал Free-lance.ru с исполнителя за пользование сервисом «Сделка без риска».</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<h3 style="padding-top:30px">Тултип с белым фоном с носиком слева</h3>
+<div class="i-tooltip">
+	<div class="b-tooltip b-tooltip_white b-tooltip_nosikleft b-tooltip_inline-block">
+		<div class="b-tooltip__right">
+			<div class="b-tooltip__left">
+				<div class="b-tooltip__body">
+					<div class="b-tooltip__txt">Эту плату берёт портал Free-lance.ru с исполнителя за пользование сервисом «Сделка без риска».</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<h3 style="padding-top:30px">Тултип юзербара с белым фоном с носиком сверху справа</h3>
+<div class="b-tooltip b-tooltip_small b-tooltip_nosikright b-tooltip_inline-block">
+			<div class="b-tooltip__body">
+				<div class="b-tooltip__txt">На ваш счёт поступило 200 FM</div>
+			</div>
+</div>
+<h3>Тултип юзербара с белым фоном с носиком сверху по центру</h3>
+<div class="b-tooltip b-tooltip_small b-tooltip_nosikcenter b-tooltip_inline-block">
+			<div class="b-tooltip__body">
+				<div class="b-tooltip__txt">На ваш счёт поступило 200 FM</div>
+			</div>
+</div>
+<h3>Тултип юзербара с белым фоном с носиком сверху слева</h3>
+<div class="b-tooltip b-tooltip_small b-tooltip_nosikleft b-tooltip_inline-block">
+			<div class="b-tooltip__body">
+				<div class="b-tooltip__txt">На ваш счёт поступило 200 FM</div>
+			</div>
+</div>
+
+<h3>Тултип для чата</h3>
+<div class="b-tooltip b-tooltip_chat">
+	<div class="b-tooltip__right">
+		<div class="b-tooltip__left">
+			<div class="b-tooltip__top">
+				<div class="b-tooltip__bottom">
+					<div class="b-tooltip__body b-textarea b-textarea_noborder">
+                    	<img class="b-tooltip__avatar" src="/images/temp/small-pic2.png"  alt="Иван Петрович [vanya]" title="Иван Петрович [vanya]" width="16" height="16" />
+                   	  <textarea class="b-textarea__textarea b-textarea__textarea_fontsize_11" name="" cols="" rows=""></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="b-tooltip__nosik-right"></div>
+	<div class="b-tooltip__tl"></div>
+	<div class="b-tooltip__tr"></div>
+	<div class="b-tooltip__bl"></div>
+	<div class="b-tooltip__br"></div>
+</div>
+
+<h3>Тултип для чата активный</h3>
+<div class="b-tooltip b-tooltip_chat b-tooltip_current">
+	<div class="b-tooltip__right">
+		<div class="b-tooltip__left">
+			<div class="b-tooltip__top">
+				<div class="b-tooltip__bottom">
+					<div class="b-tooltip__body b-textarea b-textarea_noborder">
+                    	<img class="b-tooltip__avatar" src="/images/temp/small-pic2.png" alt="Иван Петрович [vanya]" title="Иван Петрович [vanya]" width="16" height="16" />
+                   	  <textarea class="b-textarea__textarea b-textarea__textarea_fontsize_11" name="" cols="" rows=""></textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="b-tooltip__nosik-right"></div>
+	<div class="b-tooltip__tl"></div>
+	<div class="b-tooltip__tr"></div>
+	<div class="b-tooltip__bl"></div>
+	<div class="b-tooltip__br"></div>
+</div>
+
+<h3>Тултип для чата задисабленный</h3>
+<div class="b-tooltip b-tooltip_chat b-tooltip_disabled">
+	<div class="b-tooltip__right">
+		<div class="b-tooltip__left">
+			<div class="b-tooltip__top">
+				<div class="b-tooltip__bottom">
+					<div class="b-tooltip__body b-textarea b-textarea_noborder">
+                    	<img class="b-tooltip__avatar" src="/images/temp/small-pic2.png" alt="Иван Петрович [vanya]" title="Иван Петрович [vanya]" width="16" height="16" />
+                   	  <textarea class="b-textarea__textarea b-textarea__textarea_fontsize_11 b-textarea__textarea_color_c10600" name="" cols="" rows="" disabled="disabled">Отправка сообщений этому пользователю запрещена.</textarea>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="b-tooltip__nosik-right"></div>
+	<div class="b-tooltip__tl"></div>
+	<div class="b-tooltip__tr"></div>
+	<div class="b-tooltip__bl"></div>
+	<div class="b-tooltip__br"></div>
+</div>
+
+
+<h3>Тултип серый</h3>
+<span class="b-tooltip b-tooltip_grey">до 15 мая, 12:01</span>
+
+
+</body>
+</html>

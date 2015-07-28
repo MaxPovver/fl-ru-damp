@@ -1,0 +1,22 @@
+
+
+.b-shadow_m{
+	box-shadow:0 0 9px rgba(0,0,0,0.1) !important;
+	}
+	
+	
+
+.b-shadow_m .b-shadow__body{
+	margin:0px;
+	min-height:18px;;
+	}
+
+.b-shadow_m .b-shadow__icon_close{
+	right:11px;
+	top:10px;
+	}	
+
+
+
+
+

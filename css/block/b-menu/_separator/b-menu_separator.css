@@ -1,0 +1,17 @@
+.b-menu_separator .b-menu__item{
+	font-size:11px;
+	}
+.b-menu_separator a.b-menu__link{
+	color:#026dc0 ;
+	text-decoration:none;
+	border-bottom:1px dotted #026dc0 ;
+	display:inline;
+	}
+.b-menu_separator a.b-menu__link:hover{
+	text-decoration:none;
+	border-bottom-color:transparent !important;
+	}
+.b-menu__link_color_c10601{
+	color:#c10601 !important;
+	border-bottom-color:#c10601 !important;
+	}

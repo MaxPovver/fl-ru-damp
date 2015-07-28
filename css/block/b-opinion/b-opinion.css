@@ -1,0 +1,83 @@
+.b-opinion{
+	}
+.b-opinion_padtop_5{
+	padding-top:5px;
+	}
+.i-opinion_padtop_10{
+	padding-top:10px;
+	}
+/* b-opinion__txt */
+.b-opinion__txt{
+	font-size:11px;
+	color:#4e4e4e;
+	font-family:Tahoma, Arial, Helvetica, sans-serif;
+	}
+.b-opinion__txt_color_6db335{
+	color:#6db335;
+	}
+.b-opinion__txt_color_4e{
+	color:#4e4e4e;
+	}
+.b-opinion__txt_color_c10600{
+	color:#c10600;
+	}
+.b-opinion__txt_color_0f71c8{
+	color:#0f71c8;
+	}
+.b-opinion__txt_color_cd9a00{
+	color:#cd9a00;
+	}
+
+
+
+/* b-opinion__link */
+a.b-opinion__link{
+	text-decoration:underline;
+	}
+a.b-opinion__link_color_6db335{
+	color:#6db335;
+	}
+a.b-opinion__link_color_4e{
+	color:#4e4e4e;
+	}
+a.b-opinion__link_color_c10600{
+	color:#c10600;
+	}
+a.b-opinion__link_decoration_no{
+	text-decoration:none;
+	}
+a.b-opinion__link_color_0f71c8{
+	color:#0f71c8;
+	}
+a.b-opinion__link_color_cd9a00{
+	color:#cd9a00;
+	}
+
+
+.b-opinion__table{
+	border:0;
+	padding:0;
+	margin:0;
+	vertical-align:top;
+	}
+.b-opinion__tr{
+	padding:0;
+	margin:0;
+	border:0;
+	vertical-align:top;
+	}
+.b-opinion__left{
+	padding:0;
+	margin:0;
+	border:0;
+	vertical-align:top;
+	}
+.b-opinion__left_padbot_5{
+	padding-bottom:5px;;
+	}
+.b-opinion__cell{
+	padding:0 0 0 20px;
+	margin:0;
+	border:0;
+	vertical-align:top;
+	}

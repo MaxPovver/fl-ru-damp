@@ -1,0 +1,14 @@
+.b-anchor{
+	padding-bottom:65px;
+	margin-top:-65px;
+	position:absolute;
+	}
+.u-guest .b-anchor{
+	padding-bottom:85px;
+	margin-top:-85px;
+	position:absolute;
+	}
+.b-anchor__link{
+	position:absolute;
+	left:-9999px;
+	}

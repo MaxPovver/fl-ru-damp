@@ -1,0 +1,73 @@
+<?php
+
+if (@$_SESSION['photo']) {
+    $ufoto = WDCPREFIX.'/users/'.$_SESSION['login'].'/foto/'.get_unanimated_gif($_SESSION['login'], $_SESSION['photo']);
+} else {
+    $ufoto = WDCPREFIX.'/images/no_foto.png';
+}
+
+$change_foto_url = "/users/{$_SESSION['login']}/setup/foto/?pfrom=toppayed";
+$img_url = "/users/{$_SESSION['login']}";
+
+?>
+<div class="b-layout b-layout_padleft_20 b-layout_padbot_30">
+<form id="<?=$this->escape($this->element->getId())?>" 
+      method="<?=$this->escape($this->element->getMethod())?>" 
+      action="<?=$this->escape($this->element->getAction())  ?>" 
+      enctype="<?php echo $this->escape($this->element->getEnctype())?>">
+    
+    <table class="b-layout__table b-layout__table_width_full">
+        <tbody>
+            <tr class="b-layout__tr">
+                <td class="b-layout__td b-layout__td_padright_10" rowspan="2">
+                    <a class="b-carusel__piclink" href="<?=$img_url?>">
+                        <img id="payfoto" 
+                             src="<?=$ufoto?>" 
+                             alt="<?=@$_SESSION['login']?>" 
+                             class="b-carusel__pic b-carusel__pic_marg_0" width="51" height="51" />
+                    </a>
+                    <div class="b-layout__txt b-layout__txt_clear_left b-layout__txt_fontsize_11">
+                         <a class="b-layout__link" href="javascript:void(0);" onClick='n_window = window.open("<?=$change_foto_url?>"); var new_interval=setInterval(function(){if(n_window.closed){xajax_getUserPhoto(); clearInterval(new_interval);}},100);'>
+                             Изменить
+                         </a>
+                    </div>
+                </td>
+                <td class="b-layout__td b-layout__td_padbot_10">
+                    <?=$this->element->getElement('title');?>
+                </td>                 
+            </tr>
+            <tr class="b-layout__tr">
+                <td class="b-layout__td b-layout__td_padbot_10">
+                    <?=$this->element->getElement('description');?>
+                </td>           
+            </tr>            
+            <tr class="b-layout__tr">
+                <td class="b-layout__td b-layout__td_padright_10 b-layout__td_padtop_5">
+                    <span class="b-layout__txt b-layout__txt_fontsize_13">
+                        Купить
+                    </span>
+                </td>
+                <td class="b-layout__td b-layout__td_valign_mid b-layout__td_padbot_10">
+                    <?=$this->element->getElement('num');?>
+                </td>           
+            </tr>
+            <tr class="b-layout__tr">
+                <td class="b-layout__td" colspan="2">
+                    <div data-hours-el="true" class="b-layout b-layout_hide">
+                        <span class="b-layout__txt b-layout__txt_padright_10 b-layout__txt_fontsize_13">
+                            Публиковать с периодичностью 
+                        </span>
+                        <span class="b-layout__txt b-layout__txt_fontsize_13">
+                            <?=$this->element->getElement('hours');?>
+                        </span>
+                    </div>
+                    <span data-hours-txt="true" class="b-layout__txt b-layout__txt_lineheight_1 b-layout__txt_fontsize_13">
+                        При покупке нескольких размещений объявление будет <br/>
+                        публиковаться автоматически с заданной вами периодичностью.
+                    </span>
+                </td>
+            </tr>
+        </tbody>    
+    </table>
+</form>
+</div>

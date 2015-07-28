@@ -1,0 +1,165 @@
+<?php $sUri = $_SERVER['REQUEST_URI']; ?>
+<div id="i-footer" class="i-footer">
+    <div class="b-footer">
+        <div class="b-footer__top" >
+            <div class="b-footer__col b-footer__col_copy">
+                <h4 class="b-layout__txt b-layout__txt_padbot_20 b-layout__txt_bold b-layout__txt_color_646464">FL.ru | Free-lance.ru © 2005–<?= date('Y') ?></h4>
+                <div class="b-layout__txt b-layout__txt_padbot_20 b-layout__txt_fontsize_11">
+                   Наши партнеры
+                   <div class="b-layout__txt b-layout__txt_padtop_5">
+                      <a class="b-footer__dizkon" href="http://www.dizkon.ru/" target="_blank"></a><a class="b-footer__fg" href="http://www.fotogazon.ru/" target="_blank"></a><a class="b-footer__mbm" href="/promo/mbm/" target="_blank"></a>
+                   </div>
+                </div>
+                <div class="b-footer__rambler"> 
+                    <!-- begin of Top100 logo --> 
+                    <p class="b-footer__txt">
+                        <script type="text/javascript">document.write('Участник <noindex><a rel="nofollow" class="b-footer__link" href="http://top100.rambler.ru/home?id=1367737" target="_blank">Rambler\'s Top100</a></noindex>');</script>
+                    </p>
+                    <!-- begin of Top100 logo --> 
+                    <!-- end of Top100 logo --> 
+                </div>
+                  <div class="b-social">
+                     <div class="b-layout__txt b-layout__txt_fontsize_11 b-txt_padbot_5">Мы в социальных сетях:</div>
+                     <ul class="b-social__list">
+                        <li class="b-social__item"><a class="b-social__link b-social__link_f" target="_blank" href="http://www.facebook.com/freelanceru"></a></li>
+                        <li class="b-social__item"><a class="b-social__link b-social__link_v" target="_blank" href="http://vk.com/free_lanceru"></a></li>
+                        <li class="b-social__item"><a class="b-social__link b-social__link_o" target="_blank" href="http://www.odnoklassniki.ru/freelanceru"></a></li>
+                        <li class="b-social__item"><a class="b-social__link b-social__link_t" target="_blank" href="https://twitter.com/free_lanceru"></a></li>
+                        <li class="b-social__item"><a class="b-social__link b-social__link_g" target="_blank" href="https://plus.google.com/+Free-lanceru/"></a></li>
+                        <li class="b-social__item"><a class="b-social__link b-social__link_i" target="_blank" href="https://www.linkedin.com/company/free-lance-ru"></a></li>
+                     </ul>
+                  </div>
+                
+                <!-- tns-counter.ru --> 
+                <script type="text/javascript">
+                        var img = new Image();
+                        img.src = '//www.tns-counter.ru/V13a***R>' + document.referrer.replace(/\*/g,'%2a') + '*hh_ru/ru/CP1251/tmsec=hh_free-lance/';
+                </script>
+                <noscript>
+                <div><img class="b-footer__counter" src="//www.tns-counter.ru/V13a****hh_ru/ru/CP1251/tmsec=hh_free-lance/"  alt="" /></div>
+                </noscript>
+                <!--/ tns-counter.ru --> 
+
+                <!-- begin of Top100 code --> 
+                <noindex><a rel="nofollow" class="b-footer__link" style="position:absolute; left:-9999px;" href="http://top100.rambler.ru/top100/"><img class="b-footer__counter" src="//counter.rambler.ru/top100.cnt?1367737" alt="Rambler's Top100"   /></a> </noindex>
+                <!-- end of Top100 code --> 
+            </div>
+            
+            <?php if (get_uid(false) == 0): ?>
+            <div class="b-footer__col b-footer__col_user">
+				<h4 class="b-footer__h4"><a class="b-footer__link" href="/registration/" target="_blank">Профиль</a></h4>				
+                <ul class="b-footer__list">
+					    <li class="b-footer__item"><a class="b-footer__link" href="/login/" target="_blank">Войти</a></li>
+					    <li class="b-footer__item"><a class="b-footer__link" href="/registration/" target="_blank">Зарегистрироваться</a></li>
+					    <li class="b-footer__item"><a class="b-footer__link" href="/remind/" target="_blank">Восстановить доступ</a></li>
+					    <li class="b-footer__item"><a class="b-footer__link" href="https://feedback.fl.ru/topic/397534-poshagovaya-instruktsiya-novichkam-frilanseram/" target="_blank">Рекомендации Исполнителям</a></li>
+					    <li class="b-footer__item"><a class="b-footer__link" href="https://feedback.fl.ru/topic/397522-poshagovaya-instruktsiya-novichkam-rabotodatelyam/" target="_blank">Рекомендации Заказчикам</a></li>
+                </ul>
+            </div>            
+            <div class="b-footer__col b-footer__col_project b-page__desktop">
+				<h4 class="b-footer__h4"><a class="b-footer__link" href="/freelancers/" target="_blank">Выбрать исполнителя</a></h4>				
+                <ul class="b-footer__list">
+                   <li class="b-footer__item"><a class="b-footer__link" href="/tu/" target="_blank">Заказать услугу</a></li>
+                   <li class="b-footer__item"><a class="b-footer__link" href="/public/?step=1&kind=1&red=" target="_blank">Опубликовать проект</a></li>
+                   <li class="b-footer__item"><a class="b-footer__link" href="/public/?step=1&kind=4&red=" target="_blank">Разместить вакансию</a></li>
+                   <li class="b-footer__item"><a class="b-footer__link" href="/public/?step=1&kind=7&red=" target="_blank">Устроить конкурс</a></li>
+                   <li class="b-footer__item"><a class="b-footer__link" href="/masssending/" target="_blank">Провести рассылку</a></li>
+                </ul>
+            </div>
+            <?php else: ?>
+                <div class="b-footer__col b-footer__col_user">
+                <? if($_SESSION['uid']){ ?>
+	                    <h4 class="b-footer__h4"><a class="b-footer__link" href="/users/<?=$_SESSION['login']?>">Мой профиль</a></h4>
+	                    <ul class="b-footer__list">
+	                        <li class="b-footer__item"><a class="b-footer__link" href="/contacts/">Сообщения</a></li>
+	                        <li class="b-footer__item"><a class="b-footer__link" href="<?php if (is_emp()) {?>/users/<?=$_SESSION['login']?>/projects/<?php } else { ?>/proj/?p=list<?php }?>">Проекты</a></li>
+	                        <?php if(isset($_SESSION['tu_orders']) && $_SESSION['tu_orders']): ?>
+                            <li class="b-footer__item"><a class="b-footer__link" href="<?php if (is_emp()) {?>/users/<?=$_SESSION['login']?><?php }?>/tu-orders/">Заказы</a></li>
+                            <?php endif; ?>
+	                        <li class="b-footer__item"><a class="b-footer__link" href="/users/<?=$_SESSION['login']?>/setup/">Настройки</a></li>
+	                        <li class="b-footer__item"><a class="b-footer__link logoutBtn" href="javascript:void(0);" onclick="Bar_Ext.logout();">Выход</a></li>
+	                    </ul>
+	               <?}?> 
+            </div>
+            
+                <?php if (!is_emp()) {?>
+                    <div class="b-footer__col b-footer__col_project b-page__desktop">
+    				    <h4 class="b-footer__h4"><a class="b-footer__link" href="/projects/">Найти работу</a></h4>
+                        <ul class="b-footer__list">
+                                <li class="b-footer__item"><a class="b-footer__link" href="/users/<?=$_SESSION['login']?>/setup/specsetup/" target="_blank">Выбрать специализацию</a></li>
+                                <li class="b-footer__item"><a class="b-footer__link" href="/users/<?=$_SESSION['login']?>/setup/portfolio/" target="_blank">Заполнить портфолио</a></li>
+                                <li class="b-footer__item"><a class="b-footer__link" href="/users/<?=$_SESSION['login']?>/tu/" target="_blank">Добавить услуги</a></li>
+                                <li class="b-footer__item"><a class="b-footer__link" href="/users/<?=$_SESSION['login']?>/setup/info/" target="_blank">Загрузить резюме</a></li>
+                        </ul>
+                    </div>
+                <?php } else { //вторая колонка работодателя?>
+                    <div class="b-footer__col b-footer__col_project b-page__desktop">                        
+    				          <h4 class="b-footer__h4"><a class="b-footer__link" href="/freelancers/">Выбрать исполнителя</a></h4>    				    
+                         <ul class="b-footer__list">
+                            <li class="b-footer__item"><a class="b-footer__link" href="/tu/" target="_blank">Заказать услугу</a></li>
+                            <li class="b-footer__item"><a class="b-footer__link" href="/public/?step=1&kind=1&red=" target="_blank">Опубликовать проект</a></li>
+                            <li class="b-footer__item"><a class="b-footer__link" href="/public/?step=1&kind=4&red=" target="_blank">Разместить вакансию</a></li>
+                            <li class="b-footer__item"><a class="b-footer__link" href="/public/?step=1&kind=7&red=" target="_blank">Устроить конкурс</a></li>
+                            <li class="b-footer__item"><a class="b-footer__link" href="/masssending/" target="_blank">Провести рассылку</a></li>
+                         </ul>
+                    </div>
+                <?php }?>
+            
+            <?php endif; ?>
+            <div class="b-footer__col b-footer__col_project b-page__desktop">
+                <h4 class="b-footer__h4"><a class="b-footer__link" href="/service/" target="_blank">Сервисы</a></h4>
+                <ul class="b-footer__list">
+                    <li class="b-footer__item"><a class="b-footer__link" href="/search/" target="_blank">Поиск по сайту</a></li>
+                    <li class="b-footer__item"><a class="b-footer__link" href="/promo/bezopasnaya-sdelka" target="_blank">Безопасная сделка</a></li>
+                    <li class="b-footer__item"><a class="b-footer__link" href="/payed/" target="_blank">Аккаунт PRO</a></li>
+                    <? if($_SESSION['uid']&&!is_emp()) { ?>
+                       <li class="b-footer__item"><a class="b-footer__link" href="https://feedback.fl.ru/list/27457-baza-znanij-flru/?category=11140" target="_blank">Реклама профиля на сайте</a></li>
+                    <?php } else {?>
+                       <li class="b-footer__item"><a class="b-footer__link" href="http://feedback.fl.ru/topic/397524-platnyie-proektyi-opisanie/" target="_blank">Платные опции в проектах</a></li>
+                       <li class="b-footer__item"><a class="b-footer__link" href="/promo/advertisement/" target="_blank">Реклама на сайте</a></li>
+                    <?php } ?>
+                </ul>
+            </div>
+            
+            <div class="b-footer__col b-footer__col_help">
+				<h4 class="b-footer__h4"><a class="b-footer__link" href="/about/" target="_blank">О сайте</a></h4>
+
+                <ul class="b-footer__list">
+                     <li class="b-footer__item">
+                        <a class="b-footer__link" href="https://feedback.fl.ru/" onmouseover="UE.Popin.preload();" onclick="UE.Popin.show(); return false;">Помощь</a>                       
+                     </li>					
+                     <li class="b-footer__item">
+                        <a class="b-footer__link" href="/about/appendix_2_regulations.pdf" >Правила </a>                       
+                     </li>					
+                     <li class="b-footer__item">
+                        <a class="b-footer__link" href="/commune/drugoe/5100/flru/" >Новости</a>                       
+                     </li>					
+                     <li class="b-footer__item">
+                        <a class="b-footer__link" href="/about/team/" >Команда</a>                       
+                     </li>					
+                     <li class="b-footer__item">
+                        <a class="b-footer__link" href="/press/contacts/" >Контакты</a>                       
+                     </li>					
+                </ul>
+            </div>
+            
+        </div>
+    </div>
+</div>
+
+<script type='text/javascript'>
+
+var _ues = {
+host:'fl.userecho.com',
+forum:'27458',
+lang:'ru',
+tab_show:false,
+};
+
+(function() {
+    var _ue = document.createElement('script'); _ue.type = 'text/javascript'; _ue.async = true;
+    _ue.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'cdn.userecho.com/js/widget-1.4.gz.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(_ue, s);
+  })();
+
+</script>

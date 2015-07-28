@@ -1,0 +1,60 @@
+a.b-button_bill{
+	height: 63px;
+	padding-right:4px !important;
+	}
+div.b-buttons.payment-system a.b-button.b-button_bill{padding-right:4px !important;}
+a.b-button_bill .b-button__b1{
+	padding-left:4px !important;
+	}
+	
+	
+a.b-button_bill.b-button_bill_mid{
+	background: url(b-button_bill.png) no-repeat right -126px;
+	}
+a.b-button_bill.b-button_bill_mid .b-button__b1{
+	background: url(b-button_bill.png) no-repeat 0 0;
+	}
+a.b-button_bill.b-button_bill_mid .b-button__b2{
+	background: url(b-button_bill.png) repeat-x 0 -63px;
+	height: 51px;
+	padding:6px 0;
+	}
+
+a.b-button_bill.b-button_bill_mid.b-button_active, a.b-button_bill.b-button_bill_mid:hover{
+	background: url(b-button_bill.png) no-repeat  right -315px;
+	}
+a.b-button_bill.b-button_bill_mid.b-button_active .b-button__b1, a.b-button_bill.b-button_bill_mid:hover .b-button__b1{
+	background: url(b-button_bill.png) no-repeat  0 -189px;
+	}
+a.b-button_bill.b-button_bill_mid.b-button_active .b-button__b2, a.b-button_bill.b-button_bill_mid:hover .b-button__b2{
+	background: url(b-button_bill.png) repeat-x   0 -252px;
+	}
+	
+a.b-button_bill.b-button_bill_small{
+	background: url(b-button_bill.png) no-repeat right -450px;
+	}
+a.b-button_bill.b-button_bill_small .b-button__b1{
+	background: url(b-button_bill.png) no-repeat 0 -378px;
+	}
+a.b-button_bill.b-button_bill_small .b-button__b2{
+	background: url(b-button_bill.png) repeat-x 0 -414px;
+	line-height: 36px;
+	position:static;
+	}
+	
+
+a.b-button_bill.b-button_bill_small.b-button_active, a.b-button_bill.b-button_bill_small:hover{
+	background: url(b-button_bill.png) no-repeat right -558px;
+	height:36px;
+	line-height:36px;
+	}
+a.b-button_bill.b-button_bill_small.b-button_active .b-button__b1, a.b-button_bill.b-button_bill_small:hover .b-button__b1{
+	background: url(b-button_bill.png) no-repeat 0 -486px;
+	}
+a.b-button_bill.b-button_bill_small.b-button_active .b-button__b2, a.b-button_bill.b-button_bill_small:hover .b-button__b2{
+	background: url(b-button_bill.png) repeat-x 0 -522px;
+	}
+
+
+
+

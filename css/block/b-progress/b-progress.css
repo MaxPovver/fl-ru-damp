@@ -1,0 +1,15 @@
+
+.b-progress{
+	height:10px;
+	width:90px;
+	border:1px solid #a2c875;
+	border-radius:5px;
+	display:inline-block;
+	margin-right:15px;
+	}
+.b-progress__bar{
+	height:10px;
+	border-radius:5px;
+	background-color:#b6e184;
+	float:left;
+	}

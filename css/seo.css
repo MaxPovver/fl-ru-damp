@@ -1,0 +1,100 @@
+
+/* leftcol */
+.seo-block { padding-bottom:15px}
+.seo-block .form-value{ float:right}
+.seo-block .form-el label{ font-weight:bold; font-size:12px}
+.seo-block .form-value select{ width:180px}
+.seo-block .element li{ padding-left:25px}
+.seo-text p{ padding-bottom:10px; line-height:1.4; font-size:12px}
+.seo-text p em{ font-style:normal; font-weight:bold;}
+.seo-text h3{ font-size:18px; font-weight:normal; color:#666}
+.seo-text ol li{ list-style-position:inside; font-size:12px; line-height:1.4; padding-bottom:10px}
+.seo-text ul li{ list-style-position:inside; font-size:12px; line-height:1.4; padding-bottom:10px}
+.seo-links{ padding:15px; background:#f3f3f3; margin-bottom:15px}
+.seo-links li{ list-style:none; padding-bottom:10px}
+.seo-links li a{ font-size:12px}
+.seo-links li.last{ padding-bottom:0px}
+.seo-links li.last a{ font-weight:bold}
+.seo-links h3{ padding-bottom:10px}
+.block-seo-links, .seo-best{ padding-bottom:15px; }
+.block-seo-links .form-in{ overflow:hidden;zoom:1; padding:10px 0 0 10px}
+.seo-best .form-in{ overflow:hidden;zoom:1; padding:5px 0px 8px 10px; font-size:12px; line-height:1.4}
+.block-seo-links ul{ float:left; width:325px; padding-right:15px}
+.block-seo-links ul li{ list-style:none; padding-bottom:10px; }
+.seo-best-item{ float:left; width:210px; padding-right:14px}
+.seo-best-item .lpl-avatar{ float:left; margin: 3px 7px 0 0}
+.seo-best-item p{ padding:0 0 0 57px; font-size:11px; line-height:1.2; color:#666}
+.seo-best-item h4{ padding-bottom:5px; font-size:11px; color:#444}
+.seo-best-item h4 a{ color:#666; word-wrap:break-word;}
+.seo-title{  font-size:15px !important; font-weight:bold !important; padding-bottom:10px !important; font-family:Arial, Helvetica, sans-serif;}
+
+.seo-admin{ padding:15px}
+.add-new { padding-bottom:10px; float:left}
+.add-new a{ float:left; padding:5px; background: #ffeda9; font-size:14px; line-height:1}
+.add-new a i{ float:left; background:url(../images/seo-sprite.png) 0 0 no-repeat #ffeda9; width:15px; height:15px; margin-right:5px}
+.seo-left { width:330px; float:left; padding-bottom:15px}
+.seo-left ul{ clear:both; margin:0; padding:0}
+.seo-left li { list-style:none; margin:0; padding:0; display:block;  }
+.seo-left li ul{ padding:0 0 5px 35px; display:none}
+.seo-left li.active ul{ display: block}
+.seo-left li ul li{ padding:5px 50px 5px 23px; font-weight:bold; color:#444; border-bottom:1px solid #f3f2f0}
+.seo-left li ul li.last{ border-bottom:0}
+.seo-left li div{padding:7px 7px 7px 35px; background:#f3f2f0; display:block; color:#444; font-weight:bold; line-height:1; margin-bottom:2px }
+.seo-left li span{padding:0; color:#999; font-weight: normal; float:left; padding-right:3px; margin-left:-12px}
+.seo-left li li span{ margin-left:-23px  }
+.seo-left li  i{ background:url(../images/seo-sprite.png) -79px 0; width:10px; height:10px; float:left; margin:1px 5px 0 0; cursor:pointer; margin-left:-30px}
+.seo-left li.active  i{ background-position:-108px 0;}
+.seo-left li  b{ display:block; float:right; width:15px; height:15px; margin-left:7px; margin-top:-2px; cursor:pointer; position:relative}
+.seo-left li ul li  .seo-del{ margin-right:-45px}
+*+ html .seo-left li ul li  .seo-del{ right:-20px}
+.seo-left li ul li  .seo-edit{ margin-right:-20px}
+.seo-open{ background:url(../images/seo-sprite.png) 0px 0 no-repeat; width:15px; height:15px; display:inline-block;}
+.seo-edit{ background:url(../images/seo-sprite.png) -23px 0 no-repeat; width:15px; height:15px; display:inline-block;}
+.seo-del{ background:url(../images/seo-sprite.png) -46px 0 no-repeat; width:15px; height:15px; display:inline-block;}
+*+ html .seo-open{ display:inline; zoom:1; }
+*+ html .seo-edit{display:inline; zoom:1; }
+*+ html .seo-del{display:inline; zoom:1;}
+
+
+.seo-right{ width:570px; float:right;}
+
+.seo-right .form-el{ clear:both; overflow:hidden;zoom:1; margin-bottom:15px}
+.seo-right .form-el label{ display:block; padding-bottom:3px}
+.seo-right .form-el input.i-txt{ width: 562px}
+.form-group .form-value{ float:left}
+.form-group .form-value input.i-txt{ width:412px; margin-right:10px !important}
+.form-group .form-value select{ width:140px}
+.seo-right .form-el textarea{ width: 562px; height:70px; min-width:562px; max-width:562px; min-height:70px; }
+.seo-right .form-el .form-key textarea{ height:40px; min-height:40px}
+.seo-right .cl-form-files { margin:15px -15px -5px; border-top:1px solid #fff}
+.seo-right .cl-form { margin:5px 0 15px; padding:0; background:#fff}
+.seo-right .cl-form .fe{background:#fff}
+.seo-right .form-files-inf strong, .seo-right .form-files-inf p{ font-size:11px; line-height:1; color:#999}
+
+.seo-right .mooeditable-ui-toolbar{ margin-right:-10px; width:565px;}
+
+#form_section .form-el{ overflow:visible !important;}
+#form_section .form-el div p{ padding:0; margin:0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

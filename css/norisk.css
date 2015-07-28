@@ -1,0 +1,117 @@
+h3 {
+font-family: 'Tahoma';
+font-size: 20px;
+font-weight: normal;
+margin: 0;
+padding: 8px 0 8px 0;
+}
+
+h2.green {
+font-size:20px;
+color:#6ba84d;
+font-weight: normal;
+}
+
+a.green {
+color:#6ba84d;
+text-decoration: underline;
+}
+
+h2.blue {
+font-family: 'Trebuchet MS';
+font-size: 36px;
+font-weight: bold;
+color: #5287f2;
+}
+
+h2.red {
+font-size: 20px;
+color: #cb4542;
+font-weight: normal;
+}
+
+span.red {
+color: #cb4542;
+font-weight: bold;
+}
+
+div.green{
+display:inline;
+color:#6ba84d;
+font-size: 20px;
+}
+
+div.red{
+display:inline;
+color:#cb4542;
+font-size: 20px;
+}
+
+div.t3 {
+margin-top: 17px;
+padding: 19px 10px 14px 17px;
+width: 700px;
+background-color: #f4f4f4;
+}
+
+#np {
+margin-top: 0px;
+padding: 0px 10px 14px 0px;
+background-color: #fff;
+}
+
+div.grey, div.grey div.t3 div, div.grey div.t3 h2, div.grey div.t3 h3{
+	color: #d9d9d9;
+}
+
+div.grey .empname11{
+color: #dae9d2;
+}
+
+div.topmenu_act{
+	float: left;
+	color: #2263e5;
+	font-size: 13px;
+	padding:0;
+	margin:0;
+}
+
+div.topmenu_psv{
+	float: left;
+	color: #d9d9d9;
+	font-size: 13px;
+	padding:0;
+	margin:0;
+}
+
+div.topmenu_compl{
+	float: left;
+	color: #000;
+	font-size: 13px;
+	padding:0;
+	margin:0;
+}
+
+table li {
+	margin-top: 5px;
+}
+
+h2.nbm {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+
+.ammt{
+	font-size:20px;
+	font-weight:normal;
+	color: #6BA813;
+}
+
+td.green{
+	color:#6ba84d;
+}
+
+td.red{
+	color:#cb4542;
+	font-size:11px;
+}

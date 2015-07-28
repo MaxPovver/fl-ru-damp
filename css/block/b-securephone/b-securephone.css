@@ -1,0 +1,57 @@
+
+
+.b-securephone{
+	margin:15px auto 0 !important;
+	text-align:left;
+	}
+
+.b-securephone__h3{
+	margin:0 0 5px;
+	padding:0;
+	font-weight:normal;
+	font-size:15px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000;
+	}
+	
+/* b-securephone__txt */
+.b-securephone__txt{
+	font-size:13px;
+	color:#666;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+.b-securephone__txt_padbot_5{
+	padding-bottom:5px;
+	}
+.b-securephone__txt_padbot_10{
+	padding-bottom:10px;
+	}
+.b-securephone__txt_bold{
+	font-weight:bold;
+	}
+.b-securephone__txt_fontsize_11{
+	font-size:11px;
+	font-family:Tahoma, Arial, Helvetica, sans-serif;
+	}
+.b-securephone__txt_color_999{
+	color:#999;
+	}
+
+
+.b-securephone__ic{
+	position:absolute;
+	background:url(b-securephone.gif) 0 0 no-repeat;
+	width:15px;
+	height:22px;
+	top:13px;
+	left:17px;
+	}
+
+
+
+
+
+
+
+
+

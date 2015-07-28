@@ -1,0 +1,23 @@
+<?php if($this->element->getAttrib('padbot')): ?>
+<td class="b-layout__td b-layout__td_padbot_<?=$this->element->getAttrib('padbot')?> <?php if ($this->element->getAttrib('td_class')): echo $this->element->getAttrib('td_class'); endif;?>">
+<?php endif; ?>
+    <div class="b-check <?php if ($this->element->getAttrib('class')): echo " {$this->element->getAttrib('class')}"; endif;?>">
+        <input <?php if ($this->element->isChecked()):?>checked<?php endif;?> 
+                                                        type="checkbox" 
+                                                        value="1" 
+                                                        name="<?php echo $this->element->getName();?>" 
+                                                        class="b-check__input" 
+                                                        id="el-<?=$this->element->getName();?>" />
+        <label class="b-check__label" for="el-<?=$this->element->getName();?>">
+            <?=$this->element->getLabel();?>
+        </label>
+    </div>
+    
+    <div class="b-layout__txt b-layout__txt_padtop_5 b-layout__txt_color_c10600 <?php if (!$this->element->hasErrors()): ?>b-layout_hide<?php endif;?>" 
+        id="el-<?=$this->element->getName();?>-error">
+        <span class="b-icon b-icon_sbr_rattent"></span>
+        <span id="el-<?=$this->element->getName();?>-error-text"><?=array_shift($this->element->getMessages()); ?></span>
+    </div>
+<?php if($this->element->getAttrib('padbot')): ?>
+</td>
+<?php endif; ?>

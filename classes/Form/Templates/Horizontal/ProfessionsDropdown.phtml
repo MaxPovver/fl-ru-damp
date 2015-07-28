@@ -1,0 +1,78 @@
+<?php if($this->element->getAttrib('padbot')): ?>
+<td class="b-layout__td b-layout__td_padbot_<?=$this->element->getAttrib('padbot')?>">
+<?php endif; ?>
+    <?php if(!$this->element->getAttrib('hide_label')):?>
+    <div class="
+         b-layout__txt 
+         b-layout__txt_padbot_<?=$this->element->getAttrib('label_padbot')?$this->element->getAttrib('label_padbot'):'10'?>
+         b-layout__txt_bold 
+         b-layout__txt_fontsize_<?=$this->element->getAttrib('label_fs')?$this->element->getAttrib('label_fs'):'13'?>">
+        <?=$this->element->getLabel();?>
+    </div>
+    <?php endif;?>
+
+    <div class="b-combo 
+      <?php if($this->element->getAttrib('unit')):?>b-combo_inline-block<?php endif; ?>"
+      data-element-professions-name="<?=$this->element->getId();?>">
+      <div class="
+           b-combo__input 
+           b-combo__input_multi_dropdown 
+           b-combo__input_arrow_yes 
+           b-combo__input_init_professionsList 
+           show_all_records 
+           <?php if ($this->element->getAttrib('sort_type')): ?><?=$this->element->getAttrib('sort_type')?> <?php endif; ?>
+           exclude_value_0_0 
+           <?php if($this->element->getGroupDbIdValue() > 0):?>drop_down_default_<?=$this->element->getGroupDbIdValue()?><?php endif; ?> 
+           <?=$this->element->getAttrib('class')?>">
+
+         <input id="<?=$this->element->getName();?>"
+                type="text" 
+                value="<?=htmlspecialchars(stripslashes($this->element->getGroupValue()));?>" 
+                name="<?=$this->element->getName();?>[group]" 
+                <?php if ($this->element->getAttrib('width')):?>size="<?=$this->element->getAttrib('width')?>"<?php endif?> 
+                <?php if ($this->element->getAttrib('maxlength')):?>maxlength="<?=$this->element->getAttrib('maxlength')?>"<?php endif?> 
+                <?php if ($this->element->getAttrib('placeholder')):?>placeholder="<?=htmlspecialchars($this->element->getAttrib('placeholder'))?>"<?php endif?> 
+                class="b-combo__input-text"/>
+         <span class="b-combo__arrow"></span>
+      </div>
+    </div>
+
+    <div class="b-combo 
+                <?php if(!$this->element->getSpecDbIdValue()):?>b-combo_hide<?php endif; ?>
+                b-combo_margtop_10
+                b-combo_margleft_20
+         <?php if($this->element->getAttrib('unit')):?>b-combo_inline-block<?php endif; ?>"
+         data-element-professions-spec-name="<?=$this->element->getId();?>-spec">
+        <div class="
+             b-combo__input 
+             b-combo__input_multi_dropdown 
+             cut_column_1_form_<?=$this->element->getName();?>_set_parent_<?=($this->element->getGroupDbIdValue() > 0)?$this->element->getGroupDbIdValue():'1000'?> 
+             b-combo__input_arrow_yes 
+             show_all_records 
+             <?php if ($this->element->getAttrib('sort_type')): ?><?=$this->element->getAttrib('sort_type')?> <?php endif; ?>
+             <?php if($this->element->getSpecDbIdValue() > 0):?>drop_down_default_<?=$this->element->getSpecDbIdValue()?><?php endif; ?> 
+             <?=$this->element->getAttrib('spec_class')?>">
+            <input type="text" 
+                   value="<?=htmlspecialchars(stripslashes($this->element->getSpecValue()));?>"
+                   id="<?=$this->element->getName();?>-spec" 
+                   name="<?=$this->element->getName();?>[spec]" 
+                   <?php if ($this->element->getAttrib('spec_placeholder')):?>placeholder="<?=htmlspecialchars($this->element->getAttrib('spec_placeholder'))?>"<?php endif?> 
+                   class="b-combo__input-text"/>
+            <span class="b-combo__arrow" id="city_arrow"></span>
+        </div>
+    </div>
+    
+    <?php if ($this->element->getAttrib('suffix')): ?>
+        <div class="b-layout__txt b-layout__txt_fontsize_11 b-layout__txt_padtop_2">
+            <?=$this->element->getAttrib('suffix')?>
+        </div>
+    <?php endif; ?>
+
+    <div class="b-layout__txt b-layout__txt_padtop_5 b-layout__txt_color_c10600 <?php if (!$this->element->hasErrors()): ?>b-layout_hide<?php endif;?>" 
+        id="el-<?=$this->element->getName();?>-error">
+        <span class="b-icon b-icon_sbr_rattent"></span>
+        <span id="el-<?=$this->element->getName();?>-error-text"><?=array_shift($this->element->getMessages()); ?></span>
+    </div>
+<?php if($this->element->getAttrib('padbot')): ?>
+</td>
+<?php endif; ?>

@@ -1,0 +1,31 @@
+.b-promo__p{
+	padding:0;
+	margin:0 !important;
+	line-height:1.2;
+	}
+.b-promo__p_fontsize_13{
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#000;
+	line-height:1.4;
+	}
+.b-promo__p_fontsize_11{
+	font-size:11px;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	color:#414141;
+	}
+	
+.b-promo__p_padtop_10{
+	padding-top:10px;
+	}
+.b-promo__p_padbot_5{
+	padding-bottom:5px;
+	}
+.b-promo__p_padbot_10{
+	padding-bottom:10px;
+	}
+.b-promo__p_padbot_20{
+	padding-bottom:20px;
+	}
+
+

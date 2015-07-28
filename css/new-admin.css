@@ -1,0 +1,350 @@
+.admin .body{ background:#f0efed; margin-bottom:0; padding-bottom:30px}
+.admin .lm-col{ background:#fff; padding:19px; width:121px; color:#666;}
+.admin .lm-col h3{ font-size:11px; color:#717171; font-weight:bold;}
+.admin .r-col{ background:#fff}
+.admin .admin-menu {margin: 0;}
+.admin .admin-menu h3{ font-size:11px; color:#666; font-weight:bold}
+.admin .admin-menu li {background: none;margin: 0;padding: 0 0 5px;}
+.ban-razban h4{ padding:5px 10px; font-size:12px}
+.admin .form-block{ padding:13px 10px 3px;}
+.admin .form-block label{ width:80px}
+.admin .form-payd_advice label{ width:150px}
+.admin .form-block .form-btns button{ margin-right:10px}
+.admin .form-block select, .admin .form-block label, .admin .form-block .i-txt, .admin .form-block textarea{color:#666}
+.admin .filtr-hide{ display:none}
+.admin .admin-lenta{ padding:10px; }
+.admin .admin-lenta table{width:100%; font-size: 11px;}
+.admin .admin-lenta table td{ padding:5px 0; border-bottom:1px solid #f3f2f0; vertical-align:middle}
+.admin-suspicious td{ color:#666}
+.admin .admin-lenta table td.cell-top{ vertical-align: top;}
+.admin .cell-action{ width:135px}
+.admin .cell-action-bold { font-weight: bold; }
+.admin .admin-lenta table .cell-what{ width:50px; color:#b4b4b4; text-align:right; padding-right:10px}
+.admin .cell-who{ width:90px}
+.admin .cell-who a{ color:#a30000}
+.admin .cell-date{ width:115px; white-space:nowrap; color:#444}
+.admin .cell-com{ width: 20px}
+.admin .cell-IP{ width:105px; font-weight:bold}
+.admin .cell-city{ width:145px}
+.admin .cell-city1{ width:100px;}
+.admin .cell-city1 span{ width:100px; white-space:nowrap; overflow:hidden; display:block}
+.admin .cell-del{ width:20px; text-align: center}
+.admin .cell-submit{ width:80px; text-align:right}
+.admin .cell-arrow{ width:30px; text-align:center; font-size:14px;}
+.admin .admin-lenta .last td{ border-bottom:0}
+.color-a30000, .color-a30000:link, .color-a30000:visited{ color:#a30000}
+.color-e37101, .color-e37101:link, .color-e37101:visited{ color:#e37101}
+.color-45a300, .color-45a300:link, .color-45a300:visited{ color:#45a300}
+.color-666666, .color-666666:link, .color-666666:visited{ color:#666666}
+.color-a30000 a, .color-a30000 a:link, .color-a30000 a:visited{ color:#a30000; text-decoration:none; border-bottom:1px dotted #a30000}
+.color-e37101 a, .color-e37101 a:link, .color-e37101 a:visited{ color:#e37101; text-decoration:none; border-bottom:1px dotted #e37101}
+.color-45a300 a, .color-45a300 a:link, .color-45a300 a:visited{ color:#45a300; text-decoration:none; border-bottom:1px dotted #45a300}
+.color-666666 a, .color-666666 a:link, .color-666666 a:visited{ color:#666666; text-decoration:none; border-bottom:1px dotted #666666}
+.color-a30000 a:hover{ border-bottom:0}
+.color-e37101 a:hover{ border-bottom:0}
+.color-45a300 a:hover{ border-bottom:0}
+.color-666666 a:hover{ border-bottom:0}
+.admin-lenta .active td{ background:#f3f2f0}
+
+.admin #fl2_paginator { font-size:11px;}
+.admin #fl2_paginator a{ margin-right:5px;}
+
+.admin .form-filtr input{ text-align:center; color:#666}
+.admin .form-filtr, .admin .form-date { color:#666}
+.admin .form-date input{ width:20px}
+.sel-month{ width:80px}
+.sel-year{ width:54px}
+.sel-day{ width:40px}
+
+
+.admin .admin-lenta .lenta-project td{ vertical-align:top; border-bottom:0; padding:10px 0 0}
+.admin .admin-lenta #cl{ padding-top:20px}
+.admin .lenta-project{ border-bottom:1px solid #e6e6e4; margin-bottom:5px;}
+.admin .lenta-project th a{ font-size:12px}
+.admin .lenta-project th{ border-bottom:1px solid #e6e6e4; padding-bottom:5px}
+.admin .cell-number{ width:80px; color:#999; font-size:12px}
+.admin .lenta-project th a img{ margin-left:5px; position:relative;top:-2px}
+.admin .cell-blocking{ width:100px; color:#666; text-align:right}
+.admin .cell-blocking a{ color:#b60000}
+.admin .cell-blocking span{ display:block; padding-bottom:5px}
+.admin .admin-lenta  .lenta-project td.cell-body{ color:#666; vertical-align:bottom}
+.admin .cell-body h4{ font-size:13px; color:#666}
+.admin .cell-body p{ font-size:12px;}
+.admin .cell-body li{ font-size:12px;}
+.admin .cell-number h4{ font-size:13px; color:#666}
+.admin .cell-autor{ color:#6bb24b; font-weight:bold; text-decoration:none; padding-right:5px}
+.admin .notice{ color:#ff7200; font-weight:bold; text-decoration:none; border-bottom:1px dotted #ff7200}
+.admin .notice:hover{ border-bottom:0}
+.admin .admin-links li{ float:left; padding-right:10px; list-style:none; padding-top:5px}
+.admin .admin-links li a{ font-size:12px; font-weight:bold}
+.admin .lenta-project tr.last td{ padding-bottom:15px}
+
+.admin .admin-lenta table .cell-user{ width:250px; padding-right:10px}
+.admin td.cell-user img{ margin: 2px 10px 0 0}
+.admin td.cell-user h4 img{ margin: 2px 5px 0 0}
+.admin .cell-user span { display:block; padding-bottom:5px; color:#999}
+.admin .cell-user .span-user {margin-left: 60px; display:block; padding-bottom:5px; color:#999}
+.admin .cell-user .div-user {width: 50px; float: left; text-align: center;}
+.admin .cell-user .div-user img {margin: 2px 0 0 0;}
+.admin .cell-user a.notice span {display:inline;color: #FF7200;}
+.admin .cell-user span img{margin:2px 5px 0 0; top:0;}
+.admin .cell-user h4 a{ color:#666; font-size:11px}
+.admin .cell-act h4 a{font-size:11px}
+.admin .cell-act h4 {font-size:11px}
+.admin .cell-user h4 {margin-left: 60px; padding-bottom:3px}
+.admin .cell-user p { margin-left:60px; padding-bottom:5px; color:#666}
+.admin .cell-user .notice { font-weight:normal;}
+.admin .user-notice{ padding-top:5px; color:#999}
+.admin .theme-blog{ display:block; color:#999; padding-bottom:15px; padding-top:3px}
+.admin .reason{ padding-bottom:15px; color:#666}
+.admin .cell-act p .lnk-dot-red{ font-weight:bold}
+.admin .admin-lenta .lenta-project .cell-user,.admin .admin-lenta .lenta-project .cell-act  { padding-bottom:10px}
+
+
+.admin .history{ padding:0 0 10px 0; color:#444; font-size:11px; font-weight:bold}
+.admin .history a{ font-weight:normal; margin-left:10px}
+.admin .admin-lenta table .cell-from{ color:#666; padding-left:10px; padding-right:10px;}
+.admin .cell-descript{ color:#999; }
+.admin .admin-lenta .comment-head td{ padding:10px 0 10px 10px; background:#f3f2f0}
+.admin .comment-head h5{ font-size:11px; text-transform:uppercase; font-weight: bold; color:#666}
+.admin .comment-autor { text-align:right; padding-right:10px; padding-left:10px}
+.admin .comment-autor a{ color:#a30000}
+.admin .comment-autor span{ display:block; color:#999; white-space:nowrap }
+.admin-comments{ padding-top:10px;}
+.admin .comment-text { color:#666; }
+.admin .admin-lenta table .form-comment td{ vertical-align:top;background:#f3f2f0}
+.admin .form-comment label{padding-right:10px; font-weight:bold; float:right; font-size:11px; font-weight:bold; color:#666}
+.admin .form-comment textarea{ width:610px; height:50px}
+.admin .form-comment .form-el{ width:620px; margin:0}
+.admin .form-comment .form-el .form-value{ padding-bottom:5px}
+.admin .admin-lenta table .comment-item td{ background:#f3f2f0; vertical-align:top; padding:0 0 10px 0}
+.admin-lenta .cl-li .freelancer-name, .admin-lenta .cl-li .employer-name{ font-size:12px;}
+
+
+
+.admin .add-ip{ margin-bottom:10px}
+.admin .add-ip textarea{ width:390px; height:50px}
+.admin .add-ip .i-txt{ width:180px;}
+.form-acnew .sw205, .form-cnc .sw205 {width: 184px;}
+.form-acnew .sw310, .form-cnc .sw310 {width: 368px;}
+.admin .form-check{ margin-top:10px}
+.admin .form-check .form-btns{ margin:0; padding:5px}
+.admin .form-check .form-value{ float:left; padding:5px 5px 0 5px}
+.date-list{ padding-top:20px}
+.date-list div.last{border-bottom:1px solid #c6c6c6}
+.date-item h3{ font-size:12px; font-weight:normal; border-bottom:1px solid #c6c6c6; padding:0 15px 10px; margin-bottom:0}
+.gray-list { padding:0 0 30px 0; border-bottom: 1px solid #C6C6C6;}
+.gray-list table{ width:100%}
+.gray-list ul li a{ color:#999}
+.name-ip{ font-weight:bold; color:#666}
+.name-ip span{ padding-right:10px}
+.cell-btn{ width:50px; text-align:right; white-space:nowrap;}
+.delet-from-list{ float:right; width:210px}
+.edit-ip{ float:right; padding-right:10px }
+.gray-list ul{ padding:20px 0 10px}
+.gray-list ul li{ list-style:none}
+.gray-list .check{ float:left; margin-right:10px !important}
+.gray-list table td{ border-bottom:1px solid #f0efed; padding:2px 0; vertical-align:middle}
+.gray-list table td em a{ color:#6ba844; font-style:normal}
+.gray-list table td.first{ border-bottom:0; width:20px}
+.gray-list table .gray-list-head td{ border-bottom:0; padding:0}
+.gray-list .edit-list-ip td{ border:0}
+.gray-list .edit-list-ip .form{ padding-bottom:10px}
+.edit-list-ip .form-in{ padding:5px 10px}
+.edit-list-ip .form-in h4{ padding:0 0 10px 0; font-size:12px; font-weight:bold; color:#444}
+.edit-list-ip .form-in .form-btns{ margin-bottom:0}
+.edit-list-ip .form-in textarea{ width:680px; height:100px; padding:10px; text-align:left; color:#444}
+.gray-list-name{ width:500px}
+
+
+.transgressor{ padding:10px 10px 5px;}
+.transgressor_inner{border-bottom:1px solid #f3f2f0; padding:10px 0 15px}
+.plashka{ background:url(../images/plashka.gif) 0 0 no-repeat; padding-left:10px; height:28px}
+.plashka span{ background:url(../images/plashka.gif) right 0 no-repeat; padding-right:10px; height:28px; display:block; line-height:26px}
+.transgressor_inner img{ float:left; margin:3px 10px 0 0}
+.transgressor-info{ margin-left:60px}
+.transgressor-info img{ margin-right:5px;}
+.transgressor-info h4 { padding-left:0;}
+.transgressor-info .b-icon__lamp{ margin-right:5px;}
+.transgressor-info h4 a{ color:#666; font-size:11px}
+.transgressor-info span{ color:#999; display:block; padding-bottom:15px}
+.transgressor-info .b-icon{ display:inline-block; padding-bottom:0;}
+.transgressor-info p{ color:#666; padding-bottom:10px}
+.transgressor-info p span{ color:#999; padding-bottom:0px; display:inline}
+.transgressor-info p b{ color:#666; display:inline-block; width:80px}
+.transgressor-info .safety, .search-item-info .safety { color:#666; padding-bottom:10px}
+.transgressor-info .safety b { color:#666; display:inline-block; width:80px}
+.transgressor-info .safety span, .search-item-info .safety span { color:#999; padding-bottom:0px; display:inline}
+.transgressor-info .safety span.safetyvalue, .search-item-info .safety span.safetyvalue { color:#666; padding-bottom:0px; display:inline}
+.transgressor-info .reg-ip { padding:10px 0}
+.transgressor-info .reg-ip b{ width: auto; padding-right:10px}
+.transgressor-info ul{ padding:10px 0 0}
+.transgressor-info li{ float:left; padding:5px 0 5px 5px; list-style:none; color:#666;}
+.transgressor-info li a{ margin:5px 10px}
+.transgressor-info li.last{ border-right:0}
+.transgressor-info li.active{ background:#f3f2f0}
+.transgressor-info li.active a{ text-decoration:none; border-bottom:1px dotted #039; font-weight:bold}
+.transgressor-right{ float:right; width:200px; text-align:right}
+.transgressor-right p { padding-bottom:20px; line-height:1}
+.transgressor-right p span{ display:inline-block; background:#ffeda9; padding:3px 5px; color:#333; font-weight:bold;}
+.transgressor-right p span span{ padding:0;}
+.transgressor-right button{ margin-bottom:5px !important; }
+
+.search-lenta{ padding-top: 15px}
+.search-lenta .search-item { border-bottom:1px solid #f3f2f0; margin-bottom:15px}
+.search-item .form-check{ float:left; padding-right:5px; margin:0}
+.search-item img{ float:left; margin:1px 10px 0 0}
+.search-item .div-user {margin: 0 10px 0 0; width: 50px; float: left; text-align: center;}
+.search-item .div-user img {float: none; margin: 2px 0 0 0;}
+.search-item h4 { padding: 0 0 10px 0;}
+.search-item h4 a{ color:#666; font-size:11px; font-weight:bold}
+.search-item h4 img{ margin:2px 8px 0 0}
+.search-item-info{ float:left; width:680px; font-size: 11px;}
+.search-item-info .form { width:454px; margin-bottom:15px}
+.search-item-info .form ul{ display:block; padding:5px 0 0 10px;}
+.search-item-info .form li{ float:left; list-style:none; padding-right:10px; padding-bottom:5px}
+.search-item-info .search-right .color-e37101 a div { display:inline;color: #E37101; }
+.search-right{ float:right; width:250px}
+.search-right span{ float:right; padding-left:20px; color:#999}
+.search-item-info p{ color:#666; padding-bottom:10px}
+.search-item-info .form-hide{ display:none}
+.edit-data .form-l{ font-weight:bold; width:60px}
+.edit-data .form-value .i-txt{ width:280px; color:#666; font-size:11px}
+.edit-data .form-value select{ width:285px; color:#666; font-size:11px}
+.edit-data .form-check { padding-left:10px}
+.edit-data .form-check label{ padding-left:2px;color:#666; font-size:11px;}
+.edit-data .form-btn { padding-left:60px;}
+
+
+.moderator{ padding:10px}
+.moderator h2{ padding:10px 0 5px; margin:0}
+.moderator h2 a{ font-size:14px}
+.moderator p{ color:#666}
+.grafik {  overflow: auto; padding-bottom:10px; margin-bottom:10px; height:170px;}
+.grafik table{ }
+.grafik table td{ width:20px; vertical-align:bottom}
+.grafik table td div{ width:15px; background:#c6c6c6; margin:2px auto 0;}
+.grafik-cols td{ font-weight:bold; text-align:center; color:#666; height:130px}
+
+.form-action .form-value{ float:left; width:300px; padding-bottom:10px}
+.work-time{ width:740px}
+
+
+#ov-notice{ position:fixed; top:50%; left:50%; margin-left:-250px; margin-top:-110px;}
+#ov-notice6{ position:fixed; top:50%; left:50%; margin-left:-250px; margin-top:-110px; z-index:50}
+#ov-notice3{ position:fixed; top:50%; left:50%; margin-left:-250px; margin-top:-110px; z-index:50; width:540px;}
+#ov-notice2{ position:fixed; top:50%; left:50%; margin-left:-250px; margin-top:-220px; z-index:50; width:540px;}
+#ov-notice .ov-in, #ov-notice6 .ov-in{ height:220px}
+#ov-notice2 .ov-in{ height:290px}
+#ov-notice3 .ov-in{ height:220px}
+#ov-notice .form-el label, #ov-notice6 .form-el label, #ov-notice2 .form-el label, #ov-notice3 .form-el label{ width:70px;}
+#ov-notice .form-el .reason select,#ov-notice6 .form-el .reason select,#ov-notice2 .form-el .reason select,#ov-notice3 .form-el .reason select{ width:405px; margin-bottom:10px !important; display:block}
+#ov-notice .form-el textarea, #ov-notice6 .form-el textarea, #ov-notice2 .form-el textarea, #ov-notice3 .form-el textarea{ width:400px; height:80px; display:block; min-height:80px; max-height:80px}
+#ov-notice2 .form-check, #ov-notice6 .form-check, #ov-notice .form-check, #ov-notice3 .form-check{ margin-top:2px; padding-left:10px}
+#ov-notice3 .form-text{ clear:both; top:-20px; position:relative}
+#ov-notice3 .form-radios { float:left}
+#ov-notice3 label{font-weight:bold}
+#ov-notice3 .form-check label{font-weight: normal}
+#ov-notice3 .form-radios label, #ov-notice .form-radios label, #ov-notice6 .form-radios label{ padding-right:10px; font-weight:normal}
+#ov-notice3 .form-radios input{ position:relative; top:2px}
+#ov-notice3 .form-radios .form-value{ padding-top:2px}
+#ov-notice4{ position:fixed; top:50%; left:50%; margin-left:-350px; margin-top:-200px;  width:794px;}
+#ov-notice4 .ov-in{ width:750px}
+#ov-notice4 .cell-uwarn{width:420px; overflow:hidden; background:url(/images/fade.png) right 0 repeat-y;}
+
+#ov-notice5{ position:fixed; top:50%; left:50%; margin-left:-350px; margin-top:-200px; z-index:50}
+#ov-notice5 .ov-in{ width:750px}
+#ov-notice5 .cell-uwarn{width:420px; white-space:nowrap; display:inline-block; overflow:hidden; background:url(/images/fade.png) right 0 repeat-y;}
+
+.ov-in .close{ position:absolute; right:0px; top:0}
+.notice-table{ width:100%}
+.notice-table td{ color:#666; border-bottom:1px solid #f0efed; padding:5px }
+.notice-table .cell-number{ width:20px; color:#999}
+.notice-table .cell-who{ text-align:right; width:auto}
+.notice-table .cell-date{ color:#999}
+
+.admin .bun-button{ padding:10px 0 0}
+.admin .bun-button button{ margin-right:5px}
+
+.lenta-project h4 {padding:0;}
+
+
+.admin .no-border{ border:0 !important}
+.admin .cell-id{ width:25px; padding-right:5px}
+.admin .attention{ background:#a23e3e; padding:10px; margin-bottom:20px}
+.admin .attention p{ color:#fff; font-size:12px; line-height:1.4}
+
+
+
+
+
+
+
+
+
+
+.ban-razban .admin-compliant{ font-size:12px;}
+.ban-razban .admin-compliant h3{ padding:0 10px 10px; font-size:12px; color:#666; margin:0; font-weight:bold;}
+.ban-razban .admin-compliant .form-block label {width: 150px;}
+.ban-razban .admin-compliant .form-date{ margin-left:-20px;}
+.ban-razban .admin-compliant .form-date span{ float:left; width:20px; padding-top:3px;}
+.ban-razban .admin-compliant .admin-calendar{ margin:0 20px 0 5px}
+.ban-razban .admin-compliant .fvs { width:570px}
+.ban-razban .admin-compliant .fvs .i-txt{ width:170px}
+.ban-razban .admin-compliant .fvs .fvsi{ width:565px !important}
+.compliant-table{ width:100%; margin:10px 0}
+.compliant-table th{ font-weight:bold; padding:10px 0 20px; border-bottom:1px solid #e6e6e6; font-size:11px;}
+.compliant-table td{ padding:10px 0; border-bottom:1px solid #e6e6e6; line-height:1.4;}
+.compliant-table td.first{ width:100px; font-size:11px}
+.compliant-table td.last{ width:100px; padding-left:10px;}
+.compliant-table td.last .btnr-mb{ display:block}
+.compliant-autor{ font-size:11px; color:#808080;}
+.compliant-table td .form-in{ padding:5px 10px;}
+.compliant-item{ padding-bottom:10px}
+
+
+#frm_user_search_filter #search_name, #frm_user_search_filter #search_phone { margin-bottom:10px !important;}
+#frm_user_search_filter #search_name_exact{ position:relative; top:2px;}
+#frm_user_search_filter .b-check__label{ width:auto;color:#333; font-size:12px;}
+#frm_user_search_filter .form-el .usrstatus {width: 660px;}
+
+.color_6ca800{ color:#6ca800 !important;}
+
+.ulradio li{ display:inline-block; padding:3px 7px 4px; }
+.ulradio li.active{ background: #fff; border: 1px solid #B2B2B2; }
+
+
+
+
+
+#frm_filter .form-value #category{ width:184px;}
+#frm_filter .form-value #sub_category{ width:204px;}
+
+
+.u-txt ol, .u-txt ul { padding-left:30px;}
+
+table .admin-links{ margin:0}
+
+.sus_avatar{ width:20px; height:20px; vertical-align:middle; margin-bottom:2px;}
+
+SPAN.apf-date {
+	cursor: pointer;
+	position: absolute;
+	margin-top: 3px;
+	margin-left: -25px;
+	background: url(/images/icons-sprite.png) no-repeat -335px -433px;
+	width: 15px;
+	height: 15px;
+}
+
+.brd-tbl {
+    border-left: 1px solid #CCC;
+    border-top: 1px solid #CCC;
+}
+
+.brd-tbl > tbody > tr > td,
+.brd-tbl > tr > td {
+    border-bottom: 1px solid #CCC;
+    border-right: 1px solid #CCC;
+    padding: 5px;
+}

@@ -1,0 +1,118 @@
+<?php
+
+$form_elements = $this->element->getElements();
+$is_adm = $this->element->isAdm();
+
+if(!$is_adm) {
+    $info = $this->element->getCustomMessage(GuestConst::MSG_AL);
+}
+
+?>
+<form class="form_guest"
+      id="<?=$this->escape($this->element->getId())?>" 
+      method="<?=$this->escape($this->element->getMethod())?>" 
+      action="<?=$this->escape($this->element->getAction())  ?>" 
+      enctype="<?php echo $this->escape($this->element->getEnctype())?>">
+
+<?php if(isset($this->element->dataForm)): ?>
+<div class="b-layout b-layout_margbot_30 b-layout_padbot_10">    
+    <?=$this->element->dataForm?>    
+</div>    
+<?php endif; ?>    
+<?php if(count($form_elements)): ?>    
+<div class="b-layout b-layout_margbot_30 b-layout_padbot_10">
+    <h2 class="b-page__title b-page__title_size18 b-page__title_color_6db335">
+        Данные для регистрации аккаунта на сайте
+    </h2>
+    
+    <?php if (!$is_adm && isset($form_elements['social'])): ?>
+        <?=$form_elements['social']?>
+        <div class="b-layout__txt b-layout__txt_padbot_20 b-layout__txt_center">
+            <?php view_social_buttons(false) ?>
+            <?php if (isset($_SESSION['opauth_error']) && $_SESSION['opauth_error']): ?>
+                <div class="b-layout__txt b-layout__txt_padtop_10 b-layout__txt_color_c4271f">
+                    <?=$_SESSION['opauth_error']?>
+                </div>
+                <?php unset($_SESSION['opauth_error']); ?>
+            <?php endif; ?>
+        </div>
+        <div class="b-layout b-layout__txt b-layout__txt_padbot_20 b-auth_delimitter b-auth_delimitter_white">
+            <span>или зарегистрируйтесь с помощью электронной почты</span>
+        </div>
+    <?php endif; ?>
+    
+    <table class="b-layout__table b-layout__table_width_full">
+        <tbody>
+            <tr class="b-layout__tr">
+                <td colspan="2" class="b-layout__td">
+                    <div class="b-layout__txt b-layout__txt_padbot_10 b-layout__txt_bold b-layout__txt_fontsize_13">
+                        Имя и фамилия
+                    </div>
+                </td>
+            </tr>
+            <tr class="b-layout__tr">
+                <td class="b-layout__td b-layout__td_padbot_20 b-layout__td_padright_10">
+                    <?=@$form_elements['uname']?>
+                </td>
+                <td class="b-layout__td b-layout__td_padbot_20 b-layout__td_width_full">
+                    <?=@$form_elements['usurname']?>
+                </td>                   
+            </tr>
+            <tr class="b-layout__tr">
+                <td colspan="2" class="b-layout__td">
+                    <div class="b-layout__txt b-layout__txt_padbot_10 b-layout__txt_bold b-layout__txt_fontsize_13">
+                        Электронный адрес
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td class="b-layout__td b-layout__td_padbot_20">
+                    <?=@$form_elements['email']?>
+                </td>
+                <td class="b-layout__td b-layout__td_padbot_20">
+                    <?php if(isset($info)): ?>
+                    <div class="b-layout__txt b-layout__txt_width_400 b-layout__txt_fontsize_11">
+                        <?=$info['message']?>
+                    </div>
+                    <?php endif; ?>                        
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<?php endif; ?>
+<?php
+
+    if(!$is_adm) {
+        $submit_label = $this->element->getCustomMessage(GuestConst::MSG_SUBMIT);
+        $uri_cancel = $this->element->getCustomMessage(GuestConst::URI_CANCEL);
+    }
+    
+    $form_id = $this->element->getCustomMessage(GuestConst::FORM_ID);
+?>
+<table class="b-layout__table b-layout__table_width_full">
+    <tbody>
+        <tr class="b-layout__tr">
+            <td class="b-layout__td">
+                <div class="b-buttons">
+                    <button type="submit" class="b-button b-button_flat b-button_flat_green">
+                        <?php if($is_adm): ?>
+                            Отправить уведомление
+                        <?php else: ?>
+                            <?=($submit_label)?$submit_label:'Отправить'?>
+                        <?php endif; ?>
+                    </button>
+                    <?php if(isset($uri_cancel)): ?>
+                    <span class="b-buttons__txt b-button__txt_padbot_10_ipad">&#160; или &#160;</span>
+                    <a class="b-buttons__link" 
+                       guest-save-form-data="<?=$form_id?>" 
+                       href="<?=$uri_cancel?>">
+                        перейти на страницу авторизации
+                    </a>
+                    <?php endif; ?>
+                </div>
+            </td>          
+        </tr>
+    </tbody>    
+</table>
+</form>

@@ -1,0 +1,222 @@
+/* b-layout__link */	
+a.b-layout__link{
+	color:#026dc0 !important;
+	text-decoration: underline;
+	font-weight:normal;
+	font-family:Arial, Helvetica, sans-serif;
+	}
+a.b-layout__link:hover{
+	color:#8c0400 !important;
+	text-decoration:underline;
+	border-bottom-color:#8c0400;
+	cursor:pointer;
+	}
+a.b-layout__link_fontsize_18{
+	font-size:18px !important;
+	}
+a.b-layout__link_fontsize_15{
+	font-size:15px !important;
+	}
+a.b-layout__link_fontsize_13{
+	font-size:13px !important;
+	}
+a.b-layout__link_fontsize_11{
+	font-size:11px !important;
+	color:#414141 !important;
+	font-family: Tahoma, Arial, Helvetica, sans-serif;
+	}
+a.b-layout__link_color_c10600{
+	color:#c10600 !important;
+	}
+a.b-layout__link_color_0f71c8{
+	color:#0f71c8 !important;
+	}
+a.b-layout__link_color_ee1d16{
+	color:#c10600 !important;
+	}
+a.b-layout__link_color_a7a7a6{
+	color:#a7a7a6 !important;
+	}
+a.b-layout__link_color_fd6c30{
+	color:#fd6c30 !important;
+	}
+a.b-layout__link_color_6db335{
+	color:#6db335 !important;
+	}
+a.b-layout__link_color_64{
+	color:#646464 !important;
+	}
+a.b-layout__link_color_3c{
+	color:#3c3c3c !important;
+	}
+a.b-layout__link_color_80{
+	color:#808080 !important;
+	}
+a.b-layout__link_color_969696{
+	color:#969696 !important;
+	}
+a.b-layout__link_color_55b12e{
+	color:#55b12e !important;
+	}
+a.b-layout__link_color_000{
+	color:#000 !important;
+	}
+a.b-layout__link_color_fff{
+	color:#fff !important;
+	}
+a.b-layout__link_color_f5921d{
+	color:#f5921d !important;
+	}
+a.b-layout__link_color_fff_hover:hover{
+	color:#fff !important;
+	}
+a.b-layout__link_bordbot_dot_0f71c8{
+	color:#0f71c8 !important;
+	text-decoration:none !important;
+	border-bottom:1px dotted #0f71c8;
+	}
+a.b-layout__link_bordbot_dot_ee1d16{
+	color:#ee1d16 !important;
+	text-decoration:none !important;
+	border-bottom:1px dotted #ee1d16;
+	}
+a.b-layout__link_bordbot_dot_000{
+	color:#000 !important;
+	border-bottom:1px dotted #000;
+	text-decoration:none;
+	}
+a.b-layout__link_bordbot_dot_000:hover{
+	text-decoration:none;
+	}
+a.b-layout__link_bordbot_dot_41{
+	color:#414141 !important;
+	border-bottom:1px dotted #414141;
+	text-decoration:none;
+	}
+a.b-layout__link_bordbot_dot_41:hover{
+	text-decoration:none;
+	}
+a.b-layout__link_bordbot_dot_80{
+	color:#808080 !important;
+	border-bottom:1px dotted #808080;
+	text-decoration:none;
+	}
+a.b-layout__link_bordbot_dot_80:hover{
+	text-decoration:none;
+	}
+a.b-layout__link_dot_c10600{
+	color:#c10600 !important;
+	border-bottom:1px dotted #c10600;
+	text-decoration:none;
+	}
+a.b-layout__link_dot_c10600:hover{
+	text-decoration:none;
+	}
+a.b-layout__link_dot_a0763b{
+	color:#a0763b !important;
+	border-bottom:1px dotted #a0763b;
+	text-decoration:none;
+	}
+a.b-layout__link_dot_a0763b:hover{
+	text-decoration:none;
+	}
+a.b-layout__link_dot_c7271e,
+a.b-layout__link_bordbot_dot_c7271e{
+	color:#c7271e !important;
+	border-bottom:1px dotted #c7271e;
+	text-decoration:none;
+	}
+a.b-layout__link_dot_c7271e:hover,
+a.b-layout__link_bordbot_dot_c7271e:hover{
+	text-decoration:none;
+	}
+a.b-layout__link_bordbot_dot_6db335{
+	color:#6db335 !important;
+	text-decoration:none !important;
+	border-bottom:1px dotted #6db335;
+	}
+a.b-layout__link_float_right{
+	float:right;
+	}
+a.b-layout__link_no-decorat{
+	text-decoration: none;
+	}
+a.b-layout__link_no-decorat:hover{
+	text-decoration: none;
+	color:inherit;
+	}
+a.b-layout__link_underline{
+	text-decoration:underline;
+	}
+a.b-layout__link_underline_hover:hover{
+	text-decoration:underline;
+	}
+a.b-layout__link_bold{
+	font-weight:bold;
+	}
+a.b-layout__link_italic{
+	font-style:italic;
+	font-family:Arial, Helvetica, sans-serif !important;
+	}
+a.b-layout__link_valign_middle{
+	vertical-align:middle;
+	}
+a.b-layout__link_valign_top{
+	vertical-align: top;
+	}
+a.b-layout__link_inline-block{
+	display:inline-block;
+	}
+
+.b-layout__link_lineheight_1{
+	line-height:1;
+	}
+.b-layout__link_lineheight_34 {
+	line-height: 34px;
+	}
+a.b-layout__link_ygol{
+	border-bottom:1px dotted #000;
+	color:#000 !important;
+	line-height:1;
+	position:relative;
+	text-decoration:none !important;
+	}
+.b-layout__link_ygol:after{
+	content:"\00a0";
+	border-color:#000 transparent transparent transparent;
+	border-style:solid;
+	border-width:4px 3px;
+	position:absolute;
+	right:-10px;
+	top:7px;
+	width:0;
+	height:0;
+	}	
+a.b-layout__link_bordbot_dot_fd6c30.b-layout__link_ygol{
+	border-bottom:1px dotted #fd6c30;
+	color:#fd6c30 !important;
+	}
+a.b-layout__link_bordbot_dot_fd6c30.b-layout__link_ygol:hover{
+	border-bottom-color:#8c0400 !important;
+	color:#8c0400 !important;
+	}
+.b-layout__link_bordbot_dot_fd6c30.b-layout__link_ygol:after{
+	content:"\00a0";
+	border-color:#fd6c30 transparent transparent transparent;
+	}	
+.b-layout__link_ygol:hover:after{
+	border-color:#8c0400 transparent transparent transparent;
+	}
+.chrome .b-layout__link_ygol:after{
+	margin-left:5px;
+	right:auto;
+	}
+.b-layout__link_fontsize_18.b-layout__link_ygol:after{
+	top:10px;
+	}
+.b-layout_hover_link_decorate .b-layout_hover_link_decorated{
+	text-decoration:none !important;
+	}
+.b-layout_hover_link_decorate:hover .b-layout_hover_link_decorated{
+	text-decoration: underline !important;
+	}

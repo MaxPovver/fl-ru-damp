@@ -1,0 +1,45 @@
+
+.b-menu_seo{}
+.b-menu__table{
+	padding:0;
+	margin:0;
+	border:0;
+	}
+.b-menu__table_width_full{
+	width:100%;
+	}
+.b-menu__tr{
+	padding:0;
+	margin:0;
+	border:0;
+	}
+.b-menu__td{
+	padding:0;
+	margin:0;
+	border:0;
+	vertical-align:top;
+	}
+.b-menu__td_padright_20{
+	padding-right:20px;
+	}
+.b-menu__td_padbot_10{
+	padding-bottom:10px;
+	}
+.b-menu_seo a.b-menu__link{
+	text-decoration:underline !important;
+	color:#026dc0 ;
+	}
+.b-menu_seo a.b-menu__link:hover{
+	color:#8c0400;
+	}
+
+
+
+
+
+
+
+
+
+
+

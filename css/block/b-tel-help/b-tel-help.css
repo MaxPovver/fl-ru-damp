@@ -1,0 +1,51 @@
+
+
+.b-tel-help{
+	}
+.b-tel-help_width_265{
+	width:265px;
+	}
+	
+.b-tel-help__photo{
+	float:left;
+	margin:2px 10px 0 0;
+	}
+.b-tel-help__tooltip{
+	margin:0 0 10px 60px;
+	padding:7px 20px;
+	}
+.b-tel-help__tooltip_205x41{
+	background:url(b-tel-help__tooltip_205x41.png) 0 0 no-repeat;
+	width:165px;
+	height:27px;
+	}
+.b-tel-help__tooltip_205x60{
+	background:url(b-tel-help__tooltip_205x60.png) 0 0 no-repeat;
+	width:165px;
+	height:46px;
+	}
+	
+.b-tel-help__txt{
+	font-size:11px;
+	font-family:Tahoma, Arial, Helvetica, sans-serif;
+	color:#4e4e4e;
+	line-height:1.4;
+	}
+.b-tel-help__txt_bold{
+	font-weight:bold;
+	}
+.b-tel-help__txt_margleft_60{
+	margin-left:60px;
+	}
+
+a.b-tel-help__link{
+	font-size:11px;
+	color:#026dc0 ;
+	text-decoration:underline;
+	}
+a.b-tel-help__link:hover{
+	text-decoration:none;
+	}
+
+
+

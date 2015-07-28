@@ -1,0 +1,27 @@
+/**
+ * Стили, применяемые к любому блоку
+ */
+
+.g-float_left {
+    float: left;
+}
+
+.g-margtop_0 {
+    margin-top: 0 !important;
+}
+
+.g-txt_center {
+    text-align: center !important;
+}
+
+.g-color_f1645b {
+    color: #f1645b;
+}
+
+.g-color_ff7f1a {
+    color: #ff7f1a;
+}
+
+.g-color_64bc39 {
+    color: #64bc39;
+}

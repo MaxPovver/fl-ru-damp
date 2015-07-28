@@ -1,0 +1,66 @@
+.b-menu_vertical .b-menu__item{
+	display:block;
+	text-align:left;
+	}
+.b-menu_vertical a.b-menu__link{
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#026dc0 ;
+	text-decoration:underline !important;
+	line-height:1.2;
+	background:#fff;
+	display:inline;
+	}
+.b-menu_vertical a.b-menu__link:hover{
+	color:#8c0400;
+	}
+
+.b-menu_vertical .b-menu__b1{
+	border-bottom:1px dotted #e5e5e5;
+	width:100%;
+	line-height:1.2;
+	height:13px;
+	margin-bottom:-13px;
+	}
+.b-menu_vertical .b-menu__number{
+	color:#404040;
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif;
+	bottom:-1px;
+	position:relative;
+	background:#fff;
+	float:right;
+	line-height:1.2;
+	margin-left:5px;
+	}
+.b-menu_vertical .b-menu__number_fontsize_11{
+	font-size:11px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#414141;
+	bottom:-3px;
+	}
+
+.b-menu_vertical .b-menu__inner{
+	border-bottom:1px dotted #e5e5e5;
+	position:relative;
+	margin-right:48px;
+	}
+.b-menu__inner .b-menu__link{
+	position: relative;
+	bottom:-2px;
+	}
+.b-menu__inner .b-buttons{
+	position:absolute;
+	bottom:-5px;
+	right:-48px;
+	}
+
+
+
+
+
+
+
+
+
+

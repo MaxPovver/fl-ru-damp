@@ -1,0 +1,72 @@
+<?php
+/*  
+ * 
+ * Данный файл является частью проекта Веб Мессенджер.
+ * 
+ * Все права защищены. (c) 2005-2009 ООО "ТОП".
+ * Данное программное обеспечение и все сопутствующие материалы
+ * предоставляются на условиях лицензии, доступной по адресу
+ * http://webim.ru/license.html
+ * 
+ */
+?>
+product.name=Web Messenger
+webim.title=Web Messenger Online Consultant
+supported.by=Supported by:&nbsp;
+webim.host=webim.ru
+typing=typing...
+history=History
+message=Message
+message2=Hello!
+your.name=Your name:
+email.address=Email:
+phone=Phone number:
+me=I'm
+chat.default.visitorname=Visitor
+send=Send (Enter)
+send.offline=Send
+rate.operator=Rate operator...
+rate.2=excellent
+rate.1=good
+rate.-1=satisfactorily
+rate.-2=bad
+leave.offline.message=Sorry, no operator is available at the moment. Please, try again later or ask your question in this form.
+enter.name=Enter your name
+enter.name_format=The name may contain only letters, numbers, underscore (_) and hyphen (-)
+enter.email=Enter your email
+enter.email_format=Enter email in correct format
+enter.message=Enter your questions
+wrong.email.format=Please enter your email correctly.
+test.message=How much does it cost?
+thanks.for.question=Thank you for using our service. We'll answer you by mail as soon as possible.
+close=Close window
+close.window=Close window
+send.history=Send chat history by e-mail:
+history.sent=Chat history is sent to the email address
+mail=Send chat history by e-mail
+reload=Reload
+alt.refresh=Refresh the chat
+alt.send_mail=Send chat history to an email
+alt.rate=Rate the operator
+alt.change_name=Change the name
+banmessage.title=Your IP is blocked
+banmessage.message=Sorry, your IP was blocked by the system. Please try again later.
+chat.wait=Thank you for contacting us. An operator will be with you shortly...
+chat.status.operator.left=Operator {0} closed the chat
+chat.status.operator.dead=Operator has connection issues, we temporarily moved you to foreground queue. Sorry for keeping you waiting.
+chat.status.operator.redirect=Operator {0} redirected you to another operator, please, wait a little
+chat.status.operator.joined=Operator {0} joined the chat
+chat.status.operator.changed=Operator {0} changed operator {1}
+chat.status.operator.returned=Operator {0} is back
+turn.off.sound=Turn off sound
+turn.on.sound=Turn on sound
+chat.window.toolbar.mail_history=Send chat history by e-mail
+chat.window.toolbar.refresh=Refresh
+start.chat.message=To start the chat please enter you name.
+start.chat=Start chat
+consult.title=Consultant
+consult.title2=Chat
+consult.title3=Leave message
+consult.title4=Thank you!
+consult.title5=Maintaining dialogue
+consult.title6=Welcome

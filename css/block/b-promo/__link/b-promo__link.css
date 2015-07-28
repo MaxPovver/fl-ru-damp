@@ -1,0 +1,39 @@
+a.b-promo__link{
+	color:#026dc0 ;
+	text-decoration:underline;
+	}
+a.b-promo__link:hover{
+	color:#8c0400;
+	border-bottom-color:#8c0400;
+	}
+a.b-promo__link_float_right{
+	float:right;
+	}
+a.b-promo__link_float_left{
+	float:left;
+	}
+a.b-promo__link_color_000{
+	color:#000;
+	}
+a.b-promo__link_fontsize_11{
+	font-size:11px;
+	color:#414141;
+	font-family:Tahoma, Arial, Helvetica, sans-serif;
+	}
+a.b-promo__link_bordbot_dot_41{
+	border-bottom:1px dotted #414141;
+	text-decoration:none;
+	}
+a.b-promo__link_bordbot_dot_0f71c8{
+	border-bottom:1px dotted #0f71c8;
+	text-decoration:none;
+	}
+a.b-promo__link_bordbot_adcce7{
+	border-bottom:1px solid #adcce7;
+	text-decoration:none;
+	line-height:1;
+	}
+a.b-promo__link_inline-block{
+	display:inline-block;
+	}
+

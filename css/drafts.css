@@ -1,0 +1,35 @@
+.page-drafts{
+	border: 1px solid #B2B2B2;
+	border-top: none;
+	margin: 0;
+	padding: 15px;
+	min-height:350px;
+	}
+.form-drafts-op{
+	margin: 0 0 15px 0;
+	}
+.form-drafts-op .form-in{
+	padding: 3px 10px;
+	}
+.form-drafts-op .form-in .i-chk{
+	padding: 4px 7px 0 0;
+	}
+.tbl-projects-draft{
+	width: 100%;
+	font-size:12px;
+	margin: 0 0 25px 0;
+	}
+.tbl-projects-draft td{
+	border-bottom: 1px solid #F3F2F0;
+	padding: 5px 10px 7px 0;
+	}
+.tbl-projects-draft td .i-chk{
+	padding: 0 0 0 10px;
+	}
+.fd-w{
+	margin: 0 0 15px 0;
+	}
+.fd-w .form-in{
+	padding: 5px 10px 7px;
+	font-size: 12px;
+	}

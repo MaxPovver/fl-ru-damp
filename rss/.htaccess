@@ -1,0 +1,2 @@
+#ForceType application/rss+xml
+AddType application/x-httpd-php .php .xml

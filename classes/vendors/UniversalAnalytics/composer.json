@@ -1,0 +1,25 @@
+{
+    "name": "fideloper/universalanalytics",
+    "description": "Implement Google's Measurement Protocol for Universal Analytics on the Server Side",
+    "keywords": ["google analytics", "measurement protocol", "universal analytics", "analytics", "google measurement protocol"],
+    "require": {
+        "kriswallsmith/buzz": "dev-master"
+    },
+    "require-dev": {
+        "mockery/mockery": "0.8.*",
+        "phpunit/phpunit": "3.7.*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Chris Fidao",
+            "email": "fideloper@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-0": {
+	       "UniversalAnalytics": "src"
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.b-block{
+	display:inline;
+	vertical-align:top;
+	}
+.b-block[data-tpl='main/main'],
+.b-block[data-tpl='main/lenta-menu'],
+.b-block[data-tpl='main/filter'],
+.b-block[data-tpl='main/lenta-head'],
+.b-block[data-tpl='main/lenta-top'],
+.b-block[data-tpl='main/lenta'],
+.b-block[data-tpl='main/pay-place'],
+.b-block[data-tpl='/banners/banner-240x400'],
+.b-block[data-tpl='system/monitor'],
+.b-block[data-tpl='popups/create_antiuser'],
+.b-block[data-tpl='main/carusel'],
+.b-block[data-tpl='footer'],
+.b-block[data-tpl='personal']
+{
+	display:block;
+	}
+.b-block[data-tpl='main/main-left']{
+	display:inline-block;
+	width:72%;
+	}
+@media screen and (max-width: 1000px){
+.b-block[data-tpl='main/main-left']{
+	display:block;
+	width:100%;
+	}
+}

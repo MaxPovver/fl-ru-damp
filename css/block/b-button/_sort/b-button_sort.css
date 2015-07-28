@@ -1,0 +1,12 @@
+.b-button_sort{
+	background: url(b-button_sort.png) 0 0 no-repeat;
+	width:41px;
+	height:21px;
+	padding:0 !important;
+	position:relative;
+	z-index:1;
+	}
+.b-button_asort{
+	background: url(b-button_sort.png) -41px 0 no-repeat;
+	}
+

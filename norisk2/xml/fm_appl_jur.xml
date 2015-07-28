@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<document title="Doc Title" author="Free-Lance.ru" width="170" margin-left="25" margin-right="25" margin-top="25" font-name="TimesNewRomanPSMT" font-size="15" paragraph-indent="3">
+    <page>
+        <locate x="110" y="10"/>
+        <paragraph font-name="TimesNewRomanPSMT" font-size="12" width="85" height="5" align="J" border="0" parse="1" keep-text-wrap="0" keep-pos="1">
+            <![CDATA[Генеральному директору ООО «Ваан»
+            Воропаеву Василию Владимировичу
+            ]]>
+        </paragraph>
+        <paragraph width="170" height="14" align="C" border="0" parse="1" keep-text-wrap="1"></paragraph>
+        <paragraph font-name="TimesNewRomanPS-BoldMT" font-size="14" width="170" height="5" align="C" border="0" parse="1" keep-text-wrap="1">
+            <![CDATA[Заявление]]>
+        </paragraph>
+        <paragraph width="170" height="10" align="C" border="0" parse="1" keep-text-wrap="1"></paragraph>
+        <locate x="161" y="45"/>
+        <paragraph font-name="TimesNewRomanPSMT" font-size="12" width="45" height="5" align="J" border="0" parse="1" keep-text-wrap="0" keep-pos="1">
+            <![CDATA[$date_statement]]>
+        </paragraph>
+        <paragraph font-name="TimesNewRomanPSMT" font-size="12" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[
+            Прошу зачислить сумму в размере $sbr_summ_str, в том числе НДС $nds_rate – $nds_str по Договору № $sbr_num$ssnum, заключенному $sbr_date, на личный счёт № $fmid в системе Free-lance.ru, согласно Оферте на заключение договора об использовании онлайн сервиса «Безопасная сделка», п. 5.7, а именно:
+            ]]>
+        </paragraph>
+        <paragraph width="170" height="2" align="C" border="0" parse="1" keep-text-wrap="1"></paragraph>
+        <paragraph font-name="TimesNewRomanPSMT" font-size="12" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[
+            С момента выбора Исполнителем на Защищенных страницах Сайта в качестве Способа оплаты перевод в FM, обязательства Общества по Осуществлению оплаты считаются исполненными, в тоже время денежные средства, отражающиеся на личном счете Исполнителя на Сайте, считаются уплаченными в счет оплаты за оказываемые Обществом услуги по Пользовательскому соглашению, сумма $sbr_summ_str включая НДС $nds_rate – $nds_str.
+            ]]>
+        </paragraph>
+        <paragraph width="170" height="2" align="C" border="0" parse="1" keep-text-wrap="1"></paragraph>
+        <paragraph width="170" height="2" align="C" border="0" parse="1" keep-text-wrap="1"></paragraph>
+        <paragraph font-name="TimesNewRomanPSMT" font-size="12" height="5" align="J" border="0" parse="1" keep-text-wrap="1">
+            <![CDATA[Заявитель:
+$reqvs
+            ]]>
+        </paragraph>
+        <locate x="25" y="235"/>
+        <paragraph font-name="TimesNewRomanPSMT" font-size="12" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[Генеральный директор]]>
+        </paragraph>
+        <locate x="110" y="235"/>
+        <text width="85" border="0" align="R" height="5" keep-pos="1" parse="1"><![CDATA[_________/_____________________/]]></text>
+        <locate x="119" y="240"/>
+        <text font-size="8" width="25" border="0" align="R" height="5" keep-pos="1" parse="1"><![CDATA[подпись]]></text>
+        <locate x="153" y="240"/>
+        <text font-size="8" width="25" border="0" align="R" height="5" keep-pos="1" parse="1"><![CDATA[расшифровка]]></text>
+        <locate x="110" y="250"/>
+        <text width="85" border="0" align="C" height="5" keep-pos="1" parse="1"><![CDATA[М.П.]]></text>
+    </page>
+</document>

@@ -1,0 +1,344 @@
+<?php $sUri = $_SERVER['REQUEST_URI']; ?>
+<div class="i-footer">
+	<div class="b-footer">
+		<div class="b-footer__top">
+			<? if($_SESSION['uid']): ?>
+			<div class="b-footer__col b-footer__col_user">
+			    <?php if($footer_profile) { ?>
+			    <h4 class="b-footer__h4"><!--<?=$_SESSION['name'] . ' ' . $_SESSION['surname']?> [--><?=$_SESSION['login']?><!--]--></h4>
+			    <?php } else { //if?>
+			    <h4 class="b-footer__h4"><a class="b-footer__link" href="/users/<?=$_SESSION['login']?>"><!--<?=$_SESSION['name'] . ' ' . $_SESSION['surname']?> [--><?=$_SESSION['login']?><!--]--></a></h4>
+			    <?php } //else?>
+				<ul class="b-footer__list">
+				    <?php if($footer_contacts) { ?>
+				    <li class="b-footer__item">Мои контакты</a></li>
+				    <?php } else { //if?>
+					<li class="b-footer__item"><a class="b-footer__link" href="/contacts/">Мои контакты</a></li>
+					<?php }//else?>
+					<?php if($footer_bill) { ?>
+					<li class="b-footer__item">Мои услуги</li>
+					<?php } else { //if?>
+					<li class="b-footer__item"><a class="b-footer__link" href="/bill/">Мои услуги</a></li>
+					<?php } //else?>
+					<?php if($footer_project) { ?>
+					<li class="b-footer__item">Проекты</li>
+					<?php } else {//if ?>
+					<li class="b-footer__item"><a class="b-footer__link" href="/projects/?p=list">Проекты</a></li>
+					<?php }//else?>
+					<? if($cntnorisk['cnt']) { ?>
+					  <li class="b-footer__item"><a class="b-footer__link" href="/norisk/">СБР</a></li>
+					<? } ?>
+					<?php if($footer_setup) { ?>
+					<li class="b-footer__item">Настройки</li>
+					<?php } else { // if?>
+					<li class="b-footer__item"><a class="b-footer__link" href="/users/<?=$_SESSION['login']?>/setup/">Настройки</a></li>
+					<?php } //else?>
+					<li class="b-footer__item"><a class="b-footer__link logoutBtn" href="javascript:logout()">Выйти</a></li>
+				</ul>
+			</div>
+			<? else: ?>
+			<div class="b-footer__col b-footer__col_user">
+				<?php if ( $footer_registration ): ?>
+				<script type="text/javascript">document.write('<h4 class="b-footer__h4">Зарегистрироваться</h4>');</script>
+				<?php else: ?>
+				<script type="text/javascript">document.write('<h4 class="b-footer__h4"><a class="b-footer__link" href="/registration/">Зарегистрироваться</a></h4>');</script>
+				<?php endif; ?>
+				<ul class="b-footer__list">
+					<?php if ( $footer_remind ): ?>
+					<script type="text/javascript">document.write('<li class="b-footer__item">Забыли пароль?</li>');</script>
+					<?php else: ?>
+					<script type="text/javascript">document.write('<li class="b-footer__item"><a class="b-footer__link" href="/remind/">Забыли пароль?</a></li>');</script>
+					<?php endif; ?>
+				</ul>
+			</div>
+			<? endif; ?>
+		
+		
+
+
+
+			<div class="b-footer__col b-footer__col_services">
+				<script type="text/javascript">
+				<?php if ( $grey_service ): ?>
+				document.write('<h4 class="b-footer__h4">Услуги</h4>');
+				<?php else: ?>
+				document.write('<h4 class="b-footer__h4"><a class="b-footer__link" href="/service/">Услуги</a></h4>');
+				<?endif;?>
+				</script>
+				<ul class="b-footer__list">
+				<? if(is_emp()): ?>
+				    <?php if($footer_start) { ?>
+				    <li class="b-footer__item">Начальная страница</li>
+				    <?php } else {//?>
+					<li class="b-footer__item"><a class="b-footer__link" href="/start/">Начальная страница</a></li>
+					<?php }//else?>
+					<?php if($footer_payed) { ?>
+					<li class="b-footer__item">Аккаунт PRO</li>
+					<?php } else { //if?>
+					<li class="b-footer__item"><a class="b-footer__link" href="/payed-emp/">Аккаунт PRO</a></li>
+					<?php } //else?>
+					<?php if($footer_norisk) { ?>
+					<li class="b-footer__item">Сделка Без Риска</li>
+					<?php } else { //if?>
+					<li class="b-footer__item"><a class="b-footer__link" href="/norisk2/">Сделка Без Риска</a></li>
+					<?php }//else?>
+					<?php if($footer_shop) { ?>
+					<li class="b-footer__item">Магазин</li>
+					<?php } else {//if ?>
+					<li class="b-footer__item"><a class="b-footer__link" href="/service/shop/">Магазин</a></li>
+					<?php }//else?>
+				<? elseif(get_uid(false)): ?>
+					<?php if($footer_start) { ?>
+				    <li class="b-footer__item">Начальная страница</li>
+				    <?php } else {//?>
+					<li class="b-footer__item"><a class="b-footer__link" href="/start/">Начальная страница</a></li>
+					<?php }//else?>
+					<?php if($footer_payed) { ?>
+					<li class="b-footer__item">Аккаунт PRO</li>
+					<?php } else { //if?>
+					<li class="b-footer__item"><a class="b-footer__link" href="/payed/">Аккаунт PRO</a></li>
+					<?php } //else?>
+					<?php if($footer_shop) { ?>
+					<li class="b-footer__item">Магазин</li>
+					<?php } else {//if ?>
+					<li class="b-footer__item"><a class="b-footer__link" href="/service/shop/">Магазин</a></li>
+					<?php }//else?>
+					<?php if($footer_norisk) { ?>
+					<li class="b-footer__item">Сделка Без Риска</li>
+					<?php } else { //if?>
+					<li class="b-footer__item"><a class="b-footer__link" href="/norisk2/">Сделка Без Риска</a></li>
+					<?php }//else?>
+				<? else: ?>
+					<?php if ( $footer_manager ): ?>
+					<li class="b-footer__item">Подбор фрилансеров</li>
+					<?php else: ?>
+					<li class="b-footer__item"><a class="b-footer__link" href="/manager/">Подбор фрилансеров</a></li>
+					<?endif;?>
+					<?php if ( $footer_promo_sbr ): ?>
+					<li class="b-footer__item">Сделка Без Риска</li>
+					<?php else: ?>
+					<li class="b-footer__item"><a class="b-footer__link" href="/promo/sbr/">Сделка Без Риска</a></li>
+					<?endif;?>
+					<?php if ( $sUri == '/service/shop/' || $sUri == '/service/shop' ): ?>
+					<li class="b-footer__item">Магазин</li>
+					<?php else: ?>
+					<li class="b-footer__item"><a class="b-footer__link" href="/service/shop/">Магазин</a></li>
+					<?endif;?>
+				<? endif; ?>
+				</ul>
+			</div>
+
+
+
+
+			<div class="b-footer__col b-footer__col_project">
+				<?php if ( $footer_press_contacts = (strpos($sUri, '/press') === 0 && strpos($sUri, '/press/adv') === false) ): ?>
+				<h4 class="b-footer__h4">О проекте</h4>
+				<?php else: ?>
+				<h4 class="b-footer__h4"><a class="b-footer__link" href="/about/">О проекте</a></h4>
+				<? endif; ?>
+				<ul class="b-footer__list">
+					<?php if ( strpos( $sUri, '/press/adv' ) === 0 ): ?>
+					<li class="b-footer__item">Реклама</li>
+					<?php else: ?>
+					<li class="b-footer__item"><a class="b-footer__link" href="/press/adv/">Реклама</a></li>
+					<? endif; ?>
+					<?php if ( $footer_press_contacts ): ?>
+					<li class="b-footer__item">Контакты</li>
+					<?php else: ?>
+					<li class="b-footer__item"><a class="b-footer__link" href="/press/contacts/">Контакты</a></li>
+					<? endif; ?>
+					<?php /*
+					<li class="b-footer__item"><a class="b-footer__link" href="/press/partners/">Партнеры</a></li>
+					*/ ?>
+				</ul>
+				<ul class="b-footer__list">
+					<?php if ( strpos( $sUri, '/about/rules' ) === 0 ): ?>
+					<li class="b-footer__item">Правила сайта</li>
+					<?php else: ?>
+					<li class="b-footer__item"><a class="b-footer__link" href="<?=WDCPREFIX?>/about/documents/appendix_2_regulations.pdf" target="_blank">Правила сайта</a></li>
+					<? endif; ?>
+					<?php if ( strpos( $sUri, '/about/offer' ) === 0 ): ?>
+					<li class="b-footer__item">Пользовательское соглашение</li>
+					<?php else: ?>
+					<li class="b-footer__item"><a class="b-footer__link" href="<?=WDCPREFIX?>/about/documents/agreement_site.pdf" target="_blank">Пользовательское соглашение</a></li>
+					<? endif; ?>
+					<?php /*
+					<li class="b-footer__item"><a class="b-footer__link" href="/about/corporative/">Корпоративный блог</a></li>
+					*/ ?>
+				</ul>
+				
+				<ul class="b-footer__list">
+				    <li class="b-footer__item"><a class="b-footer__link" href="<?=WDCPREFIX?>/about/documents/politika_po_obrabotke_pdn.pdf" target="_blank">Политика по обработке персональных данных</a></li>
+				    <li class="b-footer__item"><a class="b-footer__link" href="<?=WDCPREFIX?>/about/documents/polozhenie_po_obespecheniu_bezopasnosti_pdn.pdf" target="_blank">Положение по обеспечению безопасности персональных данных</a></li>
+				</ul>
+			</div>
+
+			<div class="b-footer__col b-footer__col_help">
+				<script type="text/javascript">
+				<?php if ( $footer_help ): ?>
+				document.write('<h4 class="b-footer__h4">Помощь</h4>');
+				<?php else: ?>
+				document.write('<h4 class="b-footer__h4"><a class="b-footer__link" href="/help/?all">Помощь</a></h4>');
+				<? endif; ?>
+				</script>
+				<ul class="b-footer__list">
+					<?php if ( strpos($sUri, '/about/feedback') === 0 ): ?>
+					<li class="b-footer__item">Служба поддержки</li>
+					<?php else: ?>
+					<li class="b-footer__item"><a class="b-footer__link" href="/about/feedback/">Служба поддержки</a></li>
+					<? endif; ?>
+					<li class="b-footer__item"><?=webim_button(2)?></li>
+				</ul>
+			</div>
+
+		
+		
+		
+		
+		</div>
+		<div class="b-footer__bot">
+			<div class="b-footer__rightcol"> <script type="text/javascript">document.write('<a class="b-footer__link" href="/press/adv/">Реклама</a>');</script>
+				<div class="b-footer__mailru"> 
+					<!--Rating@Mail.ru counter--> 
+					<script language="javascript" type="text/javascript"><!--
+d=document;var a='';a+=';r='+escape(d.referrer);js=10;//--></script> 
+					<script language="javascript1.1" type="text/javascript"><!--
+a+=';j='+navigator.javaEnabled();js=11;//--></script> 
+					<script language="javascript1.2" type="text/javascript"><!--
+s=screen;a+=';s='+s.width+'*'+s.height;
+a+=';d='+(s.colorDepth?s.colorDepth:s.pixelDepth);js=12;//--></script> 
+					<script language="javascript1.3" type="text/javascript"><!--
+js=13;//--></script><script type="text/javascript"><!--
+d.write('<a class="b-footer__link" href="http://top.mail.ru/jump?from=2071473" target="_blank">'+
+'<img class="b-footer__counter" src="http://db.c9.bf.a1.top.mail.ru/counter?id=2071473;t=99;js='+js+
+a+';rand='+Math.random()+'" alt="Рейтинг@Mail.ru"  '+
+'height="18" width="88" \/><\/a>');if(11<js)d.write('<'+'!-- ');//--></script>
+					<noscript>
+					<a class="b-footer__link" target="_blank" href="http://top.mail.ru/jump?from=2071473"> <img class="b-footer__counter" src="http://db.c9.bf.a1.top.mail.ru/counter?js=na;id=2071473;t=99" height="18" width="88"  alt="Рейтинг@Mail.ru" /></a>
+					</noscript>
+					<script type="text/javascript"><!--
+if(11<js)d.write('--'+'>');//--></script> 
+					<!--// Rating@Mail.ru counter--> 
+				</div>
+			</div>
+			<div class="b-footer__leftcol">
+				<div class="b-footer__copyright">Copyright 2005&ndash;<?=date('Y')?> Free-lance.ru</div>
+				<div class="b-footer__rambler"> 
+					<!-- begin of Top100 logo --> 
+					<script type="text/javascript">document.write('<a class="b-footer__link" href="http://top100.rambler.ru/home?id=1367737" target="_blank">Участник Rambler\'s Top100</a>');</script> 
+					<!-- end of Top100 logo --> 
+				</div>
+			</div>
+			<div class="b-footer__midcol"> 
+				<!-- tns-counter.ru --> 
+				<script type="text/javascript">
+				   var img = new Image();
+				   img.src = 'http://www.tns-counter.ru/V13a***R>' + document.referrer.replace(/\*/g,'%2a') + '*hh_ru/ru/CP1251/tmsec=hh_free-lance/';
+				</script>
+				<noscript>
+				<div><img class="b-footer__counter" src="http://www.tns-counter.ru/V13a****hh_ru/ru/CP1251/tmsec=hh_free-lance/"  alt="" /></div>
+				</noscript>
+				<!--/ tns-counter.ru --> 
+				<!-- begin of Top100 code --> 
+				<noindex><a rel="nofollow" class="b-footer__link" href="http://top100.rambler.ru/top100/"><img class="b-footer__counter" src="http://counter.rambler.ru/top100.cnt?1367737" alt="Rambler's Top100"   /></a></noindex> 
+				<!-- end of Top100 code --> 
+				
+				<!-- bigmir)net TOP 100 --> 
+				<a class="b-footer__link" href="http://www.bigmir.net/" onclick="img = new Image();img.src='http://www.bigmir.net/?cl=119761';" > 
+				<script type="text/javascript"><!--
+							bmQ='<img class="b-footer__counter" src=http://c.bigmir.net/?s119761&t8';
+							bmD=document;
+							bmD.cookie="b=b";
+							if(bmD.cookie)bmQ+='&c1';
+						   //--></script> 
+				<script type="text/javascript"><!--
+							bmS=screen;bmQ+='&d'+(bmS.colorDepth?bmS.colorDepth:bmS.pixelDepth)+"&r"+bmS.width;
+						   //--></script> 
+				<script type="text/javascript"><!--
+							bmF = bmD.referrer.slice(7);
+							((bmI=bmF.indexOf('/'))!=-1)?(bmF=bmF.substring(0,bmI)):(bmI=bmF.length);
+							if(bmF!=window.location.href.substring(7,7+bmI))bmQ+='&f'+escape(bmD.referrer);
+							bmD.write(bmQ+" alt=\"bigmir TOP100\">");
+						   //--></script> 
+				</a> 
+				<!-- end of bigmir)net TOP 100 --> 
+				
+				<script type="text/javascript">
+
+                            var _gaq = _gaq || [];
+                            _gaq.push(['_setAccount', 'UA-163162-1']);
+                            _gaq.push(['_addOrganic', 'images.yandex.ru', 'q', true]);
+                            _gaq.push(['_addOrganic', 'blogsearch.google.ru', 'q', true]);
+                            _gaq.push(['_addOrganic', 'blogs.yandex.ru', 'text', true]);
+                            _gaq.push(['_addOrganic', 'go.mail.ru',  'q']);
+                            _gaq.push(['_addOrganic', 'nova.rambler.ru', 'query']);
+                            _gaq.push(['_addOrganic', 'nigma.ru', 's']);
+                            _gaq.push(['_addOrganic', 'webalta.ru', 'q']);
+                            _gaq.push(['_addOrganic', 'aport.ru', 'r']);
+                            _gaq.push(['_addOrganic', 'poisk.ru', 'text']);
+                            _gaq.push(['_addOrganic', 'km.ru', 'sq']);
+                            _gaq.push(['_addOrganic', 'liveinternet.ru', 'ask']);
+                            _gaq.push(['_addOrganic', 'quintura.ru', 'request']);
+                            _gaq.push(['_addOrganic', 'search.qip.ru', 'query']);
+                            _gaq.push(['_addOrganic', 'gde.ru', 'keywords']);
+                            _gaq.push(['_addOrganic', 'gogo.ru', 'q']);
+                            _gaq.push(['_addOrganic', 'ru.yahoo.com', 'p']);
+                            _gaq.push(['_addOrganic', 'akavita.by', 'z']);
+                            _gaq.push(['_addOrganic', 'tut.by', 'query']);
+                            _gaq.push(['_addOrganic', 'all.by', 'query']);
+                            _gaq.push(['_addOrganic', 'meta.ua', 'q']);
+                            _gaq.push(['_addOrganic', 'bigmir.net', 'q']);
+                            _gaq.push(['_addOrganic', 'i.ua', 'q']);
+                            _gaq.push(['_addOrganic', 'online.ua', 'q']);
+                            _gaq.push(['_addOrganic', 'a.ua', 's']);
+                            _gaq.push(['_addOrganic', 'ukr.net', 'search_query']);
+                            _gaq.push(['_addOrganic', 'search.com.ua', 'q']);
+                            _gaq.push(['_addOrganic', 'search.ua', 'query']);
+                            _gaq.push(['_addOrganic', 'search.ukr.net', 'search_query']);
+                            _gaq.push(['_trackPageview']);
+
+                            (function() {
+                            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                            })();
+
+                            </script> 
+				
+							<!-- Yandex.Metrika counter -->
+							<script type="text/javascript">
+							var yaParams = {/*Здесь параметры визита электронной торговли*/};
+							</script>
+
+							<script type="text/javascript">
+							(function (d, w, c) {
+							    (w[c] = w[c] || []).push(function() {
+							        try {
+							            w.yaCounter6051055 = new Ya.Metrika({id:6051055,
+							                    webvisor:true,
+							                    clickmap:true,
+							                    trackLinks:true,
+							                    accurateTrackBounce:true,params:window.yaParams||{ }});
+							        } catch(e) { }
+							    });
+
+							    var n = d.getElementsByTagName("script")[0],
+							        s = d.createElement("script"),
+							        f = function () { n.parentNode.insertBefore(s, n); };
+							    s.type = "text/javascript";
+							    s.async = true;
+							    s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+							    if (w.opera == "[object Opera]") {
+							        d.addEventListener("DOMContentLoaded", f, false);
+							    } else { f(); }
+							})(document, window, "yandex_metrika_callbacks");
+							</script>
+							<noscript><div><img src="//mc.yandex.ru/watch/6051055" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+							<!-- /Yandex.Metrika counter -->
+
+			</div>
+		</div>
+	</div>
+</div>

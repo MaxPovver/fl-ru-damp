@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2007 rel. 3 sp1 (http://www.altova.com) by russkiy (EMBRACE) -->
+<wsdl:definitions xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://new.webservice.namespace" xmlns:xsd1="http://www.ecerami.com/schema" targetNamespace="http://new.webservice.namespace">
+	<wsdl:types>
+		<xs:schema targetNamespace="http://new.webservice.namespace" elementFormDefault="qualified"/>
+		<schema xmlns="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.ecerami.com/schema" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+		<import namespace="http://schemas.xmlsoap.org/soap/encoding/"/>
+			<complexType name="ArrayOfString">
+				<complexContent>
+					<restriction base="soapenc:Array">
+						<attribute ref="soapenc:arrayType" wsdl:arrayType="string[]"/>
+					</restriction>
+				</complexContent>
+			</complexType>
+			<complexType name="ArrayOfInt">
+				<complexContent>
+					<restriction base="soapenc:Array">
+						<attribute ref="soapenc:arrayType" wsdl:arrayType="int[]"/>
+					</restriction>
+				</complexContent>
+			</complexType>
+			<complexType name="ArrayOfDouble">
+				<complexContent>
+					<restriction base="soapenc:Array">
+						<attribute ref="soapenc:arrayType" wsdl:arrayType="double[]"/>
+					</restriction>
+				</complexContent>
+			</complexType>
+		</schema>
+	</wsdl:types>
+	<wsdl:message name="AuthUserRequest">
+		<wsdl:part name="login" type="xs:string"/>
+		<wsdl:part name="password" type="xs:string"/>
+		<wsdl:part name="session" type="xs:string"/>
+	</wsdl:message>
+	<wsdl:message name="AuthUserResponse">
+		<wsdl:part name="result" type="xs:string"/>
+		<wsdl:part name="cookie" type="xs:string"/>
+		<wsdl:part name="message_template" type="xs:string"/>
+		<wsdl:part name="project_template" type="xs:string"/>
+	</wsdl:message>
+	<wsdl:message name="GetUserInfoRequest">
+		<wsdl:part name="session" type="xs:string"/>
+	</wsdl:message>
+	<wsdl:message name="GetUserInfoResponse">
+		<wsdl:part name="money" type="xs:float"/>
+		<wsdl:part name="result" type="xs:string"/>
+		<wsdl:part name="unreadmessage" type="xs:int"/>
+		<wsdl:part name="reyting" type="xs:integer"/>
+		<wsdl:part name="hits" type="xs:integer"/>
+	</wsdl:message>
+	<wsdl:message name="GetAllInfoReqest">
+		<wsdl:part name="session" type="xs:string"/>
+		<wsdl:part name="lastprj" type="xs:integer"/>
+		<wsdl:part name="get" type="xsd1:ArrayOfInt"/>
+		<wsdl:part name="filter" type="xsd1:ArrayOfInt"/>
+		<wsdl:part name="lastmes" type="xs:integer"/>
+	</wsdl:message>
+	<wsdl:message name="GetAllInfoResponse">
+		<wsdl:part name="result" type="xs:string"/>
+		<wsdl:part name="id" type="xsd1:ArrayOfInt"/>
+		<wsdl:part name="money" type="xs:float"/>
+		<wsdl:part name="lastprj" type="xs:integer"/>
+		<wsdl:part name="rating" type="xs:integer"/>
+		<wsdl:part name="hits" type="xs:integer"/>
+		<wsdl:part name="type" type="xsd1:ArrayOfInt"/>
+		<wsdl:part name="login" type="xsd1:ArrayOfString"/>
+		<wsdl:part name="uname" type="xsd1:ArrayOfString"/>
+		<wsdl:part name="usurname" type="xsd1:ArrayOfString"/>
+		<wsdl:part name="text" type="xsd1:ArrayOfString"/>
+		<wsdl:part name="picname" type="xsd1:ArrayOfString"/>
+		<wsdl:part name="thread" type="xsd1:ArrayOfInt"/>
+		<wsdl:part name="pro" type="xsd1:ArrayOfString"/>
+		<wsdl:part name="online" type="xsd1:ArrayOfString"/>
+		<wsdl:part name="time" type="xsd1:ArrayOfString"/>
+		<wsdl:part name="head" type="xsd1:ArrayOfString"/>
+		<wsdl:part name="budget" type="xsd1:ArrayOfInt"/>
+		<wsdl:part name="b_type" type="xsd1:ArrayOfInt"/>
+		<wsdl:part name="role" type="xsd1:ArrayOfString"/>
+		<wsdl:part name="lastmes" type="xs:integer"/>
+	</wsdl:message>
+	<wsdl:message name="ReadMessReqest">
+		<wsdl:part name="session" type="xs:string"/>
+		<wsdl:part name="mess_id" type="xsd1:ArrayOfInt"/>
+	</wsdl:message>
+	<wsdl:message name="ReadMessResponse">
+		<wsdl:part name="result" type="xs:string"/>
+	</wsdl:message>
+	<wsdl:message name="CheckVersionRequest">
+		<wsdl:part name="version" type="xs:string"/>
+	</wsdl:message>
+	<wsdl:message name="CheckVersionResponse">
+		<wsdl:part name="result" type="xs:string"/>
+	</wsdl:message>
+	<wsdl:message name="NewMessage">
+		<wsdl:part name="session" type="xs:string"/>
+		<wsdl:part name="message" type="xs:string"/>
+		<wsdl:part name="type" type="xs:int"/>
+		<wsdl:part name="id" type="xs:integer"/>
+	</wsdl:message>
+	<wsdl:message name="NewMessage2">
+		<wsdl:part name="result" type="xs:string"/>
+	</wsdl:message>
+	<wsdl:portType name="FLTrayPortType">
+		<wsdl:operation name="AuthUser">
+			<wsdl:input message="tns:AuthUserRequest"/>
+			<wsdl:output message="tns:AuthUserResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="GetAllInfo">
+			<wsdl:input message="tns:GetAllInfoReqest"/>
+			<wsdl:output message="tns:GetAllInfoResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="ReadMess">
+			<wsdl:input message="tns:ReadMessReqest"/>
+			<wsdl:output message="tns:ReadMessResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="CheckVersion">
+			<wsdl:input message="tns:CheckVersionRequest"/>
+			<wsdl:output message="tns:CheckVersionResponse"/>
+		</wsdl:operation>
+		<wsdl:operation name="SendMess">
+			<wsdl:input message="tns:NewMessage"/>
+			<wsdl:output message="tns:NewMessage2"/>
+		</wsdl:operation>
+	</wsdl:portType>
+	<wsdl:binding name="FLTrayBinding" type="tns:FLTrayPortType">
+		<soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+		<wsdl:operation name="AuthUser">
+			<soap:operation soapAction="urn:xmethods-delayed-quotes#AuthUser"/>
+			<wsdl:input>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:xmethods-delayed-quotes"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:xmethods-delayed-quotes"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="GetAllInfo">
+			<soap:operation soapAction="urn:xmethods-delayed-quotes#GetAllInfo"/>
+			<wsdl:input>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:xmethods-delayed-quotes"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:xmethods-delayed-quotes"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="ReadMess">
+			<soap:operation soapAction="urn:xmethods-delayed-quotes#ReadMess"/>
+			<wsdl:input>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:xmethods-delayed-quotes"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:xmethods-delayed-quotes"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="CheckVersion">
+			<soap:operation soapAction="urn:xmethods-delayed-quotes#CheckVersion"/>
+			<wsdl:input>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:xmethods-delayed-quotes"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:xmethods-delayed-quotes"/>
+			</wsdl:output>
+		</wsdl:operation>
+		<wsdl:operation name="SendMess">
+			<soap:operation soapAction="urn:xmethods-delayed-quotes#SendMess"/>
+			<wsdl:input>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:xmethods-delayed-quotes"/>
+			</wsdl:input>
+			<wsdl:output>
+				<soap:body use="encoded" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/" namespace="urn:xmethods-delayed-quotes"/>
+			</wsdl:output>
+		</wsdl:operation>
+	</wsdl:binding>
+	<wsdl:service name="FLTrayService">
+		<wsdl:port name="FLTrayPort" binding="tns:FLTrayBinding">
+			<soap:address location="http://freelance/soap2/soap.php"/>
+		</wsdl:port>
+	</wsdl:service>
+</wsdl:definitions>

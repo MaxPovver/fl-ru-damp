@@ -1,0 +1,160 @@
+.frl-projects-in{
+	padding: 20px;
+	}
+.pjs-str{
+	width: 840px;
+	padding: 1px;
+	margin: 0 0 10px 0;
+	}
+.frl-prj-sort{
+	list-style:none;
+	margin: 0 0 15px 0;
+	overflow:hidden;
+	}
+.frl-prj-sort li{
+	float:left;
+	padding: 0 12px 0 0;
+	}
+.frl-prj-sort li.active{
+	background-color: #f0efdf;
+	border-radius:10px;
+	padding: 2px 8px 5px 12px;
+	}
+.frl-prj-sort li a:link, .frl-prj-sort li a:visited, .frl-prj-sort li a:active{
+	font-size:115%;
+	color: #000;
+	}
+.frl-prj-sort li a:hover{
+	color: #6BB24B;
+	}
+@media screen and (max-width: 1000px){
+.frl-prj-sort li{ margin-bottom:5px; margin-right:5px;}
+}
+@media screen and (max-width: 700px){
+.frl-prj-sort li{ clear:both;}
+}
+.fp-s0{
+	margin: 0 10px 0 0;
+	}
+.fp-s0.active{ margin-top:-2px;}
+.fp-s1{
+	margin: 0 80px 0 0;
+	}
+.fp-s2{
+	margin: 0 10px 0 0;
+	}
+.fp-s2 a{
+	display:inline-block;
+	padding: 0 0 0 17px;
+	background: url(../images/frl-ico1.png) no-repeat 0 3px;
+	}
+.fp-s3{
+	margin: 0 10px 0 0;
+	}
+.fp-s3 a{
+	display:inline-block;
+	padding: 0 0 0 17px;
+	background: url(../images/frl-ico2.png) no-repeat 0 3px;
+	}
+.fp-s4{
+	margin: 0 10px 0 0;
+	}
+.fp-s4 a{
+	display:inline-block;
+	padding: 0 0 0 17px;
+	background: url(../images/frl-ico3.png) no-repeat 0 3px;
+	}
+.fp-s5{
+	margin: 0 10px 0 0;
+	}
+.fp-s5 a{
+	display:inline-block;
+	padding: 0 0 0 17px;
+	background: url(../images/frl-ico4.png) no-repeat 0 3px;
+	}
+@media screen and (max-width: 1000px){
+.fp-s1, .fp-s2, .fp-s3, .fp-s4, .fp-s5{margin: 0;}
+.fp-s2{clear:both;}
+.frl-prj-sort li div{ padding-left:0;}
+}
+
+.frl-prj-del{
+	position:relative;
+	top: 3px;
+	}
+.frl-prj-status{
+	float:right;
+	font-size: 80%;
+	width: 200px;
+	}
+@media screen and (max-width: 1000px){
+.frl-prj-status{
+	float:none;
+	width: 100%;
+	padding-bottom:20px;
+	}
+}
+.fps1{
+	display:block;
+	padding: 0 0 3px 17px;
+	background: url(../images/frl-ico1.png) no-repeat 0 0px;
+	margin: 0 0 2px 0;
+	}
+.fps2{
+	display:block;
+	padding: 0 0 3px 17px;
+	background: url(../images/frl-ico3.png) no-repeat 0 0px;
+	margin: 0 0 2px 0;
+	}
+.fps3{
+	display:block;
+	padding: 0 0 3px 17px;
+	background: url(../images/frl-ico2.png) no-repeat 0 0px;
+	margin: 0 0 2px 0;
+	}
+.frl-prj-cbr{
+	display:block;
+	padding: 0 0 3px 17px;
+	background: url(../images/cbr-ico.png) no-repeat 1px 0px;
+	margin: 0 0 2px 0;
+	}
+.frl-prj-mess{
+	display:block;
+	background: url(../images/gdot.png) repeat-x top left;
+	padding: 5px 0 0 0;
+	}
+.frl-prj-mess span{
+	float:right;
+	}
+.fpm-all{
+	background: url(../images/icons-sprite.png) no-repeat 0 -436px;
+	padding: 0 0 0 15px;
+	display:inline-block;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	

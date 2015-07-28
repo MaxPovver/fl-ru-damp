@@ -1,0 +1,37 @@
+.b-button_rectangle_orange {
+	height: 34px;
+	background: url(b-button_rectangle_orange.png) no-repeat right -32px;
+	padding-right:7px !important;
+	cursor:pointer;
+	}
+.b-button_rectangle_orange .b-button__b1{
+	background: url(b-button_rectangle_orange.png) no-repeat 0 4px;
+	padding-left:7px;
+	}
+.b-button_rectangle_orange .b-button__b2{
+	background: url(b-button_rectangle_orange.png) repeat-x 0 -68px;
+	font-weight: normal;
+	line-height: 36px;
+	height: 34px;
+	}
+.b-button_rectangle_orange:hover{
+	background-position: right -140px;
+	}
+.b-button_rectangle_orange:hover .b-button__b1{
+	background-position: 0 -104px;
+	}
+.b-button_rectangle_orange:hover .b-button__b2{
+	background-position: 0 -176px;
+	}
+.b-button_rectangle_orange.b-button_active{
+	background-position: right -246px !important;
+	}
+.b-button_rectangle_orange.b-button_active .b-button__b1{
+	background-position: 0 -210px !important;
+	}
+.b-button_rectangle_orange.b-button_active .b-button__b2{
+	background-position: 0 -282px !important;
+	}
+.b-button_rectangle_orange .b-button__txt {
+	text-shadow:0 1px 0 hsla(0, 0%, 100%, 0.5);
+	}

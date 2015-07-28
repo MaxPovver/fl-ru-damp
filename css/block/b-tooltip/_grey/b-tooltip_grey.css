@@ -1,0 +1,51 @@
+
+.b-tooltip_grey{
+	font-size:13px;
+	line-height:1;
+	font-family:Calibri, Arial, Helvetica, sans-serif;
+	color:#a6a5a5;
+	background:#676767;
+	padding:4px 10px;
+	display:inline-block;
+	box-shadow:0 0 3px -1px #676767;
+	position:absolute;
+	z-index:1;
+	left:15px;
+	top:20px;
+	white-space:nowrap;
+	}
+.b-tooltip_grey:before{
+	content:'\00a0';
+	display:inline-block;
+	width:0px;
+	height:0px;
+	border-width:6px 4px;
+	border-color:transparent transparent #676767 transparent;
+	border-style:solid;
+	vertical-align:top;
+	position:absolute;
+	top:-12px;
+	left:50%;
+	margin-left:-3px;
+	}
+	
+	
+.i-tooltip{
+	position:relative;
+	}
+.i-tooltip>.b-tooltip{
+	display:none;
+	}
+.i-tooltip:hover>.b-tooltip{
+	display:block;
+	}
+
+
+
+
+
+
+
+
+
+

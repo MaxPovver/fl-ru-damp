@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<document title="Doc Title" author="Free-Lance.ru" width="170" margin-left="25" margin-right="25" margin-top="25" font-name="ArialMT" font-size="15" paragraph-indent="3">
+    <page>
+    
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="C" border="0" parse="1" keep-text-wrap="1" save-pos="1">
+            <![CDATA[Акт об оказании услуг №$tab$tab$tab $ssnum
+                     по Договору об использовании онлайн сервиса «Безопасная сделка»
+                     № $cnum от $sbr_begin г.]]>
+        </paragraph>
+        <locate x="0" y="0" x_offset="0" y_offset="5"/>
+        <cell width="85" border="0" height="5" keep-pos="1" align="L"><![CDATA[г. Москва]]></cell>
+        <locate x="0" y="0" x_offset="85" y_offset="0"/>
+        <cell width="85" border="0" height="5" keep-pos="1" align="R" parse="1"><![CDATA[$now_date]]></cell>
+ 
+        <ln height="15"/>
+
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="1" save-pos="0">
+            <![CDATA[Общество с ограниченной ответственностью «Ваан», в лице генерального директора Воропаева Василия Владимировича, действующего на основании Устава, с одной стороны, далее именуемое «Агент», и
+
+$employer_title, далее именуемый «Заказчик», с другой стороны, далее совместно именуемые «Стороны», а по отдельности «Сторона»,
+
+в соответствии с условиями и во исполнение Договора об использовании онлайн сервиса «Безопасная сделка» № $cnum от $sbr_begin года, заключенного между Обществом, Заказчиком и $freelancer_title (далее — «Исполнителем»), (далее — «Договор») 
+ 
+составили настоящий Акт об оказании услуг по Договору о нижеследующем. 
+            ]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[Все термины в настоящем Акте используются в том смысле, как они определены в Договоре.]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="1">
+            <![CDATA[В соответствии с п. 3.2, п. 4 Договора Заказчик осуществил Резервирование денежных средств в размере $reserved_sum$stages_additional_information. В результате чего на расчетный счет Агента поступило $reserved_sum из них:
+– $act_sum$act_nds_note — Стоимость работы, согласованная между Заказчиком и Исполнителем;
+– $emp_reward, в том числе НДС 18 % — Вознаграждение Агента.]]>
+        </paragraph>
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[Согласно п. 3.3 Договора Агент уведомил Заказчика и Исполнителя через Защищенные страницы Сайта о том, что Заказчиком было осуществлено Резервирование денежных средств путем их перечисления Агенту одним из предусмотренных способов оплаты.]]>
+        </paragraph>
+        
+        <ln/>
+        
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[$reason]]>
+        </paragraph>
+        
+        <paragraph show-if="$frl_sum_ex" font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[в соответствии с условиями и во исполнение Договора Агент произвел Осуществление оплаты Стоимости работы $frl_sum Исполнителю, а именно:]]>
+        </paragraph>
+        <paragraph show-if="$frl_sum_ex" font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[– Исполнителю перечислена Стоимость работы $frl_sum$act_ndfl_note]]>
+        </paragraph>
+        <paragraph show-if="$frl_sum_ex" font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[$ndfl_text]]>
+        </paragraph>
+        <paragraph show-if="$frl_sum_ex" font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[$vaan_text]]>
+        </paragraph>
+        <paragraph show-if="$frl_sum_ex" font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[что подтверждается Отчетом агента № $agent_rep_num от $now_date по Договору об использовании онлайн сервиса «Безопасная сделка» № $cnum от $sbr_begin.]]>
+        </paragraph>
+        
+        <ln/>
+        
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0" skip-empty="1">
+            <![CDATA[$reason_add]]>
+        </paragraph>
+        
+        <paragraph show-if="$emp_sum_ex" font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[в соответствии с условиями и во исполнение Договора Агент произвел Осуществление возврата Стоимости работы Заказчику, а именно:]]>
+        </paragraph>
+        <paragraph show-if="$emp_sum_ex" font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[– Заказчику перечислена Стоимость работы $stage_num_str в размере $emp_sum;]]>
+        </paragraph>
+        <paragraph show-if="$emp_sum_ex" font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[– $emp_reward, в том числе НДС 18 % — $emp_nds_reward, — возврат невостребованной платы за оказание ООО «Ваан» услуг Исполнителю, взимаемой при Осуществлении оплаты,]]>
+        </paragraph>
+        <paragraph show-if="$emp_sum_ex" font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[что подтверждается Отчетом агента № $agent_rep_num от $now_date по Договору об использовании онлайн сервиса «Безопасная сделка» № $cnum от $sbr_begin.]]>
+        </paragraph>
+        
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[В соответствии с п. 10.2 Договора вознаграждение Агента составляет $emp_reward, в том числе НДС 18% – $emp_nds_reward.
+            В связи с этим, Агентом удержано агентское вознаграждение со стороны Заказчика в пользу Агента в размере: $emp_reward, в том числе НДС 18% – $emp_nds_reward.]]>
+        </paragraph>
+        
+        
+        <paragraph font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[Стороны свои обязательства по Договору выполнили надлежащим образом, финансовых и иных претензий друг к другу не имеют.]]>
+        </paragraph>
+        <nobreak start="1"/>
+        <text font-name="ArialMT" font-size="12" width="170" height="5" align="J" border="0" parse="1" keep-text-wrap="0">
+            <![CDATA[Подписи сторон:]]>
+        </text>
+
+        
+        <locate x="0" y="0" x_offset="0" y_offset="5"/>
+        <cell width="85" height="5" keep-pos="1" align="L"><![CDATA[Агент:]]></cell>
+        <locate x="0" y="0" x_offset="85" y_offset="0"/>
+        <cell width="85" height="5" keep-pos="1" align="L"><![CDATA[Реквизиты Заказчика:]]></cell>
+        <locate x="0" y="0" x_offset="0" y_offset="5"/>
+        <cell width="85" height="120" keep-pos="1"/>
+        <fix-locate y="@usign"/>
+        <locate x="0" y="0" x_offset="85" y_offset="0"/>
+        <cell width="85" height="120" keep-pos="1" />
+        <locate y_offset="2"/>
+        <fix-locate y="@vaan"/>
+        <paragraph font-name="ArialMT" font-size="9" width="85" height="4" align="L" offset-left="1" keep-text-wrap="1">
+            <![CDATA[ООО «Ваан»
+
+Юридический адрес: 125040, Москва,
+улица Нижняя, дом 14, корпус 1.
+Почтовый адрес: 129223, Москва, а/я 33.
+ИНН 7805399430/ КПП 771401001
+Расчетный счет: 40702810787880000803
+в Московский филиал ОАО АКБ "РОСБАНК" г. Москва
+Корреспондентский счет: 30101810200000000272
+БИК 044552272
+ОКПО 94626823
+ОГРН 5067847040421
+ОКВЭД 52.61.2.]]>
+        </paragraph>
+        <locate y="@vaan" />
+	<paragraph font-name="ArialMT" font-size="9" width="75" height="4" align="L" offset-left="86" keep-text-wrap="1" parse="1">
+            <![CDATA[$side_b]]>
+        </paragraph>
+        <locate x="0" y="@usign" y_offset="97"/>
+        <paragraph font-name="ArialMT" font-size="9" width="85" height="4" align="L" offset-left="1" keep-text-wrap="1">
+            <![CDATA[Генеральный директор: Воропаев В.В.
+
+_____________________________
+
+ М.П.]]>
+        </paragraph>
+        <locate y="@usign" y_offset="97"/>
+        <paragraph font-name="ArialMT" font-size="9" width="85" height="4" align="L" offset-left="86" keep-text-wrap="1" parse="1">
+            <![CDATA[$bossname
+
+_____________________________
+]]>
+        </paragraph>
+        <locate x="0" y="@usign" y_offset="125"/>
+    	<paragraph font-name="ArialMT" color="008080" font-size="9" width="170" height="4" align="L" keep-pos="1" keep-text-wrap="1" parse="1">
+            <![CDATA[Подписанный вами акт необходимо отправить на один из следующих адресов:
+$adr_act
+Обязательно укажите наименование организации-получателя – ООО «Ваан».]]>
+        </paragraph>
+        
+        <nobreak end="1"/>
+        <footer><![CDATA[____________________(Подпись Заказчика)]]></footer>
+    </page>
+</document>

@@ -1,0 +1,131 @@
+<td class="b-layout__td b-layout__td_width_120 b-layout__td_padbot_<?=$this->element->getAttrib('padbot')?$this->element->getAttrib('padbot'):20?>">
+    <div class="b-layout__txt b-layout__txt_fontsize_15"><?=$this->element->getLabel();?></div>
+</td>
+<td class="b-layout__td b-layout__td_padbot_<?=is_numeric($this->element->getAttrib('padbot'))?$this->element->getAttrib('padbot'):20?>">
+    <table class="b-layout__table b-layout__table_width_full">
+        <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_ipad b-layout__td_nowrap">
+<?php
+    $is_agreement = $this->element->getValue('agreement') == 1;
+
+    $budget_width = $this->element->getAttrib('budget_width');
+    if(!$budget_width) $budget_width = 60;
+
+    $budget_size = $this->element->getAttrib('budget_size');
+    if(!$budget_size) $budget_size = 10;
+?>
+                <div class="b-combo b-combo_inline-block b-combo_margright_10">
+                    <div class="b-combo__input b-combo__input_width_<?=$budget_width?>
+                        <?php if($this->element->hasErrors() && !$is_agreement): ?>b-combo__input_error<?php endif;?>
+                        <?php if($is_agreement): ?>b-combo__input_disabled<?php endif; ?>">
+                        <input 
+                            data-budget-name="<?=$this->element->getName();?>" 
+                            id="el-<?=$this->element->getName();?>_budget" 
+                            type="text" 
+                            name="<?=$this->element->getName();?>[budget]" 
+                            value="<?=htmlspecialchars(stripslashes($this->element->getUnfilteredValue()));?>" 
+                            size="<?=$budget_size?>" 
+                            <?php if ($this->element->getAttrib('maxlength')):?>maxlength="<?=$this->element->getAttrib('maxlength')?>"<?php endif?> 
+                            <?php if ($this->element->getAttrib('placeholder')):?>placeholder="<?=htmlspecialchars($this->element->getAttrib('placeholder'))?>"<?php endif?> 
+                            class="b-combo__input-text" />
+                    </div>
+                </div>
+<?php
+    $currency_width = $this->element->getAttrib('currency_width');
+    if(!$currency_width) $currency_width = 60;
+
+    $currency_size = $this->element->getAttrib('currency_size');
+    if(!$currency_size) $currency_size = 80;
+    
+    $currency_db_id = intval($this->element->getValue('currency_db_id'));
+    if(!$currency_db_id) $currency_db_id = 2;    
+?>    
+                <script type="text/javascript">var currencyList = {0:"USD", 1:"Евро", 2:"Руб"}</script>
+                <div class="b-combo b-combo_inline-block b-combo_margright_10">
+                    <div class="b-combo__input 
+                         b-combo__input_width_<?=$currency_width?> 
+                         b-combo__input_arrow_yes 
+                         b-combo__input_multi_dropdown 
+                         drop_down_default_<?=$currency_db_id?> 
+                         b-combo__input_init_currencyList 
+                         reverse_list 
+                         <?php if($is_agreement): ?>b-combo__input_disabled<?php endif; ?>">
+                        <input id="el-<?=$this->element->getName();?>_currency" 
+                               class="b-combo__input-text" 
+                               name="<?=$this->element->getName();?>[currency]" 
+                               type="text" 
+                               value="" 
+                               size="<?=$currency_size?>" 
+                               readonly="readonly" />
+                        <label for="el-<?=$this->element->getName();?>_currency" class="b-combo__label"></label>
+                        <span class="b-combo__arrow"></span>
+                    </div>
+                </div>
+<?php
+    $priceby_width = $this->element->getAttrib('priceby_width');
+    if(!$priceby_width) $priceby_width = 85;
+
+    $priceby_size = $this->element->getAttrib('priceby_size');
+    if(!$priceby_size) $priceby_size = 10;
+    
+    $priceby_db_id = intval($this->element->getValue('priceby_db_id'));
+    if(!$priceby_db_id) $priceby_db_id = 4;
+?>      
+                <script type="text/javascript">var pricebyList = {1:"за час", 2:"за день", 3:"за месяц", 4:"за проект"}</script>
+                <div class="b-combo b-combo_inline-block">
+                  <div class="b-combo__input 
+                       b-combo__input_width_<?=$priceby_width?> 
+                       b-combo__input_arrow_yes 
+                       b-combo__input_multi_dropdown 
+                       drop_down_default_<?=$priceby_db_id?> 
+                       b-combo__input_init_pricebyList 
+                       <?php if($is_agreement): ?>b-combo__input_disabled<?php endif; ?>">
+                      <input id="el-<?=$this->element->getName();?>_priceby" 
+                             class="b-combo__input-text" 
+                             name="<?=$this->element->getName();?>[priceby]" 
+                             type="text" 
+                             size="<?=$priceby_size?>" 
+                             value="" 
+                             readonly="readonly" />
+                      <label for="el-<?=$this->element->getName();?>_priceby" class="b-combo__label"></label>          
+                      <span class="b-combo__arrow"></span>
+                  </div>
+                </div>    
+            </td>
+            <td class="b-layout__td b-layout__td_ipad">
+                <div class="b-layout__txt b-layout__txt_bold b-layout__txt_lineheight_1 b-layout__txt_valign_top b-page__desktop b-page__ipad b-layout__txt_padleft_10">
+                    <?=$this->element->getDescription();?>
+                </div>
+            </td>
+        </tr>
+    </table>
+    <div class="b-layout__txt b-layout__txt_bold b-page__iphone ">
+        <?=$this->element->getDescription();?>
+    </div>
+    
+    <div class="b-check b-check_padtop_10">
+        <input id="el-<?=$this->element->getName();?>_agreement" 
+               class="b-check__input" 
+               name="<?=$this->element->getName();?>[agreement]" 
+               type="checkbox" 
+               value="1" <?php if($is_agreement): ?>checked<?php endif;?> />
+        <label for="el-<?=$this->element->getName();?>_agreement" 
+               class="b-check__label b-check__label_fontsize_13">
+            По договоренности
+        </label>
+    </div>
+    
+    <?php if ($this->element->getAttrib('suffix')): ?>
+        <div class="b-layout__txt b-layout__txt_fontsize_11 b-layout__txt_padtop_2">
+            <?=$this->element->getAttrib('suffix')?>
+        </div>
+    <?php endif; ?>
+
+    <div class="b-layout__txt b-layout__txt_padtop_5 b-layout__txt_color_c10600 <?php if (!$this->element->hasErrors() || $is_agreement): ?>b-layout_hide<?php endif;?>" 
+         id="el-<?=$this->element->getName();?>-error">
+        <span class="b-icon b-icon_sbr_rattent"></span>
+        <span id="el-<?=$this->element->getName();?>-error-text">
+         <?=array_shift($this->element->getMessages()); ?>
+        </span>
+    </div>
+</td>

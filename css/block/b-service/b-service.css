@@ -1,0 +1,64 @@
+.b-service{}
+
+.b-service_padtop_15{
+	padding-top:15px;
+	}
+.b-service_padbot_25{
+	padding-bottom:25px;
+	}
+	
+.b-service__title{
+	padding:0;
+	margin:0;
+	font-size:15px;
+	color:#000;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:bold;
+	text-align:left;
+	}
+.b-service__title_padbot_5{
+	padding-bottom:5px;
+	}
+
+.b-service__item{
+	text-align:left;
+	}
+.b-service__item_padbot_5{
+	padding-bottom:5px;
+	}
+
+a.b-service__link{
+	font-size:13px;
+	font-family:Arial, Helvetica, sans-serif;
+	color:#026dc0 ;
+	text-decoration:underline;
+	}
+a.b-service__link_bold{
+	font-weight:bold;
+	}
+
+a.b-service__link:hover{
+	color:#8c0400;
+	}
+
+.b-service__icon{
+	display:inline-block;
+	width:34px;
+	height:16px;
+	vertical-align:middle;
+	margin-right:10px;
+	background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAABGCAYAAACpIkaOAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2VJREFUeNrsWM1rE0EUn12XxGiUglBNWzURa6oQqZqmxlKv4kVFhVLxoKgHP0DwIFhEEKQHDwWhiKBiQXpQVNSDIGLRol4aEaooxYOKiv+CCLvrvqmzzk5md2aS2B0hDx7z8ZuZ9/p7b99MY7jH+10Ut4xOIgu58fvxujLlOeLE7wjIf+TI1VfB8ZEt4TjBRHs4YiLbQaH658DPO/NYfSNhuMwenmJGbHFosi0twQlmj49T86I9nNA44gCya0Rj2TXKyXpzyu8C3dn0IsYI5wx2zhExIhEaP9ZAeSpdTTM1xo4+mEFovBKcg331hiabXMClmDhI49CnHfdxYWgiGPENWSm+g2SeTV52vQTrkSU+O2/+bGcOroFmiWfFcD2B208HR7RgxESaiHHm0YrYKRne/gVZOkQGv9BsTXLEkrl858YRSUZGdnytmjv1cHkoTmNSjtiKBW3PsOH3O9a14/bSrm8B7O6Qix07eb/j3zkCRoicuNcewDJdbQGHyFiqjsDFKKM0I8TQ6O7vAYysbc23YVU5W5mRJZ2Z4A1P7bfruLeUHWHX8xy5PvADt4duZVS+GjXPiRESpsWrluEWcoeHNZwR+mshsjC7FLMALYsTrOF1JLWylfNQd0NxR7FiW5q8i/RxpPlC0/aFZt0pVGKnZO/bIrzQNPkNzUE65IiBTGBEpAPvSgElc6KW9EWKkxUqoEiPGiO+kqoJ/agWhPRFKl3i+7rKVeUb5va934yctW5VS86ENbKlXooRlp39H8qRbAAuywZx1Lix5oVyth6Y6ROuGcu/lD6vMJ6Qv31pIbkSJT2dJdVLT/0fm02ri7g9/HErutY56c/TY9VzlXOEKBglxnljFcWOyHznPCXhgZY3VlGcrJdzEzWX1ulPb9D63IbQsayUbqe9u6aOEl/IdSN6PztWSla3+UJrvtAEObLt4q/YKXl8OqHRb2iurUdoTPgNLUqfDCUajrE6W+K9TpSCPD2baCjGW2s6tnfxRCiRiXOJhmG8tSbkSJTS8ux8siEYz4bHiBenCGXl+YVk3RjPhlSOBEpx/1jdGM+G5Sh8vnBYuXeQ+xfXiv19KtryTvQWww3VggWfAY6cE6WNg6GU14IpOwKH9XSHG6oF49opHvsZ+21z5eC0Hj9LaPVC+y3AAHY4t9YNffpXAAAAAElFTkSuQmCC)}
+
+.b-service__icon_pro{
+	background-position:0 0;
+	}
+.b-service__icon_sbr{
+	background-position:0 -18px;
+	}
+.b-service__icon_shop{
+	background-position:0 -36px;
+	}
+.b-service__icon_ref{
+	background-position:0 -54px;
+	}
+

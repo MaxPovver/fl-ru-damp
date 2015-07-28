@@ -1,0 +1,1 @@
+<a href="#" class="close <!--{$close_class}-->"><!--{get_res code="close.window"}--></a>

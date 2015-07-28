@@ -1,0 +1,60 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>b-captcha</title>
+<link href="b-captcha.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<h3>1.</h3>
+<div class="b-fon b-fon_bg_ffeda9">
+	<table class="b-fon__table"><tr><td class="b-fon__cell">
+		<b class="b-fon__b1"></b>
+		<b class="b-fon__b2"></b>
+		<div class="b-fon__body">
+			<div class="b-captcha b-captcha_pad_5_10">
+				<span class="b-captcha__descr">Вы отправили более 5 сообщений за 5 минут.<br />Чтобы отправить это сообщение, введите код с картинки:</span>
+				<img class="b-captcha__img b-captcha__img_bord_b2b2b2" src="../../../images/cont-captcha.gif" alt="" width="64" height="25" />
+				<div class="b-input">
+					<input class="b-input__text b-input__text_width_70 b-input__text_height_27" name="" type="text" />
+				</div>
+				<a class="b-captcha__link b-captcha__link_color_333" href="#">Обновить картинку</a>
+			</div>
+		</div>
+		<b class="b-fon__b2"></b>
+		<b class="b-fon__b1"></b>
+	</td></tr></table>
+</div>
+<h3>2.</h3>
+<div class="b-captcha">
+				<img class="b-captcha__img b-captcha__img_bord_b2b2b2" src="../../../images/cont-captcha.gif" alt="" width="64" height="25" />
+				<div class="b-input">
+					<input class="b-input__text b-input__text_width_70 b-input__text_height_27" name="" type="text" />
+				</div>
+				<a class="b-captcha__link b-captcha__link_color_333" href="#">Обновить картинку</a>
+</div>
+
+<h3>3.</h3>
+<div class="b-captcha">
+                                <img width="132" height="62" onclick="$('rndnumimage').set('src','/image.php?num='+$('captchanum').get('value')+'&amp;r='+Math.random());" alt="" src="/image.php?num=512b52c4c918d7.21047487" id="rndnumimage" class="b-captcha__img b-captcha__img_bord_ebe8e8"><div class="b-captcha__txt b-captcha__txt_inline-block b-captcha__txt_padtop_20">&nbsp;→&nbsp;</div><div class="b-combo b-combo_inline-block">
+                                    <div class="b-combo__input b-combo__input_width_122 b-combo__input_height_60 ">
+                                        <input type="hidden" value="512b52c4c918d7.21047487" name="captchanum" id="captchanum">
+                                        <input type="text" maxlength="5" onkeypress="clear_error('reg_rndnum'); if(event.keyCode==13) { $('frm').submit(); }" onfocus="clear_error('reg_rndnum');$$('#captcha_error').dispose(); registration_value_check('captcha');" autocomplete="off" size="80" name="rndnum" id="reg_rndnum" class="b-combo__input-text b-combo__input-text_center"><label class="b-combo__label" for="reg_rndnum"></label>
+                                    </div>
+                                </div>
+
+                                <div class="b-captcha__txt b-captcha__txt_padtop_5"><a onclick="$('rndnumimage').set('src','/image.php?num='+$('captchanum').get('value')+'&amp;r='+Math.random()); return false;" href="javascript:void(0)" class="b-captcha__link">Обновить картинку</a></div>
+                            </div>
+
+<h3>4.</h3>
+<div class="b-captcha"> <img width="100" height="41" alt="" src="/image.php?num=512b52c4c918d7.21047487" class="b-captcha__img b-captcha__img_bord_ebe8e8">
+                <div class="b-captcha__txt b-captcha__txt_inline-block b-captcha__txt_padtop_15">&nbsp;&rarr;&nbsp;</div>
+                <div class="b-combo b-combo_inline-block">
+                  <div class="b-combo__input b-combo__input_width_100 b-combo__input_height_41 ">
+                    <input type="text" maxlength="5" class="b-combo__input-text b-combo__input-text_center" value="e456w">
+                  </div>
+                </div>
+                <div class="b-captcha__txt b-captcha__txt_padtop_5"><a  href="javascript:void(0)" class="b-captcha__link">Обновить картинку</a></div>
+              </div>
+</body>
+</html>

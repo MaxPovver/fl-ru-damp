@@ -1,0 +1,32 @@
+.b-button_rectangle_transparent {
+	height: 36px;
+	background: url(b-button_rectangle_transparent.png) no-repeat right -34px;
+	left:-4px;
+	}
+.b-button_rectangle_transparent .b-button__b1{
+	background: url(b-button_rectangle_transparent.png) no-repeat 0 2px;
+	}
+.b-button_rectangle_transparent .b-button__b2{
+	background: url(b-button_rectangle_transparent.png) repeat-x 0 -70px;
+	font-weight: bold;
+	line-height: 36px;
+	height: 36px;
+	}
+.b-button_rectangle_transparent:hover{
+	background-position: right -142px;
+	}
+.b-button_rectangle_transparent:hover .b-button__b1{
+	background-position: 0 -106px;
+	}
+.b-button_rectangle_transparent:hover .b-button__b2{
+	background-position: 0 -178px;
+	}
+.b-button_rectangle_transparent.b-button_active{
+	background-position: right -250px !important;
+	}
+.b-button_rectangle_transparent.b-button_active .b-button__b1{
+	background-position: 0 -214px !important;
+	}
+.b-button_rectangle_transparent.b-button_active .b-button__b2{
+	background-position: 0 -286px !important;
+	}

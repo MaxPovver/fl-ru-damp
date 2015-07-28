@@ -1,0 +1,22 @@
+.b-button_land{
+	border:2px solid hsla(0, 0%, 100%, .3);
+	color:#fff;
+	padding:20px 10px !important;
+	border-radius:3px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:16px;
+	font-weight:bold;
+	line-height:1;
+	}
+.b-button_land_bg_green{
+	border:2px solid hsla(0, 0%, 100%, .2);
+	background-color:hsla(102, 55%, 48%,.5);
+	}
+.b-button_land:hover{
+	border:2px solid hsla(0, 0%, 100%, .2);
+	background-color:hsla(0, 0%, 100%, .4);
+	}
+.b-button_land_bg_green:hover{
+	background-color:hsla(102, 55%, 48%,1);
+	border:2px solid hsla(102, 55%, 48%,1);
+	}

@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ext-filter</title>
+<link href="b-ext-filter.css" rel="stylesheet" type="text/css" />
+<link href="../b-menu/b-menu.css" rel="stylesheet" type="text/css" />
+<link href="../b-buttons/b-buttons.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/scripts/mootools-new.js"></script>
+<script type="text/javascript" src="../b-combo/b-combo.js"></script>
+<script type="text/javascript" src="b-ext-filter.js"></script>
+</head>
+<body>
+<h3>Фильтр на главной</h3>
+<div class="b-ext-filter">
+  <div class="b-ext-filter__inner">
+    <div class="b-ext-filter__txt b-ext-filter__txt_padbot_10">Фильтр проектов <span class="b-ext-filter__switcher b-ext-filter__switcher_on"> <span class="b-ext-filter__switch-on"><span class="b-ext-filter__icon"></span>отключен &#160;&#160;<a class="b-ext-filter__link b-ext-filter__link_bordbot_dot_0f71c8" href="#">Включить</a></span> <span class="b-ext-filter__switch-off"><span class="b-ext-filter__icon"></span>включен &#160;&#160;&#160;&#160;<a class="b-ext-filter__link b-ext-filter__link_bordbot_dot_0f71c8" href="#">Отключить</a></span> </span> <a class="b-ext-filter__slide" href="#">свернуть фильтр<span class="b-ext-filter__toggler b-ext-filter__toggler_up"></span></a> 
+      <!--											<a class="b-ext-filter__slide b-ext-filter__slide_hide" href="#">развернуть фильтр<span class="b-ext-filter__toggler b-ext-filter__toggler_down"></span></a>--> 
+    </div>
+    <div class="b-ext-filter__body b-ext-filter__body_bordtop_fff">
+      <div class="b-form b-form_padtop_15">
+        <label class="b-form__name b-form__name_padtop_8 b-form__name_width_60">Бюджет от</label>
+        <div class="b-combo b-combo_inline-block">
+          <div class="b-combo__input b-combo__input_width_100 b-combo__input_max-width_100">
+            <input id="c1" class="b-combo__input-text b-combo__input-text_fontsize_15" name="" type="text" size="80" value="500" />
+            <label class="b-combo__label" for="c1"></label>
+          </div>
+        </div>
+        <label class="b-form__name b-form__name_padtop_8 b-form__name_padlr_5">до</label>
+        <div class="b-combo b-combo_inline-block b-combo_margright_10">
+          <div class="b-combo__input b-combo__input_width_100 b-combo__input_max-width_100">
+            <input id="c2" class="b-combo__input-text b-combo__input-text_fontsize_15" name="" type="text" size="80" value="500" />
+            <label class="b-combo__label" for="c2"></label>
+          </div>
+        </div>
+        <div class="b-combo b-combo_inline-block b-combo_margright_20">
+          <div class="b-combo__input b-combo__input_width_45 b-combo__input_min-width_40 b-combo__input_max-width_40 b-combo__input_arrow_yes">
+            <input id="c3" class="b-combo__input-text b-combo__input-text_fontsize_15" name="" type="text" size="80" value="руб" />
+            <label class="b-combo__label" for="c3"></label>
+            <span class="b-combo__arrow"></span> </div>
+          <div class="b-shadow b-shadow_hide b-shadow_inline-block">
+            <div class="b-shadow__right">
+              <div class="b-shadow__left">
+                <div class="b-shadow__top">
+                  <div class="b-shadow__bottom">
+                    <div class="b-shadow__body b-shadow__body_bg_fff b-layout b-combo__body ">
+                      <table class="b-layout__table b-layout__table_width_70" border="0" cellpadding="0" cellspacing="0">
+                        <tr class="b-layout__tr">
+                          <td class="b-layout__one"><ul class="b-combo__list">
+                              <li class="b-combo__item"><span class="b-combo__item-inner">Руб.</span></li>
+                              <li class="b-combo__item"><span class="b-combo__item-inner">FM</span></li>
+                              <li class="b-combo__item"><span class="b-combo__item-inner">Дол.</span></li>
+                              <li class="b-combo__item"><span class="b-combo__item-inner">Евр.</span></li>
+                            </ul></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="b-shadow__tl"></div>
+            <div class="b-shadow__tr"></div>
+            <div class="b-shadow__bl"></div>
+            <div class="b-shadow__br"></div>
+          </div>
+        </div>
+        <div class="b-check b-check_inline-block b-check_padtop_8">
+          <input id="b-check1" class="b-check__input" name="" type="checkbox" value="" />
+          <label for="b-check1" class="b-check__label ">В том числе проекты с бюджетом «по договорённости»</label>
+        </div>
+      </div>
+      <div class="b-form b-form_padtop_15">
+        <label class="b-form__name b-form__name_padtop_8 b-form__name_width_60">Разделы</label>
+        <div class="b-combo b-combo_inline-block b-combo_margright_20">
+          <div class="b-combo__input b-combo__input_width_150 b-combo__input_max-width_400 b-combo__input_arrow_yes">
+            <input id="c3" class="b-combo__input-text" name="" type="text" size="80" value="Все разделы" />
+            <label class="b-combo__label" for="c3"></label>
+            <span class="b-combo__arrow"></span> </div>
+          <div class="b-shadow b-shadow_hide b-shadow_inline-block">
+            <div class="b-shadow__right">
+              <div class="b-shadow__left">
+                <div class="b-shadow__top">
+                  <div class="b-shadow__bottom">
+                    <div class="b-shadow__body b-shadow__body_bg_fff b-layout b-combo__body ">
+                      <table class="b-layout__table" border="0" cellpadding="0" cellspacing="0">
+                        <tr class="b-layout__tr">
+                          <td class="b-layout__left"><ul class="b-combo__list">
+                              <li class="b-combo__item"><span class="b-combo__item-inner">Все специализации</span></li>
+                              <li class="b-combo__item"><span class="b-combo__item-inner">Дизайн</span></li>
+                              <li class="b-combo__item"><span class="b-combo__item-inner">Менеджмент</span></li>
+                              <li class="b-combo__item"><span class="b-combo__item-inner">Разработка сайтов</span></li>
+                              <li class="b-combo__item"><span class="b-combo__item-inner">Анимация и мультипликация</span></li>
+                            </ul></td>
+                          <td class="b-layout__right b-layout__right_bordleft_cdd1d3 b-layout__right_hide"><ul class="b-combo__list">
+                              <li class="b-combo__item"><span class="b-combo__item-inner">Дизайн сайтов</span></li>
+                              <li class="b-combo__item"><span class="b-combo__item-inner">Полиграфический дизайн</span></li>
+                              <li class="b-combo__item"><span class="b-combo__item-inner">Дизайн выставочных стендов</span></li>
+                            </ul></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="b-shadow__tl"></div>
+            <div class="b-shadow__tr"></div>
+            <div class="b-shadow__bl"></div>
+            <div class="b-shadow__br"></div>
+          </div>
+        </div>
+        <div class="b-check b-check_padleft_60 b-check_padtop_8">
+          <input id="b-check2" class="b-check__input" name="" type="checkbox" value="" />
+          <label for="b-check2" class="b-check__label ">Проекты только по моей специализации</label>
+        </div>
+        <ul class="b-ext-filter__list">
+          <li class="b-ext-filter__item b-ext-filter__item_green"><a class="b-ext-filter__spec" href="#"><span class="b-ext-filter__spec-inner"><span class="b-ext-filter__krest"></span>Менеджмент</span></a></li>
+          <li class="b-ext-filter__item b-ext-filter__item_light-green"><a class="b-ext-filter__spec" href="#"><span class="b-ext-filter__spec-inner"><span class="b-ext-filter__krest"></span>Дизайн</span></a></li>
+          <li class="b-ext-filter__item b-ext-filter__item_yellow"><a class="b-ext-filter__spec" href="#"><span class="b-ext-filter__spec-inner"><span class="b-ext-filter__krest"></span>Разработка сайтов</span></a></li>
+        </ul>
+      </div>
+      <div class="b-form b-form_padtop_15">
+        <label class="b-form__name b-form__name_padtop_8 b-form__name_width_60">Место</label>
+        <div class="b-combo b-combo_inline-block b-combo_margright_20">
+          <div class="b-combo__input b-combo__input_width_150 b-combo__input_max-width_180 b-combo__input_arrow_yes">
+            <input id="c3" class="b-combo__input-text" name="" type="text" size="80" value="Все страны" />
+            <label class="b-combo__label" for="c3"></label>
+            <span class="b-combo__arrow"></span> </div>
+          <div class="b-shadow b-shadow_hide b-shadow_inline-block">
+            <div class="b-shadow__right">
+              <div class="b-shadow__left">
+                <div class="b-shadow__top">
+                  <div class="b-shadow__bottom">
+                    <div class="b-shadow__body b-shadow__body_bg_fff b-layout b-combo__body ">
+                      <table class="b-layout__table" border="0" cellpadding="0" cellspacing="0">
+                        <tr class="b-layout__tr">
+                          <td class="b-layout__left b-layout__left_width_175"><ul class="b-combo__list">
+                              <li class="b-combo__item"><span class="b-combo__item-inner">Россия</span></li>
+                              <li class="b-combo__item"><span class="b-combo__item-inner">Украина</span></li>
+                              <li class="b-combo__item"><span class="b-combo__item-inner">Казахстан</span></li>
+                            </ul></td>
+                          <td class="b-layout__right b-layout__right_width_175 b-layout__right_bordleft_cdd1d3 b-layout__right_hide"><ul class="b-combo__list">
+                              <li class="b-combo__item"><span class="b-combo__item-inner">Москва</span></li>
+                              <li class="b-combo__item"><span class="b-combo__item-inner">Санкт-Петербург</span></li>
+                            </ul></td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="b-shadow__tl"></div>
+            <div class="b-shadow__tr"></div>
+            <div class="b-shadow__bl"></div>
+            <div class="b-shadow__br"></div>
+          </div>
+        </div>
+      </div>
+      <div class="b-form b-form_padtop_15 b-layout">
+        <table class="b-layout__table b-layout__table_width_full" border="0" cellpadding="0" cellspacing="0">
+          <tr class="b-layout__tr">
+            <td class="b-layout__left b-layout__left_width_60"><label class="b-form__name b-form__name_width_60">Ключевые слова</label></td>
+            <td class="b-layout__right"><div class="b-input b-input_visibility_yes b-input_height_24">
+                <input type="text" id="b-input" class="b-input__text"  />
+              </div></td>
+          </tr>
+        </table>
+      </div>
+      <div class="b-form b-form_padtop_5">
+        <div class="b-check b-check_padleft_60">
+          <input id="b-check3" class="b-check__input" name="" type="checkbox" value="" />
+          <label for="b-check3" class="b-check__label ">Только проекты, предусматривающие&#160;<span class="b-ext-filter__sbr"></span>&#160;«Сделку без риска»</label>
+        </div>
+      </div>
+      <div class="b-form b-form_padtop_5 b-form_padleft_57"> <a class="b-button b-button_rectangle_color_transparent"  href="#"> <span class="b-button__b1"> <span class="b-button__b2"> <span class="b-button__txt">Отфильтровать проекты</span> </span> </span> </a> </div>
+    </div>
+    <span class="b-ext-filter__nosik"></span> </div>
+  <!-- b-ext-filter__body --> 
+</div>
+<!-- b-ext-filter -->
+
+<h3>Фильтр в «Сделаю»</h3>
+<div class="b-page__filter">
+  <div class="b-menu b-menu_tabs b-menu_relative b-menu_padbot_2">
+    <div class="b-menu__filter"> <a onclick="xajax__HideProject('all', 'unhide', '5', '1', 1); return false;" id="hide_project_count" class="b-menu__link b-menu__link_bordbot_dot_0f71c8"> </a> <span class="b-menu__filter-ic b-menu__filter-ic_on b-menu__filter-ic_margleft_20"></span> <a class="b-menu__link b-menu__link_bordbot_dot_c10600 b-menu__link_6db335 b-menu__filter_switcher ">Фильтр</a> </div>
+    <ul class="b-menu__list">
+    </ul>
+  </div>
+  <!-- b-menu_tabs -->
+  
+  <div page="0" class="b-ext-filter b-ext-filter_zindex_2  " >
+    <div class="b-ext-filter__inner">
+    <form id="frm" method="post" action="/index.php#prj_filter">
+      <input type="hidden" value="postfilter" name="action">
+      <input type="hidden" value="5" name="kind">
+      <div class="b-ext-filter__txt b-ext-filter__txt_padbot_10"> Фильтр проектов <span class="b-ext-filter__switcher b-ext-filter__switcher_off"> <span class="b-ext-filter__switch-off"> <span class="b-ext-filter__icon"></span>включен &nbsp;&nbsp;&nbsp;&nbsp; <a href="/index.php?action=deletefilter&amp;kind=0#prj_filter" class="b-ext-filter__link ">Отключить</a> </span> </span> <a href="javascript:void(0)" class="b-ext-filter__slide ">Cвернуть фильтр&nbsp;<span class="b-ext-filter__toggler b-ext-filter__toggler_up"></span></a> 
+        <!--											<a class="b-ext-filter__slide b-ext-filter__slide_hide" href="#">развернуть фильтр<span class="b-ext-filter__toggler b-ext-filter__toggler_down"></span></a>--> 
+      </div>
+      <div class="b-ext-filter__body b-ext-filter__body_bordtop_fff">
+        <div class="b-form b-form_padtop_15">
+          <input type="hidden" id="pf_category" name="pf_category">
+          <input type="hidden" id="pf_subcategory" name="pf_subcategory">
+          <label class="b-form__name b-form__name_padtop_8 b-form__name_width_60">Разделы</label>
+          <div class="b-combo b-combo_inline-block b-combo_margright_5 b-combo_zindex_3">
+            <div class="b-combo__input b-combo__input_multi_dropdown b-combo__input_width_150 b-combo__input_resize b-combo__input_max-width_450 b-combo__input_visible_height_200 b-combo__input_arrow_yes  b-combo__input_on_load_request_id_getprofgroups  b-combo__input_on_click_request_id_getprofessions drop_down_default_0 multi_drop_down_default_column_0" style="width: 150px;">
+              <input type="hidden" id="comboe_column_id" name="comboe_column_id" value="0">
+              <input type="hidden" id="comboe_db_id" name="comboe_db_id" value="0">
+              <input type="text" value="Все разделы" size="80" name="comboe" class="b-combo__input-text" id="comboe" autocomplete="off">
+              <label class="b-combo__label" for="comboe">Все разделы</label>
+              <span class="b-combo__arrow"></span> </div>
+            <div class="b-shadow b-shadow_hide b-shadow_inline-block">
+              <div class="b-shadow__right">
+                <div class="b-shadow__left">
+                  <div class="b-shadow__top">
+                    <div class="b-shadow__bottom">
+                      <div class="b-shadow__body b-shadow__body_bg_fff b-layout b-combo__body">
+                        <table border="0" cellspacing="0" cellpadding="0" class="b-layout__table">
+                          <tbody>
+                            <tr class="b-layout__tr">
+                              <td class="b-layout__left"><ul class="b-combo__list">
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="0">Другое</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="1">Менеджмент</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="2">Разработка сайтов</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="3">Дизайн</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="4">Флеш</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="5">Программирование</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="6">Оптимизация (SEO)</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="7">Переводы</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="8">Тексты</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="9">3D Графика</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="10">Фотография</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="11">Аудио/Видео</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="12">Реклама/Маркетинг</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="13">Консалтинг</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="14">Архитектура/Интерьер</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="16">Разработка игр</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="17">Полиграфия</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="18">Арт</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="19">Анимация/Мультипликация</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="20">Инжиниринг</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="22">Обучение</span></li>
+                                </ul></td>
+                              <td class="b-layout__right b-layout__right_bordleft_cdd1d3 b-layout__right_hide"><ul class="b-combo__list">
+                                </ul></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-shadow__tl"></div>
+              <div class="b-shadow__tr"></div>
+              <div class="b-shadow__bl"></div>
+              <div class="b-shadow__br"></div>
+            </div>
+          </div>
+          <a onclick="FilterCatalogAddCategoryType();" href="javascript:void(0)" class="b-button b-button_inline-block b-button_rectangle_color_transparent b-button_margtop_-4"> <span class="b-button__b1"> <span class="b-button__b2"> <span class="b-button__txt">Добавить</span> </span> </span> </a>
+          <div class="b-check b-check_padleft_60 b-check_padtop_8">
+            <input type="checkbox" value="1" name="pf_my_specs" class="b-check__input" id="pf_my_specs">
+            <label class="b-check__label " for="pf_my_specs">Проекты только по моей специализации</label>
+          </div>
+          <ul id="pf_specs" class="b-ext-filter__list">
+            <input type="hidden" value="0" name="pf_categofy[0][2]">
+            <li class="b-ext-filter__item b-ext-filter__item_green"><a class="b-ext-filter__spec" onclick="FilterAddBulletNew(0, 2,0,0);" href="javascript: void(0);"><span class="b-ext-filter__spec-inner"><span class="b-ext-filter__krest"></span>Разработка сайтов</span></a></li>
+            <input type="hidden" value="0" name="pf_categofy[0][3]">
+            <li class="b-ext-filter__item b-ext-filter__item_green"><a class="b-ext-filter__spec" onclick="FilterAddBulletNew(0, 3,0,0);" href="javascript: void(0);"><span class="b-ext-filter__spec-inner"><span class="b-ext-filter__krest"></span>Дизайн</span></a></li>
+            <input type="hidden" value="0" name="pf_categofy[0][4]">
+            <li class="b-ext-filter__item b-ext-filter__item_green"><a class="b-ext-filter__spec" onclick="FilterAddBulletNew(0, 4,0,0);" href="javascript: void(0);"><span class="b-ext-filter__spec-inner"><span class="b-ext-filter__krest"></span>Флеш</span></a></li>
+            <input type="hidden" value="0" name="pf_categofy[0][6]">
+            <li class="b-ext-filter__item b-ext-filter__item_green"><a class="b-ext-filter__spec" onclick="FilterAddBulletNew(0, 6,0,0);" href="javascript: void(0);"><span class="b-ext-filter__spec-inner"><span class="b-ext-filter__krest"></span>Оптимизация (SEO)</span></a></li>
+            <input type="hidden" value="0" name="pf_categofy[0][10]">
+            <li class="b-ext-filter__item b-ext-filter__item_green"><a class="b-ext-filter__spec" onclick="FilterAddBulletNew(0, 10,0,0);" href="javascript: void(0);"><span class="b-ext-filter__spec-inner"><span class="b-ext-filter__krest"></span>Фотография</span></a></li>
+          </ul>
+        </div>
+        <div class="b-buttons b-buttons_padbot_10 b-buttons_padtop_5 b-buttons_padleft_57"> <a onclick="$('frm').submit();" href="javascript:void(0)" class="b-button b-button_rectangle_color_transparent"> <span class="b-button__b1"> <span class="b-button__b2"> <span class="b-button__txt">Применить фильтр</span> </span> </span> </a> </div>
+      </div>
+      <span class="b-ext-filter__nosik b-ext-filter__nosik_right_25"></span>
+      <!-- b-ext-filter__body -->
+    </form>
+    </div>
+  </div>
+</div>
+
+<br /><br />
+<div class="b-page__filter">
+  <div class="b-menu b-menu_tabs b-menu_relative b-menu_padbot_2">
+    <div class="b-menu__filter"> <a onclick="xajax__HideProject('all', 'unhide', '5', '1', 1); return false;" id="hide_project_count" class="b-menu__link b-menu__link_bordbot_dot_0f71c8"> </a> <span class="b-menu__filter-ic b-menu__filter-ic_on b-menu__filter-ic_margleft_20"></span> <a class="b-menu__link b-menu__link_bordbot_dot_c10600 b-menu__link_6db335 b-menu__filter_switcher ">Фильтр</a> </div>
+    <ul class="b-menu__list">
+    </ul>
+  </div>
+  <!-- b-menu_tabs -->
+  
+  <div  class="b-ext-filter b-ext-filter_zindex_2 b-ext-filter_hide ">
+    <div class="b-ext-filter__inner">
+    <form id="frm" method="post" action="/index.php#prj_filter">
+      <input type="hidden" value="postfilter" name="action">
+      <input type="hidden" value="5" name="kind">
+      <div class="b-ext-filter__txt b-ext-filter__txt_padbot_10"> Фильтр проектов <span class="b-ext-filter__switcher b-ext-filter__switcher_off"> <span class="b-ext-filter__switch-off"> <span class="b-ext-filter__icon"></span>включен &nbsp;&nbsp;&nbsp;&nbsp; <a href="/index.php?action=deletefilter&amp;kind=0#prj_filter" class="b-ext-filter__link ">Отключить</a> </span> </span> <a href="javascript:void(0)" class="b-ext-filter__slide ">Cвернуть фильтр&nbsp;<span class="b-ext-filter__toggler b-ext-filter__toggler_up"></span></a> 
+        <!--											<a class="b-ext-filter__slide b-ext-filter__slide_hide" href="#">развернуть фильтр<span class="b-ext-filter__toggler b-ext-filter__toggler_down"></span></a>--> 
+      </div>
+      <div class="b-ext-filter__body b-ext-filter__body_bordtop_fff">
+        <div class="b-form b-form_padtop_15">
+          <input type="hidden" id="pf_category" name="pf_category">
+          <input type="hidden" id="pf_subcategory" name="pf_subcategory">
+          <label class="b-form__name b-form__name_padtop_8 b-form__name_width_60">Разделы</label>
+          <div class="b-combo b-combo_inline-block b-combo_margright_5 b-combo_zindex_3">
+            <div class="b-combo__input b-combo__input_multi_dropdown b-combo__input_width_150 b-combo__input_resize b-combo__input_max-width_450 b-combo__input_visible_height_200 b-combo__input_arrow_yes  b-combo__input_on_load_request_id_getprofgroups  b-combo__input_on_click_request_id_getprofessions drop_down_default_0 multi_drop_down_default_column_0" style="width: 150px;">
+              <input type="hidden" id="comboe_column_id" name="comboe_column_id" value="0">
+              <input type="hidden" id="comboe_db_id" name="comboe_db_id" value="0">
+              <input type="text" value="Все разделы" size="80" name="comboe" class="b-combo__input-text" id="comboe" autocomplete="off">
+              <label class="b-combo__label" for="comboe">Все разделы</label>
+              <span class="b-combo__arrow"></span> </div>
+            <div class="b-shadow b-shadow_hide b-shadow_inline-block">
+              <div class="b-shadow__right">
+                <div class="b-shadow__left">
+                  <div class="b-shadow__top">
+                    <div class="b-shadow__bottom">
+                      <div class="b-shadow__body b-shadow__body_bg_fff b-layout b-combo__body">
+                        <table border="0" cellspacing="0" cellpadding="0" class="b-layout__table">
+                          <tbody>
+                            <tr class="b-layout__tr">
+                              <td class="b-layout__left"><ul class="b-combo__list">
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="0">Другое</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="1">Менеджмент</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="2">Разработка сайтов</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="3">Дизайн</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="4">Флеш</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="5">Программирование</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="6">Оптимизация (SEO)</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="7">Переводы</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="8">Тексты</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="9">3D Графика</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="10">Фотография</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="11">Аудио/Видео</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="12">Реклама/Маркетинг</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="13">Консалтинг</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="14">Архитектура/Интерьер</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="16">Разработка игр</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="17">Полиграфия</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="18">Арт</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="19">Анимация/Мультипликация</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="20">Инжиниринг</span></li>
+                                  <li class="b-combo__item"><span class="b-combo__item-inner" dbid="22">Обучение</span></li>
+                                </ul></td>
+                              <td class="b-layout__right b-layout__right_bordleft_cdd1d3 b-layout__right_hide"><ul class="b-combo__list">
+                                </ul></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="b-shadow__tl"></div>
+              <div class="b-shadow__tr"></div>
+              <div class="b-shadow__bl"></div>
+              <div class="b-shadow__br"></div>
+            </div>
+          </div>
+          <a onclick="FilterCatalogAddCategoryType();" href="javascript:void(0)" class="b-button b-button_inline-block b-button_rectangle_color_transparent b-button_margtop_-4"> <span class="b-button__b1"> <span class="b-button__b2"> <span class="b-button__txt">Добавить</span> </span> </span> </a>
+          <div class="b-check b-check_padleft_60 b-check_padtop_8">
+            <input type="checkbox" value="1" name="pf_my_specs" class="b-check__input" id="pf_my_specs">
+            <label class="b-check__label " for="pf_my_specs">Проекты только по моей специализации</label>
+          </div>
+          <ul id="pf_specs" class="b-ext-filter__list">
+            <input type="hidden" value="0" name="pf_categofy[0][2]">
+            <li class="b-ext-filter__item b-ext-filter__item_green"><a class="b-ext-filter__spec" onclick="FilterAddBulletNew(0, 2,0,0);" href="javascript: void(0);"><span class="b-ext-filter__spec-inner"><span class="b-ext-filter__krest"></span>Разработка сайтов</span></a></li>
+            <input type="hidden" value="0" name="pf_categofy[0][3]">
+            <li class="b-ext-filter__item b-ext-filter__item_green"><a class="b-ext-filter__spec" onclick="FilterAddBulletNew(0, 3,0,0);" href="javascript: void(0);"><span class="b-ext-filter__spec-inner"><span class="b-ext-filter__krest"></span>Дизайн</span></a></li>
+            <input type="hidden" value="0" name="pf_categofy[0][4]">
+            <li class="b-ext-filter__item b-ext-filter__item_green"><a class="b-ext-filter__spec" onclick="FilterAddBulletNew(0, 4,0,0);" href="javascript: void(0);"><span class="b-ext-filter__spec-inner"><span class="b-ext-filter__krest"></span>Флеш</span></a></li>
+            <input type="hidden" value="0" name="pf_categofy[0][6]">
+            <li class="b-ext-filter__item b-ext-filter__item_green"><a class="b-ext-filter__spec" onclick="FilterAddBulletNew(0, 6,0,0);" href="javascript: void(0);"><span class="b-ext-filter__spec-inner"><span class="b-ext-filter__krest"></span>Оптимизация (SEO)</span></a></li>
+            <input type="hidden" value="0" name="pf_categofy[0][10]">
+            <li class="b-ext-filter__item b-ext-filter__item_green"><a class="b-ext-filter__spec" onclick="FilterAddBulletNew(0, 10,0,0);" href="javascript: void(0);"><span class="b-ext-filter__spec-inner"><span class="b-ext-filter__krest"></span>Фотография</span></a></li>
+          </ul>
+        </div>
+        <div class="b-buttons b-buttons_padbot_10 b-buttons_padtop_5 b-buttons_padleft_57"> <a onclick="$('frm').submit();" href="javascript:void(0)" class="b-button b-button_rectangle_color_transparent"> <span class="b-button__b1"> <span class="b-button__b2"> <span class="b-button__txt">Применить фильтр</span> </span> </span> </a> </div>
+      </div>
+      <span class="b-ext-filter__nosik b-ext-filter__nosik_right_25"></span>
+      <!-- b-ext-filter__body -->
+    </form>
+    </div>
+  </div>
+</div>
+<!-- b-ext-filter -->
+
+</div>
+</body>
+</html>

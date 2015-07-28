@@ -1,0 +1,1 @@
+<? $category = intval($_GET['category']); $subcategory = intval($_GET['subcategory']); $kind = 5; include('projects.php') ?>

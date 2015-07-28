@@ -1,0 +1,42 @@
+<?php
+
+global $session;
+$form_elements = $this->element->getElements();
+
+?>
+<?php if(count($form_elements)): ?>
+<table class="b-layout__table b-layout__table_width_full">
+    <tbody>
+        <?php if($this->element->freelancer): ?>
+        <tr class="b-layout__tr">
+            <td class="b-layout__td b-layout__td_padbot_20">
+                <div class="b-layout__txt b-layout__txt_fontsize_15">
+                    Исполнитель
+                </div>
+            </td>
+            <td class="b-layout__td b-layout__td_padbot_20 b-layout__td_fs_11">
+                <?=$session->view_online_status($this->element->freelancer->login)?>
+                <a class="b-layout__link b-layout__link_fontsize_13 b-layout__link_no-decorat b-layout__link_color_000 b-layout__link_bold" 
+                   href="/users/<?=$this->element->freelancer->login?>/">
+                    <?=view_fullname($this->element->freelancer)?>
+                </a>
+                <?=view_mark_user2(array(
+                    "uid"           => $this->element->freelancer->uid,
+                    "login"         => $this->element->freelancer->login,
+                    "is_verify"     => $this->element->freelancer->is_verify,
+                    "is_pro"        => $this->element->freelancer->is_pro,
+                    "is_pro_test"   => $this->element->freelancer->is_pro_test,
+                    "is_team"       => $this->element->freelancer->is_team,
+                    "role"          => $this->element->freelancer->role), '', true, "&nbsp;");
+                ?>
+            </td>
+        </tr>
+        <?php endif; ?>
+        <?php foreach($form_elements as $form_element): ?>
+        <tr class="b-layout__tr">
+            <?=$form_element?>
+        </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>
+<?php endif; ?>
